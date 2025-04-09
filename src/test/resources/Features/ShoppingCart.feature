@@ -13,3 +13,9 @@ Background: Given The user is on the home page
    And confirm order
    Then the user should see the order number and able to download the invoice as pdf
  
+ @invoiceDetails
+ Scenario: To read the invoice pdf in the application
+ When I logged in and click the orders
+ And click the invoice pdf 
+ Then the user should see the entire order details
+ 
