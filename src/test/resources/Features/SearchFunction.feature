@@ -1,13 +1,13 @@
-@SearchFunctionality
-Feature: I want to use search feature and apply the search filters
+Feature: Search Functionality
 
-  @tag1
+  @Search
   Scenario: Normal product search
     Given I am on the DemoWebShop HomePage
     When I click search bar and enter "Fiction"
     And I click the search button
     Then the "Fiction" should be displayed in the results
 
+  @validAdvanceSearch
   Scenario: Advanced product search with valid details
     Given I am on the homepage
     When I enter "Laptop" in the search box
@@ -15,9 +15,10 @@ Feature: I want to use search feature and apply the search filters
     And I enable advanced search
     And I apply the following search filters:
       | Category               | Min Price | Max Price |
-      | Computers >> Notebooks| 1000      | 2000      |
+      | Computers >> Notebooks | 1000       | 2000       |
     Then the search results for "Laptop" should be displayed
 
+  @InvalidAdvanceSearch
   Scenario: Advanced product search with invalid details
     Given I am on the homepage
     When I enter "Jewelry" in the search box
@@ -28,7 +29,8 @@ Feature: I want to use search feature and apply the search filters
       | All      | 1000      | 2000      |
     Then a message should be displayed indicating no products found
 
-  Scenario: Email a Friend feature without logging in using DataTable
+  @EmailWithoutLogin
+  Scenario: Try to Email a Friend without logging in 
   Given I am on the homepage
   When I click "Books"
   And I click the product from the results
@@ -52,5 +54,5 @@ Feature: I want to use search feature and apply the search filters
 
     Examples:
       | Product Name | FriendEmail         | YourEmail              | ExpectedMessage                                      |
-      | Jewelry      | friend@example.com  | user@example.com       | Your message has been sent.                         |
-      | Jewelry      | invalidemail        | user@example.com       | Enter valid email                                   |
+      | Jewelry      | 2k21dhar@gmail.com  | lakssakthi@gmail.com   | Your message has been sent.                         |
+      | Jewelry      |                     | user@example.com       | Enter valid email                                   |
