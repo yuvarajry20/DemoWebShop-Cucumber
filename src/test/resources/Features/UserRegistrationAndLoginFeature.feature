@@ -1,42 +1,84 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: User Registeration and Login
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another actions
-    Then I validate the outcomes
-    And check more outcomes
+Background: Given Home page of website
 
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+@registerwithvalidemail
+Scenario Outline: Register on the website with new mail id
+When click on register
+And Choose gender
+And Enter "<First name>" in first name field
+And Enter "<Second name>" in second name field
+And Enter "<Email>" in email field
+And Enter "<Password>" in password field
+And Enter "<Confirm password>" in confirm password field
+And click on register button
+Then Registered successfuly
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+Examples:
+|First name  |Second name |Email            |Password      |Confirm password   |
+|Yuvaraj     |R           |yuv@gmail.com    |123456        |123456         |
+
+@registerwithinvalidemail
+Scenario Outline: Register on the website with invalid email
+And click on register
+And Choose gender
+And Enter "<First name>" in first name field
+And Enter "<Second name>" in second name field
+And Enter "<Email>" in email field
+And Enter "<Password>" in password field
+And Enter "<Confirm password>" in confirm password field
+And click on register button
+Then Invalid email
+
+Examples: 
+|First name  |Second name  |Email               |Password      |Confirm password   |
+|Yuvaraj     |R            |ghana@              |123456        |123456         |
+
+@loginwithvalidcredentials
+Scenario Outline: Login with valid credentials
+When Click on login
+And Enter "<Email>" in email field
+And Enter "<Password>" in password field
+And Click on login button
+Then Logged in successfully
+
+Examples:
+|Email           |Password     |
+|yuv@gmail.com   |123456       |
+
+@loginwithinvalidcredentials
+Scenario Outline: Login with valid credentials
+When Click on login
+And Enter "<Email>" in email field
+And Enter "<Password>" in password field
+And Click on login button
+Then invalid login credentials
+
+Examples:
+|Email           |Password    |
+|t@gmail.com     |testuser1   |
+
+@Forgotpasswordwithvalidemail
+Scenario Outline: Forgot password with valid email
+When Click on login
+And Click on Forgot password
+And Enter "<Email>" in email field
+And Click on recover button
+Then Email sent message displayed
+
+Examples:
+|Email            |
+|yuv@gmail.com    |
+
+@Forgotpasswordwithinvalidemail
+Scenario Outline: Forgot password with valid email
+When Click on login
+And Click on Forgot password
+And Enter "<Email>" in email field
+And Click on recover button
+Then Email does not exist  message displayed
+
+Examples:
+|Email                |
+|rohitkohli@gmail.com |
+    
