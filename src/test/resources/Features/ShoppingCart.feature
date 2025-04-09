@@ -2,7 +2,7 @@ Feature: Verifying the Shopping Cart
 Background: Given The user is on the home page
     
 @orderPlacement
-   Scenario: adding items and purchasing in the web application
+   Scenario: adding items and purchasing in the web application.
    
    When the user search an item in the search box
    |product			 |
