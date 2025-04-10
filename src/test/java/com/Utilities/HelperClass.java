@@ -58,12 +58,11 @@ public class HelperClass {
     }
 
     public static void openPage(String url) {
-        driver.get(url);
+        driver.get("https://demowebshop.tricentis.com/");
     }
 
     public static void teardown() {
         if (driver != null) {
-            driver.close();
             driver.quit();
         }
         help = null;
