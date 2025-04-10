@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 10, 2025 11:08:02 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 10, 2025 11:44:51 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,8 +76,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Login</a></li>
+					<li><a href='#'>@ProductDetailsValidation</a></li>
 					<li><a href='#'>@ForgotPassword</a></li>
+					<li><a href='#'>@Login</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,7 +121,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -138,7 +139,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>7</span> scenarios passed</span>
+                    <span class='strong'>8</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -158,7 +159,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>38</span> steps passed</span>
+                    <span class='strong'>43</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -188,7 +189,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login</span>
-						<span class='test-time'>Apr 10, 2025 11:08:03 pm</span>
+						<span class='test-time'>Apr 10, 2025 11:44:52 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,7 +202,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 30.628</span>
+	<span class='duration right label'>00 00 26.555</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid and invalid credentials</div>
 	</div>
@@ -334,7 +335,7 @@
 </div>
 <div class='scenario outline node' test-id='35' status='pass'>
 
-	<span class='duration right label'>00 00 20.954</span>
+	<span class='duration right label'>00 00 17.928</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Forgot password with valid and invalid email</div>
 	</div>
@@ -449,6 +450,63 @@
 </div>
 					</div>
 				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>Product Details Validation and purchasing in the Shopping cart page</span>
+						<span class='test-time'>Apr 10, 2025 11:45:37 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='64' status='pass'>
+
+	<span class='duration right label'>00 00 05.317</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating the Product Details and Adding to Cart</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@ProductDetailsValidation</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='66' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.ProductStepDefinition.the_user_is_on_the_home_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the home page</div>
+
+
+		</li>
+		<li test-id='67' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.ProductStepDefinition.the_user_search_for_a_product(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user search for a product</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>3rd Album</td></tr></table></div>
+		</li>
+		<li test-id='68' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.ProductStepDefinition.see_the_product_title_and_the_product_description())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And see the product title and the product description</div>
+
+
+		</li>
+		<li test-id='69' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.ProductStepDefinition.clicks_on_add_to_cart())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on add to cart</div>
+
+
+		</li>
+		<li test-id='70' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.ProductStepDefinition.the_user_should_see_the_successful_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the successful message</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -491,14 +549,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Login</span>
+						<span class='category-name'>@ProductDetailsValidation</span>
 						<span class='category-status right'>
-						<span class='label pass'>4</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -513,23 +571,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 10, 2025 11:08:03 pm</td>
-										<td class='linked' test-id='3'>Login with valid and invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 10, 2025 11:08:14 pm</td>
-										<td class='linked' test-id='11'>Login with valid and invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 10, 2025 11:08:21 pm</td>
-										<td class='linked' test-id='19'>Login with valid and invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 10, 2025 11:08:27 pm</td>
-										<td class='linked' test-id='27'>Login with valid and invalid credentials</td>
+										<td>Apr 10, 2025 11:45:37 pm</td>
+										<td class='linked' test-id='64'>Validating the Product Details and Adding to Cart</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -561,18 +604,66 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 10, 2025 11:08:33 pm</td>
+										<td>Apr 10, 2025 11:45:19 pm</td>
 										<td class='linked' test-id='36'>Forgot password with valid and invalid email</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 10, 2025 11:08:41 pm</td>
+										<td>Apr 10, 2025 11:45:25 pm</td>
 										<td class='linked' test-id='45'>Forgot password with valid and invalid email</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 10, 2025 11:08:48 pm</td>
+										<td>Apr 10, 2025 11:45:31 pm</td>
 										<td class='linked' test-id='54'>Forgot password with valid and invalid email</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Login</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 10, 2025 11:44:52 pm</td>
+										<td class='linked' test-id='3'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 10, 2025 11:45:02 pm</td>
+										<td class='linked' test-id='11'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 10, 2025 11:45:07 pm</td>
+										<td class='linked' test-id='19'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 10, 2025 11:45:13 pm</td>
+										<td class='linked' test-id='27'>Login with valid and invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -597,37 +688,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>38</div>
+					<div class='panel-lead'>43</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 10, 2025 11:08:02 pm</div>
+					<div class='panel-lead'>Apr 10, 2025 11:44:51 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 10, 2025 11:08:54 pm</div>
+			 		<div class='panel-lead'>Apr 10, 2025 11:45:42 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 52.636</div>
+					<div class='panel-lead'>00 00 51.150</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -663,8 +754,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Login</td>
-							<td>4</td>
+							<td>@ProductDetailsValidation</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -674,6 +765,15 @@
 						<tr>
 							<td>@ForgotPassword</td>
 							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Login</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -691,23 +791,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
+                parentCount: 2,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 7,
-				passChild: 7,
+				childCount: 8,
+				passChild: 8,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 38,
-				passGrandChild: 38,
+				grandChildCount: 43,
+				passGrandChild: 43,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -719,7 +819,7 @@
 		
 		<script>
 			var timeline = {
-			        "Login":51.594
+			        "Login":44.493,"Product Details Validation and purchasing in the Shopping cart page":5.317
 			};
 		</script>
 		
