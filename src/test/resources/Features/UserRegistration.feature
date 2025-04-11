@@ -1,9 +1,8 @@
 Feature: User Registeration
 
-Background: Given Home page of website
-
 @Register
 Scenario Outline: Register on the website with valid and invalid fields
+  Given I want to be in the demowebshop "url"
   When I click on register
   And I choose gender
   And I enter "<First name>","<Second name>","<Email>","<Password>","<Confirm password>" in the corresponding field
