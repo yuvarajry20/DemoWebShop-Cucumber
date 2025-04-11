@@ -11,15 +11,15 @@ Scenario: Validating the Product Details and Adding to Cart
 And see the product title and the product description
 And clicks on add to cart
 Then the user should see the successful message
-    #
-    #
-#@shoppingCart_Functionality
-#Scenario: Adding and Removing a Product in the Shopping Cart
-#
-#And go to the shopping cart
-#And remove the product from cart
-#Then the shopping cart is empty
-    #
+    
+    
+@shoppingCart_Functionality
+Scenario: Adding and Removing a Product in the Shopping Cart
+
+And go to the shopping cart
+And remove the product from cart
+Then the shopping cart is empty
+    
 #@Shipping_Product_Feature
 #Scenario: Navigate to the shipping estimate methods
 #
@@ -27,7 +27,7 @@ Then the user should see the successful message
 #|637505  |
 #And click the Estimate Shipping button
 #Then the user should able to see the multiple shipping methods
-#
+
 #@Verify_Wishlist_Product_URL
 #Scenario: Verify the product is same as in the auto-generated url in wishlist page
 #

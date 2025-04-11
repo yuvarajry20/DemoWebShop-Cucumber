@@ -29,5 +29,24 @@ public class ProductPage
 	@FindBy(xpath="//span[@class=\"cart-qty\"]")
 	public WebElement AddTocartnumber;
 	
+	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+	public WebElement shoppingcart;
+	
+	@FindBy(xpath="//input[@name=\"removefromcart\"]")
+	public WebElement removefromcart;
+	
+	@FindBy(xpath="//input[@class=\"button-2 update-cart-button\"]")
+	public WebElement updatecart;
+	
+	@FindBy(xpath="//div[@class=\"order-summary-content\"]")
+	public WebElement emptycart;
+	
+	@FindBy(xpath="//a[@class=\"product-name\"]")
+	public WebElement cartproductavailable;
+	
+	
+	
+	
+	
 	
 }

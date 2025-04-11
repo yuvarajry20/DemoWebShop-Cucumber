@@ -23,6 +23,9 @@ public class ProductAction {
 	public void login()
 	{
 		ProductPageLocator.LoginButtonHomePage.click();
+		ProductPageLocator.EmailField.sendKeys("abcggggg123@Gmail.com");
+		ProductPageLocator.PasswordField.sendKeys("Divraj@1234");
+		ProductPageLocator.LoginButtonSubmit.click();
 		
 	}
 	public void SearchFeildStore(String product)
@@ -40,9 +43,37 @@ public class ProductAction {
 	}
 	public void AddTocartMessage()
 	{
+		try 
+		{
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		String numberofproduct=ProductPageLocator.AddTocartnumber.getText();
 		System.out.println("the number of product :"+numberofproduct);
 		
 	}
+	public void Shopping_cart()
+	{
+		ProductPageLocator.AddToCart.click();
+		ProductPageLocator.shoppingcart.click();
+		System.out.println("The product is available in the cart :"+ProductPageLocator.cartproductavailable.getText());
+	}
+	public void updatecartbyremove()
+	{
+		ProductPageLocator.removefromcart.click();
+		ProductPageLocator.updatecart.click();
+	}
+	
+	public void emptycarts()
+	{
+		String act="\r\n"
+				+ "    \r\n"
+				+ "    \r\n"
+				+ "Your Shopping Cart is empty!    ";
+		String exp=ProductPageLocator.emptycart.getText();
+		System.out.println(exp);
+	}
+	
 
 }

@@ -44,18 +44,23 @@ public class ProductStepDefinition {
 
 	@When("go to the shopping cart")
 	public void go_to_the_shopping_cart() {
+		objProductAction.clickAddTocart();
+		objProductAction.Shopping_cart();
 	}
 
 	@When("remove the product from cart")
 	public void remove_the_product_from_cart() {
+		objProductAction.updatecartbyremove();
 	}
 
 	@Then("the shopping cart is empty")
 	public void the_shopping_cart_is_empty() {
+		objProductAction.emptycarts();
 	}
 
 	@When("go to the shopping cart and enter pincode")
 	public void go_to_the_shopping_cart_and_enter_pincode(io.cucumber.datatable.DataTable dataTable) {
+		
 	}
 
 	@When("click the Estimate Shipping button")
