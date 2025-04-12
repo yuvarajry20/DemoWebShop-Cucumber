@@ -50,7 +50,7 @@ public class ProductAction {
 			e.printStackTrace();
 		}
 		String numberofproduct=ProductPageLocator.AddTocartnumber.getText();
-		System.out.println("the number of product :"+numberofproduct);
+		System.out.println("the Number of product :"+numberofproduct);
 		
 	}
 	public void Shopping_cart()
