@@ -7,13 +7,16 @@ import io.cucumber.testng.CucumberOptions;
 		"json:target/cucumber-reports/Cucumber.json",
 		"html:target/cucumber-reports/Cucumber.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-features={"src/test/resources/Features/Login.feature",
+features={
+		"src/test/resources/Features/Login.feature",
 		"src/test/resources/Features/Product.feature",
-		 "src/test/resources/Features/HomePage.feature",
 		 "src/test/resources/Features/Books.feature"},
+		"src/test/resources/Features/HomePage.feature",
+		"src/test/resources/Features/Address.feature",
+},
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
     	return super.scenarios();
 	}

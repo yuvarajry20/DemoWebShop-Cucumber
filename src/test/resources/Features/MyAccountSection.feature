@@ -6,13 +6,6 @@ Background:
      |abccy@gmail.com|789456    |
     And click log in
     When I click my email
-
-   @AddAddress
-  Scenario: Adding Address 
-    And click Addressess and add new
-    Then I want to add new address
-    And select country and state
-    Then i click save
     
     @ValidChangePassword
   Scenario Outline: ChangePassword
@@ -59,10 +52,4 @@ Background:
    Scenario: verify the customer info 
    When i click the Customer Info
    Then i should see the FirstName, LastName and Email
-   
-   @DeleteAddess
-   Scenario: Deleting the already present address
-   When i click Addresses
-   And i click the Delete button
-   Then i should click the yes button in the alert
    
