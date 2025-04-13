@@ -1,10 +1,16 @@
-#Feature: Verifying the Shopping Cart
-#Background: 
-#Given The user is on the home page and logged in
-#|abcggggg123@Gmail.com|Divraj@1234|
-#When the user search an item in the search box
-#|health book  |
-#And I add the product to cart and click on shopping cart 
+#Feature: Checkout the product in the web Application
+#
+#Background:
+#Given the user is on the Web application 
+#Then  log in search an item and add to cart
+#And click checkout the product
+#
+    #
+#@Verifying_Terms&Condition_Checkbox
+#Scenario: Navigate to checkout page Without clicking the terms & conditions 
+#
+#And forgot to click the term & condition button
+#Then the user should see the pop up windows as to click the terms&condition
 #
 #@orderPlacement
 #Scenario:  checkout and download the invoice pdf
@@ -20,12 +26,7 @@
 #And click the invoice pdf 
 #Then the user should see the entire order details
  #
-    #
-#@Verifying_Terms&Condition_Checkbox
-#Scenario: Navigate to checkout page Without clicking the terms & conditions 
-    #
-#And click the checkout button
-#Then the user should see the pop up windows as to click the terms&condition
+#
     #
 #@orderPlacementthroughstorepickup
 #Scenario: purchase an item and choose store pickup

@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		"json:target/cucumber-reports/Cucumber.json",
 		"html:target/cucumber-reports/Cucumber.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+<<<<<<< HEAD
 features={
 		"src/test/resources/Features/Login.feature",
 		"src/test/resources/Features/Product.feature",
@@ -14,6 +15,11 @@ features={
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
 },
+=======
+features={"src/test/resources/Features/Login.feature",
+		"src/test/resources/Features/CheckOut.feature",
+		 "src/test/resources/Features/HomePage.feature"},
+>>>>>>> f7a2d3001ebb8092bb3a31b11be4ef7f18a67df0
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
     @DataProvider(parallel = false)
