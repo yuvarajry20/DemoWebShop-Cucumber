@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="0" failed="16" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T16:13:13 IST" name="Suite" finished-at="2025-04-11T16:13:58 IST" duration-ms="44717">
+  <suite started-at="2025-04-13T14:31:17 IST" name="Default suite" finished-at="2025-04-13T14:31:29 IST" duration-ms="12484">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T16:13:13 IST" name="Test" finished-at="2025-04-11T16:13:58 IST" duration-ms="44717">
+    <test started-at="2025-04-13T14:31:17 IST" name="Default test" finished-at="2025-04-13T14:31:29 IST" duration-ms="12484">
       <class name="com.Runner.runnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:13 IST" name="setUpClass" finished-at="2025-04-11T16:13:14 IST" duration-ms="864" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:17 IST" name="setUpClass" finished-at="2025-04-13T14:31:19 IST" duration-ms="2812" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a6d8329]]>
+                <![CDATA[org.testng.TestRunner@4a9860]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39434" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1491" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,573 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.core.exception.CucumberException">
+            <message>
+              <![CDATA[Failed to instantiate class com.Definitions.HomeStepDefinition]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class com.Definitions.HomeStepDefinition
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+... 27 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+The import com.Actions.LoginAction cannot be resolved
+The import com.Utilities cannot be resolved
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+HelperClass cannot be resolved
+HelperClass cannot be resolved
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+
+at com.Definitions.HomeStepDefinition.<init>(HomeStepDefinition.java:10)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.exception.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39656" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1497" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid and invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid and invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1543" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Forgot password with valid and invalid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1512" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid and invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1506" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid and invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string},{string} in the appropriate field")
+public void i_enter_in_the_appropriate_field(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the login button")
+public void i_click_on_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the login result should be {string}")
+public void the_login_result_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1445" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +613,68 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.core.exception.CucumberException">
+            <message>
+              <![CDATA[Failed to instantiate class com.Definitions.HomeStepDefinition]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class com.Definitions.HomeStepDefinition
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+... 27 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+The import com.Actions.LoginAction cannot be resolved
+The import com.Utilities cannot be resolved
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+HelperClass cannot be resolved
+HelperClass cannot be resolved
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+LoginAction cannot be resolved to a type
+
+at com.Definitions.HomeStepDefinition.<init>(HomeStepDefinition.java:10)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.exception.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39782" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1495" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +687,105 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("see the product title and the product description")
+public void see_the_product_title_and_the_product_description() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks on add to cart")
+public void clicks_on_add_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the successful message")
+public void the_user_should_see_the_successful_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("see the product title and the product description")
+public void see_the_product_title_and_the_product_description() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks on add to cart")
+public void clicks_on_add_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the successful message")
+public void the_user_should_see_the_successful_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:53 IST" duration-ms="38723" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1519" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,26 +798,103 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:53 IST" duration-ms="39212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid and invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:55 IST" duration-ms="41229" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="1513" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -114,78 +907,807 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to be in the demowebshop "url"' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to be in the demowebshop {string}")
+public void i_want_to_be_in_the_demowebshop(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on login")
+public void i_click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on Forgot password")
+public void i_click_on_forgot_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter {string} in the email field")
+public void i_enter_in_the_email_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the recover button")
+public void i_click_on_the_recover_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the result message should be {string}")
+public void the_result_message_should_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:53 IST" duration-ms="39201" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="134" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid and invalid credentials"]]>
+                <![CDATA["Adding and Removing a Product in the Shopping Cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("go to the shopping cart")
+public void go_to_the_shopping_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("remove the product from cart")
+public void remove_the_product_from_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the shopping cart is empty")
+public void the_shopping_cart_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("go to the shopping cart")
+public void go_to_the_shopping_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("remove the product from cart")
+public void remove_the_product_from_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the shopping cart is empty")
+public void the_shopping_cart_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39527" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="156" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid and invalid credentials"]]>
+                <![CDATA["Verify the product is same as in the auto-generated url in wishlist page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click the add to wishlist")
+public void click_the_add_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click the auto-generated url for the specific product")
+public void click_the_auto_generated_url_for_the_specific_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the product which is same as in the wishlist")
+public void the_user_should_see_the_product_which_is_same_as_in_the_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click the add to wishlist")
+public void click_the_add_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click the auto-generated url for the specific product")
+public void click_the_auto_generated_url_for_the_specific_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the product which is same as in the wishlist")
+public void the_user_should_see_the_product_which_is_same_as_in_the_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39353" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="121" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid and invalid credentials"]]>
+                <![CDATA["verify the quantity of the product is increased"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("Increase the count of the product and click add to cart")
+public void increase_the_count_of_the_product_and_click_add_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the updated quantity and price in the shopping cart page")
+public void the_user_should_see_the_updated_quantity_and_price_in_the_shopping_cart_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("Increase the count of the product and click add to cart")
+public void increase_the_count_of_the_product_and_click_add_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the updated quantity and price in the shopping cart page")
+public void the_user_should_see_the_updated_quantity_and_price_in_the_shopping_cart_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T16:13:54 IST" duration-ms="39828" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="137" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Forgot password with valid and invalid email"]]>
+                <![CDATA["send a product details through valid email a friend"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("logged in and click Email a friend")
+public void logged_in_and_click_email_a_friend() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter my email and friend email")
+public void enter_my_email_and_friend_email(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click send")
+public void click_send() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the email sent successful message")
+public void the_user_should_see_the_email_sent_successful_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("logged in and click Email a friend")
+public void logged_in_and_click_email_a_friend() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter my email and friend email")
+public void enter_my_email_and_friend_email(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click send")
+public void click_send() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the email sent successful message")
+public void the_user_should_see_the_email_sent_successful_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-11T16:13:55 IST" name="tearDownClass" finished-at="2025-04-11T16:13:58 IST" duration-ms="2559" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="133" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["send a product details through Invalid email a friend"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("logged in and click Email a friend")
+public void logged_in_and_click_email_a_friend() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter my email and friend email")
+public void enter_my_email_and_friend_email(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click send")
+public void click_send() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the Invalid email message")
+public void the_user_should_see_the_invalid_email_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("logged in and click Email a friend")
+public void logged_in_and_click_email_a_friend() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter my email and friend email")
+public void enter_my_email_and_friend_email(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click send")
+public void click_send() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the Invalid email message")
+public void the_user_should_see_the_invalid_email_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T14:31:21 IST" duration-ms="112" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the product is added in wishlist to shopping cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Details Validation and purchasing in the Shopping cart page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click add to wishlist")
+public void click_add_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("add to cart the product in the wishlist")
+public void add_to_cart_the_product_in_the_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the product is added in the shopping cart")
+public void the_user_should_see_the_product_is_added_in_the_shopping_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the home page")
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user search for a product")
+public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("click add to wishlist")
+public void click_add_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("add to cart the product in the wishlist")
+public void add_to_cart_the_product_in_the_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the product is added in the shopping cart")
+public void the_user_should_see_the_product_is_added_in_the_shopping_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-13T14:31:21 IST" name="tearDownClass" finished-at="2025-04-13T14:31:29 IST" duration-ms="7843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.Runner.runnerTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
