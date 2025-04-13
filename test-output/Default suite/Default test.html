@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 13 14:01:29 IST 2025</td>
+<td>Started on:</td><td>Sun Apr 13 16:04:01 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>130 seconds (130187 ms)</td>
+<tr><td>Total time:</td><td>110 seconds (110266 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with invalid email address", "HomePageFunctionality"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=135.0.7049.84)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27fa51d7a61e4d2bca905f1d4ea7af14, isElementDisplayed {id=f.6CAA0B4AE95BA19A817CF862BA0CF0D7.d.DCA43306DED95038DFA6DBA13DC38917.e.50}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58065/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (27fa51d7a61e4d2bca905f1d4ea7af14)] -&gt; xpath: //input[@id=&quot;newsletter-email&quot;]]
-Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
+Command: [5b2f09bbce56a2d4433a264eaa5cc0c2, getElementText {id=f.74CD0416EB4A9BC61E66A5FD71503F95.d.03BA81A1A09C8D44229D1FACC51BD9BB.e.43}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65058/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5b2f09bbce56a2d4433a264eaa5cc0c2)] -&gt; xpath: //h2[@class=&quot;product-title&quot;]]
+Session ID: 5b2f09bbce56a2d4433a264eaa5cc0c2
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -98,29 +98,25 @@ Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.Actions.HomePageAction.enterNewsLetterEmail(HomePageAction.java:22)
-	at com.Definitions.HomeStepDefinition.i_enter_the_following_email_in_the_newsletter_field(HomeStepDefinition.java:44)
-	at ✽.I enter the following email in the newsletter field(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/HomePage.feature:18)
-</pre></div><a href='#' onClick='toggleBox("stack-trace150385835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace150385835'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at com.Actions.ProductAction.GetTitleOfProduct(ProductAction.java:34)
+	at com.Definitions.ProductStepDefinition.see_the_product_title_and_the_product_description(ProductStepDefinition.java:31)
+	at ✽.see the product title and the product description(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Product.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1765576175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765576175'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=135.0.7049.84)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27fa51d7a61e4d2bca905f1d4ea7af14, isElementDisplayed {id=f.6CAA0B4AE95BA19A817CF862BA0CF0D7.d.DCA43306DED95038DFA6DBA13DC38917.e.50}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58065/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (27fa51d7a61e4d2bca905f1d4ea7af14)] -&gt; xpath: //input[@id=&quot;newsletter-email&quot;]]
-Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
+Command: [5b2f09bbce56a2d4433a264eaa5cc0c2, getElementText {id=f.74CD0416EB4A9BC61E66A5FD71503F95.d.03BA81A1A09C8D44229D1FACC51BD9BB.e.43}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65058/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5b2f09bbce56a2d4433a264eaa5cc0c2)] -&gt; xpath: //h2[@class=&quot;product-title&quot;]]
+Session ID: 5b2f09bbce56a2d4433a264eaa5cc0c2
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -132,20 +128,16 @@ Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.Actions.HomePageAction.enterNewsLetterEmail(HomePageAction.java:22)
-	at com.Definitions.HomeStepDefinition.i_enter_the_following_email_in_the_newsletter_field(HomeStepDefinition.java:44)
-	at ✽.I enter the following email in the newsletter field(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/HomePage.feature:18)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at com.Actions.ProductAction.GetTitleOfProduct(ProductAction.java:34)
+	at com.Definitions.ProductStepDefinition.see_the_product_title_and_the_product_description(ProductStepDefinition.java:31)
+	at ✽.see the product title and the product description(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Product.feature:11)
 </pre></div></td>
-<td>6</td>
+<td>23</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -157,79 +149,79 @@ Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply filter options for books", "Book Product Functionality"</td>
-<td></td>
-<td>27</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
 <td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deleting the already present address", "Validating Address Section"</td>
-<td></td>
-<td>8</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all books available", "Book Product Functionality"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
-<td></td>
-<td>6</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of a specific book", "Book Product Functionality"</td>
-<td></td>
-<td>7</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured products as list", "HomePageFunctionality"</td>
-<td></td>
-<td>6</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>5</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding Address", "Validating Address Section"</td>
-<td></td>
-<td>17</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
-<td></td>
-<td>5</td>
+<td>24</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with valid email address", "HomePageFunctionality"</td>
 <td></td>
-<td>6</td>
+<td>106</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all books available", "Book Product Functionality"</td>
+<td></td>
+<td>77</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td></td>
+<td>32</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deleting the already present address", "Validating Address Section"</td>
+<td></td>
+<td>85</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td></td>
+<td>31</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>101</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured products as list", "HomePageFunctionality"</td>
+<td></td>
+<td>84</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding Address", "Validating Address Section"</td>
+<td></td>
+<td>102</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply filter options for books", "Book Product Functionality"</td>
+<td></td>
+<td>108</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of a specific book", "Book Product Functionality"</td>
+<td></td>
+<td>76</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>33</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>33</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>76</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with invalid email address", "HomePageFunctionality"</td>
+<td></td>
+<td>75</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 </table><p>
 </body>
