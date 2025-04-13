@@ -31,11 +31,11 @@ private WebElement sortbyDropdown;
 	    }
     }
 
-     public void selectSortByAToZ() {
-    	  Select select = new Select(sortbyDropdown);
-          select.selectByVisibleText("Name: A to Z");
-
-     }
+//     public void selectSortByAToZ() {
+//    	  Select select = new Select(sortbyDropdown);
+//          select.selectByVisibleText("Name: A to Z");
+//
+//     }
      public void VerifySortedBooks() {
     	 bookPage.SortedBookList.getText();
      }
@@ -83,5 +83,17 @@ private WebElement sortbyDropdown;
     	System.out.println(bookPage.bookFiltered.getText());
     }
 
-    	}
+    public String getSelectedSortByOption() {
+        Select select = new Select(bookPage.sortbyDropdown);
+        return select.getFirstSelectedOption().getText();
+    }
+    public void applySortByOption(String option) {
+        System.out.println("Trying to select sort option: " + option);
+        Select select = new Select(bookPage.sortbyDropdown);
+        select.selectByVisibleText(option);
+    }
+
+}
+
+    	
     

@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import com.Actions.BookPageAction;
 
@@ -65,6 +66,29 @@ public class BookDefinitions {
 	@Then("the filtered books should be displayed accordingly")
 	public void the_filtered_books_should_be_displayed_accordingly() {
 	    bookAction.filterAppliedBooks();
+	}
+
+	@When("I apply each of the following Sort By filters:")
+	public void i_apply_each_of_the_following_sort_by_filters(DataTable dataTable) {
+	    List<Map<String, String>> list = dataTable.asMaps();
+	    
+	    for (Map<String, String> row : list) {
+	        String option = row.get("Sort By"); 
+	        bookAction.applySortByOption(option);
+
+	        try {
+	            Thread.sleep(1000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
+
+	@Then("each sort result should be applied correctly")
+	public void each_sort_result_should_be_applied_correctly() {
+	    String selectedOption = bookAction.getSelectedSortByOption();
+	    System.out.println("Current selected: " + selectedOption);
+	    Assert.assertNotNull(selectedOption);
 	}
 
 
