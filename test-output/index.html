@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-1843570174\testng-customsuite.xml</span>
+                    <span>C:\Users\yuvar\AppData\Local\Temp\testng-eclipse-737895965\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe with invalid email address&quot;, &quot;HomePageFunctionality&quot;)">runScenario("Subscribe with invalid email address", "HomePageFunctionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">runScenario("Forgot password with valid and invalid email", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Apply filter options for books&quot;, &quot;Book Product Functionality&quot;)">runScenario("Apply filter options for books", "Book Product Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe with valid email address&quot;, &quot;HomePageFunctionality&quot;)">runScenario("Subscribe with valid email address", "HomePageFunctionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">runScenario("Forgot password with valid and invalid email", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">runScenario("Forgot password with valid and invalid email", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Deleting the already present address&quot;, &quot;Validating Address Section&quot;)">runScenario("Deleting the already present address", "Validating Address Section")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,12 +147,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Deleting the already present address&quot;, &quot;Validating Address Section&quot;)">runScenario("Deleting the already present address", "Validating Address Section")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the Product Details and Adding to Cart&quot;, &quot;Product Details Validation and purchasing in t...)">runScenario("Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in t...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,22 +162,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;View details of a specific book&quot;, &quot;Book Product Functionality&quot;)">runScenario("View details of a specific book", "Book Product Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the Product Details and Adding to Cart&quot;, &quot;Product Details Validation and purchasing in t...)">runScenario("Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in t...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe with invalid email address&quot;, &quot;HomePageFunctionality&quot;)">runScenario("Subscribe with invalid email address", "HomePageFunctionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Adding Address&quot;, &quot;Validating Address Section&quot;)">runScenario("Adding Address", "Validating Address Section")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;View featured products as list&quot;, &quot;HomePageFunctionality&quot;)">runScenario("View featured products as list", "HomePageFunctionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,17 +177,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">runScenario("Forgot password with valid and invalid email", "Login")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">runScenario("Login with valid and invalid credentials", "Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Adding Address&quot;, &quot;Validating Address Section&quot;)">runScenario("Adding Address", "Validating Address Section")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">runScenario("Forgot password with valid and invalid email", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.runnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Subscribe with valid email address&quot;, &quot;HomePageFunctionality&quot;)">runScenario("Subscribe with valid email address", "HomePageFunctionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -193,6 +202,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Runner.runnerTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Subscribe with invalid email address&quot;, &quot;HomePageFunctionality&quot;)">
+                  </a> <!-- runScenario("Subscribe with invalid email address", "HomePageFunctionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Subscribe with invalid email address","HomePageFunctionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27fa51d7a61e4d2bca905f1d4ea7af14, isElementDisplayed {id=f.6CAA0B4AE95BA19A817CF862BA0CF0D7.d.DCA43306DED95038DFA6DBA13DC38917.e.50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58065/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (27fa51d7a61e4d2bca905f1d4ea7af14)] -&gt; xpath: //input[@id=&quot;newsletter-email&quot;]]
+Session ID: 27fa51d7a61e4d2bca905f1d4ea7af14
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.Actions.HomePageAction.enterNewsLetterEmail(HomePageAction.java:22)
+	at com.Definitions.HomeStepDefinition.i_enter_the_following_email_in_the_newsletter_field(HomeStepDefinition.java:44)
+	at ✽.I enter the following email in the newsletter field(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/HomePage.feature:18)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -201,70 +263,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("Forgot password with valid and invalid email", "Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Forgot password with valid and invalid email","Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">
                   </a> <!-- runScenario("Login with valid and invalid credentials", "Login") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login with valid and invalid credentials","Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Subscribe with valid email address&quot;, &quot;HomePageFunctionality&quot;)">
-                  </a> <!-- runScenario("Subscribe with valid email address", "HomePageFunctionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Subscribe with valid email address","HomePageFunctionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("Forgot password with valid and invalid email", "Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Forgot password with valid and invalid email","Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("Forgot password with valid and invalid email", "Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Forgot password with valid and invalid email","Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Deleting the already present address&quot;, &quot;Validating Address Section&quot;)">
-                  </a> <!-- runScenario("Deleting the already present address", "Validating Address Section") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Deleting the already present address","Validating Address Section")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("Login with valid and invalid credentials", "Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Subscribe with valid email address","HomePageFunctionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -291,6 +293,36 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("Forgot password with valid and invalid email", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Forgot password with valid and invalid email","Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Deleting the already present address&quot;, &quot;Validating Address Section&quot;)">
+                  </a> <!-- runScenario("Deleting the already present address", "Validating Address Section") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Deleting the already present address","Validating Address Section")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View all books available&quot;, &quot;Book Product Functionality&quot;)">
+                  </a> <!-- runScenario("View all books available", "Book Product Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View all books available","Book Product Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">
                   </a> <!-- runScenario("Login with valid and invalid credentials", "Login") -->
                   <span class="method-name">runScenario</span>
@@ -311,10 +343,40 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Subscribe with invalid email address&quot;, &quot;HomePageFunctionality&quot;)">
-                  </a> <!-- runScenario("Subscribe with invalid email address", "HomePageFunctionality") -->
+                  <a name="runScenario(&quot;Forgot password with valid and invalid email&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("Forgot password with valid and invalid email", "Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Subscribe with invalid email address","HomePageFunctionality")</span>
+                  <span class="parameters">("Forgot password with valid and invalid email","Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View details of a specific book&quot;, &quot;Book Product Functionality&quot;)">
+                  </a> <!-- runScenario("View details of a specific book", "Book Product Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View details of a specific book","Book Product Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View featured products as list&quot;, &quot;HomePageFunctionality&quot;)">
+                  </a> <!-- runScenario("View featured products as list", "HomePageFunctionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View featured products as list","HomePageFunctionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with valid and invalid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("Login with valid and invalid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with valid and invalid credentials","Login")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -339,12 +401,22 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Subscribe with valid email address&quot;, &quot;HomePageFunctionality&quot;)">
+                  </a> <!-- runScenario("Subscribe with valid email address", "HomePageFunctionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Subscribe with valid email address","HomePageFunctionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-1843570174\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yuvar\AppData\Local\Temp\testng-eclipse-737895965\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -401,62 +473,78 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.Runner.runnerTestNG')
-data.setCell(0, 3, 14572);
+data.setCell(0, 3, 27416);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.Runner.runnerTestNG')
-data.setCell(1, 3, 8334);
+data.setCell(1, 3, 17343);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.Runner.runnerTestNG')
-data.setCell(2, 3, 6424);
+data.setCell(2, 3, 8746);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.Runner.runnerTestNG')
-data.setCell(3, 3, 6217);
+data.setCell(3, 3, 7023);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.Runner.runnerTestNG')
-data.setCell(4, 3, 6202);
+data.setCell(4, 3, 6408);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.Runner.runnerTestNG')
-data.setCell(5, 3, 6131);
+data.setCell(5, 3, 6139);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'com.Runner.runnerTestNG')
-data.setCell(6, 3, 5975);
+data.setCell(6, 3, 6055);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'com.Runner.runnerTestNG')
-data.setCell(7, 3, 5965);
+data.setCell(7, 3, 6009);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'com.Runner.runnerTestNG')
-data.setCell(8, 3, 5865);
+data.setCell(8, 3, 5863);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'com.Runner.runnerTestNG')
-data.setCell(9, 3, 5699);
+data.setCell(9, 3, 5730);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'com.Runner.runnerTestNG')
-data.setCell(10, 3, 5548);
+data.setCell(10, 3, 5637);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'com.Runner.runnerTestNG')
-data.setCell(11, 3, 5351);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(11, 3, 5501);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.Runner.runnerTestNG')
+data.setCell(12, 3, 5460);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.Runner.runnerTestNG')
+data.setCell(13, 3, 5453);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.Runner.runnerTestNG')
+data.setCell(14, 3, 5353);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.Runner.runnerTestNG')
+data.setCell(15, 3, 5304);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -482,60 +570,78 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.Runner.runnerTestNG</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@368247b9)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@378c48c1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Adding Address", "Validating Address Section")</span>
-                <span class="method-start">702 ms</span>
+                <span class="method-start">647 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Deleting the already present address", "Validating Address Section")</span>
-                <span class="method-start">15279 ms</span>
+                <span class="method-start">17992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View all books available", "Book Product Functionality")</span>
+                <span class="method-start">26740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View details of a specific book", "Book Product Functionality")</span>
+                <span class="method-start">32046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Apply filter options for books", "Book Product Functionality")</span>
+                <span class="method-start">39071 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Subscribe with valid email address", "HomePageFunctionality")</span>
-                <span class="method-start">23615 ms</span>
+                <span class="method-start">66489 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Subscribe with invalid email address", "HomePageFunctionality")</span>
-                <span class="method-start">29832 ms</span>
+                <span class="method-start">72899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View featured products as list", "HomePageFunctionality")</span>
+                <span class="method-start">78956 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid and invalid credentials", "Login")</span>
-                <span class="method-start">35965 ms</span>
+                <span class="method-start">84965 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid and invalid credentials", "Login")</span>
-                <span class="method-start">41943 ms</span>
+                <span class="method-start">90602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid and invalid credentials", "Login")</span>
-                <span class="method-start">47491 ms</span>
+                <span class="method-start">96103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid and invalid credentials", "Login")</span>
-                <span class="method-start">53192 ms</span>
+                <span class="method-start">101563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Forgot password with valid and invalid email", "Login")</span>
-                <span class="method-start">59059 ms</span>
+                <span class="method-start">107293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Forgot password with valid and invalid email", "Login")</span>
-                <span class="method-start">65485 ms</span>
+                <span class="method-start">113432 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Forgot password with valid and invalid email", "Login")</span>
-                <span class="method-start">71687 ms</span>
+                <span class="method-start">119297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in t...)</span>
-                <span class="method-start">77652 ms</span>
+                <span class="method-start">124752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">83006 ms</span>
+                <span class="method-start">130109 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
