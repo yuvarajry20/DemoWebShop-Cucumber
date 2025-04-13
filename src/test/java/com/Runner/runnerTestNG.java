@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 features={
 		"src/test/resources/Features/Login.feature",
 		"src/test/resources/Features/Product.feature",
-		 "src/test/resources/Features/Books.feature"},
+		 "src/test/resources/Features/Books.feature",
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
 },
