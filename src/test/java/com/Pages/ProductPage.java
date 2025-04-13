@@ -96,11 +96,12 @@ public class ProductPage
 	@FindBy(xpath="//a[@class=\"product-name\"]")
 	public WebElement assertcartwishlist;
 	
+	@FindBy(xpath="//select[@class=\"country-input valid\"]")
+	public WebElement countryclick;
 	
+	@FindBy(xpath="//input[@class=\"zip-input\"]")
+	public WebElement zipcode;
 	
-	
-	
-	
-	
-	
+	@FindBy(xpath="//input[@class=\"button-2 estimate-shipping-button\"]")
+	public WebElement shippingestimate;
 }

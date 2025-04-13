@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.Pages.ProductPage;
@@ -157,6 +158,35 @@ public class ProductAction {
 		String exp=ProductPageLocator.assertcartwishlist.getText();
 		Assert.assertEquals(textincart, exp);
 	}
+	
+	public void addlaptopcart()
+	{
+		ProductPageLocator.SearchStoreField.sendKeys("laptop"+Keys.ENTER);
+		ProductPageLocator.AddToCart.click();
+		ProductPageLocator.shoppingcart.click();
+	}
+	
+	public void countrypin(String country,String pincode)
+	{
+		Select dropdown = new Select(HelperClass.getDriver().findElement(By.xpath("//*[@id=\"CountryId\"]")));
+		dropdown.selectByVisibleText(country);
+		ProductPageLocator.zipcode.sendKeys(pincode);
+		ProductPageLocator.shippingestimate.click();
+	}
+	
+	public void estimateshippingdetails()
+	{
+		List<WebElement> obj=HelperClass.getDriver().findElements(By.xpath("//ul[@class=\"shipping-results\"]//li//strong"));
+		System.out.println("Shipping Estimate ways :");
+		for(WebElement a:obj)
+		{
+			System.out.println(a.getText());
+			
+		}
+		
+		
+	}
+
 	
 
 }

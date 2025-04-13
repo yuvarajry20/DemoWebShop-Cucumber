@@ -2,7 +2,7 @@
 #
 #Background:
 #Given the user is on the Web application 
-#Then  log in search an item and add to cart
+#When I log in  and search an item and add to cart
 #And click checkout the product
 #
     #
@@ -11,7 +11,7 @@
 #
 #And forgot to click the term & condition button
 #Then the user should see the pop up windows as to click the terms&condition
-#
+
 #@orderPlacement
 #Scenario:  checkout and download the invoice pdf
    #
