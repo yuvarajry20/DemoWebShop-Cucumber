@@ -58,7 +58,7 @@ public class ProductAction {
 	{
 		ProductPageLocator.AddToCart.click();
 		ProductPageLocator.shoppingcart.click();
-		System.out.println("The product is available in the cart :"+ProductPageLocator.cartproductavailable.getText());
+		System.out.println("The product is available in the cart is :"+ProductPageLocator.cartproductavailable.getText());
 	}
 	public void updatecartbyremove()
 	{
