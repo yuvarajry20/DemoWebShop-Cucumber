@@ -131,6 +131,8 @@ public void click_add_to_wishlist() {
     
 }
 
+
+
 @When("add to cart the product in the wishlist")
 public void add_to_cart_the_product_in_the_wishlist() {
 	objProductAction.addtocartcheckboxs();

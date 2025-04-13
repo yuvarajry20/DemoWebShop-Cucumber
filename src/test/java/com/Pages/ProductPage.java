@@ -31,6 +31,7 @@ public class ProductPage
 	
 	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
 	public WebElement shoppingcart;
+
 	
 	@FindBy(xpath="//input[@name=\"removefromcart\"]")
 	public WebElement removefromcart;
