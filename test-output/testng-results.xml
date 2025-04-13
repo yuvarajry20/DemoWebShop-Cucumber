@@ -5,7 +5,7 @@
   <suite started-at="2025-04-13T13:17:39 IST" name="Suite" finished-at="2025-04-13T13:19:04 IST" duration-ms="85276">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
     <test started-at="2025-04-13T13:17:39 IST" name="Test" finished-at="2025-04-13T13:19:04 IST" duration-ms="85276">
@@ -94,7 +94,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Book Product Functionality"]]>
               </value>
             </param>
           </params>
@@ -126,7 +126,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login"]]>
+                <![CDATA["Book Product Functionality"]]>
               </value>
             </param>
           </params>
@@ -218,6 +218,6 @@
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.Runner.runnerTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
