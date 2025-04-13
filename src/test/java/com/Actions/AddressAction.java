@@ -19,7 +19,7 @@ public class AddressAction {
     }
 
     public void fillAddressForm() {
-        String filePath = "C:\\Users\\yuvar\\DemoWebShop(Automation)\\DemoWebShop-Cucumber\\src\\test\\resources\\testdataExcel.xlsx";
+        String filePath = "src/test/resources/testdataExcel.xlsx";
         String sheetName = "AddressData";
 
         ExcelReader excelReader = new ExcelReader();
