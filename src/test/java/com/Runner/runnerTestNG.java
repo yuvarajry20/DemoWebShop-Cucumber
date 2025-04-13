@@ -16,7 +16,7 @@ features={
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
     	return super.scenarios();
 	}
