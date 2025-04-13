@@ -25,3 +25,16 @@ Feature: Book Product Functionality
       | View As     | List               |
       | Price       | Under 25.00        |
     Then the filtered books should be displayed accordingly
+    
+@BooksSortBy
+Scenario: Apply all Sort By options for books
+  When I click on the "Books" category
+  And I apply each of the following Sort By filters:
+    | Sort By             |
+    | Position            |
+    | Name: A to Z        |
+    | Name: Z to A        |
+    | Price: Low to High  |
+    | Price: High to Low  |
+  Then each sort result should be applied correctly
+    

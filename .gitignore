@@ -1,78 +1,12 @@
-# Maven
+# Ignore Maven build output
 target/
-pom./maven.status
+!target/classes
 
-# IntelliJ IDEA
-.idea/
-*.iml
-*.ipr
-
-# NetBeans
-/nbproject/private/
-
-# Eclipse
-.project
-.classpath
-.settings/
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*.swp
-*.纳斯
-*.log
-*.tmp
-
-# Compiled Java class files
-*.class
-
-# Log files
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Package files
-*.jar
-*.war
-*.ear
-
-# Virtual Machine crash logs
-hs_err_pid*.log
-
-# Environment-specific settings
-.env
-
-# Test output directories and files
-test-output/
+# Ignore test reports
 HtmlReport/
 PdfReport/
 Reports/
-*.html
-*.xml
-*.pdf
-
-# Cucumber reports
+test-output/
 cucumber-reports/
-*.json
-*.html
-*.xml
-
-# JUnit reports
 surefire-reports/
 junitreports/
-*.xml
-
-# TestNG reports
-testng-results.xml
-
-# All .iml/.ipr files
-*.iml
-*.ipr
-
-# Local history files created by IntelliJ IDEA
-.idea/*.log
-
-# SonarQube analysis reports
-sonarqube/

@@ -55,8 +55,227 @@ at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
 at com.Actions.ProductAction.GetTitleOfProduct(ProductAction.java:34)
 at com.Definitions.ProductStepDefinition.see_the_product_title_and_the_product_description(ProductStepDefinition.java:31)
 at ✽.see the product title and the product description(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Product.feature:11)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
+<testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="1" tests="17" name="Default test" time="199.113" errors="0" timestamp="2025-04-13T16:21:19 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.374">
+    <failure type="java.lang.NullPointerException" message="Cannot read the array length because &amp;quot;data&amp;quot; is null">
+      <![CDATA[java.lang.NullPointerException: Cannot read the array length because "data" is null
+at com.Actions.AddressAction.fillAddressForm(AddressAction.java:29)
+at com.Definitions.AddressStepDefinition.i_want_to_add_new_address(AddressStepDefinition.java:21)
+at ✽.I want to add new address(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Address.feature:14)
 ]]>
     </failure>
   </testcase> <!-- runScenario -->
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="33.537"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="12.298"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.578"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.956"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="34.069"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.727"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.757"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.631"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.355"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.374"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.502"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.455"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.777"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.199"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="9.164"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.955"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="8.158"/>
 </testsuite> <!-- Default test -->
