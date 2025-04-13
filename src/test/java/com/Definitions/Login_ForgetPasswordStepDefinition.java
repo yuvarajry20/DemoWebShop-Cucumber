@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-public class StepDefinition {
+public class Login_ForgetPasswordStepDefinition {
     LoginAction loginAction = new LoginAction();
     WebDriver driver = HelperClass.getDriver();
 
