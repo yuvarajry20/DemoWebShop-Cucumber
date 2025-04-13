@@ -60,8 +60,5 @@ Scenario: Verify the product is added in wishlist to shopping cart
 
 And click add to wishlist
 And add to cart the product in the wishlist
-<<<<<<< HEAD
 Then the user should see the product is added in the shopping cart
-=======
-Then the user should see the product is added in the shopping cart
->>>>>>> f7a2d3001ebb8092bb3a31b11be4ef7f18a67df0
+
