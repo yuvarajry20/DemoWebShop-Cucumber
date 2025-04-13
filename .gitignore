@@ -1,1 +1,6 @@
-/target/
+# Ignore generated reports
+target/
+HtmlReport/
+PdfReport/
+Reports/
+test-output/

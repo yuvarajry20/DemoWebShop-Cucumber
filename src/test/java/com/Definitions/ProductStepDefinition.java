@@ -61,19 +61,6 @@ public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTa
 		objProductAction.emptycarts();
 	}
 
-//	@When("go to the shopping cart and enter pincode")
-//	public void go_to_the_shopping_cart_and_enter_pincode(io.cucumber.datatable	.DataTable dataTable) {
-//		
-//	}
-//
-//	@When("click the Estimate Shipping button")
-//	public void click_the_estimate_shipping_button() {
-//	}
-//
-//	@Then("the user should able to see the multiple shipping methods")
-//	public void the_user_should_able_to_see_the_multiple_shipping_methods() {
-//	}
-
 	@When("click the add to wishlist")
 	public void click_the_add_to_wishlist() {
 		objProductAction.addtowishlist();
@@ -100,13 +87,6 @@ public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTa
 		objProductAction.updatedqtyinwishlist();
 	}
 
-//	@When("enter the recipients name,email and our details")
-//	public void enter_the_recipients_name_email_and_our_details() {
-//	}
-//
-//	@Then("the user should see the product is added to wishlist")
-//	public void the_user_should_see_the_product_is_added_to_wishlist() {
-//	}
 
 	@When("logged in and click Email a friend")
 	public void logged_in_and_click_email_a_friend() {

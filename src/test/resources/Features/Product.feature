@@ -5,6 +5,13 @@ Given the user is on the home page
 When the user search for a product
 |3rd Album |
 
+@shoppingCart_Functionality
+Scenario: Adding and Removing a Product in the Shopping Cart
+
+And go to the shopping cart
+And remove the product from cart
+Then the shopping cart is empty
+
 @ProductDetailsValidation
 Scenario: Validating the Product Details and Adding to Cart
 
@@ -13,12 +20,6 @@ And clicks on add to cart
 Then the user should see the successful message
     
     
-@shoppingCart_Functionality
-Scenario: Adding and Removing a Product in the Shopping Cart
-
-And go to the shopping cart
-And remove the product from cart
-Then the shopping cart is empty
 
 
 @Verify_Wishlist_Product_URL
