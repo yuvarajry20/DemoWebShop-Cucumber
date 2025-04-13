@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 # Ignore Maven build output
 target/
 !target/classes
 
 # Ignore test reports
-=======
-# Ignore generated reports
-target/
->>>>>>> f7a2d3001ebb8092bb3a31b11be4ef7f18a67df0
 HtmlReport/
 PdfReport/
 Reports/
 test-output/
-<<<<<<< HEAD
 cucumber-reports/
 surefire-reports/
 junitreports/
-=======
->>>>>>> f7a2d3001ebb8092bb3a31b11be4ef7f18a67df0

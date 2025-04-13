@@ -129,23 +129,9 @@ public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTa
 public void click_add_to_wishlist() {
 	objProductAction.addtowishlist();
     
-<<<<<<< HEAD
-=======
 }
 
-@When("add to cart the product in the wishlist")
-public void add_to_cart_the_product_in_the_wishlist() {
-	objProductAction.addtocartcheckboxs();
-    
-}
 
-@Then("the user should see the product is added in the shopping cart")
-public void the_user_should_see_the_product_is_added_in_the_shopping_cart() {
-    objProductAction.verifytextincart();
-}
-
->>>>>>> f7a2d3001ebb8092bb3a31b11be4ef7f18a67df0
-}
 
 @When("add to cart the product in the wishlist")
 public void add_to_cart_the_product_in_the_wishlist() {
