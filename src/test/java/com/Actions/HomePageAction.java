@@ -66,6 +66,10 @@ public class HomePageAction {
     	 public void ViewPollresult() {
     		 System.out.println( homePage.votepollResults.getText());
     	 }
+    	 public void ViewPollInvalidresult() {
+    		 System.out.println( homePage.pollErrorMsg.getText());
+    	 }
+    	 
 
 }
      

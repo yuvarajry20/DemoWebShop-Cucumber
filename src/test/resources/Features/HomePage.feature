@@ -33,3 +33,10 @@ Scenario: Subscribe with invalid email address
     
   #  Then I should see the poll results
   
+    
+   # @InvalidPoll
+    #Scenario: Poll the vote without logging in
+    #When I click the "Excellent" option in poll
+    #And click the vote button
+    #Then I should see an error message
+
