@@ -29,7 +29,7 @@ public class ProductPage
 	@FindBy(xpath="//span[@class=\"cart-qty\"]")
 	public WebElement AddTocartnumber;
 	
-	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+	@FindBy(css="#topcartlink > a")
 	public WebElement shoppingcart;
 
 	
