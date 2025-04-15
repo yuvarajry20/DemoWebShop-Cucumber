@@ -48,7 +48,7 @@ public class CheckoutAction {
 	public void clickcheckbox()
 	{
 		
-		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='terms-of-service']//input")));
 		element.click();
 	}
