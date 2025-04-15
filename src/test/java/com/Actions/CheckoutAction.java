@@ -1,5 +1,6 @@
 package com.Actions;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,6 +8,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Pages.Checkoutpage;
@@ -44,7 +47,10 @@ public class CheckoutAction {
 	}
 	public void clickcheckbox()
 	{
-		CheckoutLocator.checkboxbtn.click();
+		
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='terms-of-service']//input")));
+		element.click();
 	}
 	public void isselectedcheckbox()
 	{
