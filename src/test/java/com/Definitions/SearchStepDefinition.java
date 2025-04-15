@@ -1,5 +1,7 @@
 package com.Definitions;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -45,11 +47,26 @@ public class SearchStepDefinition {
 	    public void i_enter_the_search() {
 	    	searchaction.clickSearchButton();
 	    }
-       
+//       
+//	    @Then("a message that {string} should be displayed")
+//	    public void a_message_that_should_be_displayed(String expectedMessage) {
+//	        String actualMessage = searchaction.getRelevantSearchMessage(expectedMessage);
+//	        Assert.assertEquals(actualMessage.trim(), expectedMessage);
+//	    }
+	    
 	    @Then("a message that {string} should be displayed")
 	    public void a_message_that_should_be_displayed(String expectedMessage) {
-	        String actualMessage = searchaction.getRelevantSearchMessage(expectedMessage);
-	        Assert.assertEquals(actualMessage.trim(), expectedMessage);
+	        try {
+	            // Check if an alert is present
+	            Alert alert = HelperClass.getDriver().switchTo().alert();
+	            String actualMessage = alert.getText();
+	            alert.accept(); // Accept the alert
+	            Assert.assertEquals(actualMessage.trim(), expectedMessage);
+	        } catch (NoAlertPresentException e) {
+	            // If no alert is present, check for other messages
+	            String actualMessage = searchaction.getRelevantSearchMessage(expectedMessage);
+	            Assert.assertEquals(actualMessage.trim(), expectedMessage);
+	        }
 	    }
 
 	    @When("I enter {string} in the search box")

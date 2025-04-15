@@ -20,21 +20,22 @@ public class HomeStepDefinition {
     
     @Given("I am on Demowebshop Homepage {string}")
     public void i_want_to_be_in_the_demowebshop(String url) {
-       // HelperClass.openPage(url);
+     HelperClass.openPage(url);
+    	//HelperClass.openPage("https://demowebshop.tricentis.com/");
     }
 
-    @Given("I login using the following credentials")
-    public void i_login_using_the_following_credentials(io.cucumber.datatable.DataTable dataTable) {
-    	HelperClass.openPage("https://demowebshop.tricentis.com/");
-    	List<Map<String, String>> loginData = dataTable.asMaps(String.class, String.class);
-        String email = loginData.get(0).get("email");
-        String password = loginData.get(0).get("password");
-
-        loginAction.clickLoginLink();
-        loginAction.enterEmail(email);
-        loginAction.enterPassword(password);
-        loginAction.clickLoginButton();
-    }
+//    @Given("I login using the following credentials")
+//    public void i_login_using_the_following_credentials(io.cucumber.datatable.DataTable dataTable) {
+//    	HelperClass.openPage("https://demowebshop.tricentis.com/");
+//    	List<Map<String, String>> loginData = dataTable.asMaps(String.class, String.class);
+//        String email = loginData.get(0).get("email");
+//        String password = loginData.get(0).get("password");
+//
+//        loginAction.clickLoginLink();
+//        loginAction.enterEmail(email);
+//        loginAction.enterPassword(password);
+//        loginAction.clickLoginButton();
+//    }
 
     @When("I enter the following email in the newsletter field")
     public void i_enter_the_following_email_in_the_newsletter_field(io.cucumber.datatable.DataTable dataTable) {
@@ -77,19 +78,23 @@ public class HomeStepDefinition {
     public void i_should_see_the_list_of_recently_viewed_products() {
         homePage.GetRecentlyViewedProducts();
     }
-    @When("I select the poll option {string}")
-    public void i_select_the_poll_option(String string) {
-      //  homePage.SelectVotingOption();
+  
+    @When("I click the option in poll")
+    public void i_click_the_option_in_poll() {
+    	homePage.SelectVotingOption();
+   }
+
+    @When("click the vote button")
+    public void click_the_vote_button() {
+    	homePage.voting();
     }
 
-    @When("I click the Vote button")
-    public void i_click_the_vote_button() {
-       // homePage.voting();
+    @Then("I should see an error message")
+    public void i_should_see_an_error_message() {
+        homePage.ViewPollInvalidresult();
     }
 
-    @Then("I should see the poll results")
-    public void i_should_see_the_poll_results() {
-       // homePage.ViewPollresult();
-    }
+
+
     
 }

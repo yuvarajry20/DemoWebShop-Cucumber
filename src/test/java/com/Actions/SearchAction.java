@@ -52,10 +52,18 @@ public class SearchAction {
             return wait.until(ExpectedConditions.visibilityOf(searchPage.noResultMessage)).getText();
         } else if (expectedMessage.equals("Search term minimum length is 3 characters")) {
             return wait.until(ExpectedConditions.visibilityOf(searchPage.searchWarning)).getText();
+        } else if (expectedMessage.equals("Please enter some search keyword")) {
+            try {
+                Alert alert = HelperClass.getDriver().switchTo().alert();
+                String actualMessage = alert.getText();
+                alert.accept(); 
+                return actualMessage;
+            } catch (NoAlertPresentException e) {
+                return "No alert present";
+            }
         }
         return "";
     }
-    
     public void enableAdvanceSearch() {
     	searchPage.AdvanceCheckbox.click();
     }

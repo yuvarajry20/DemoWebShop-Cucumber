@@ -20,6 +20,7 @@ Feature: Search Functionality
       | keyword | expectedMessage                                           |
       | Mobile  | No products were found that matched your criteria.        |
       | mo      | Search term minimum length is 3 characters                |
+      |         | Please enter some search keyword                          |
 
   @AdvanceSearch
   Scenario Outline: Perform advanced product search with various filter combinations

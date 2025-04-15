@@ -20,6 +20,9 @@ public class SearchBarLocators {
 	//@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[3]/strong/text()")
 	@FindBy(xpath="//strong[contains(text(),\"Search term minimum length is 3 characters\")]")
     public WebElement searchWarning;
+	
+	@FindBy(xpath="//form[@action=\"/search\"]//script[1]")
+	public WebElement SearchAlert;
 
 	@FindBy(xpath = "//strong[@class=\"result\"]")
 	public WebElement noResultMessage;
@@ -54,6 +57,4 @@ public class SearchBarLocators {
     @FindBy(xpath="//h2[@class=\"product-title\"]")
     public WebElement CameraFound;
     
-
-
 }

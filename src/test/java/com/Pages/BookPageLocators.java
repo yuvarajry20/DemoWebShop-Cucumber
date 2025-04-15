@@ -16,9 +16,6 @@ public class BookPageLocators {
 	@FindBy(xpath="//select[@id=\"products-orderby\"]")
 	public WebElement sortbyDropdown;
 	
-	@FindBy(xpath="")
-	public WebElement Sort_A_Z;
-	
 	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
 	public WebElement SortedBookList;
 	
