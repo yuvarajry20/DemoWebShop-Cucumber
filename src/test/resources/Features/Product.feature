@@ -19,9 +19,6 @@ And see the product title and the product description
 And clicks on add to cart
 Then the user should see the successful message
     
-    
-
-
 @Verify_Wishlist_Product_URL
 Scenario: Verify the product is same as in the auto-generated url in wishlist page
 
@@ -62,3 +59,11 @@ And click add to wishlist
 And add to cart the product in the wishlist
 Then the user should see the product is added in the shopping cart
 
+@ShippingEstimation
+Scenario: To get a Shipping Estimation details
+
+When I add to cart the laptop 
+And enter the country and pincode and click Estimate Shipping
+|India|
+|637505|
+Then the user should see the shipping details

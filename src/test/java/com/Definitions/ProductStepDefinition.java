@@ -144,4 +144,30 @@ public void the_user_should_see_the_product_is_added_in_the_shopping_cart() {
     objProductAction.verifytextincart();
 }
 
+@When("I add to cart the laptop")
+public void i_add_to_cart_the_laptop() {
+    objProductAction.addlaptopcart();
+}
+
+@When("enter the country and pincode and click Estimate Shipping")
+public void enter_the_country_and_pincode_and_click_estimate_shipping(io.cucumber.datatable.DataTable dataTable) {
+	List<String> objList=dataTable.asList(String.class);
+	String country=objList.get(0);
+	String pincode=objList.get(1);
+	objProductAction.countrypin(country, pincode);
+}
+
+@Then("the user should see the shipping details")
+public void the_user_should_see_the_shipping_details() {
+	objProductAction.estimateshippingdetails();
+   
+}
+
+
+
+
+
+
+
+
 }

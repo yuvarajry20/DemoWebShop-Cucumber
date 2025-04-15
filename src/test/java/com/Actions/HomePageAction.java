@@ -13,10 +13,12 @@ public class HomePageAction {
    
 	HomePageLocators homePage;
 	
-    public HomePageAction() {
+    public HomePageAction() 
+    {
 	        this.homePage = new HomePageLocators();
 	        PageFactory.initElements(HelperClass.getDriver(), homePage);
-	    }
+	    
+    }
     	    public void enterNewsLetterEmail(String email) {
     		    new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10))
     		        .until(ExpectedConditions.visibilityOf(homePage.NewsLetter_email));

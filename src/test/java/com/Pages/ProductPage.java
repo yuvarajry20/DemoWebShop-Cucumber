@@ -29,7 +29,7 @@ public class ProductPage
 	@FindBy(xpath="//span[@class=\"cart-qty\"]")
 	public WebElement AddTocartnumber;
 	
-	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+	@FindBy(css="#topcartlink > a")
 	public WebElement shoppingcart;
 	
 	@FindBy(xpath="//input[@name=\"removefromcart\"]")
@@ -93,6 +93,19 @@ public class ProductPage
 	public WebElement addtocartbtnbelowchkbox;
 	
 	@FindBy(xpath="//a[@class=\"product-name\"]")
+<<<<<<< HEAD
 	public WebElement assertcartwishlist;	
 	
+=======
+	public WebElement assertcartwishlist;
+	
+	@FindBy(xpath="//select[@class=\"country-input valid\"]")
+	public WebElement countryclick;
+	
+	@FindBy(xpath="//input[@class=\"zip-input\"]")
+	public WebElement zipcode;
+	
+	@FindBy(xpath="//input[@class=\"button-2 estimate-shipping-button\"]")
+	public WebElement shippingestimate;
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 }
