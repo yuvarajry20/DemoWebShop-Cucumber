@@ -87,7 +87,7 @@ public class BookDefinitions {
 	@Then("each sort result should be applied correctly")
 	public void each_sort_result_should_be_applied_correctly() {
 	    String selectedOption = bookAction.getSelectedSortByOption();
-	    System.out.println("Current selected: " + selectedOption);
+	    System.out.println("Book is sorted by: " + selectedOption);
 	    Assert.assertNotNull(selectedOption);
 	}
 	
