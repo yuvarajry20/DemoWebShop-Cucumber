@@ -23,7 +23,7 @@ public class Checkoutpage {
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
 	public WebElement addtocartlap;
 	
-	@FindBy(xpath="//input[@id=\"termsofservice\"]")
+	@FindBy(xpath="//div[@class=\"terms-of-service\"]//input")
 	public WebElement checkboxbtn;
 	
 	@FindBy(xpath="//button[@class=\"button-1 checkout-button\"]")
