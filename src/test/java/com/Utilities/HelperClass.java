@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelperClass {
@@ -27,10 +28,12 @@ public class HelperClass {
             if (this.web == null) {
                 throw new RuntimeException("The 'browser' property is missing in testdata.properties file.");
             }
-
+        
             WebDriver driver = null;
             if (this.web.equalsIgnoreCase("Chrome")) {
-                driver = new ChromeDriver();
+            	ChromeOptions opt=new ChromeOptions();
+            	opt.addArguments("--headless");
+                driver = new ChromeDriver(opt);
             } else if (this.web.equalsIgnoreCase("FireFox")) {
                 driver = new FirefoxDriver();
             } else {

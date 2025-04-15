@@ -18,7 +18,16 @@ public class MyAccountSectionPage {
 	
 	@FindBy(xpath="//a[text()=\"Orders\"]")
 	public WebElement clickorders;
-	
 
+	@FindBy(xpath="//div[@class=\"order-list\"]")
+	public WebElement orderList;
+	
+	@FindBy(xpath="//a[text()=\"Back in stock subscriptions\"]")
+	public WebElement clickbackInStock;
+	
+	@FindBy(xpath="//div[@class=\"no-data\"]")
+	public WebElement BackInStocktext;
+	
+	
 	
 }
