@@ -42,6 +42,13 @@ Scenario: Apply all Sort By options for books
 Scenario: Comparing two different products
   When I click on the "Books" category
   And I click the "Computing and Internet" book link
+  And click the Add to Compare button
+  Then click the books category and click the "Health Book" link
+  And add it to the compare list
+  Then verify and compare the prices of both the product  
+  Then clear the list in compare products
+  Then assert if the lists are cleared
+  
   
   
     
