@@ -42,6 +42,6 @@ Scenario: Apply all Sort By options for books
 Scenario: Comparing two different products
   When I click on the "Books" category
   And I click the "Computing and Internet" book link
-  A
+  
   
     
