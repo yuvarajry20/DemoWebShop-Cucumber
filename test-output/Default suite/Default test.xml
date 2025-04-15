@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite ignored="0" hostname="DESKTOP-3CKMDVP" failures="3" tests="28" name="Default test" time="343.205" errors="0" timestamp="2025-04-14T19:52:57 IST">
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="88.367"/>
   <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="12.248"/>
@@ -398,5 +399,11 @@ at ✽.click the auto-generated url for the specific product(file:///C:/Users/yu
 ]]>
     </failure>
   </testcase> <!-- runScenario -->
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+=======
+<testsuite ignored="0" hostname="DIVRAJ-2004" failures="0" tests="3" name="Default test" time="33.989" errors="0" timestamp="2025-04-15T17:04:26 IST">
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="16.651"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="18.505"/>
+  <testcase classname="io.cucumber.testng.AbstractTestNGCucumberTests" name="runScenario" time="25.275"/>
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 </testsuite> <!-- Default test -->

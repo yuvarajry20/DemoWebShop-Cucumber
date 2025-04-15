@@ -41,7 +41,7 @@ public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTa
 	}
 
 	@Then("the user should see the successful message")
-	public void the_user_should_see_the_successful_message() {
+	public void the_user_should_see_the_successful_message() throws InterruptedException {
 		objProductAction.AddTocartMessage();
 	}
 
