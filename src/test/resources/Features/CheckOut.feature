@@ -21,7 +21,15 @@ And checkout the product
 And select  address and payment methods
 And confirm order
 Then the user should see the order number and able to download the invoice as pdf
- 
+
+@CheckoutanItem
+Scenario: checkout an item in the application
+
+And click the terms & conditions
+And click the checkout button
+Then the user should see the checkout page and billing details
+
+
 #@invoiceDetails
 #Scenario: To read the invoice pdf in the application
 #

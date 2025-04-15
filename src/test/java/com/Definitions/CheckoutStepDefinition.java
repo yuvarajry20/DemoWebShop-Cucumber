@@ -52,19 +52,41 @@ public void checkout_the_product() {
 	objcheckout.selectcheckout();
    
 }
-@When("enter the billing address and payment methods")
-public void enter_the_billing_address_and_payment_methods() {
-   
+
+@When("select  address and payment methods")
+public void select_address_and_payment_methods() {
+    objcheckout.selectaddresss();
+    objcheckout.billcontinuebtn();
+    objcheckout.storepickupbox();
+    objcheckout.shippingcontinue();
+    objcheckout.paymentcontinuestep();
+    objcheckout.paymentinfocontinue();
 }
 
 @When("confirm order")
 public void confirm_order() {
+	objcheckout.confirmcheckout();
     
 }
 
 @Then("the user should see the order number and able to download the invoice as pdf")
 public void the_user_should_see_the_order_number_and_able_to_download_the_invoice_as_pdf() {
-    
+    objcheckout.getplacedorder();
+    objcheckout.invoicepdfdownload();
+}
+@When("click the terms & conditions")
+public void click_the_terms_conditions() {
+	objcheckout.clickcheckbox();
+}
+
+@When("click the checkout button")
+public void click_the_checkout_button() {
+	objcheckout.selectcheckout();
+}
+
+@Then("the user should see the checkout page and billing details")
+public void the_user_should_see_the_checkout_page_and_billing_details() {
+    objcheckout.checkoutsteps();
 }
 
 

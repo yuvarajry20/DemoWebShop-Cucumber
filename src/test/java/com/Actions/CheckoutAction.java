@@ -1,5 +1,7 @@
 package com.Actions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -66,6 +68,56 @@ public class CheckoutAction {
 	public void selectaddresss()
 	{
 		CheckoutLocator.addressfield.click();
+		CheckoutLocator.option1.click();
+		
+	}
+	public void billcontinuebtn()
+	{
+		CheckoutLocator.billcontinuebtn.click();
+	}
+	public void storepickupbox()
+	{
+		CheckoutLocator.storepick.click();
+	}
+	public void shippingcontinue()
+	{
+		CheckoutLocator.shipcontinuebtn.click();
+	}
+	public void paymentcontinuestep()
+	{
+		CheckoutLocator.paymentcontinue.click();
+	}
+	public void paymentinfocontinue()
+	{
+		CheckoutLocator.paymentinfobtncontinue.click();
+	}
+	public void confirmcheckout()
+	{
+		CheckoutLocator.confirmbtnincheckout.click();
+	}
+	public void getplacedorder()
+	{
+		System.out.println(CheckoutLocator.confirmplacedoreder.getText());
+		String act="Your order has been successfully processed!";
+		String exp=CheckoutLocator.confirmplacedoreder.getText();
+		Assert.assertEquals(act, exp);
+		System.out.println(CheckoutLocator.ordernumber.getText());
+		
+	}
+	public void invoicepdfdownload()
+	{
+		CheckoutLocator.invoiceclickhere.click();
+		CheckoutLocator.pdfinvoice.click();
+	}
+	public void checkoutsteps()
+	{
+		List<WebElement> obj=HelperClass.getDriver().findElements(By.xpath("//div[@class=\"page-body checkout-data\"]//ol//li//div//h2"));
+		System.out.println("Follow this steps to checkout");
+		for(WebElement a:obj)
+		{
+			System.out.println(a.getText());
+			
+		}
 	}
 	
 	
