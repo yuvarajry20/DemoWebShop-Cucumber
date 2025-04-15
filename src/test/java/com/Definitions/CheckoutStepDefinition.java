@@ -46,6 +46,28 @@ public void the_user_should_see_the_pop_up_windows_as_to_click_the_terms_conditi
 }
 
 
+@When("checkout the product")
+public void checkout_the_product() {
+	objcheckout.clickcheckbox();
+	objcheckout.selectcheckout();
+   
+}
+@When("enter the billing address and payment methods")
+public void enter_the_billing_address_and_payment_methods() {
+   
+}
+
+@When("confirm order")
+public void confirm_order() {
+    
+}
+
+@Then("the user should see the order number and able to download the invoice as pdf")
+public void the_user_should_see_the_order_number_and_able_to_download_the_invoice_as_pdf() {
+    
+}
+
+
 
 
 }

@@ -40,12 +40,18 @@ public class CheckoutAction {
 	     
 		
 	}
+	public void clickcheckbox()
+	{
+		CheckoutLocator.checkboxbtn.click();
+	}
 	public void isselectedcheckbox()
 	{
+		
 		System.out.println("The checkbox is selected :"+CheckoutLocator.checkboxbtn.isSelected());
 	}
 	public void selectcheckout()
 	{
+		
 		CheckoutLocator.checkoutbtn.click();
 		
 	}
@@ -56,6 +62,12 @@ public class CheckoutAction {
 		Assert.assertEquals(act, exp);
 		System.out.println(CheckoutLocator.popupcheckboxmsg.getText());
 	}
+	
+	public void selectaddresss()
+	{
+		CheckoutLocator.addressfield.click();
+	}
+	
 	
 	
 	

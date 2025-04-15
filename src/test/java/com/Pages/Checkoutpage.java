@@ -31,4 +31,8 @@ public class Checkoutpage {
 	
 	@FindBy(xpath="//div[@id=\"terms-of-service-warning-box\"]//p")
 	public WebElement popupcheckboxmsg;
+	
+	@FindBy(xpath="//select[@class=\"address-select valid\"]")
+	public WebElement addressfield;
+	
 }
