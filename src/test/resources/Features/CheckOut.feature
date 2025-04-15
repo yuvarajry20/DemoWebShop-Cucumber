@@ -4,22 +4,32 @@ Background:
 Given the user is on the Web application 
 When I log in and add an item and add to cart
 |laptop|
-And click checkout the product
+
 
     
 @Verifying_Terms&Condition_Checkbox
 Scenario: Navigate to checkout page Without clicking the terms & conditions 
 
+And click checkout the product
 And forgot to click the term & condition button
 Then the user should see the pop up windows as to click the terms&condition
 
-#@orderPlacement
-#Scenario:  checkout and download the invoice pdf
-   #
-#And enter the billing address and payment methods
-#And confirm order
-#Then the user should see the order number and able to download the invoice as pdf
- #
+@orderPlacement
+Scenario:  checkout and download the invoice pdf
+
+And checkout the product
+And select  address and payment methods
+And confirm order
+Then the user should see the order number and able to download the invoice as pdf
+
+@CheckoutanItem
+Scenario: checkout an item in the application
+
+And click the terms & conditions
+And click the checkout button
+Then the user should see the checkout page and billing details
+
+
 #@invoiceDetails
 #Scenario: To read the invoice pdf in the application
 #
