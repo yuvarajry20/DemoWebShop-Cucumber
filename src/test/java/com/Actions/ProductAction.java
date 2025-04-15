@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -58,7 +59,11 @@ public class ProductAction {
 	public void Shopping_cart()
 	{
 		ProductPageLocator.AddToCart.click();
-		ProductPageLocator.shoppingcart.click();
+		WebElement el = HelperClass.getDriver().findElement( By.cssSelector("#topcartlink > a") );
+	     Actions builder = new Actions(HelperClass.getDriver());
+	     builder.moveToElement( el ).click( el );
+	     builder.perform();
+		//ProductPageLocator.shoppingcart.click();
 		System.out.println("The product is available in the cart is :"+ProductPageLocator.cartproductavailable.getText());
 	}
 	public void updatecartbyremove()
@@ -101,7 +106,11 @@ public class ProductAction {
 		ProductPageLocator.increaseqty.clear();
 		ProductPageLocator.increaseqty.sendKeys("10");
 		ProductPageLocator.addtocartinqty.click();
-		ProductPageLocator.shoppingcart.click();
+		WebElement el = HelperClass.getDriver().findElement( By.cssSelector("#topcartlink > a") );
+	     Actions builder = new Actions(HelperClass.getDriver());
+	     builder.moveToElement( el ).click( el );
+	     builder.perform();
+		//ProductPageLocator.shoppingcart.click();
 		
 	}
 	public void updatedqtyinwishlist()  
@@ -163,7 +172,11 @@ public class ProductAction {
 	{
 		ProductPageLocator.SearchStoreField.sendKeys("laptop"+Keys.ENTER);
 		ProductPageLocator.AddToCart.click();
-		ProductPageLocator.shoppingcart.click();
+		WebElement el = HelperClass.getDriver().findElement( By.cssSelector("#topcartlink > a") );
+	     Actions builder = new Actions(HelperClass.getDriver());
+	     builder.moveToElement( el ).click( el );
+	     builder.perform();
+		//ProductPageLocator.shoppingcart.click();
 	}
 	
 	public void countrypin(String country,String pincode)

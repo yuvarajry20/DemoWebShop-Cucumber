@@ -1,16 +1,16 @@
-#Feature: Checkout the product in the web Application
-#
-#Background:
-#Given the user is on the Web application 
-#When I log in  and search an item and add to cart
-#And click checkout the product
-#
-    #
-#@Verifying_Terms&Condition_Checkbox
-#Scenario: Navigate to checkout page Without clicking the terms & conditions 
-#
-#And forgot to click the term & condition button
-#Then the user should see the pop up windows as to click the terms&condition
+Feature: Checkout the product in the web Application
+
+Background:
+Given the user is on the Web application 
+When I log in  and add an item and add to cart
+And click checkout the product
+
+    
+@Verifying_Terms&Condition_Checkbox
+Scenario: Navigate to checkout page Without clicking the terms & conditions 
+
+And forgot to click the term & condition button
+Then the user should see the pop up windows as to click the terms&condition
 
 #@orderPlacement
 #Scenario:  checkout and download the invoice pdf
