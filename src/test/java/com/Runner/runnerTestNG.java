@@ -13,7 +13,11 @@ features={
 		 "src/test/resources/Features/Books.feature",
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
+<<<<<<< HEAD
 		"src/test/resources/Features/SearchFunction.feature"
+=======
+		"src/test/resources/Features/CheckOut.feature",
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {

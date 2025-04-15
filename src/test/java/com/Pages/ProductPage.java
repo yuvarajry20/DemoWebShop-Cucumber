@@ -50,7 +50,7 @@ public class ProductPage
 	@FindBy(xpath="//ul/li[4]/a[@class=\"ico-wishlist\"]")
 	public WebElement clickwishlist;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[3]/div[1]/div/div/div[1]/a")
+	@FindBy(xpath="//div[@class=\"picture\"]//a[@title=\"Show details for 3rd Album\"]")
 	public WebElement imgalbum3;
 	
 	@FindBy(xpath="//tbody/tr/td[4]/a")
