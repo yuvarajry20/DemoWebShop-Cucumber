@@ -47,10 +47,12 @@ public class CheckoutAction {
 	}
 	public void clickcheckbox()
 	{
+		WebElement el = HelperClass.getDriver().findElement( By.xpath("//div[@class=\"terms-of-service\"]//input") );
+	     Actions builder = new Actions(HelperClass.getDriver());
+	     builder.moveToElement( el ).click( el );
+	     builder.perform();
 		
-		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
-		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='terms-of-service']//input")));
-		element.click();
+		
 	}
 	public void isselectedcheckbox()
 	{
