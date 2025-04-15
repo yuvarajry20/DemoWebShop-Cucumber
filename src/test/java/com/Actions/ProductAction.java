@@ -58,7 +58,6 @@ public class ProductAction {
 	}
 	public void Shopping_cart()
 	{
-		ProductPageLocator.AddToCart.click();
 		WebElement el = HelperClass.getDriver().findElement( By.cssSelector("#topcartlink > a") );
 	     Actions builder = new Actions(HelperClass.getDriver());
 	     builder.moveToElement( el ).click( el );

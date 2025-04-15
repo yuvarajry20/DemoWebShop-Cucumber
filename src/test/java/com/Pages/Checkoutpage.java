@@ -17,5 +17,18 @@ public class Checkoutpage {
 	@FindBy(xpath="//input[@class=\"button-1 login-button\"]")
 	public WebElement LoginButtonclick;
 	
+	@FindBy(xpath="//input[@id=\"small-searchterms\"]")
+	public WebElement serachfields;
 
+	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
+	public WebElement addtocartlap;
+	
+	@FindBy(xpath="//input[@id=\"termsofservice\"]")
+	public WebElement checkboxbtn;
+	
+	@FindBy(xpath="//button[@class=\"button-1 checkout-button\"]")
+	public WebElement checkoutbtn;
+	
+	@FindBy(xpath="//div[@id=\"terms-of-service-warning-box\"]//p")
+	public WebElement popupcheckboxmsg;
 }
