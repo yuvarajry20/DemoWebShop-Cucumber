@@ -2,7 +2,8 @@ Feature: Checkout the product in the web Application
 
 Background:
 Given the user is on the Web application 
-When I log in  and add an item and add to cart
+When I log in and add an item and add to cart
+|laptop|
 And click checkout the product
 
     
