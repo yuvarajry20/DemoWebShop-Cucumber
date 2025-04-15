@@ -3,7 +3,7 @@ Background:
     Given I want to be in the demowebshop "https://demowebshop.tricentis.com/login"
     When I provide email and password
      |email          |password  |
-     |abccy@gmail.com|789456    |
+     |abccdee@gmail.com|123456    |
     And click log in
     When I click my email
     
@@ -16,7 +16,7 @@ Background:
 
     Examples: 
       |oldPassword  |newPassword |confirmPassword  |
-      |789456       |789456      |789456 |
+      |123456       |789456      |789456 |
       
   @InValidChangePassword
   Scenario Outline: ChangePassword
