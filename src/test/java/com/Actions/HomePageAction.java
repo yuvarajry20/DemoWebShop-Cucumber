@@ -30,7 +30,7 @@ public class HomePageAction {
     	 }
     	 public void SuccessfulSubscription() {
     		 homePage.SubscribedMessage.getText();
-    		 System.out.println( homePage.SubscribedMessage.getText());
+    		 System.out.println(homePage.SubscribedMessage.getText());
     	 }
     	 public void invalidSubscription() {
     		 System.out.println(homePage.InvalidsubscribeMsg.getText());
@@ -38,7 +38,7 @@ public class HomePageAction {
     	 }
     	 
     	 public void VerifyFeaturedProducts() {
-    		 System.out.println( homePage.FeatureProductsSec.getText());
+    		 System.out.println(homePage.FeatureProductsSec.getText());
     	 }
     	 public void GetFeaturedProducts() {
     		    System.out.println("Featured Products:");

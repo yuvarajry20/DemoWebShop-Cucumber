@@ -93,11 +93,7 @@ public class ProductPage
 	public WebElement addtocartbtnbelowchkbox;
 	
 	@FindBy(xpath="//a[@class=\"product-name\"]")
-<<<<<<< HEAD
 	public WebElement assertcartwishlist;	
-	
-=======
-	public WebElement assertcartwishlist;
 	
 	@FindBy(xpath="//select[@class=\"country-input valid\"]")
 	public WebElement countryclick;
@@ -107,5 +103,4 @@ public class ProductPage
 	
 	@FindBy(xpath="//input[@class=\"button-2 estimate-shipping-button\"]")
 	public WebElement shippingestimate;
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 }

@@ -37,4 +37,11 @@ Scenario: Apply all Sort By options for books
     | Price: Low to High  |
     | Price: High to Low  |
   Then each sort result should be applied correctly
+  
+@CompareProduct
+Scenario: Comparing two different products
+  When I click on the "Books" category
+  And I click the "Computing and Internet" book link
+  A
+  
     
