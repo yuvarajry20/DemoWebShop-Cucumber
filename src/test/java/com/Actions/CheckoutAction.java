@@ -153,8 +153,9 @@ public class CheckoutAction {
     }
 
     public void creditcardcheckbox() {
-    	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
-        js.executeScript("document.querySelector('div.section.payment-method > ul > li:nth-child(3) > div > div:nth-child(2) > input').click();");
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+        WebElement creditCardCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='section payment-method']//ul//li[3]//div//div[2]//input")));
+        creditCardCheckbox.click();
         LogManagers.logInfo("Clicked on credit card checkbox.");
     }
 
@@ -178,7 +179,10 @@ public class CheckoutAction {
     }
 
     public void paymentcontinuestepintwoday() {
-        CheckoutLocator.twodayshipping.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+        WebElement shippingOption = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='method-list']//li[3]//div//input[@id='shippingoption_2']")));
+        shippingOption.click();
+        //CheckoutLocator.twodayshipping.click();
         LogManagers.logInfo("Clicked on payment continue button in two-day shipping.");
     }
 
