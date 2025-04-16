@@ -10,16 +10,17 @@ import io.cucumber.testng.CucumberOptions;
 features={
 		"src/test/resources/Features/Login.feature",
 		"src/test/resources/Features/Product.feature",
-		 "src/test/resources/Features/Books.feature",
+		"src/test/resources/Features/Books.feature",
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
 		"src/test/resources/Features/CheckOut.feature",
 		"src/test/resources/Features/MyAccountSection.feature",
-		"src/test/resources/Features/SearchFunction.feature"
+		"src/test/resources/Features/SearchFunction.feature",
+		"src/test/resources/Features/UserRegistration.feature"
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
     	return super.scenarios();
 	}

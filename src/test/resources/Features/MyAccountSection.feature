@@ -13,22 +13,22 @@ Background:
     Then I want to click change Password
     When i provide oldPassword as "<oldPassword>"
     And i provide newPassword as "<newPassword>" and confirmPassword as "<confirmPassword>"
-    Then i click change Password
+    Then i click change Password "<message>"
 
     Examples: 
-      |oldPassword  |newPassword |confirmPassword  |
-      |789456       |789456      |789456 |
+      |oldPassword  |newPassword |confirmPassword  |message |
+      |789456       |789456      |789456 |Password was changed|
       
   @InValidChangePassword
   Scenario Outline: ChangePassword
     Then I want to click change Password
     When i provide invalid oldPassword as "<oldPassword>"
     And i provide newPassword as "<newPassword>" and confirmPassword as "<confirmPassword>"
-    Then i click change Password
+    Then i click change Password "<message>"
 
     Examples: 
-      |oldPassword  |newPassword |confirmPassword  |
-      |123478       |789456      |789456 |
+      |oldPassword  |newPassword |confirmPassword  |message |
+      |123478       |789456      |789456 |Old password doesn't match |
       
    @VerfiyOrders
    Scenario: verify the orders with products details

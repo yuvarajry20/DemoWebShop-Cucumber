@@ -70,23 +70,25 @@ public class MyAccountStepDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 	    accountSectionAction.newconfirmPassword(string, string2);
 	}
-
-	@Then("i click change Password")
-	public void i_click_change_password() {
+	
+	@Then("i click change Password {string}")
+	public void i_click_change_password(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    accountSectionAction.changePassword();
-	    By passlocator=By.xpath("//div[@class=\"result\"]");
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    WebElement result=wait.until(ExpectedConditions.visibilityOfElementLocated(passlocator));
-	    String text=result.getText();
-	    if(text.contains("Password was changed")) {
+		accountSectionAction.changePassword();  
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    
+	    if(string.contains("Password was changed")) {
+	    	By passlocator=By.xpath("//div[@class=\"result\"]");
+		    WebElement result=wait.until(ExpectedConditions.visibilityOfElementLocated(passlocator));
+		    String text=result.getText();
 	    	String actual="Password was changed";
 	    	Assert.assertEquals(actual, text);
 	    }else {
-	    	String actual="Old password doesn't match";
-	    	Assert.assertEquals(actual, text);
+	    	By passloca1=By.xpath("//li[text()=\"Old password doesn't match\"]");
+	    	WebElement result1=wait.until(ExpectedConditions.visibilityOfElementLocated(passloca1));
+	    	String actual=result1.getText();
+	    	Assert.assertEquals(actual, string);
 	    }
-	    
 	}
 
 	@When("i provide invalid oldPassword as {string}")
