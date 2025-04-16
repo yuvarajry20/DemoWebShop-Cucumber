@@ -62,13 +62,13 @@ public class MyAccountStepDefinition {
 	@When("i provide oldPassword as {string}")
 	public void i_provide_old_password_as(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    accountSectionAction.oldpassword(string);
+	    accountSectionAction.enterOldPassword(string);
 	}
 
 	@When("i provide newPassword as {string} and confirmPassword as {string}")
 	public void i_provide_new_password_as_and_confirm_password_as(String string, String string2) {
 	    // Write code here that turns the phrase above into concrete actions
-	    accountSectionAction.newconfirmPassword(string, string2);
+	    accountSectionAction.enterNewConfirmPassword(string, string2);
 	}
 	
 	@Then("i click change Password {string}")
@@ -94,7 +94,7 @@ public class MyAccountStepDefinition {
 	@When("i provide invalid oldPassword as {string}")
 	public void i_provide_invalid_old_password_as(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    accountSectionAction.oldpassword(string);
+	    accountSectionAction.enterOldPassword(string);
 	}
 
 	@When("i click orders")
@@ -106,25 +106,25 @@ public class MyAccountStepDefinition {
 	@Then("i want to see Order number")
 	public void i_want_to_see_order_number() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.getorder());
+	    System.out.println(accountSectionAction.getOrder());
 	}
 
 	@Then("i want to see Order Date")
 	public void i_want_to_see_order_date() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.getorderdate());
+	    System.out.println(accountSectionAction.getOrderDate());
 	}
 
 	@When("i click Details")
 	public void i_click_details() {
 	    // Write code here that turns the phrase above into concrete actions
-	    accountSectionAction.clickorderdetails();
+	    accountSectionAction.clickOrderDetails();
 	}
 
 	@Then("i want to see Products name")
 	public void i_want_to_see_products_name() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.productname());
+	    System.out.println(accountSectionAction.getProductName());
 	}
 
 	@When("i click Back in stock subscriptions")
@@ -136,7 +136,7 @@ public class MyAccountStepDefinition {
 	@Then("i should see the currently subscribed lists")
 	public void i_should_see_the_currently_subscribed_lists() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.backinstock());
+	    System.out.println(accountSectionAction.getBackInStockText());
 	}
 
 	@When("i click Reward points")
@@ -148,13 +148,13 @@ public class MyAccountStepDefinition {
 	@Then("i should see the current balance of Reward points")
 	public void i_should_see_the_current_balance_of_reward_points() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.currentreward());
+	    System.out.println(accountSectionAction.getCurrentRewardPoints());
 	}
 
 	@Then("i should see the History")
 	public void i_should_see_the_history() {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(accountSectionAction.historyreward());
+	    System.out.println(accountSectionAction.getHistoryRewardPoints());
 	}
 
 	@When("i click the Customer Info")
