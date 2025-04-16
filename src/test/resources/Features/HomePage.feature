@@ -27,18 +27,10 @@ Scenario: Subscribe with invalid email address
   Scenario: View featured products as list
     When I see the featured products section
     Then I should see list of featured products displayed 
-  
- # @RecentlyViewed
- # Scenario: Verify recently viewed products
-  #  When I see the recently viewed products section
-  #  Then I should see the list of recently viewed products
-    
-  #  Then I should see the poll results
-  
-    
+   
     @InvalidPoll
     Scenario: Poll the vote without logging in
     When I click the option in poll
     And click the vote button
     Then I should see an error message
-
+    
