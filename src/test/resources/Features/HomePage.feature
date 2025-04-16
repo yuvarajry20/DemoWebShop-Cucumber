@@ -1,9 +1,11 @@
 Feature: HomePageFunctionality 
 
-Background: Given I am on Demowebshop Homepage "url"
-  And I login using the following credentials
-    | email            | password  |
-    |abccy@gmail.com   |789456     |
+Background: 
+  Given I am on Demowebshop Homepage "https://demowebshop.tricentis.com/"
+
+ # And I login using the following credentials
+   # | email            | password  |
+  #  |abccy@gmail.com   |789456     |
     
 @ValidNewsletter
 Scenario: Subscribe with valid email address
@@ -33,3 +35,10 @@ Scenario: Subscribe with invalid email address
     
   #  Then I should see the poll results
   
+    
+    @InvalidPoll
+    Scenario: Poll the vote without logging in
+    When I click the option in poll
+    And click the vote button
+    Then I should see an error message
+
