@@ -7,6 +7,9 @@
         <methods>
           <include name="setUpClass"/>
 <<<<<<< HEAD
+          <include name="runScenario" invocation-numbers="32 20 6 26 29 30"/>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="runScenario" invocation-numbers="7"/>
@@ -17,6 +20,7 @@
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
           <include name="tearDownClass"/>
 <<<<<<< HEAD
