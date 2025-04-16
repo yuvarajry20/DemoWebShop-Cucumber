@@ -60,21 +60,27 @@ And select the credit card method and enter the required fields
 And proceed the details and confirm
 Then the user should see the order code successfully
 
-#@orderPlacementinOnedayshipping
-#Scenario: purchase an item and choose the one day shipping
-#
-#And click the checkout button and proceed
-#And select the one day shipping as Next Day Air
-#And proceed the further details
-#Then the user should see the order code successfully
+@orderPlacementinOnedayshipping
+Scenario: purchase an item and choose the one day shipping
 
-#@orderPlacementinOnedayshipping
-#Scenario: purchase an item and choose the two day shipping
-#
-#And click the checkout button and proceed
-#And select the two day shipping as 2nd Day Air 
-#And proceed the further details
-#Then the user should see the order code successfully
-#
-#
-#
+And click the checkout buttons and proceed
+And select the one day shipping as Next Day Air
+And proceed the further details
+Then the user should see the order code successfully
+
+@orderPlacementinTwodayshipping
+Scenario: purchase an item and choose the two day shipping
+
+And click the checkout buttons and proceed
+And select the two day shipping as two Day Air 
+And proceed the further details
+Then the user should see the order code successfully
+
+@Checkoutredirectshippingtoshippingaddress
+Scenario: user should click the store pick up after the shipping methods
+
+And click the checkout buttons and proceed
+And select back and click the store pickup
+And proceed the remaining steps and confirm
+Then the user should see the order code successfully
+

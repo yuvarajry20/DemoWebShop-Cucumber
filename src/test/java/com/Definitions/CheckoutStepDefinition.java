@@ -179,8 +179,53 @@ public void proceed_the_details_and_confirm() {
 	objcheckout.getplacedorder();
    
 }
+@When("click the checkout buttons and proceed")
+public void click_the_checkout_buttons_and_proceed() {
+	objcheckout.clickcheckbox();
+	objcheckout.selectcheckout();
+	objcheckout.selectaddresss();
+    objcheckout.billcontinuebtn();
+}
 
+@When("select the one day shipping as Next Day Air")
+public void select_the_one_day_shipping_as_next_day_air() {
+	objcheckout.shippingcontinue();
+	objcheckout.onedaypickup();
+    
+}
 
+@When("proceed the further details")
+public void proceed_the_further_details() {
+	 objcheckout.paymentcontinuestepinoneday();
+	 objcheckout.paymentcontinuestep();
+	 objcheckout.paymentinfocontinue();
+		objcheckout.confirmcheckout();
+		objcheckout.getplacedorder();
+    
+}
+@When("select the two day shipping as two Day Air")
+public void select_the_two_day_shipping_as_two_day_air() {
+	objcheckout.shippingcontinue();
+	objcheckout.paymentcontinuestepintwoday();
+}
+@When("select back and click the store pickup")
+public void select_back_and_click_the_store_pickup() {
+	
+	objcheckout.shippingcontinue();
+	objcheckout.onedaypickup();
+	objcheckout.clickbacktoship();
+	objcheckout.storepickupbox();
+	objcheckout.shippingcontinue();
+	
+}
+
+@When("proceed the remaining steps and confirm")
+public void proceed_the_remaining_steps_and_confirm() {
+	objcheckout.paymentcontinuestep();
+	objcheckout.paymentinfocontinue();
+	objcheckout.confirmcheckout();
+	objcheckout.getplacedorder();
+}
 
 
 

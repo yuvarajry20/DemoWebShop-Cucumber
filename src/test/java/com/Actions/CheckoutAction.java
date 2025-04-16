@@ -157,7 +157,24 @@ public class CheckoutAction {
 		CheckoutLocator.cardcode.sendKeys(code);
 		
 	}
+	public void onedaypickup()
+	{
+		CheckoutLocator.onedaypick.click();
+	}
+
+	public void paymentcontinuestepinoneday() {
+		CheckoutLocator.shippingcntinue.click();
+		
+	}
+	public void paymentcontinuestepintwoday()
+	{
+		CheckoutLocator.twodayshipping.click();
+	}
 	
+	public void clickbacktoship()
+	{
+		CheckoutLocator.backtoshipping.click();
+	}
 	
 	
 
