@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.Pages.AddressPage;
 import com.Utilities.HelperClass;
 import com.Utilities.ExcelReader;
+import com.Utilities.LogManagers;
 
 public class AddressAction {
     AddressPage addressPage;
@@ -46,45 +47,54 @@ public class AddressAction {
                 addressPage.Address1.sendKeys(address1);
                 addressPage.ZipCode.sendKeys(zipCode);
                 addressPage.PhoneNumber.sendKeys(phoneNumber);
+
+                LogManagers.logInfo("Address form filled successfully with data: " + firstName + ", " + lastName + ", " + email);
             } else {
-                System.out.println("Data is null or does not contain enough rows/columns.");
+                LogManagers.logError("Data is null or does not contain enough rows/columns.");
             }
         } catch (IOException e) {
-            System.out.println("Error reading Excel data: " + e.getMessage());
+            LogManagers.logError("Error reading Excel data: " + e.getMessage(), e);
         }
     }
 
     public void clickAddNew() {
         addressPage.addNew.click();
+        LogManagers.logInfo("Clicked on 'Add New' button.");
     }
 
     public void clickSave() {
         addressPage.save.click();
+        LogManagers.logInfo("Clicked on 'Save' button.");
     }
 
     public void clickMyEmail() {
         addressPage.myEmail.click();
+        LogManagers.logInfo("Clicked on 'My Email' link.");
     }
-    
+
     public void clickAddresses() {
-    	addressPage.addressesLink.click();
+        addressPage.addressesLink.click();
+        LogManagers.logInfo("Clicked on 'Addresses' link.");
     }
+
     public void clickAddressesAndAddNew() {
         addressPage.addressesLink.click();
         addressPage.addNew.click();
+        LogManagers.logInfo("Clicked on 'Addresses' link and then 'Add New' button.");
     }
-    
+
     public void clickDeleteAddressButton() {
-    	addressPage.deleteaddress.click();
-   
+        addressPage.deleteaddress.click();
+        LogManagers.logInfo("Clicked on 'Delete Address' button.");
     }
-    
+
     public void handleAlert() {
         try {
             Alert alert = HelperClass.getDriver().switchTo().alert();
             alert.accept();
+            LogManagers.logInfo("Alert handled successfully.");
         } catch (Exception e) {
-            System.out.println("No alert present or error handling alert: " + e.getMessage());
+            LogManagers.logError("No alert present or error handling alert: " + e.getMessage(), e);
         }
     }
 }
