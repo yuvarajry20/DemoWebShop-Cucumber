@@ -47,6 +47,9 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@id=\"shipping-buttons-container\"]//input")
 	public WebElement shipcontinuebtn;
 	
+	@FindBy(xpath="//div[@id=\"shipping-method-buttons-container\"]//input")
+	public WebElement shippingcntinue;
+	
 	@FindBy(xpath="//div[@class=\"buttons\"]//input[@class=\"button-1 payment-method-next-step-button\"]")
 	public WebElement paymentcontinue;
 	
@@ -92,6 +95,15 @@ public class Checkoutpage {
 	
 	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[5]//td[2]//input")
 	public WebElement cardcode;
+	
+	@FindBy(xpath="//ul[@class=\"method-list\"]//li[2]//div//input[@id=\"shippingoption_1\"]")
+	public WebElement onedaypick;
+	
+	@FindBy(xpath="//ul[@class=\"method-list\"]//li[3]//div//input[@id=\"shippingoption_2\"]")
+	public WebElement twodayshipping;
+	
+	@FindBy(xpath="//div[@id=\"shipping-method-buttons-container\"]//p//a")
+	public WebElement backtoshipping;
 	
 	
 }
