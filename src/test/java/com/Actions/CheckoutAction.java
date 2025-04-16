@@ -120,7 +120,7 @@ public class CheckoutAction {
 
     public void invoicepdfdownload() {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
-        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\\\"section order-completed\\\"]//ul//li[2]//a")));
+        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"section order-completed\"]//ul//li[2]//a")));
         elements.click();
 
         LogManagers.logInfo("Clicked on invoice PDF download link.");
