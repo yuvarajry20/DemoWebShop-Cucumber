@@ -47,6 +47,7 @@ public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTa
 
 	@When("go to the shopping cart")
 	public void go_to_the_shopping_cart() {
+		HelperClass.getDriver().navigate().refresh();
 		objProductAction.clickAddTocart();
 		objProductAction.Shopping_cart();
 	}
@@ -146,6 +147,7 @@ public void the_user_should_see_the_product_is_added_in_the_shopping_cart() {
 
 @When("I add to cart the laptop")
 public void i_add_to_cart_the_laptop() {
+	HelperClass.getDriver().navigate().refresh();
     objProductAction.addlaptopcart();
 }
 
