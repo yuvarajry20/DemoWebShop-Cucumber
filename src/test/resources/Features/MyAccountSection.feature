@@ -1,10 +1,11 @@
 Feature: Validating My Account Section
 Background:
-    Given I want to be in the demowebshop "https://demowebshop.tricentis.com/login"
+    Given I want to be in the demowebshop "url"
+    When I click on login
     When I provide email and password
      |email          |password  |
-     |abccdee@gmail.com|123456    |
-    And click log in
+     |abccy@gmail.com|789456    |
+    And I click on the login button
     When I click my email
     
     @ValidChangePassword
@@ -16,7 +17,7 @@ Background:
 
     Examples: 
       |oldPassword  |newPassword |confirmPassword  |
-      |123456       |789456      |789456 |
+      |789456       |789456      |789456 |
       
   @InValidChangePassword
   Scenario Outline: ChangePassword
