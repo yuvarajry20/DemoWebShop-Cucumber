@@ -11,7 +11,7 @@ import com.Utilities.HelperClass;
 import com.Utilities.ExcelReader;
 
 public class AddressAction {
-    private AddressPage addressPage;
+    AddressPage addressPage;
 
     public AddressAction() {
         this.addressPage = new AddressPage();
