@@ -107,7 +107,7 @@ public class CheckoutAction {
 	}
 	public void getplacedorder()
 	{
-		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
 		WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
 		System.out.println(elements.getText());
 		String act="Your order has been successfully processed!";
@@ -118,7 +118,9 @@ public class CheckoutAction {
 	}
 	public void invoicepdfdownload()
 	{
-		CheckoutLocator.invoiceclickhere.click();
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
+		WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\\\"section order-completed\\\"]//ul//li[2]//a")));
+		elements.click();
 	}
 	public void pdfinvoiceclik()
 	{
