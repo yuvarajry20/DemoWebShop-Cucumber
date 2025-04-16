@@ -153,7 +153,8 @@ public class CheckoutAction {
     }
 
     public void creditcardcheckbox() {
-        CheckoutLocator.creditcheckbox.click();
+    	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+        js.executeScript("document.querySelector('div.section.payment-method > ul > li:nth-child(3) > div > div:nth-child(2) > input').click();");
         LogManagers.logInfo("Clicked on credit card checkbox.");
     }
 
