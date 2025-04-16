@@ -108,8 +108,9 @@ public void click_the_orders() {
 
 @When("click the invoice pdf")
 public void click_the_invoice_pdf() {
+	
 	 objcheckout.getplacedorder();
-	    objcheckout.invoicepdfdownload();
+	 objcheckout.invoicepdfdownload();
 
 }
 
