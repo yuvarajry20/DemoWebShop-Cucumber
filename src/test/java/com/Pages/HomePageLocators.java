@@ -27,6 +27,9 @@ public class HomePageLocators {
     @FindBy(xpath="//ul[@class=\"poll-results\"]")
     public WebElement votepollResults;
     
+    @FindBy(xpath="//div[@id=\"block-poll-vote-error-1\"]")
+    public WebElement pollErrorMsg;
+    
     @FindBy(xpath="//Strong[contains(text(),\"Recently viewed products\")]")
     public WebElement RecentProductsSec;
     
