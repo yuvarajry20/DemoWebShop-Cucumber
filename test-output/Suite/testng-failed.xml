@@ -6,28 +6,8 @@
       <class name="com.Runner.runnerTestNG">
         <methods>
           <include name="setUpClass"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="runScenario" invocation-numbers="9 11"/>
-=======
-          <include name="runScenario" invocation-numbers="16 24 26"/>
->>>>>>> fc4cb205eec0da32277af7873feaee4b6d07b051
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="runScenario" invocation-numbers="17 10"/>
-=======
-          <include name="runScenario" invocation-numbers="18 6"/>
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
-=======
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
->>>>>>> fc4cb205eec0da32277af7873feaee4b6d07b051
+          <include name="runScenario" invocation-numbers="8 11 12 28 13 15"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="25"/>
         </methods>
       </class> <!-- com.Runner.runnerTestNG -->
     </classes>
