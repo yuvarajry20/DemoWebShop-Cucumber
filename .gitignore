@@ -9,4 +9,4 @@ Reports/
 test-output/
 cucumber-reports/
 surefire-reports/
-junitreports/
+junitreports//
