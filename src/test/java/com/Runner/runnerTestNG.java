@@ -16,10 +16,11 @@ features={
 		"src/test/resources/Features/CheckOut.feature",
 		"src/test/resources/Features/MyAccountSection.feature",
 		"src/test/resources/Features/SearchFunction.feature"
+		
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
     	return super.scenarios();
 	}
