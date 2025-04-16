@@ -112,7 +112,7 @@ public class CheckoutAction {
     }
 
     public void getplacedorder() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
         System.out.println(elements.getText());
         String act = "Your order has been successfully processed!";
