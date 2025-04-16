@@ -35,7 +35,7 @@ public class SearchStepDefinition {
 
 	    @Then("the {string} should be displayed in the results")
 	    public void the_should_be_displayed_in_the_results(String string) {
-	        searchaction.DisplayResult();
+	        searchaction.displayResult();
 	    }
 	    
 	    @When("I click search bar and enter invalid {string}")
@@ -83,7 +83,7 @@ public class SearchStepDefinition {
 	    public void i_apply_the_following_search_filters(String Category, String min, String max) {
 	    	searchaction.applyCategory();
 	    	if(Category.equals("Electronics >> Camera, photo")) {
-	    		searchaction.applycameraCategory();
+	    		searchaction.applyCameraCategory();
 	    	}else if(Category.equals("Electronics >> Cell phones")) {
 	    		searchaction.applyCellCategory();
 	    	}
@@ -95,9 +95,9 @@ public class SearchStepDefinition {
 	    public void the_system_should_display_message_for(String ExpectedResult, String SearchTerm) {
 	    	//if(ExpectedResult.equalsIgnoreCase("1MP 60GB Hard Drive Handycam Camcorder")) {
 	    		if(ExpectedResult.equalsIgnoreCase(SearchTerm)) {
-	    		searchaction.AdvanceSearchResultDisplayed();
+	    		searchaction.advanceSearchResultDisplayed();
 	    	}else if(ExpectedResult.equalsIgnoreCase(SearchTerm)){
-	    		searchaction.NoSearchDisplayed();
+	    		searchaction.noSearchDisplayed();
 	    	}
 	    }
 

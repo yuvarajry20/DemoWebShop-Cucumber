@@ -8,121 +8,141 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.Pages.BookPageLocators;
 import com.Utilities.HelperClass;
+import com.Utilities.LogManagers;
 
 public class BookPageAction {
-	
-BookPageLocators bookPage;
-private WebElement sortbyDropdown;
-	
+    BookPageLocators bookPage;
+
     public BookPageAction() {
-	        this.bookPage = new BookPageLocators();
-	        PageFactory.initElements(HelperClass.getDriver(), bookPage);
-	    }
+        this.bookPage = new BookPageLocators();
+        PageFactory.initElements(HelperClass.getDriver(), bookPage);
+    }
+
     public void openBooksCategory() {
-    	     bookPage.Books.click();
+        bookPage.Books.click();
+        LogManagers.logInfo("Clicked on 'Books' category.");
     }
-    
+
     public void ListOfBooks() {
-    	System.out.println("List of available books:");
-
-	    for (WebElement book : bookPage.BooksList) {
-	        String bookName = book.getText().trim();
-	        System.out.println("- " + bookName);
-	    }
+        LogManagers.logInfo("List of available books:");
+        for (WebElement book : bookPage.BooksList) {
+            String bookName = book.getText().trim();
+            LogManagers.logInfo("- " + bookName);
+        }
     }
 
-//     public void selectSortByAToZ() {
-//    	  Select select = new Select(sortbyDropdown);
-//          select.selectByVisibleText("Name: A to Z");
-//
-//     }
-     public void VerifySortedBooks() {
-    	 bookPage.SortedBookList.getText();
-     }
-    	
+    public void VerifySortedBooks() {
+        String sortedBooksText = bookPage.SortedBookList.getText();
+        LogManagers.logInfo("Sorted books list: " + sortedBooksText);
+    }
+
     public void clickFictionBook() {
-    	 bookPage.Fiction_book.click();
+        bookPage.Fiction_book.click();
+        LogManagers.logInfo("Clicked on 'Fiction' book.");
     }
-    
+
     public void getBookDescription() {
-    	System.out.println(bookPage.FictionDetail.getText());
+        String description = bookPage.FictionDetail.getText();
+        LogManagers.logInfo("Book description: " + description);
     }
-    
 
     public void clickPriceFilter(String value) {
         List<WebElement> priceFilters = bookPage.priceFilterLinks;
+        boolean filterFound = false;
 
         for (WebElement filter : priceFilters) {
             if (filter.getText().trim().equalsIgnoreCase(value)) {
                 filter.click();
+                LogManagers.logInfo("Clicked on price filter: " + value);
+                filterFound = true;
                 break;
             }
+        }
+
+        if (!filterFound) {
+            LogManagers.logError("Price filter not found: " + value);
         }
     }
 
     public void applyFilter(String filterType, String value) {
-        switch (filterType) {
-            case "Sort By":
-                new Select(bookPage.sortbyDropdown).selectByVisibleText(value);
-                break;
-            case "Display By":
-                new Select(bookPage.DisplayDropdown).selectByVisibleText(value);
-                break;
-            case "View As":
-                new Select(bookPage.ViewAsDropdown).selectByVisibleText(value);
-                break;
-            case "Price":
-                clickPriceFilter(value);
-                break;
-            default:
-                throw new IllegalArgumentException("Unknown filter: " + filterType);
+        try {
+            switch (filterType) {
+                case "Sort By":
+                    new Select(bookPage.sortbyDropdown).selectByVisibleText(value);
+                    LogManagers.logInfo("Applied 'Sort By' filter: " + value);
+                    break;
+                case "Display By":
+                    new Select(bookPage.DisplayDropdown).selectByVisibleText(value);
+                    LogManagers.logInfo("Applied 'Display By' filter: " + value);
+                    break;
+                case "View As":
+                    new Select(bookPage.ViewAsDropdown).selectByVisibleText(value);
+                    LogManagers.logInfo("Applied 'View As' filter: " + value);
+                    break;
+                case "Price":
+                    clickPriceFilter(value);
+                    break;
+                default:
+                    LogManagers.logError("Unknown filter type: " + filterType);
+                    throw new IllegalArgumentException("Unknown filter: " + filterType);
+            }
+        } catch (Exception e) {
+            LogManagers.logError("Error applying filter: " + e.getMessage(), e);
         }
     }
-    
+
     public void filterAppliedBooks() {
-    	System.out.println(bookPage.bookFiltered.getText());
+        String filteredBooksText = bookPage.bookFiltered.getText();
+        LogManagers.logInfo("Filtered books list: " + filteredBooksText);
     }
 
     public String getSelectedSortByOption() {
         Select select = new Select(bookPage.sortbyDropdown);
-        return select.getFirstSelectedOption().getText();
+        String selectedOption = select.getFirstSelectedOption().getText();
+        LogManagers.logInfo("Selected 'Sort By' option: " + selectedOption);
+        return selectedOption;
     }
+
     public void applySortByOption(String option) {
-        System.out.println("Applying sort filters: " + option);
+        LogManagers.logInfo("Applying sort filters: " + option);
         Select select = new Select(bookPage.sortbyDropdown);
         select.selectByVisibleText(option);
     }
-    
+
     public void clickComputingInternet() {
-    	bookPage.Computing_Internet.click();
+        bookPage.Computing_Internet.click();
+        LogManagers.logInfo("Clicked on 'Computing & Internet' book.");
     }
-    
+
     public void clickHealthBook() {
-    	bookPage.Health_book.click();
+        bookPage.Health_book.click();
+        LogManagers.logInfo("Clicked on 'Health' book.");
     }
-    
+
     public void AddToCompareList() {
-    	bookPage.CompareList.click();
+        bookPage.CompareList.click();
+        LogManagers.logInfo("Added book to compare list.");
     }
-    
+
     public void ResultOfCompareProducts() {
-    	System.out.println("Book Names:");
-    	for (WebElement name : bookPage.compareName) {
-    	    System.out.println(name.getText());
-    	}
+        LogManagers.logInfo("Book Names:");
+        for (WebElement name : bookPage.compareName) {
+            LogManagers.logInfo(name.getText());
+        }
 
-    	System.out.println("Prices:");
-    	for (WebElement price : bookPage.comparePrice) {
-    	    System.out.println(price.getText());
-    	}
+        LogManagers.logInfo("Prices:");
+        for (WebElement price : bookPage.comparePrice) {
+            LogManagers.logInfo(price.getText());
+        }
     }
-    
+
     public void ClearCompareProductsList() {
-    	bookPage.ClearList.click();
-    }
-    
-    public void verifyClearedList() {
-    	System.out.println(bookPage.EmptyCompareList.getText());
+        bookPage.ClearList.click();
+        LogManagers.logInfo("Cleared compare list.");
     }
 
+    public void verifyClearedList() {
+        String emptyListText = bookPage.EmptyCompareList.getText();
+        LogManagers.logInfo("Verify cleared list: " + emptyListText);
+    }
 }
