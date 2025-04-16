@@ -13,7 +13,8 @@ features={
 		 "src/test/resources/Features/Books.feature",
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
-		"src/test/resources/Features/CheckOut.feature",
+		"src/test/resources/Features/SearchFunction.feature"
+		
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {

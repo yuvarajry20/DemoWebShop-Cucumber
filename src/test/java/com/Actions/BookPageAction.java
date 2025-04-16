@@ -88,12 +88,41 @@ private WebElement sortbyDropdown;
         return select.getFirstSelectedOption().getText();
     }
     public void applySortByOption(String option) {
-        System.out.println("Trying to select sort option: " + option);
+        System.out.println("Applying sort filters: " + option);
         Select select = new Select(bookPage.sortbyDropdown);
         select.selectByVisibleText(option);
     }
+    
+    public void clickComputingInternet() {
+    	bookPage.Computing_Internet.click();
+    }
+    
+    public void clickHealthBook() {
+    	bookPage.Health_book.click();
+    }
+    
+    public void AddToCompareList() {
+    	bookPage.CompareList.click();
+    }
+    
+    public void ResultOfCompareProducts() {
+    	System.out.println("Book Names:");
+    	for (WebElement name : bookPage.compareName) {
+    	    System.out.println(name.getText());
+    	}
+
+    	System.out.println("Prices:");
+    	for (WebElement price : bookPage.comparePrice) {
+    	    System.out.println(price.getText());
+    	}
+    }
+    
+    public void ClearCompareProductsList() {
+    	bookPage.ClearList.click();
+    }
+    
+    public void verifyClearedList() {
+    	System.out.println(bookPage.EmptyCompareList.getText());
+    }
 
 }
-
-    	
-    

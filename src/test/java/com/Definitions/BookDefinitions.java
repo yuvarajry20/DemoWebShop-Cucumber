@@ -87,8 +87,44 @@ public class BookDefinitions {
 	@Then("each sort result should be applied correctly")
 	public void each_sort_result_should_be_applied_correctly() {
 	    String selectedOption = bookAction.getSelectedSortByOption();
-	    System.out.println("Current selected: " + selectedOption);
+	    System.out.println("Book is sorted by: " + selectedOption);
 	    Assert.assertNotNull(selectedOption);
+	}
+	
+	@When("I click the {string} book link")
+	public void i_click_the_book_link(String string) {
+		bookAction.clickComputingInternet();
+	}
+
+	@When("click the Add to Compare button")
+	public void click_the_add_to_compare_button() {
+	    bookAction.AddToCompareList();
+	}
+
+	@Then("click the books category and click the {string} link")
+	public void click_the_books_category_and_click_the_link(String string) {
+		bookAction.openBooksCategory();
+	    bookAction.clickHealthBook();
+	}
+
+	@Then("add it to the compare list")
+	public void add_it_to_the_compare_list() {
+	    bookAction.AddToCompareList();
+	}
+
+	@Then("verify and compare the prices of both the product")
+	public void verify_and_compare_the_prices_of_both_the_product() {
+	   bookAction.ResultOfCompareProducts();
+	}
+
+	@Then("clear the list in compare products")
+	public void clear_the_list_in_compare_products() {
+	    bookAction.ClearCompareProductsList();
+	}
+
+	@Then("assert if the lists are cleared")
+	public void assert_if_the_lists_are_cleared() {
+	    bookAction.verifyClearedList();
 	}
 
 
