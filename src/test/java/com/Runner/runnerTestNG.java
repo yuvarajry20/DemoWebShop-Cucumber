@@ -16,7 +16,8 @@ features={
 		"src/test/resources/Features/CheckOut.feature",
 		"src/test/resources/Features/MyAccountSection.feature",
 		"src/test/resources/Features/SearchFunction.feature",
-		"src/test/resources/Features/UserRegistration.feature"
+		"src/test/resources/Features/UserRegistration.feature",
+		"src/test/resources/Features/DigitalDownload.feature"
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
