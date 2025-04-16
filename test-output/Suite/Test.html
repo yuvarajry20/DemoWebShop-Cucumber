@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>59/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>60/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 16 20:29:54 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 16 20:39:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109578 ms)</td>
+<tr><td>Total time:</td><td>107 seconds (107018 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,167 +76,51 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should click the store pick up after the shipping methods", "Checkout the product in the web Application"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&quot;billing-address-select&quot;]&quot;}
-  (Session info: chrome=135.0.7049.86)
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose the credit card", "Checkout the product in the web Application"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[@class=&quot;section payment-method&quot;]//ul//li[3]//div//div[2]//input
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9336044a9bf4c2575eba8ce93a610d27, findElement {using=xpath, value=//select[@id=&quot;billing-address-select&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63189/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9336044a9bf4c2575eba8ce93a610d27
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:76)
-	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
-	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:82)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017269244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2017269244'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&quot;billing-address-select&quot;]&quot;}
-  (Session info: chrome=135.0.7049.86)
+	at com.Actions.CheckoutAction.creditcardcheckbox(CheckoutAction.java:156)
+	at com.Definitions.CheckoutStepDefinition.select_the_credit_card_method_and_enter_the_required_fields(CheckoutStepDefinition.java:164)
+	at ✽.select the credit card method and enter the required fields(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1108933322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1108933322'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[@class=&quot;section payment-method&quot;]//ul//li[3]//div//div[2]//input
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9336044a9bf4c2575eba8ce93a610d27, findElement {using=xpath, value=//select[@id=&quot;billing-address-select&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63189/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9336044a9bf4c2575eba8ce93a610d27
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:76)
-	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
-	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:82)
-</pre></div></td>
-<td>39</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose store pickup", "Checkout the product in the web Application"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.86): Your cart is empty
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1aa705df159a4723179babd36cbb1a71, findElement {using=xpath, value=//div[@id=&quot;payment-info-buttons-container&quot;]//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1aa705df159a4723179babd36cbb1a71
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.paymentinfocontinue(CheckoutAction.java:102)
-	at com.Definitions.CheckoutStepDefinition.enter_the_billing_address_and_click_store_pick(CheckoutStepDefinition.java:131)
-	at ✽.enter the billing address and click store pick(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:45)
-</pre></div><a href='#' onClick='toggleBox("stack-trace877835429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace877835429'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.86): Your cart is empty
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1aa705df159a4723179babd36cbb1a71, findElement {using=xpath, value=//div[@id=&quot;payment-info-buttons-container&quot;]//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1aa705df159a4723179babd36cbb1a71
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.paymentinfocontinue(CheckoutAction.java:102)
-	at com.Definitions.CheckoutStepDefinition.enter_the_billing_address_and_click_store_pick(CheckoutStepDefinition.java:131)
-	at ✽.enter the billing address and click store pick(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:45)
+	at com.Actions.CheckoutAction.creditcardcheckbox(CheckoutAction.java:156)
+	at com.Definitions.CheckoutStepDefinition.select_the_credit_card_method_and_enter_the_required_fields(CheckoutStepDefinition.java:164)
+	at ✽.select the credit card method and enter the required fields(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:53)
 </pre></div></td>
 <td>16</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose the two day shipping", "Checkout the product in the web Application"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //ul[@class=&quot;method-list&quot;]//li[3]//div//input[@id=&quot;shippingoption_2&quot;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.paymentcontinuestepintwoday(CheckoutAction.java:177)
-	at com.Definitions.CheckoutStepDefinition.select_the_two_day_shipping_as_two_day_air(CheckoutStepDefinition.java:211)
-	at ✽.select the two day shipping as two Day Air(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:75)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1460051340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1460051340'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //ul[@class=&quot;method-list&quot;]//li[3]//div//input[@id=&quot;shippingoption_2&quot;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.paymentcontinuestepintwoday(CheckoutAction.java:177)
-	at com.Definitions.CheckoutStepDefinition.select_the_two_day_shipping_as_two_day_air(CheckoutStepDefinition.java:211)
-	at ✽.select the two day shipping as two Day Air(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:75)
-</pre></div></td>
-<td>19</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose the credit card", "Checkout the product in the web Application"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&quot;billing-address-select&quot;]&quot;}
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;click&apos;)
   (Session info: chrome=135.0.7049.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4bbece2e9719185b262060157c466db0, findElement {using=xpath, value=//select[@id=&quot;billing-address-select&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63108/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4bbece2e9719185b262060157c466db0
+Command: [a23650f1a75ebf91fc455d6d4fb0aa9b, executeScript {script=document.querySelector(&apos;select#billing-address-select&apos;).click();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50509/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a23650f1a75ebf91fc455d6d4fb0aa9b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -244,26 +128,19 @@ Session ID: 4bbece2e9719185b262060157c466db0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:76)
-	at com.Definitions.CheckoutStepDefinition.click_the_checkout_button_and_proceed(CheckoutStepDefinition.java:154)
-	at ✽.click the checkout button and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:52)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace171787031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace171787031'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&quot;billing-address-select&quot;]&quot;}
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:78)
+	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
+	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:74)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace774329487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace774329487'><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;click&apos;)
   (Session info: chrome=135.0.7049.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4bbece2e9719185b262060157c466db0, findElement {using=xpath, value=//select[@id=&quot;billing-address-select&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63108/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4bbece2e9719185b262060157c466db0
+Command: [a23650f1a75ebf91fc455d6d4fb0aa9b, executeScript {script=document.querySelector(&apos;select#billing-address-select&apos;).click();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50509/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a23650f1a75ebf91fc455d6d4fb0aa9b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -274,72 +151,87 @@ Session ID: 4bbece2e9719185b262060157c466db0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:76)
-	at com.Definitions.CheckoutStepDefinition.click_the_checkout_button_and_proceed(CheckoutStepDefinition.java:154)
-	at ✽.click the checkout button and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:78)
+	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
+	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:74)
 </pre></div></td>
-<td>34</td>
+<td>16</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checkout and download the invoice pdf", "Checkout the product in the web Application"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Payment method is not selected}
-  (Session info: chrome=135.0.7049.86): Payment method is not selected
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To read the invoice pdf in the application", "Checkout the product in the web Application"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;section order-completed&apos;]//div[@class=&apos;title&apos;]//strong (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0971539cd3f4722ceb0c673ffbdeab7f, findElement {using=xpath, value=//div[@class=&apos;section order-completed&apos;]//div[@class=&apos;title&apos;]//strong}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62871/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.Actions.CheckoutAction.getplacedorder(CheckoutAction.java:113)
-	at com.Definitions.CheckoutStepDefinition.the_user_should_see_the_order_number_and_able_to_download_the_invoice_as_pdf(CheckoutStepDefinition.java:74)
-	at ✽.the user should see the order number and able to download the invoice as pdf(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:23)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1094270869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1094270869'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Payment method is not selected}
-  (Session info: chrome=135.0.7049.86): Payment method is not selected
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50436/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5bb793b4daaa072f25fbe2d5b6cf98a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Actions.CheckoutAction.getplacedorder(CheckoutAction.java:116)
+	at com.Definitions.CheckoutStepDefinition.click_the_invoice_pdf(CheckoutStepDefinition.java:113)
+	at ✽.click the invoice pdf(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1036648385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1036648385'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;section order-completed&apos;]//div[@class=&apos;title&apos;]//strong (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0971539cd3f4722ceb0c673ffbdeab7f, findElement {using=xpath, value=//div[@class=&apos;section order-completed&apos;]//div[@class=&apos;title&apos;]//strong}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62871/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.Actions.CheckoutAction.getplacedorder(CheckoutAction.java:113)
-	at com.Definitions.CheckoutStepDefinition.the_user_should_see_the_order_number_and_able_to_download_the_invoice_as_pdf(CheckoutStepDefinition.java:74)
-	at ✽.the user should see the order number and able to download the invoice as pdf(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:23)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50436/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5bb793b4daaa072f25fbe2d5b6cf98a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Actions.CheckoutAction.getplacedorder(CheckoutAction.java:116)
+	at com.Definitions.CheckoutStepDefinition.click_the_invoice_pdf(CheckoutStepDefinition.java:113)
+	at ✽.click the invoice pdf(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:37)
 </pre></div></td>
-<td>21</td>
+<td>62</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose the one day shipping", "Checkout the product in the web Application"</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;click&apos;)
+  (Session info: chrome=135.0.7049.86)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [048934c4d0f2b7c930884150125a09c4, executeScript {script=document.querySelector(&apos;select#billing-address-select&apos;).click();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50507/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 048934c4d0f2b7c930884150125a09c4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:78)
+	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
+	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:66)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275564938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275564938'><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;click&apos;)
+  (Session info: chrome=135.0.7049.86)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [048934c4d0f2b7c930884150125a09c4, executeScript {script=document.querySelector(&apos;select#billing-address-select&apos;).click();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50507/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 048934c4d0f2b7c930884150125a09c4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at com.Actions.CheckoutAction.selectaddresss(CheckoutAction.java:78)
+	at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:188)
+	at ✽.click the checkout buttons and proceed(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:66)
+</pre></div></td>
+<td>15</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -351,157 +243,72 @@ Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>10</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the user is on the digital download page", "category under digital download product is added to cart"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the product is added in wishlist to shopping cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Write a review without logging in", "Review a product Functionality"</td>
 <td></td>
 <td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "Search Functionality"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured products as list", "HomePageFunctionality"</td>
 <td></td>
 <td>11</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tags should be navigated to product page", "Popular tags"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the current balance of reward points", "Validating My Account Section"</td>
 <td></td>
-<td>9</td>
+<td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the orders with products details", "Validating My Account Section"</td>
+<td></td>
+<td>14</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "add product to the cart", "category under digital download product is added to cart"</td>
+<td></td>
+<td>13</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "Review a product Functionality"</td>
+<td></td>
+<td>20</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "ChangePassword", "Validating My Account Section"</td>
 <td></td>
 <td>15</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>9</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all books available", "Book Product Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
-<td></td>
-<td>13</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply all Sort By options for books", "Book Product Functionality"</td>
-<td></td>
-<td>21</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of a specific book", "Book Product Functionality"</td>
-<td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deleting the already present address", "Validating Address Section"</td>
-<td></td>
-<td>28</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "ChangePassword", "Validating My Account Section"</td>
-<td></td>
-<td>16</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>7</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "add product to the cart", "category under digital download product is added to cart"</td>
 <td></td>
 <td>11</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding and Removing a Product in the Shopping Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
 <td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose the one day shipping", "Checkout the product in the web Application"</td>
-<td></td>
-<td>22</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Write a review without logging in", "Review a product Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
 <td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to checkout page Without clicking the terms & conditions", "Checkout the product in the web Application"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the customer info", "Validating My Account Section"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "send a product details through valid email a friend", "Product Details Validation and purchasing in the Shopping cart page"</td>
 <td></td>
 <td>17</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "Review a product Functionality"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should click the store pick up after the shipping methods", "Checkout the product in the web Application"</td>
 <td></td>
-<td>17</td>
+<td>25</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply filter options for books", "Book Product Functionality"</td>
 <td></td>
-<td>10</td>
+<td>33</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with valid email address", "HomePageFunctionality"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the quantity of the product is increased", "Product Details Validation and purchasing in the Shopping cart page"</td>
 <td></td>
-<td>7</td>
+<td>15</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the current balance of reward points", "Validating My Account Section"</td>
-<td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "Search Functionality"</td>
-<td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing two different products", "Book Product Functionality"</td>
-<td></td>
-<td>20</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>13</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>10</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "Review a product Functionality"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply all Sort By options for books", "Book Product Functionality"</td>
 <td></td>
 <td>19</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
@@ -511,91 +318,6 @@ Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
 <td>17</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
-<td></td>
-<td>7</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>19</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the product is same as in the auto-generated url in wishlist page", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>17</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
-<td></td>
-<td>10</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "Search Functionality"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Poll the vote without logging in", "HomePageFunctionality"</td>
-<td></td>
-<td>9</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured products as list", "HomePageFunctionality"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View submitted reviews of a product", "Review a product Functionality"</td>
-<td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To get a Shipping Estimation details", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the quantity of the product is increased", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>13</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "Search Functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "send a product details through Invalid email a friend", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>16</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To read the invoice pdf in the application", "Checkout the product in the web Application"</td>
-<td></td>
-<td>22</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select the filters view product", "category under digital download product is added to cart"</td>
-<td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "ChangePassword", "Validating My Account Section"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with invalid email address", "HomePageFunctionality"</td>
 <td></td>
 <td>7</td>
@@ -603,17 +325,212 @@ Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "Review a product Functionality"</td>
 <td></td>
-<td>20</td>
+<td>18</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to checkout page Without clicking the terms & conditions", "Checkout the product in the web Application"</td>
+<td></td>
+<td>14</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>10</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deleting the already present address", "Validating Address Section"</td>
+<td></td>
+<td>26</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "ChangePassword", "Validating My Account Section"</td>
+<td></td>
+<td>15</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>13</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the back in stock subscriptions", "Validating My Account Section"</td>
 <td></td>
 <td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "Search Functionality"</td>
 <td></td>
+<td>9</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all books available", "Book Product Functionality"</td>
+<td></td>
 <td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the product is added in wishlist to shopping cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
+<td></td>
+<td>12</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To get a Shipping Estimation details", "Product Details Validation and purchasing in the Shopping cart page"</td>
+<td></td>
+<td>16</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td></td>
+<td>10</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td></td>
+<td>15</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View submitted reviews of a product", "Review a product Functionality"</td>
+<td></td>
+<td>15</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select the filters view product", "category under digital download product is added to cart"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding Address", "Validating Address Section"</td>
+<td></td>
+<td>39</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid and invalid credentials", "Login"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the user is on the digital download page", "category under digital download product is added to cart"</td>
+<td></td>
+<td>9</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "send a product details through Invalid email a friend", "Product Details Validation and purchasing in the Shopping cart page"</td>
+<td></td>
+<td>16</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>6</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Poll the vote without logging in", "HomePageFunctionality"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of a specific book", "Book Product Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose store pickup", "Checkout the product in the web Application"</td>
+<td></td>
+<td>22</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>7</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>7</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing two different products", "Book Product Functionality"</td>
+<td></td>
+<td>17</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>7</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on the website with valid and invalid fields", "User Registeration"</td>
+<td></td>
+<td>8</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "Review a product Functionality"</td>
+<td></td>
+<td>18</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tags should be navigated to product page", "Popular tags"</td>
+<td></td>
+<td>11</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
+<td></td>
+<td>15</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Simple product search with valid keyword", "Search Functionality"</td>
+<td></td>
+<td>10</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with valid email address", "HomePageFunctionality"</td>
+<td></td>
+<td>7</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot password with valid and invalid email", "Login"</td>
+<td></td>
+<td>10</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the customer info", "Validating My Account Section"</td>
+<td></td>
+<td>16</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checkout and download the invoice pdf", "Checkout the product in the web Application"</td>
+<td></td>
+<td>28</td>
+<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "Search Functionality"</td>
+<td></td>
+<td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tags should be navigated to product page", "Popular tags"</td>
@@ -621,29 +538,9 @@ Session ID: 0971539cd3f4722ceb0c673ffbdeab7f
 <td>10</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding Address", "Validating Address Section"</td>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the product is same as in the auto-generated url in wishlist page", "Product Details Validation and purchasing in the Shopping cart page"</td>
 <td></td>
-<td>40</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the back in stock subscriptions", "Validating My Account Section"</td>
-<td></td>
-<td>15</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "send a product details through valid email a friend", "Product Details Validation and purchasing in the Shopping cart page"</td>
-<td></td>
-<td>20</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply filter options for books", "Book Product Functionality"</td>
-<td></td>
-<td>33</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
-<tr>
-<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Simple product search with valid keyword", "Search Functionality"</td>
-<td></td>
-<td>13</td>
+<td>14</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 </table><p>
 </body>
