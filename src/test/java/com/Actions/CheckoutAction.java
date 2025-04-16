@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -46,6 +47,7 @@ public class CheckoutAction {
     }
 
     public void clickcheckbox() {
+    	HelperClass.getDriver().navigate().refresh();
         WebElement el = HelperClass.getDriver().findElement(By.xpath("//div[@class=\"terms-of-service\"]//input"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -72,7 +74,9 @@ public class CheckoutAction {
     }
 
     public void selectaddresss() {
-        CheckoutLocator.addressfield.click();
+    	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+        js.executeScript("document.querySelector('select#billing-address-select').click();");
+        //CheckoutLocator.addressfield.click();
         CheckoutLocator.option1.click();
         LogManagers.logInfo("Selected address option.");
     }
@@ -108,7 +112,7 @@ public class CheckoutAction {
     }
 
     public void getplacedorder() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
         System.out.println(elements.getText());
         String act = "Your order has been successfully processed!";
@@ -120,8 +124,9 @@ public class CheckoutAction {
 
     public void invoicepdfdownload() {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
-        WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\\\"section order-completed\\\"]//ul//li[2]//a")));
+        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"section order-completed\"]//ul//li[2]//a")));
         elements.click();
+
         LogManagers.logInfo("Clicked on invoice PDF download link.");
     }
 
@@ -148,7 +153,9 @@ public class CheckoutAction {
     }
 
     public void creditcardcheckbox() {
-        CheckoutLocator.creditcheckbox.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+        WebElement creditCardCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='section payment-method']//ul//li[3]//div//div[2]//input")));
+        creditCardCheckbox.click();
         LogManagers.logInfo("Clicked on credit card checkbox.");
     }
 
@@ -172,7 +179,10 @@ public class CheckoutAction {
     }
 
     public void paymentcontinuestepintwoday() {
-        CheckoutLocator.twodayshipping.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+        WebElement shippingOption = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='method-list']//li[3]//div//input[@id='shippingoption_2']")));
+        shippingOption.click();
+        //CheckoutLocator.twodayshipping.click();
         LogManagers.logInfo("Clicked on payment continue button in two-day shipping.");
     }
 
