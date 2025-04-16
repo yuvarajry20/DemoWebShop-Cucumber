@@ -112,14 +112,11 @@ public class CheckoutAction {
     }
 
     public void getplacedorder() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-        WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
-        System.out.println(elements.getText());
-        String act = "Your order has been successfully processed!";
-        String exp = elements.getText();
+    	System.out.println(CheckoutLocator.thankyou.getText());
+    	String exp=CheckoutLocator.thankyou.getText();
+        String act = "Thank you";
         Assert.assertEquals(act, exp);
-        System.out.println(elements.getText());
-        LogManagers.logInfo("Order placed successfully: " + exp);
+        LogManagers.logInfo("Order placed successfully ");
     }
 
     public void invoicepdfdownload() {

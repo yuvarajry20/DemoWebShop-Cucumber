@@ -105,5 +105,7 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@id=\"shipping-method-buttons-container\"]//p//a")
 	public WebElement backtoshipping;
 	
+	@FindBy(xpath="//div[@class=\"page-title\"]//h1")
+	public WebElement thankyou;
 	
 }
