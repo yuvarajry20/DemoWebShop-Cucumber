@@ -46,6 +46,7 @@ public class CheckoutAction {
     }
 
     public void clickcheckbox() {
+    	HelperClass.getDriver().navigate().refresh();
         WebElement el = HelperClass.getDriver().findElement(By.xpath("//div[@class=\"terms-of-service\"]//input"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();

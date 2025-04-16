@@ -2452,3 +2452,424 @@ There is no balance history yet
 2025-04-16 20:24:14 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
 2025-04-16 20:24:15 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
 2025-04-16 20:24:15 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:05 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:05 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:05 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:05 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - List of available books:
+2025-04-16 20:30:05 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:05 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Position
+2025-04-16 20:30:05 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Computing and Internet
+30.00
+10.00
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Copy of Computing and Internet EX
+30.00
+10.00
+2025-04-16 20:30:05 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:05 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Fiction
+35.00
+24.00
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Fiction EX
+35.00
+24.00
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Health Book
+27.00
+10.00
+2025-04-16 20:30:05 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Science
+67.00
+51.00
+2025-04-16 20:30:05 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:05 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:06 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:06 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'Sort By' filter: Price: High to Low
+2025-04-16 20:30:06 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: A to Z
+2025-04-16 20:30:06 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Fiction' book.
+2025-04-16 20:30:06 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:06 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Book description: Fiction EX
+Bestselling fiction
+Availability: In stock
+395 review(s) | Add your review
+Old price: 35.00
+Price: 24.00
+Qty:
+2025-04-16 20:30:06 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:07 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:07 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:07 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Computing & Internet' book.
+2025-04-16 20:30:07 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'Display By' filter: 4
+2025-04-16 20:30:07 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:07 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:08 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:08 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:08 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'View As' filter: List
+2025-04-16 20:30:08 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: Z to A
+2025-04-16 20:30:08 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-16 20:30:08 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:08 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:09 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 20:30:09 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:09 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:09 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:10 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - The checkbox is selected: false
+2025-04-16 20:30:10 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:10 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Asserted message: Please accept the terms of service before the next step.
+2025-04-16 20:30:10 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: Low to High
+2025-04-16 20:30:10 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:11 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Health' book.
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Billing Address
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Shipping Address
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Shipping Method
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Payment Method
+2025-04-16 20:30:11 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Payment Information
+2025-04-16 20:30:12 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Confirm Order
+2025-04-16 20:30:12 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Book Names:
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager -  
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Health Book
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Copy of Computing and Internet EX
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Prices:
+2025-04-16 20:30:12 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Price
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:30:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:30:12 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: High to Low
+2025-04-16 20:30:12 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-16 20:30:13 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:13 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-16 20:30:13 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-16 20:30:13 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Cleared compare list.
+2025-04-16 20:30:13 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Verify cleared list: You have no items to compare.
+2025-04-16 20:30:14 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-16 20:30:14 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:14 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-16 20:30:14 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on confirm checkout button.
+2025-04-16 20:30:15 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Selected 'Sort By' option: Price: High to Low
+2025-04-16 20:30:15 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:15 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:16 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:17 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Addresses' link.
+2025-04-16 20:30:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Delete Address' button.
+2025-04-16 20:30:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Alert handled successfully.
+2025-04-16 20:30:18 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:18 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:18 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:19 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-16 20:30:19 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:19 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-16 20:30:20 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Addresses' link and then 'Add New' button.
+2025-04-16 20:30:20 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:20 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-16 20:30:20 [TestNG-PoolService-1] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-16 20:30:20 [TestNG-PoolService-1] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-04-16 20:30:20 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-16 20:30:21 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-16 20:30:21 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:21 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:21 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:21 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-16 20:30:22 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-16 20:30:22 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-16 20:30:22 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on confirm checkout button.
+2025-04-16 20:30:22 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:22 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-16 20:30:22 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:23 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-16 20:30:23 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-16 20:30:23 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:24 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Order placed successfully: Your order has been successfully processed!
+2025-04-16 20:30:24 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:24 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:25 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Address form filled successfully with data: yuvaraj, r, yuvarajr@example.com
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-16 20:30:25 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Sub-Total:
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - 9540.00
+2025-04-16 20:30:25 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Shipping:
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Payment method additional fee:
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - 7.00
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Tax:
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Order Total:
+2025-04-16 20:30:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - 9547.00
+2025-04-16 20:30:26 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:27 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:27 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:30:27 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-16 20:30:27 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-16 20:30:27 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:28 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-16 20:30:28 [TestNG-PoolService-5] ERROR org.apache.logging.log4j.LogManager - Price filter not found: Under 25.00
+2025-04-16 20:30:28 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-16 20:30:28 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Filtered books list: Science
+A guide to elementary science
+67.00
+51.00
+Fiction
+Bestselling fiction
+35.00
+24.00
+Fiction EX
+Bestselling fiction
+35.00
+24.00
+Copy of Computing and Internet EX
+More Than 100 tips about computing and internet.
+30.00
+10.00
+2025-04-16 20:30:29 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Selected one-day pickup option.
+2025-04-16 20:30:29 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button in one-day pickup.
+2025-04-16 20:30:29 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:30 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-16 20:30:30 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-16 20:30:30 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-16 20:30:30 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-16 20:30:31 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-16 20:30:31 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-16 20:30:31 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on confirm checkout button.
+2025-04-16 20:30:31 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-16 20:30:32 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-16 20:30:32 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Order placed successfully: Your order has been successfully processed!
+2025-04-16 20:30:33 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Order placed successfully: Your order has been successfully processed!
+2025-04-16 20:30:33 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Save' button.
+2025-04-16 20:30:34 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-16 20:30:34 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi
+2025-04-16 20:30:34 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-16 20:30:34 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Subscription message: 
+2025-04-16 20:30:34 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-16 20:30:34 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-16 20:30:34 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-16 20:30:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-16 20:30:41 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-16 20:30:41 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-16 20:30:41 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:41 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Poll error message: 
+2025-04-16 20:30:42 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:42 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:42 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:42 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered password: testuser1
+2025-04-16 20:30:43 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered password: 
+2025-04-16 20:30:43 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:43 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:43 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:44 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Forgot password?' link.
+2025-04-16 20:30:44 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:44 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:44 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email: divvvv@gmail.com
+2025-04-16 20:30:44 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered email: 
+2025-04-16 20:30:44 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:45 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Forgot password?' link.
+2025-04-16 20:30:45 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Recover' button.
+2025-04-16 20:30:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:45 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:45 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:46 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Recover' button.
+2025-04-16 20:30:52 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:52 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:52 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:52 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:52 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:52 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:53 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:53 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:53 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:53 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:53 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:53 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:53 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:54 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:54 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Forgot password?' link.
+2025-04-16 20:30:54 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:54 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:54 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered email: @gmail.com
+2025-04-16 20:30:55 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:55 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Recover' button.
+2025-04-16 20:30:55 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:56 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:56 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:56 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:30:56 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Change Password' link.
+2025-04-16 20:30:56 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:56 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered old password.
+2025-04-16 20:30:56 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:57 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Orders' link.
+2025-04-16 20:30:57 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Change Password' link.
+2025-04-16 20:30:57 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Retrieved order number: Order Number: 1951372
+2025-04-16 20:30:57 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Back In Stock' link.
+2025-04-16 20:30:57 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Retrieved order date: Order Date: 4/10/2025 7:56:44 AM
+2025-04-16 20:30:57 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:30:57 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Retrieved 'Back In Stock' text: You are not currently subscribed to any Back In Stock notification lists
+2025-04-16 20:30:57 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered old password.
+2025-04-16 20:30:57 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:30:57 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:30:57 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered new password and confirmation.
+2025-04-16 20:30:58 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:30:58 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:30:58 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-16 20:30:58 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered new password and confirmation.
+2025-04-16 20:30:58 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Change Password' button.
+2025-04-16 20:30:58 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-16 20:30:58 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Order Details' link.
+2025-04-16 20:30:58 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:58 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Retrieved product name: 14.1-inch Laptop
+2025-04-16 20:30:59 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-16 20:30:59 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Change Password' button.
+2025-04-16 20:30:59 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:30:59 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:31:00 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on shopping cart link.
+2025-04-16 20:31:00 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Product in cart: 3rd Album
+2025-04-16 20:31:00 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'My Email' link.
+2025-04-16 20:31:00 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Reward Points' link.
+2025-04-16 20:31:00 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Retrieved current reward points: Your current balance is 0 reward points (0.00).
+2025-04-16 20:31:00 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Retrieved history reward points: History
+There is no balance history yet
+2025-04-16 20:31:00 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Updated cart by removing an item.
+2025-04-16 20:31:01 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Empty cart message: Your Shopping Cart is empty!
+2025-04-16 20:31:01 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Customer Info' link.
+2025-04-16 20:31:01 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Retrieved first name: 
+2025-04-16 20:31:01 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Retrieved last name: 
+2025-04-16 20:31:01 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Retrieved email: 
+2025-04-16 20:31:03 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-16 20:31:04 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:04 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:07 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Added item to wishlist and clicked on wishlist.
+2025-04-16 20:31:07 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Wishlist URL for sharing: http://demowebshop.tricentis.com/wishlist/4d3f16af-6021-437f-8830-3faf00003c2a
+2025-04-16 20:31:07 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Increased quantity to 10 and added to cart.
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Updated quantity in wishlist:
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Sub-Total:
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Shipping:
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Not required
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Not required
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Tax:
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Total:
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:31:08 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-16 20:31:08 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:08 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Current URL: https://demowebshop.tricentis.com/wishlist/4d3f16af-6021-437f-8830-3faf00003c2a
+2025-04-16 20:31:08 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:08 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:09 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-16 20:31:11 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added item to wishlist and clicked on wishlist.
+2025-04-16 20:31:11 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:31:12 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-16 20:31:12 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Added laptop to cart.
+2025-04-16 20:31:13 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added item to cart using checkboxes.
+2025-04-16 20:31:13 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Product in cart: 3rd Album
+2025-04-16 20:31:13 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' page.
+2025-04-16 20:31:13 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' page.
+2025-04-16 20:31:14 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' button.
+2025-04-16 20:31:14 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:31:15 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' button.
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Selected country: India and entered pincode: 637505
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Shipping estimate ways:
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Ground (0.00)
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Next Day Air (0.00)
+2025-04-16 20:31:15 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - 2nd Day Air (0.00)
+2025-04-16 20:31:15 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:31:15 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - In-Store Pickup (0.00)
+2025-04-16 20:31:15 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:31:15 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:31:15 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:31:15 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered friend's email: abcd@gmail.com and your email: abcggggg123@Gmail.com
+2025-04-16 20:31:15 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered friend's email: abcd and your email: abcggggg123@Gmail.com
+2025-04-16 20:31:16 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Send' button for email.
+2025-04-16 20:31:16 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Email send failed with message: Wrong email
+2025-04-16 20:31:16 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:31:16 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Send' button for email.
+2025-04-16 20:31:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Email sent successfully: Your message has been sent.
+2025-04-16 20:31:17 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:31:18 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-16 20:31:18 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-16 20:31:19 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-16 20:31:20 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-16 20:31:20 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Entered search text: Fiction
+2025-04-16 20:31:21 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered search text: Mobile
+2025-04-16 20:31:22 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:22 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered search text: mo
+2025-04-16 20:31:22 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Search result: Fiction
+35.00
+24.00
+2025-04-16 20:31:23 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:23 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - No result message: No products were found that matched your criteria.
+2025-04-16 20:31:23 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:23 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Search warning message: Search term minimum length is 3 characters
+2025-04-16 20:31:23 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered search text: 
+2025-04-16 20:31:24 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:24 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered search text: Camera
+2025-04-16 20:31:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Enabled advanced search.
+2025-04-16 20:31:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered search text: Camera
+2025-04-16 20:31:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Applied category filter.
+2025-04-16 20:31:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Applied camera category filter.
+2025-04-16 20:31:27 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-16 20:31:27 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-16 20:31:28 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Enabled advanced search.
+2025-04-16 20:31:28 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered price range: Min=100, Max=500
+2025-04-16 20:31:28 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied category filter.
+2025-04-16 20:31:28 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied cell phone category filter.
+2025-04-16 20:31:29 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-16 20:31:30 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-16 20:31:30 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-16 20:31:30 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered price range: Min=100, Max=500
+2025-04-16 20:31:33 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-16 20:31:33 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:33 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:33 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:33 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:33 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:34 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:34 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-16 20:31:34 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:34 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:34 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: , Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 123456
+2025-04-16 20:31:34 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:34 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: test1744815693939@example.com, Password: 123456, Confirm Password: 123456
+2025-04-16 20:31:35 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:35 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:35 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: , Email: yuv@gmail.com, Password: 123456, Confirm Password: 123456
+2025-04-16 20:31:35 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-16 20:31:35 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-16 20:31:35 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: ghana@, Password: 123456, Confirm Password: 123456
+2025-04-16 20:31:35 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:35 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:36 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: , Password: 123456, Confirm Password: 123456
+2025-04-16 20:31:36 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:36 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:37 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:37 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 20:31:37 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:37 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 20:31:37 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
+2025-04-16 20:31:37 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: , Confirm Password: 123456
+2025-04-16 20:31:37 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 20:31:37 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
