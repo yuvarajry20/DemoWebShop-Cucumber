@@ -15,6 +15,8 @@ import org.testng.Assert;
 import com.Pages.Checkoutpage;
 import com.Utilities.HelperClass;
 
+import lombok.experimental.Helper;
+
 public class CheckoutAction {
 	Checkoutpage CheckoutLocator=null;
 	
@@ -105,11 +107,13 @@ public class CheckoutAction {
 	}
 	public void getplacedorder()
 	{
-		System.out.println(CheckoutLocator.confirmplacedoreder.getText());
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+		WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
+		System.out.println(elements.getText());
 		String act="Your order has been successfully processed!";
-		String exp=CheckoutLocator.confirmplacedoreder.getText();
+		String exp=elements.getText();
 		Assert.assertEquals(act, exp);
-		System.out.println(CheckoutLocator.ordernumber.getText());
+		System.out.println(elements.getText());
 		
 	}
 	public void invoicepdfdownload()
