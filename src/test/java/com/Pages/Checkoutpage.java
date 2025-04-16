@@ -47,13 +47,13 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@id=\"shipping-buttons-container\"]//input")
 	public WebElement shipcontinuebtn;
 	
-	@FindBy(xpath="//div[@id=\"payment-method-buttons-container\"]//input")
+	@FindBy(xpath="//div[@class=\"buttons\"]//input[@class=\"button-1 payment-method-next-step-button\"]")
 	public WebElement paymentcontinue;
 	
 	@FindBy(xpath="//div[@id=\"payment-info-buttons-container\"]//input")
 	public WebElement paymentinfobtncontinue;
 	
-	@FindBy(xpath="//div[@id=\"confirm-order-buttons-container\"]//input")
+	@FindBy(xpath="//div[@id=\"confirm-order-buttons-container\"]//input[@class=\"button-1 confirm-order-next-step-button\"]")
 	public WebElement confirmbtnincheckout;
 	
 	@FindBy(xpath="//div[@class=\"section order-completed\"]//div[@class=\"title\"]//strong")
@@ -68,6 +68,30 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@class=\"page-title\"]//a[2]")
 	public WebElement pdfinvoice;
 	
+	@FindBy(xpath="//div[@class=\"section payment-method\"]//ul//li[3]//div//div[2]//input")
+	public WebElement creditcheckbox;
+	
+	
+	@FindBy(xpath="//select[@id=\"CreditCardType\" and @class=\"dropdownlists valid\"]")
+	public WebElement selectpaymentopt;
+	
+	@FindBy(xpath="//select[@id=\"CreditCardType\" and @class=\"dropdownlists valid\"]//option[1]")
+	public WebElement visaopt;
+	
+	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[2]//td[2]//input")
+	public WebElement cardholdername;
+	
+	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[3]//td[2]//input")
+	public WebElement cardnumber;
+	
+	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[4]//td[2]//select[1]")
+	public WebElement expirymonth;
+	
+	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[4]//td[2]//select[2]")
+	public WebElement year;
+	
+	@FindBy(xpath="//div[@class=\"section payment-info\"]//div//table//tbody//tr[5]//td[2]//input")
+	public WebElement cardcode;
 	
 	
 }
