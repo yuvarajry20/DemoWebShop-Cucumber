@@ -92,7 +92,6 @@ public class Login_ForgetPasswordStepDefinition {
          } else {
              throw new IllegalArgumentException("Unexpected result message: " + expectedResult);
          }
-
          WebElement resultMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(resultMessageLocator));
          assertEquals(expectedResult, resultMessage.getText());
     }

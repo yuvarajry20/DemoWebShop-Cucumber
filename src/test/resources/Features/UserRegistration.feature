@@ -11,10 +11,10 @@ Scenario Outline: Register on the website with valid and invalid fields
 
 Examples:
 |First name|Second name|Email            |Password|Confirm password|Result                      |
-|Yuvaraj   |R          |yuv@gmail.com    |123456  |123456          |Your registration completed |
+|Yuvaraj   |R          |yuvabbb@gmail.com |123456  |123456          |Your registration completed |
 |Yuvaraj   |R          |ghana@           |123456  |123456          |Wrong email                 |
-|          |R          |yuv@gmail.com    |123456  |123456          |First name is required      |
-|Yuvaraj   |           |yuv@gmail.com    |123456  |123456          |Second name is required     |
-|Yuvaraj   |R          |                 |123456  |123456          |Email is required           |
-|Yuvaraj   |R          |yuv@gmail.com    |        |123456          |Password is required        |
-|Yuvaraj   |R          |yuv@gmail.com    |123456  |                |Confirm password is required|
+|          |R          |yuv@gmail.com    |123456  |123456          |First name is required.     |
+|Yuvaraj   |           |yuv@gmail.com    |123456  |123456          |Last name is required.      |
+|Yuvaraj   |R          |                 |123456  |123456          |Email is required.          |
+|Yuvaraj   |R          |yuv@gmail.com    |        |123456          |The password and confirmation password do not match.       |
+|Yuvaraj   |R          |yuv@gmail.com    |123456  |                |Password is required.       |
