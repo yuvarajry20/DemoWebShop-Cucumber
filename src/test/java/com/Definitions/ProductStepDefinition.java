@@ -15,7 +15,7 @@ public class ProductStepDefinition {
 	public void the_user_is_on_the_home_page() 
 	{
 		HelperClass.openPage("https://demowebshop.tricentis.com/");
-		//objProductAction.login();
+		
 		
 		
 	}

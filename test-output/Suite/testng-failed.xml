@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" data-provider-thread-count="12" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="com.Runner.runnerTestNG">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 8 40 10 11 12 13 14 15"/>
+<<<<<<< HEAD
+=======
+          <include name="runScenario" invocation-numbers="8 10 11 12 13 14 15"/>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="32 8 10 11 12 13 14 15"/>
         </methods>
       </class> <!-- com.Runner.runnerTestNG -->
     </classes>

@@ -57,13 +57,13 @@ public class SearchStepDefinition {
 	    @Then("a message that {string} should be displayed")
 	    public void a_message_that_should_be_displayed(String expectedMessage) {
 	        try {
-	            // Check if an alert is present
+	            
 	            Alert alert = HelperClass.getDriver().switchTo().alert();
 	            String actualMessage = alert.getText();
-	            alert.accept(); // Accept the alert
+	            alert.accept(); 
 	            Assert.assertEquals(actualMessage.trim(), expectedMessage);
 	        } catch (NoAlertPresentException e) {
-	            // If no alert is present, check for other messages
+	            
 	            String actualMessage = searchaction.getRelevantSearchMessage(expectedMessage);
 	            Assert.assertEquals(actualMessage.trim(), expectedMessage);
 	        }
