@@ -349,3 +349,31 @@ There is no balance history yet
 2025-04-16 16:19:30 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
 2025-04-16 16:19:30 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: , Confirm Password: 123456
 2025-04-16 16:19:31 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:11 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:11 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' link.
+2025-04-16 16:40:12 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
+2025-04-16 16:40:12 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: , Confirm Password: 123456
+2025-04-16 16:40:12 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
+2025-04-16 16:40:12 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: , Email: yuv@gmail.com, Password: 123456, Confirm Password: 123456
+2025-04-16 16:40:12 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: test1744801812068@example.com, Password: 123456, Confirm Password: 123456
+2025-04-16 16:40:12 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: ghana@, Password: 123456, Confirm Password: 123456
+2025-04-16 16:40:12 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: , Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 123456
+2025-04-16 16:40:12 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: , Password: 123456, Confirm Password: 123456
+2025-04-16 16:40:13 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:13 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:13 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:13 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:13 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:13 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 16:40:15 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
