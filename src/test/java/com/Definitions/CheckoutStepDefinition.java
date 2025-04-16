@@ -109,6 +109,7 @@ public void click_the_orders() {
 @When("click the invoice pdf")
 public void click_the_invoice_pdf() {
 	
+	HelperClass.getDriver().navigate().refresh();
 	 objcheckout.getplacedorder();
 	 objcheckout.invoicepdfdownload();
 
@@ -141,6 +142,7 @@ public void proceed_and_confirm_order() {
 
 @Then("the user should see the order code successfully")
 public void the_user_should_see_the_order_code_successfully() {
+	HelperClass.getDriver().navigate().refresh();
 	objcheckout.getplacedorder();
     objcheckout.invoicepdfdownload();
 }
