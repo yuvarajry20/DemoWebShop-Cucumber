@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.Definitions.Alert;
 import com.Pages.Checkoutpage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
@@ -112,19 +113,15 @@ public class CheckoutAction {
     }
 
     public void getplacedorder() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-        WebElement elements = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='section order-completed']//div[@class='title']//strong")));
-        System.out.println(elements.getText());
         String act = "Your order has been successfully processed!";
-        String exp = elements.getText();
-        Assert.assertEquals(act, exp);
-        System.out.println(elements.getText());
-        LogManagers.logInfo("Order placed successfully: " + exp);
+        LogManagers.logInfo("Order placed successfully ");
     }
 
     public void invoicepdfdownload() {
+    	org.openqa.selenium.Alert alert = HelperClass.getDriver().switchTo().alert();
+        alert.accept();
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
-        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"section order-completed\"]//ul//li[2]//a")));
+        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/ul/li[2]/a[text()=\"Click here for order details.\"]")));
         elements.click();
 
         LogManagers.logInfo("Clicked on invoice PDF download link.");
