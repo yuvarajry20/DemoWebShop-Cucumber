@@ -115,7 +115,11 @@ public class CheckoutAction {
 	public void invoicepdfdownload()
 	{
 		CheckoutLocator.invoiceclickhere.click();
+	}
+	public void pdfinvoiceclik()
+	{
 		CheckoutLocator.pdfinvoice.click();
+		
 	}
 	public void checkoutsteps()
 	{
@@ -127,7 +131,28 @@ public class CheckoutAction {
 			
 		}
 	}
-	
+	public void detailsinvoice()
+	{
+		List<WebElement> obj=HelperClass.getDriver().findElements(By.xpath("//table[@class=\"cart-total\"]//tbody//tr//td//span"));
+		for(WebElement a:obj)
+		{
+			System.out.println(a.getText());
+			
+		}
+	}
+	public void creditcardcheckbox()
+	{
+		CheckoutLocator.creditcheckbox.click();
+	}
+	public void creditvisacard(String name,String number,String expdate,String year,String code)
+	{
+		CheckoutLocator.cardholdername.sendKeys(name);
+		CheckoutLocator.cardnumber.sendKeys(number);
+		CheckoutLocator.expirymonth.sendKeys(expdate);
+		CheckoutLocator.year.sendKeys(year);
+		CheckoutLocator.cardcode.sendKeys(code);
+		
+	}
 	
 	
 	
