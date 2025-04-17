@@ -69,7 +69,7 @@ public class ReviewStepDefinitions {
 	}
     
 	@Given("I navigate to the gift cards page and click the product")
-	public void i_navigate_to_the_gift_cards_page_and_click_the_product() throws ElementNotFoundException {
+	public void i_navigate_to_the_gift_cards_page_and_click_the_product() {
 	    reviewAction.ClickGiftCategory();
 	}
 
@@ -79,7 +79,7 @@ public class ReviewStepDefinitions {
 	}
 
 	@When("I enter review {string}, {string} and click the rating value")
-	public void i_enter_review_and_click_the_rating_value(String title, String text) throws ElementNotFoundException {
+	public void i_enter_review_and_click_the_rating_value(String title, String text) {
 		reviewAction.clickAddReview();
 		reviewAction.enterReviewTitle(title);
 	    reviewAction.enterReviewText(text);
