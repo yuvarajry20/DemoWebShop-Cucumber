@@ -2,6 +2,7 @@ package com.Definitions;
 
 import org.openqa.selenium.WebDriver;
 
+import com.Actions.ElementNotFoundException;
 import com.Actions.LoginAction;
 import com.Actions.ReviewAction;
 import com.Utilities.HelperClass;
@@ -66,9 +67,9 @@ public class ReviewStepDefinitions {
 	    loginAction.clickLoginButton();
 
 	}
-
+    
 	@Given("I navigate to the gift cards page and click the product")
-	public void i_navigate_to_the_gift_cards_page_and_click_the_product() {
+	public void i_navigate_to_the_gift_cards_page_and_click_the_product() throws ElementNotFoundException {
 	    reviewAction.ClickGiftCategory();
 	}
 
@@ -78,7 +79,7 @@ public class ReviewStepDefinitions {
 	}
 
 	@When("I enter review {string}, {string} and click the rating value")
-	public void i_enter_review_and_click_the_rating_value(String title, String text) {
+	public void i_enter_review_and_click_the_rating_value(String title, String text) throws ElementNotFoundException {
 		reviewAction.clickAddReview();
 		reviewAction.enterReviewTitle(title);
 	    reviewAction.enterReviewText(text);
@@ -91,7 +92,7 @@ public class ReviewStepDefinitions {
 	}
 
 	@Then("I should see the error message {string}")
-	public void i_should_see_the_error_message(String expected) {
+	public void i_should_see_the_error_message(String expected) throws ElementNotFoundException {
 		if(expected.equals("Product review is successfully added.")) {
 			reviewAction.verifyReviewSubmitted();
 		}else if(expected.equals("Review title is required.")) {
