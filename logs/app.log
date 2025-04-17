@@ -8589,3 +8589,80 @@ Was this review helpful? Yes No (3/2)
 2025-04-16 22:15:48 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
 2025-04-16 22:15:49 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
 2025-04-16 22:15:49 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-16 23:27:17 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 23:27:24 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 23:27:24 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Position
+2025-04-16 23:27:26 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'Sort By' filter: Price: High to Low
+2025-04-16 23:27:28 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: A to Z
+2025-04-16 23:27:36 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'Display By' filter: 4
+2025-04-16 23:27:38 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: Z to A
+2025-04-16 23:27:41 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Applied 'View As' filter: List
+2025-04-16 23:27:45 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: Low to High
+2025-04-16 23:35:15 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-16 23:35:16 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - List of available books:
+2025-04-16 23:35:23 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Computing and Internet
+30.00
+10.00
+2025-04-16 23:35:23 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Copy of Computing and Internet EX
+30.00
+10.00
+2025-04-16 23:35:27 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Fiction
+35.00
+24.00
+2025-04-16 23:35:34 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Fiction EX
+35.00
+24.00
+2025-04-16 23:35:41 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Health Book
+27.00
+10.00
+2025-04-16 23:35:49 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - - Science
+67.00
+51.00
+2025-04-16 23:58:22 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-16 23:58:32 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-16 23:58:37 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Reviews' link.
+2025-04-16 23:58:38 [main] INFO  org.apache.logging.log4j.LogManager - Read reviews: test
+test
+From: Test | Date: 8/9/2016 9:03 AM
+Was this review helpful? Yes No (3/2)
+2025-04-16 23:59:20 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-16 23:59:25 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-16 23:59:30 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-16 23:59:35 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-16 23:59:35 [main] INFO  org.apache.logging.log4j.LogManager - Not logged in error message: Only registered users can write reviews
+2025-04-17 00:00:14 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-17 00:00:15 [main] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-17 00:00:23 [main] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-17 00:00:29 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-17 00:00:35 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-17 00:00:39 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-17 00:00:44 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-17 00:00:44 [main] INFO  org.apache.logging.log4j.LogManager - Entered review title: Demo
+2025-04-17 00:00:47 [main] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-17 00:00:47 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-17 00:00:51 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-17 00:00:53 [main] INFO  org.apache.logging.log4j.LogManager - Review submitted successfully: Product review is successfully added.
+2025-04-17 00:02:00 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-17 00:02:02 [main] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-17 00:02:03 [main] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-17 00:02:08 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-17 00:02:15 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-17 00:02:23 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-17 00:02:27 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-17 00:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Entered review title: 
+2025-04-17 00:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-17 00:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-17 00:02:32 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-17 00:02:32 [main] INFO  org.apache.logging.log4j.LogManager - Blank text error message: 
+2025-04-17 00:03:08 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-17 00:03:08 [main] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-17 00:03:11 [main] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-17 00:03:14 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-17 00:03:16 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-17 00:03:20 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-17 00:03:23 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-17 00:03:24 [main] INFO  org.apache.logging.log4j.LogManager - Entered review title: Test 1
+2025-04-17 00:03:26 [main] INFO  org.apache.logging.log4j.LogManager - Entered review text: 
+2025-04-17 00:03:26 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-17 00:03:32 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-17 00:03:35 [main] INFO  org.apache.logging.log4j.LogManager - Blank text error message: Review text is required.

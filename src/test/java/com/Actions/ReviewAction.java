@@ -1,6 +1,11 @@
 package com.Actions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.Pages.ReviewPage;
 import com.Utilities.HelperClass;
@@ -14,10 +19,18 @@ public class ReviewAction {
         PageFactory.initElements(HelperClass.getDriver(), reviewPage);
     }
 
+//    public void ClickGiftCategory() {
+//        reviewPage.GiftCategory.click();
+//        LogManagers.logInfo("Clicked on 'Gift Category' link.");
+//    }
+    
     public void ClickGiftCategory() {
-        reviewPage.GiftCategory.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        WebElement giftCategoryLink = wait.until(ExpectedConditions.elementToBeClickable(reviewPage.GiftCategory));
+        giftCategoryLink.click();
         LogManagers.logInfo("Clicked on 'Gift Category' link.");
     }
+
 
     public void clickGiftCard() {
         reviewPage.GiftCard.click();

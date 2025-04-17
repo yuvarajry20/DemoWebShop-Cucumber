@@ -66,7 +66,7 @@ public class ReviewStepDefinitions {
 	    loginAction.clickLoginButton();
 
 	}
-
+    
 	@Given("I navigate to the gift cards page and click the product")
 	public void i_navigate_to_the_gift_cards_page_and_click_the_product() {
 	    reviewAction.ClickGiftCategory();
