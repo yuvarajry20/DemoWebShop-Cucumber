@@ -121,9 +121,9 @@ public class ProductAction {
     }
 
     public void emailFriendButton() {
-    	JavascriptExecutor obj=(JavascriptExecutor)HelperClass.getDriver();
-    	WebElement element = HelperClass.getDriver().findElement(By.xpath("//input[@class='button-2 email-a-friend-button']"));
-    	obj.executeScript("arguments[0].click();", element);
+//    	JavascriptExecutor obj=(JavascriptExecutor)HelperClass.getDriver();
+//    	WebElement element = HelperClass.getDriver().findElement(By.xpath("//input[@class='button-2 email-a-friend-button']"));
+//    	obj.executeScript("arguments[0].click();", element);
         ProductPageLocator.emailfriendbtn.click();
         LogManagers.logInfo("Clicked on 'Email a friend' button.");
     }

@@ -38,7 +38,7 @@ public class Checkoutpage {
 	@FindBy(xpath="//*[@id=\"billing-address-select\"]/option[1]")
 	public WebElement option1;
 	
-	@FindBy(xpath="//div[@id=\"billing-buttons-container\"]//input")
+	@FindBy(xpath="//input[@class=\"button-1 new-address-next-step-button\"]")
 	public WebElement billcontinuebtn;
 	
 	@FindBy(xpath="//input[@id=\"PickUpInStore\"]")
