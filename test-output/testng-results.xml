@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="63" passed="58" failed="5" skipped="0">
+<testng-results ignored="0" total="63" passed="55" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-17T13:03:08 IST" name="Suite" finished-at="2025-04-17T13:05:54 IST" duration-ms="166250">
+  <suite started-at="2025-04-17T15:52:39 IST" name="Default suite" finished-at="2025-04-17T15:55:18 IST" duration-ms="159486">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-17T13:03:08 IST" name="Test" finished-at="2025-04-17T13:05:54 IST" duration-ms="166250">
+    <test started-at="2025-04-17T15:52:39 IST" name="Default test" finished-at="2025-04-17T15:55:18 IST" duration-ms="159486">
       <class name="com.Runner.runnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:08 IST" name="setUpClass" finished-at="2025-04-17T13:03:09 IST" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:39 IST" name="setUpClass" finished-at="2025-04-17T15:52:40 IST" duration-ms="832" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@63376bed]]>
+                <![CDATA[org.testng.TestRunner@62c3f556]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:29 IST" duration-ms="19758" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigate to checkout page Without clicking the terms & conditions"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout the product in the web Application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="67876" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:42 IST" duration-ms="62832" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,23 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:28 IST" duration-ms="19571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["View details of a specific book"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Book Product Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:44 IST" duration-ms="35379" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:09 IST" duration-ms="29540" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,71 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:49 IST" duration-ms="40181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checkout and download the invoice pdf"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout the product in the web Application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:54 IST" duration-ms="44763" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Apply filter options for books"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Book Product Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:30 IST" duration-ms="21193" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["checkout an item in the application"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout the product in the web Application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:46 IST" duration-ms="37024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Deleting the already present address"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validating Address Section"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:28 IST" duration-ms="19493" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:02 IST" duration-ms="22480" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +69,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:32 IST" duration-ms="22932" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:34 IST" duration-ms="54216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply filter options for books"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Product Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:05 IST" duration-ms="25384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to checkout page Without clicking the terms & conditions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the product in the web Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:18 IST" duration-ms="38628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Deleting the already present address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Address Section"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:09 IST" duration-ms="29274" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +133,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:54 IST" duration-ms="25349" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:02 IST" duration-ms="22930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View details of a specific book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Book Product Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:09 IST" duration-ms="29481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["checkout an item in the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the product in the web Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:05 IST" duration-ms="25427" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["checkout and download the invoice pdf"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the product in the web Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.Actions.CheckoutAction$ProductSearchException">
+            <message>
+              <![CDATA[Failed to search for product: laptop. Error: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10605a2bd884591cb52b6eb870f49387, sendKeysToElement {value=[Ljava.lang.CharSequence;@6489cf3d, id=f.58D525C57D18F38BC5E8C1CF2E352E8E.d.2E763A27BCFE1D72DBA59F2D1CC0C642.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62071/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10605a2bd884591cb52b6eb870f49387)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 10605a2bd884591cb52b6eb870f49387]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.Actions.CheckoutAction$ProductSearchException: Failed to search for product: laptop. Error: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10605a2bd884591cb52b6eb870f49387, sendKeysToElement {value=[Ljava.lang.CharSequence;@6489cf3d, id=f.58D525C57D18F38BC5E8C1CF2E352E8E.d.2E763A27BCFE1D72DBA59F2D1CC0C642.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62071/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10605a2bd884591cb52b6eb870f49387)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 10605a2bd884591cb52b6eb870f49387
+at com.Actions.CheckoutAction.searchAnItem(CheckoutAction.java:45)
+at com.Definitions.CheckoutStepDefinition.i_log_in_and_add_an_item_and_add_to_cart(CheckoutStepDefinition.java:27)
+at ✽.I log in and add an item and add to cart(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.Actions.CheckoutAction$ProductSearchException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:41 IST" duration-ms="38594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,44 +224,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.85): Your cart is empty
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57bef2d9e2e19cb63eb11c807c85e73a, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65317/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 57bef2d9e2e19cb63eb11c807c85e73a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.85): Your cart is empty
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57bef2d9e2e19cb63eb11c807c85e73a, refresh {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65317/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 57bef2d9e2e19cb63eb11c807c85e73a
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:1106)
-at com.Definitions.CheckoutStepDefinition.click_the_invoice_pdf(CheckoutStepDefinition.java:113)
-at ✽.click the invoice pdf(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:37)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:55 IST" duration-ms="26567" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:50 IST" duration-ms="47321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,7 +243,7 @@ at ✽.click the invoice pdf(file:///C:/Users/yuvar/DemoWebShop(Automation)/Demo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="48378" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:32 IST" duration-ms="26952" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -260,115 +256,44 @@ at ✽.click the invoice pdf(file:///C:/Users/yuvar/DemoWebShop(Automation)/Demo
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+          <exception class="com.Actions.CheckoutAction$ProductSearchException">
             <message>
-              <![CDATA[stale element reference: stale element not found
+              <![CDATA[Failed to search for product: laptop. Error: stale element reference: stale element not found
   (Session info: chrome=135.0.7049.85)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e2fc726ea485a3db7d7952d74c3372d3, clickElement {id=f.50326EE1FE3B67A0FE1E0C946FCD8DD8.d.3FC4FA55DEEFAB4EF2AE207F5C86FD09.e.283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65319/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e2fc726ea485a3db7d7952d74c3372d3)] -> xpath: //div[@id="shipping-buttons-container"]//input]
-Session ID: e2fc726ea485a3db7d7952d74c3372d3]]>
+Command: [685d4dadd6f894ff3e73720dc308d922, sendKeysToElement {value=[Ljava.lang.CharSequence;@3c4a79c6, id=f.77A0E81F2C7E772A500932C7276B3BFD.d.483963926A80010FFAEF6201DF014553.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62386/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (685d4dadd6f894ff3e73720dc308d922)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 685d4dadd6f894ff3e73720dc308d922]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+              <![CDATA[com.Actions.CheckoutAction$ProductSearchException: Failed to search for product: laptop. Error: stale element reference: stale element not found
   (Session info: chrome=135.0.7049.85)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e2fc726ea485a3db7d7952d74c3372d3, clickElement {id=f.50326EE1FE3B67A0FE1E0C946FCD8DD8.d.3FC4FA55DEEFAB4EF2AE207F5C86FD09.e.283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65319/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e2fc726ea485a3db7d7952d74c3372d3)] -> xpath: //div[@id="shipping-buttons-container"]//input]
-Session ID: e2fc726ea485a3db7d7952d74c3372d3
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-at com.Actions.CheckoutAction.shippingcontinue(CheckoutAction.java:102)
-at com.Definitions.CheckoutStepDefinition.click_the_checkout_button_and_proceed(CheckoutStepDefinition.java:158)
-at ✽.click the checkout button and proceed(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:52)
+Command: [685d4dadd6f894ff3e73720dc308d922, sendKeysToElement {value=[Ljava.lang.CharSequence;@3c4a79c6, id=f.77A0E81F2C7E772A500932C7276B3BFD.d.483963926A80010FFAEF6201DF014553.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62386/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (685d4dadd6f894ff3e73720dc308d922)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 685d4dadd6f894ff3e73720dc308d922
+at com.Actions.CheckoutAction.searchAnItem(CheckoutAction.java:45)
+at com.Definitions.CheckoutStepDefinition.i_log_in_and_add_an_item_and_add_to_cart(CheckoutStepDefinition.java:27)
+at ✽.I log in and add an item and add to cart(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- com.Actions.CheckoutAction$ProductSearchException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:03:53 IST" duration-ms="23425" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:07 IST" duration-ms="61665" status="FAIL">
           <params>
             <param index="0">
               <value>
                 <![CDATA["purchase an item and choose the two day shipping"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout the product in the web Application"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.85): Your cart is empty
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7593489a8ebc739fd3c8570e09ff367c, findElement {using=xpath, value=//*[@id="shippingoption_2"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65382/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7593489a8ebc739fd3c8570e09ff367c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your cart is empty}
-  (Session info: chrome=135.0.7049.85): Your cart is empty
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7593489a8ebc739fd3c8570e09ff367c, findElement {using=xpath, value=//*[@id="shippingoption_2"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65382/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7593489a8ebc739fd3c8570e09ff367c
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.Actions.CheckoutAction.paymentcontinuestepintwoday(CheckoutAction.java:195)
-at com.Definitions.CheckoutStepDefinition.select_the_two_day_shipping_as_two_day_air(CheckoutStepDefinition.java:212)
-at ✽.select the two day shipping as two Day Air(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:67)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="45093" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["user should click the store pick up after the shipping methods"]]>
               </value>
             </param>
             <param index="1">
@@ -385,9 +310,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [112dd8794c27e9a40d1ba7a5fe4802cc, findElement {using=xpath, value=//input[@class="button-1 new-address-next-step-button"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65381/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 112dd8794c27e9a40d1ba7a5fe4802cc]]>
+Command: [abbc1909cc77d73ce19d78a5acb42492, findElement {using=xpath, value=//input[@class="button-1 new-address-next-step-button"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62388/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abbc1909cc77d73ce19d78a5acb42492]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="button-1 new-address-next-step-button"]"}
@@ -396,9 +321,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [112dd8794c27e9a40d1ba7a5fe4802cc, findElement {using=xpath, value=//input[@class="button-1 new-address-next-step-button"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65381/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 112dd8794c27e9a40d1ba7a5fe4802cc
+Command: [abbc1909cc77d73ce19d78a5acb42492, findElement {using=xpath, value=//input[@class="button-1 new-address-next-step-button"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62388/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abbc1909cc77d73ce19d78a5acb42492
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -418,14 +343,60 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
 at com.Actions.CheckoutAction.billcontinuebtn(CheckoutAction.java:92)
 at com.Definitions.CheckoutStepDefinition.click_the_checkout_buttons_and_proceed(CheckoutStepDefinition.java:190)
-at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:74)
+at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:66)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:02 IST" duration-ms="17981" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:32 IST" duration-ms="23031" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user should click the store pick up after the shipping methods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the product in the web Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.Actions.CheckoutAction$ProductSearchException">
+            <message>
+              <![CDATA[Failed to search for product: laptop. Error: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49cf13fb84dc7d0cbfb1d5fde7479970, sendKeysToElement {value=[Ljava.lang.CharSequence;@21f6e057, id=f.2BD04EA44829EC8CD560C6E7CF4E3CB1.d.3C147CF87678CD955222E8654985A555.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62444}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62444/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (49cf13fb84dc7d0cbfb1d5fde7479970)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 49cf13fb84dc7d0cbfb1d5fde7479970]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.Actions.CheckoutAction$ProductSearchException: Failed to search for product: laptop. Error: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49cf13fb84dc7d0cbfb1d5fde7479970, sendKeysToElement {value=[Ljava.lang.CharSequence;@21f6e057, id=f.2BD04EA44829EC8CD560C6E7CF4E3CB1.d.3C147CF87678CD955222E8654985A555.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62444}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62444/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (49cf13fb84dc7d0cbfb1d5fde7479970)] -> xpath: //input[@id="small-searchterms"]]
+Session ID: 49cf13fb84dc7d0cbfb1d5fde7479970
+at com.Actions.CheckoutAction.searchAnItem(CheckoutAction.java:45)
+at com.Definitions.CheckoutStepDefinition.i_log_in_and_add_an_item_and_add_to_cart(CheckoutStepDefinition.java:27)
+at ✽.I log in and add an item and add to cart(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/CheckOut.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.Actions.CheckoutAction$ProductSearchException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:31 IST" duration-ms="22474" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -441,7 +412,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:02 IST" duration-ms="16056" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:31 IST" duration-ms="22414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -457,7 +428,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:02 IST" duration-ms="13166" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:43 IST" duration-ms="24716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -473,7 +444,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:03 IST" duration-ms="9094" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:47 IST" duration-ms="15142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -489,7 +460,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:03 IST" duration-ms="9082" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:41 IST" duration-ms="9263" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -505,7 +476,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:03 IST" duration-ms="9352" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:46 IST" duration-ms="13696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -521,7 +492,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:03:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:05 IST" duration-ms="9760" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:49 IST" duration-ms="17601" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -537,7 +508,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:19 IST" duration-ms="17129" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:59 IST" duration-ms="25154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -553,7 +524,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="14777" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:53:55 IST" duration-ms="14566" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -569,7 +540,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="14639" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:17 IST" duration-ms="36408" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -585,7 +556,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:17 IST" duration-ms="14141" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:00 IST" duration-ms="18084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -601,7 +572,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:19 IST" duration-ms="16391" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:15 IST" duration-ms="31649" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -617,7 +588,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:19 IST" duration-ms="15805" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:03 IST" duration-ms="17001" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -633,7 +604,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:19 IST" duration-ms="14244" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:09 IST" duration-ms="21925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,7 +620,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:41 IST" duration-ms="24306" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:09 IST" duration-ms="19024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -665,7 +636,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:40 IST" duration-ms="23225" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:15 IST" duration-ms="25413" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -681,7 +652,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:39 IST" duration-ms="22234" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:20 IST" duration-ms="25095" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -697,7 +668,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:39 IST" duration-ms="21637" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:53:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:19 IST" duration-ms="20294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -713,7 +684,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:39 IST" duration-ms="21820" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:18 IST" duration-ms="17199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -729,7 +700,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:39 IST" duration-ms="22109" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:21 IST" duration-ms="18411" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -745,7 +716,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:41 IST" duration-ms="22169" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:33 IST" duration-ms="26085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -761,7 +732,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:41 IST" duration-ms="22065" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:31 IST" duration-ms="22703" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -774,10 +745,56 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ad981f2cb7ef7ca5522828236e9bd8f, getElementText {id=f.1B6B5CE9E3D8A7F57B175EC1FBF0F0E8.d.F745D927ECD701E4654FA8BB7AC839A6.e.32}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63214/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5ad981f2cb7ef7ca5522828236e9bd8f)] -> xpath: //h2[@class="product-title"]]
+Session ID: 5ad981f2cb7ef7ca5522828236e9bd8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ad981f2cb7ef7ca5522828236e9bd8f, getElementText {id=f.1B6B5CE9E3D8A7F57B175EC1FBF0F0E8.d.F745D927ECD701E4654FA8BB7AC839A6.e.32}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63214/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5ad981f2cb7ef7ca5522828236e9bd8f)] -> xpath: //h2[@class="product-title"]]
+Session ID: 5ad981f2cb7ef7ca5522828236e9bd8f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+at com.Actions.ProductAction.getTitleOfProduct(ProductAction.java:41)
+at com.Definitions.ProductStepDefinition.see_the_product_title_and_the_product_description(ProductStepDefinition.java:34)
+at ✽.see the product title and the product description(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Product.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:39 IST" duration-ms="20012" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:34 IST" duration-ms="25645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -793,7 +810,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:04:40 IST" duration-ms="21039" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:34 IST" duration-ms="19621" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -809,7 +826,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:06 IST" duration-ms="27375" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:40 IST" duration-ms="25024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -825,7 +842,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:05 IST" duration-ms="25898" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:40 IST" duration-ms="23006" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -841,7 +858,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:04 IST" duration-ms="24923" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:39 IST" duration-ms="21282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -857,7 +874,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:05 IST" duration-ms="25842" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:40 IST" duration-ms="20335" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -870,10 +887,56 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06d7c95e48032cafb66f138308167f04, clickElement {id=f.F89B2D063FF4938CD484A926D5C38B35.d.4D7F388E9A7915776C594200CC5E099D.e.124}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63373}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63373/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06d7c95e48032cafb66f138308167f04)] -> xpath: //input[@class="button-2 product-box-add-to-cart-button"]]
+Session ID: 06d7c95e48032cafb66f138308167f04]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06d7c95e48032cafb66f138308167f04, clickElement {id=f.F89B2D063FF4938CD484A926D5C38B35.d.4D7F388E9A7915776C594200CC5E099D.e.124}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63373}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63373/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06d7c95e48032cafb66f138308167f04)] -> xpath: //input[@class="button-2 product-box-add-to-cart-button"]]
+Session ID: 06d7c95e48032cafb66f138308167f04
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at com.Actions.ProductAction.addLaptopCart(ProductAction.java:171)
+at com.Definitions.ProductStepDefinition.i_add_to_cart_the_laptop(ProductStepDefinition.java:151)
+at ✽.I add to cart the laptop(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Product.feature:65)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:03 IST" duration-ms="24015" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:44 IST" duration-ms="23753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -889,7 +952,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:05 IST" duration-ms="25077" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:45 IST" duration-ms="24541" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -905,7 +968,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="40984" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:59 IST" duration-ms="27822" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -921,23 +984,7 @@ at ✽.click the checkout buttons and proceed(file:///C:/Users/yuvar/DemoWebShop
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="40022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Submit review with valid and invalid inputs"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Review a product Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="40133" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:47 IST" duration-ms="14696" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -958,10 +1005,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ed9819c33aba2ca95aaa52d5f7b8a76, getElementText {id=f.4C71A03AD16F7B08C66F7F9750BA778C.d.6E9EE14A55C15BD0A087A05A81EB66A7.e.242}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50371/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9ed9819c33aba2ca95aaa52d5f7b8a76)] -> xpath: //span[@data-valmsg-for="AddProductReview.ReviewText"]]
-Session ID: 9ed9819c33aba2ca95aaa52d5f7b8a76]]>
+Command: [84ad268818fbcb94ac43029c496b004f, clickElement {id=f.0CADC322089215297651ECF3BAF58875.d.4F5EFA1F6F75A234866690EA2CCA6FA1.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63558/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (84ad268818fbcb94ac43029c496b004f)] -> xpath: (//a[contains(text(),"Gift Cards")])[3]]
+Session ID: 84ad268818fbcb94ac43029c496b004f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
@@ -970,10 +1017,72 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ed9819c33aba2ca95aaa52d5f7b8a76, getElementText {id=f.4C71A03AD16F7B08C66F7F9750BA778C.d.6E9EE14A55C15BD0A087A05A81EB66A7.e.242}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50371/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9ed9819c33aba2ca95aaa52d5f7b8a76)] -> xpath: //span[@data-valmsg-for="AddProductReview.ReviewText"]]
-Session ID: 9ed9819c33aba2ca95aaa52d5f7b8a76
+Command: [84ad268818fbcb94ac43029c496b004f, clickElement {id=f.0CADC322089215297651ECF3BAF58875.d.4F5EFA1F6F75A234866690EA2CCA6FA1.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63558/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (84ad268818fbcb94ac43029c496b004f)] -> xpath: (//a[contains(text(),"Gift Cards")])[3]]
+Session ID: 84ad268818fbcb94ac43029c496b004f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at com.Actions.ReviewAction.ClickGiftCategory(ReviewAction.java:23)
+at com.Definitions.ReviewStepDefinitions.i_navigate_to_the_gift_cards_page_and_click_the_product(ReviewStepDefinitions.java:73)
+at ✽.I navigate to the gift cards page and click the product(file:///C:/Users/yuvar/DemoWebShop(Automation)/DemoWebShop-Cucumber/src/test/resources/Features/Review.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:04 IST" duration-ms="29610" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit review with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Review a product Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5476ed6dda7cf0a3ee4d7ccd6872122a, getElementText {id=f.D2E33C634295CEEB4EE60AC49E660ED0.d.2B18E5210498EF7E2613166FBA01FD29.e.274}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63596/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5476ed6dda7cf0a3ee4d7ccd6872122a)] -> xpath: //span[@data-valmsg-for="AddProductReview.ReviewText"]]
+Session ID: 5476ed6dda7cf0a3ee4d7ccd6872122a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5476ed6dda7cf0a3ee4d7ccd6872122a, getElementText {id=f.D2E33C634295CEEB4EE60AC49E660ED0.d.2B18E5210498EF7E2613166FBA01FD29.e.274}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63596/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5476ed6dda7cf0a3ee4d7ccd6872122a)] -> xpath: //span[@data-valmsg-for="AddProductReview.ReviewText"]]
+Session ID: 5476ed6dda7cf0a3ee4d7ccd6872122a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -999,7 +1108,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:04:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:04 IST" duration-ms="22829" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:55 IST" duration-ms="20400" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1015,7 +1124,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="18354" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:54 IST" duration-ms="15112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1031,7 +1140,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="16886" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:06 IST" duration-ms="26006" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1047,7 +1156,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="16878" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:55 IST" duration-ms="14414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1063,7 +1172,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:21 IST" duration-ms="16523" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:54:59 IST" duration-ms="18713" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1079,7 +1188,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:22 IST" duration-ms="17075" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:08 IST" duration-ms="23809" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1095,7 +1204,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:22 IST" duration-ms="16843" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:06 IST" duration-ms="20678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1111,7 +1220,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="26770" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:06 IST" duration-ms="18772" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1127,7 +1236,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:51 IST" duration-ms="30134" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:11 IST" duration-ms="16526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1143,7 +1252,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="12449" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:11 IST" duration-ms="16018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1159,7 +1268,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="12072" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:10 IST" duration-ms="15655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1175,7 +1284,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="12030" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:11 IST" duration-ms="11820" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1191,7 +1300,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="12279" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:54:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:11 IST" duration-ms="11655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1207,7 +1316,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="12011" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:55:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:14 IST" duration-ms="10345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1223,7 +1332,7 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T13:05:33 IST" duration-ms="11669" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:55:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-17T15:55:14 IST" duration-ms="8362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1239,11 +1348,11 @@ at ✽.I should see the error message "Review text is required."(file:///C:/User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T13:05:51 IST" name="tearDownClass" finished-at="2025-04-17T13:05:54 IST" duration-ms="3313" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-04-17T15:55:14 IST" name="tearDownClass" finished-at="2025-04-17T15:55:18 IST" duration-ms="4021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.Runner.runnerTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
