@@ -60,18 +60,21 @@ public class SearchAction {
             String actualMessage = wait.until(ExpectedConditions.visibilityOf(searchPage.noResultMessage)).getText();
             LogManagers.logInfo("No result message: " + actualMessage);
             return actualMessage;
-        } else if (expectedMessage.equals("Search term minimum length is 3 characters")) {
+        }
+        else if (expectedMessage.equals("Search term minimum length is 3 characters")) {
             String actualMessage = wait.until(ExpectedConditions.visibilityOf(searchPage.searchWarning)).getText();
             LogManagers.logInfo("Search warning message: " + actualMessage);
             return actualMessage;
-        } else if (expectedMessage.equals("Please enter some search keyword")) {
+        }
+        else if (expectedMessage.equals("Please enter some search keyword")) {
             try {
                 Alert alert = HelperClass.getDriver().switchTo().alert();
                 String actualMessage = alert.getText();
                 alert.accept();
                 LogManagers.logInfo("Alert message: " + actualMessage);
                 return actualMessage;
-            } catch (NoAlertPresentException e) {
+            }
+            catch (NoAlertPresentException e) {
                 LogManagers.logError("No alert present", e);
                 return "No alert present";
             }
