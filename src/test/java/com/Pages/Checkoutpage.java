@@ -53,7 +53,8 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@class=\"buttons\"]//input[@class=\"button-1 payment-method-next-step-button\"]")
 	public WebElement paymentcontinue;
 	
-	@FindBy(xpath="//div[@id=\"payment-info-buttons-container\"]//input")
+	//@FindBy(xpath="//div[@id=\"payment-info-buttons-container\"]//input")
+	@FindBy(xpath="//input[@class=\"button-1 payment-info-next-step-button\"]")
 	public WebElement paymentinfobtncontinue;
 	
 	@FindBy(xpath="//div[@id=\"confirm-order-buttons-container\"]//input[@class=\"button-1 confirm-order-next-step-button\"]")

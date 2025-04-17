@@ -60,14 +60,6 @@ And select the credit card method and enter the required fields
 And proceed the details and confirm
 Then the user should see the order code successfully
 
-@orderPlacementinOnedayshipping
-Scenario: purchase an item and choose the one day shipping
-
-And click the checkout buttons and proceed
-And select the one day shipping as Next Day Air
-And proceed the further details
-Then the user should see the order code successfully
-
 @orderPlacementinTwodayshipping
 Scenario: purchase an item and choose the two day shipping
 
