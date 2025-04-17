@@ -3,6 +3,7 @@ package com.Actions;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -120,6 +121,9 @@ public class ProductAction {
     }
 
     public void emailFriendButton() {
+    	JavascriptExecutor obj=(JavascriptExecutor)HelperClass.getDriver();
+    	WebElement element = HelperClass.getDriver().findElement(By.xpath("//input[@class='button-2 email-a-friend-button']"));
+    	obj.executeScript("arguments[0].click();", element);
         ProductPageLocator.emailfriendbtn.click();
         LogManagers.logInfo("Clicked on 'Email a friend' button.");
     }

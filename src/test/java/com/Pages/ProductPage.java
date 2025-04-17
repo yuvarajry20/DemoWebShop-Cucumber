@@ -56,7 +56,7 @@ public class ProductPage
 	@FindBy(xpath="//tbody/tr/td[4]/a")
 	public WebElement productnameinwishlist;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div[2]/p[2]/a")
+	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div/div/div[2]/div[2]/p[2]/a")
 	public WebElement urlforwishlist;
 	
 	@FindBy(xpath="//input[@class=\"qty-input\"]")
@@ -65,7 +65,7 @@ public class ProductPage
 	@FindBy(xpath = "//input[@class=\"button-1 add-to-cart-button\"]")
 	public WebElement addtocartinqty;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[3]/div/div/div[3]/div[2]/div/div[2]/h2/a")
+	@FindBy(xpath="//h2[@class=\"product-title\"]//a[text()=\"$25 Virtual Gift Card\"]")
 	public WebElement giftcardpage;
 	
 	@FindBy(xpath="//input[@class=\"button-2 email-a-friend-button\"]")
@@ -80,13 +80,13 @@ public class ProductPage
 	@FindBy(xpath="//input[@class=\"button-1 send-email-a-friend-button\"]")
 	public WebElement sendmail;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[2]")
+	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[2]")
 	public WebElement successfulsentmail;
 	
 	@FindBy(xpath="//span[@class=\"field-validation-error\"]//span")
 	public WebElement invalidemailmsg;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div[1]/form/table/tbody/tr/td[2]/input")
+	@FindBy(xpath="//form//table//tbody//tr//td[2]//input")
 	public WebElement addtocartcheckbox;
 	
 	@FindBy(xpath="//input[@class=\"button-2 wishlist-add-to-cart-button\"]")

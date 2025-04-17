@@ -99,9 +99,6 @@ public class CheckoutAction {
     }
 
     public void paymentinfocontinue() {
-//    	WebElement el = HelperClass.getDriver().findElement(By.xpath("//div[@id=\"payment-info-buttons-container\"]//input"));
-//        Actions builder = new Actions(HelperClass.getDriver());
-//        builder.moveToElement(el).click(el).perform();
         CheckoutLocator.paymentinfobtncontinue.click();
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
