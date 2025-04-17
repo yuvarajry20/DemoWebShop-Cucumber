@@ -31,10 +31,20 @@ public class CheckoutAction {
         LogManagers.logInfo("Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234");
     }
 
-    public void serachanitem(String product) {
-        CheckoutLocator.serachfields.sendKeys(product + Keys.ENTER);
-        LogManagers.logInfo("Searched for product: " + product);
+    public class ProductSearchException extends Exception {
+        public ProductSearchException(String message) {
+            super(message);
+        }
     }
+
+        public void searchAnItem(String product) throws ProductSearchException {
+            try {
+                CheckoutLocator.serachfields.sendKeys(product + Keys.ENTER);
+                LogManagers.logInfo("Searched for product: " + product);
+            } catch (Exception e) {
+                throw new ProductSearchException("Failed to search for product: " + product + ". Error: " + e.getMessage());
+            }
+        }
 
     public void addtocartanitem() {
         CheckoutLocator.addtocartlap.click();

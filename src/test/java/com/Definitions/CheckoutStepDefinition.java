@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.Keys;
 
 import com.Actions.CheckoutAction;
+import com.Actions.CheckoutAction.ProductSearchException;
 import com.Utilities.HelperClass;
 
 import io.cucumber.java.en.*;
@@ -19,11 +20,11 @@ public void the_user_is_on_the_web_application() {
 }
 
 @When("I log in and add an item and add to cart")
-public void i_log_in_and_add_an_item_and_add_to_cart(io.cucumber.datatable.DataTable dataTable) {
+public void i_log_in_and_add_an_item_and_add_to_cart(io.cucumber.datatable.DataTable dataTable) throws ProductSearchException {
 	objcheckout.login();
 	List<String> objList=dataTable.asList(String.class);
 	String productName=objList.get(0);
-	objcheckout.serachanitem(productName);
+	objcheckout.searchAnItem(productName);
 	objcheckout.addtocartanitem();
 	
 }
