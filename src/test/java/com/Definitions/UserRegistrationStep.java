@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.Actions.UserRegistrationAction;
+import com.Actions.UserRegistrationException;
 import com.Utilities.HelperClass;
 
 import io.cucumber.java.en.Then;
@@ -13,19 +14,19 @@ public class UserRegistrationStep {
 	WebDriver driver = HelperClass.getDriver();
 	UserRegistrationAction userRegistrationAction=new UserRegistrationAction();
 	@When("I click on register")
-	public void i_click_on_register() {
+	public void i_click_on_register() throws UserRegistrationException {
 	    // Write code here that turns the phrase above into concrete actions
 	    userRegistrationAction.clickOnRegisterLink();
 	}
 
 	@When("I choose gender")
-	public void i_choose_gender() {
+	public void i_choose_gender() throws UserRegistrationException {
 	    // Write code here that turns the phrase above into concrete actions
 	    userRegistrationAction.selectGender();
 	}
 
 	@When("I enter {string},{string},{string},{string},{string} in the corresponding field")
-	public void i_enter_in_the_corresponding_field(String string, String string2, String string3, String string4, String string5) {
+	public void i_enter_in_the_corresponding_field(String string, String string2, String string3, String string4, String string5) throws UserRegistrationException {
 	    // Write code here that turns the phrase above into concrete actions
 		if(string3.contains("yuvabbb@gmail.com")) {
 			String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
@@ -37,7 +38,7 @@ public class UserRegistrationStep {
 	}
 
 	@When("I click on the register button")
-	public void i_click_on_the_register_button() {
+	public void i_click_on_the_register_button() throws UserRegistrationException {
 	    // Write code here that turns the phrase above into concrete actions
 	    userRegistrationAction.clickOnRegisterButton();
 	}
