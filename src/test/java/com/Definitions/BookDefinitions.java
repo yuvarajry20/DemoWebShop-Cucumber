@@ -76,11 +76,11 @@ public class BookDefinitions {
 	        String option = row.get("Sort By"); 
 	        bookAction.applySortByOption(option);
 
-	        try {
-	            Thread.sleep(1000);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
+//	        try {
+//	            Thread.sleep(1000);
+//	        } catch (InterruptedException e) {
+//	            e.printStackTrace();
+//	        }
 	    }
 	}
 

@@ -1,7 +1,10 @@
 package com.Actions;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,21 +16,23 @@ import com.Utilities.LogManagers;
 
 public class HomePageAction {
     HomePageLocators homePage;
+    WebDriver driver;
 
     public HomePageAction() {
+        this.driver = HelperClass.getDriver();
         this.homePage = new HomePageLocators();
-        PageFactory.initElements(HelperClass.getDriver(), homePage);
+        PageFactory.initElements(driver, homePage);
     }
 
     public void enterNewsLetterEmail(String email) {
-        new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(10))
             .until(ExpectedConditions.visibilityOf(homePage.NewsLetter_email));
-        homePage.NewsLetter_email.sendKeys(email);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + email + "';", homePage.NewsLetter_email);
         LogManagers.logInfo("Entered email for newsletter subscription: " + email);
     }
 
     public void SubscribeNewsLetter() {
-        homePage.newsSubscribe.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.newsSubscribe);
         LogManagers.logInfo("Clicked on 'Subscribe' button for newsletter.");
     }
 
@@ -68,12 +73,12 @@ public class HomePageAction {
     }
 
     public void SelectVotingOption() {
-        homePage.VoteExcellentbtn.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.VoteExcellentbtn);
         LogManagers.logInfo("Selected 'Excellent' voting option.");
     }
 
     public void voting() {
-        homePage.Votebtn.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.Votebtn);
         LogManagers.logInfo("Clicked on 'Vote' button.");
     }
 

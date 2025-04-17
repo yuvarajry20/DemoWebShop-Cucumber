@@ -111,7 +111,7 @@ public class HelperClass {
             WebDriver driver = null;
             if (this.web.equalsIgnoreCase("Chrome")) {
             	ChromeOptions opt=new ChromeOptions();
-            	opt.addArguments("--headless");
+            	//opt.addArguments("--headless");
             	opt.addArguments("--disable-web-security");
             	opt.addArguments("--no-proxy-server");
 
