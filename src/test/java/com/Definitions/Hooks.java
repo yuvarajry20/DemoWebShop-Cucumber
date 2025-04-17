@@ -1,5 +1,9 @@
 package com.Definitions;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import com.Utilities.HelperClass;
@@ -14,7 +18,14 @@ public class Hooks {
 		HelperClass.setupDriver();;
 	}
 	@After
-	public static void teardown(Scenario scenario) {
+	public static void teardown(Scenario scenario) throws IOException {
+		  if (scenario.isFailed()) {
+	            // Take screenshot if scenario fails
+	        	File srcFile = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.FILE);
+	        	File destFile = new File("screenshots/" + scenario.getName() + ".png");
+	        	FileUtils.copyFile(srcFile, destFile);
+	        }
+
 		HelperClass.teardown();
 	}
 }
