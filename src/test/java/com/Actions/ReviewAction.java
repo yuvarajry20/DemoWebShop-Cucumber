@@ -1,17 +1,22 @@
 package com.Actions;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Pages.ReviewPage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
+import com.Actions.ElementNotFoundException;
 
 public class ReviewAction {
     ReviewPage reviewPage;
+    WebDriver driver;
 
     public ReviewAction() {
+        this.driver = HelperClass.getDriver();
         this.reviewPage = new ReviewPage();
-        PageFactory.initElements(HelperClass.getDriver(), reviewPage);
+        PageFactory.initElements(driver, reviewPage);
     }
 
     public void ClickGiftCategory() {
@@ -66,20 +71,32 @@ public class ReviewAction {
         LogManagers.logInfo("Clicked on 'Rating' button.");
     }
 
-    public void blankTitleError() {
-        String errorText = reviewPage.blanktitle.getText();
-        System.out.println(errorText);
-        LogManagers.logInfo("Blank title error message: " + errorText);
+    public void blankTitleError() throws ElementNotFoundException {
+        if (reviewPage.blanktitle != null) {
+            String errorText = reviewPage.blanktitle.getText();
+            System.out.println(errorText);
+            LogManagers.logInfo("Blank title error message: " + errorText);
+        } else {
+            throw new ElementNotFoundException("Blank Title error message element not found.");
+        }
     }
 
-    public void blankTextError() {
-        String errorText = reviewPage.blanktext.getText();
-        System.out.println(errorText);
-        LogManagers.logInfo("Blank text error message: " + errorText);
+    public void blankTextError() throws ElementNotFoundException {
+        if (reviewPage.blanktext != null) {
+            String errorText = reviewPage.blanktext.getText();
+            System.out.println(errorText);
+            LogManagers.logInfo("Blank text error message: " + errorText);
+        } else {
+            throw new ElementNotFoundException("Blank Text error message element not found.");
+        }
     }
 
-    public void verifyReviewSubmitted() {
-        String successText = reviewPage.ReviewSuccess.getText();
-        LogManagers.logInfo("Review submitted successfully: " + successText);
+    public void verifyReviewSubmitted() throws ElementNotFoundException {
+        if (reviewPage.ReviewSuccess != null) {
+            String successText = reviewPage.ReviewSuccess.getText();
+            LogManagers.logInfo("Review submitted successfully: " + successText);
+        } else {
+            throw new ElementNotFoundException("Review Success message element not found.");
+        }
     }
 }
