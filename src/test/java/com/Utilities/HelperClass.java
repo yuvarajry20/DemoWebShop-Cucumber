@@ -112,9 +112,6 @@ public class HelperClass {
             if (this.web.equalsIgnoreCase("Chrome")) {
             	ChromeOptions opt=new ChromeOptions();
             	opt.addArguments("--headless");
-            	opt.addArguments("--disable-web-security");
-            	opt.addArguments("--no-proxy-server");
-
             	Map<String, Object> prefs = new HashMap<String, Object>();
             	prefs.put("credentials_enable_service", false);
             	prefs.put("profile.password_manager_enabled", false);
