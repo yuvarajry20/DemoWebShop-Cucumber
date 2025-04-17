@@ -59,6 +59,7 @@ public class CheckoutAction {
     }
 
     public void selectcheckout() {
+    	
         CheckoutLocator.checkoutbtn.click();
         LogManagers.logInfo("Clicked on checkout button.");
     }
