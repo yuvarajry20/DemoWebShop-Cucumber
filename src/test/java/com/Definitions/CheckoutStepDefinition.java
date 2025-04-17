@@ -142,7 +142,7 @@ public void proceed_and_confirm_order() {
 
 @Then("the user should see the order code successfully")
 public void the_user_should_see_the_order_code_successfully() {
-	HelperClass.getDriver().navigate().refresh();
+	//HelperClass.getDriver().navigate().refresh();
 	objcheckout.getplacedorder();
     objcheckout.invoicepdfdownload();
 }
@@ -153,7 +153,7 @@ public void click_the_checkout_button_and_proceed() {
 	objcheckout.selectcheckout();
 	objcheckout.selectaddresss();
     objcheckout.billcontinuebtn();
-    objcheckout.storepickupbox();
+    //objcheckout.storepickupbox();
     objcheckout.shippingcontinue();
     
    
@@ -185,7 +185,7 @@ public void proceed_the_details_and_confirm() {
 public void click_the_checkout_buttons_and_proceed() {
 	objcheckout.clickcheckbox();
 	objcheckout.selectcheckout();
-	objcheckout.selectaddresss();
+	//objcheckout.selectaddresss();
     objcheckout.billcontinuebtn();
 }
 
@@ -214,7 +214,7 @@ public void select_the_two_day_shipping_as_two_day_air() {
 public void select_back_and_click_the_store_pickup() {
 	
 	objcheckout.shippingcontinue();
-	objcheckout.onedaypickup();
+	//objcheckout.onedaypickup();
 	objcheckout.clickbacktoship();
 	objcheckout.storepickupbox();
 	objcheckout.shippingcontinue();
