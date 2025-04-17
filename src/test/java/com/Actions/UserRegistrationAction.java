@@ -14,32 +14,48 @@ public class UserRegistrationAction {
         PageFactory.initElements(HelperClass.getDriver(), userRegistrationPage);
     }
 
-    public void clickOnRegisterLink() {
-        userRegistrationPage.registerLink.click();
-        LogManagers.logInfo("Clicked on 'Register' link.");
+    public void clickOnRegisterLink() throws UserRegistrationException {
+        try {
+            userRegistrationPage.registerLink.click();
+            LogManagers.logInfo("Clicked on 'Register' link.");
+        } catch (Exception e) {
+            throw new UserRegistrationException("Failed to click on 'Register' link.");
+        }
     }
 
-    public void selectGender() {
-        userRegistrationPage.clickMale.click();
-        LogManagers.logInfo("Selected 'Male' gender.");
+    public void selectGender() throws UserRegistrationException {
+        try {
+            userRegistrationPage.clickMale.click();
+            LogManagers.logInfo("Selected 'Male' gender.");
+        } catch (Exception e) {
+            throw new UserRegistrationException("Failed to select 'Male' gender.");
+        }
     }
 
-    public void enterRegistrationDetails(String firstName, String lastName, String email, String password, String confirmPassword) {
-        userRegistrationPage.FirstName.sendKeys(firstName);
-        userRegistrationPage.LastName.sendKeys(lastName);
-        userRegistrationPage.Email.sendKeys(email);
-        userRegistrationPage.password.sendKeys(password);
-        userRegistrationPage.confirmPassword.sendKeys(confirmPassword);
-        LogManagers.logInfo("Entered registration details: " + 
-                            "First Name: " + firstName + 
-                            ", Last Name: " + lastName + 
-                            ", Email: " + email + 
-                            ", Password: " + password + 
-                            ", Confirm Password: " + confirmPassword);
+    public void enterRegistrationDetails(String firstName, String lastName, String email, String password, String confirmPassword) throws UserRegistrationException {
+        try {
+            userRegistrationPage.FirstName.sendKeys(firstName);
+            userRegistrationPage.LastName.sendKeys(lastName);
+            userRegistrationPage.Email.sendKeys(email);
+            userRegistrationPage.password.sendKeys(password);
+            userRegistrationPage.confirmPassword.sendKeys(confirmPassword);
+            LogManagers.logInfo("Entered registration details: " + 
+                                "First Name: " + firstName + 
+                                ", Last Name: " + lastName + 
+                                ", Email: " + email + 
+                                ", Password: " + password + 
+                                ", Confirm Password: " + confirmPassword);
+        } catch (Exception e) {
+            throw new UserRegistrationException("Failed to enter registration details.");
+        }
     }
 
-    public void clickOnRegisterButton() {
-        userRegistrationPage.registerButton.click();
-        LogManagers.logInfo("Clicked on 'Register' button.");
+    public void clickOnRegisterButton() throws UserRegistrationException {
+        try {
+            userRegistrationPage.registerButton.click();
+            LogManagers.logInfo("Clicked on 'Register' button.");
+        } catch (Exception e) {
+            throw new UserRegistrationException("Failed to click on 'Register' button.");
+        }
     }
 }

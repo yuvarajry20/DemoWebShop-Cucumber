@@ -111,10 +111,14 @@ public class HelperClass {
             WebDriver driver = null;
             if (this.web.equalsIgnoreCase("Chrome")) {
             	ChromeOptions opt=new ChromeOptions();
+<<<<<<< HEAD
             	//opt.addArguments("--headless");
             	opt.addArguments("--disable-web-security");
             	opt.addArguments("--no-proxy-server");
 
+=======
+            	opt.addArguments("--headless");
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
             	Map<String, Object> prefs = new HashMap<String, Object>();
             	prefs.put("credentials_enable_service", false);
             	prefs.put("profile.password_manager_enabled", false);

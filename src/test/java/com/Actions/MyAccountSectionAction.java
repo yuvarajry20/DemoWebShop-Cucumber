@@ -4,6 +4,8 @@ import com.Pages.MyAccountSectionPage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountSectionAction {
@@ -38,7 +40,9 @@ public class MyAccountSectionAction {
     }
 
     public void clickOrders() {
-        accountPage.clickorders.click();
+        WebElement element = accountPage.clickorders;
+        JavascriptExecutor executor = (JavascriptExecutor) HelperClass.getDriver();
+        executor.executeScript("arguments[0].click();", element);
         LogManagers.logInfo("Clicked on 'Orders' link.");
     }
 
@@ -94,7 +98,9 @@ public class MyAccountSectionAction {
     }
 
     public void clickChangePassword() {
-        accountPage.clickChangePassword.click();
+        WebElement element = accountPage.clickChangePassword;
+        JavascriptExecutor executor = (JavascriptExecutor) HelperClass.getDriver();
+        executor.executeScript("arguments[0].click();", element);
         LogManagers.logInfo("Clicked on 'Change Password' link.");
     }
 

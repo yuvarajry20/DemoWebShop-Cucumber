@@ -31,10 +31,20 @@ public class CheckoutAction {
         LogManagers.logInfo("Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234");
     }
 
-    public void serachanitem(String product) {
-        CheckoutLocator.serachfields.sendKeys(product + Keys.ENTER);
-        LogManagers.logInfo("Searched for product: " + product);
+    public class ProductSearchException extends Exception {
+        public ProductSearchException(String message) {
+            super(message);
+        }
     }
+
+        public void searchAnItem(String product) throws ProductSearchException {
+            try {
+                CheckoutLocator.serachfields.sendKeys(product + Keys.ENTER);
+                LogManagers.logInfo("Searched for product: " + product);
+            } catch (Exception e) {
+                throw new ProductSearchException("Failed to search for product: " + product + ". Error: " + e.getMessage());
+            }
+        }
 
     public void addtocartanitem() {
         CheckoutLocator.addtocartlap.click();
@@ -45,7 +55,7 @@ public class CheckoutAction {
     }
 
     public void clickcheckbox() {
-    	//HelperClass.getDriver().navigate().refresh();
+    	HelperClass.getDriver().navigate().refresh();
         WebElement el = HelperClass.getDriver().findElement(By.xpath("//div[@class=\"terms-of-service\"]//input"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -59,6 +69,7 @@ public class CheckoutAction {
     }
 
     public void selectcheckout() {
+    	
         CheckoutLocator.checkoutbtn.click();
         LogManagers.logInfo("Clicked on checkout button.");
     }
@@ -98,9 +109,6 @@ public class CheckoutAction {
     }
 
     public void paymentinfocontinue() {
-//    	WebElement el = HelperClass.getDriver().findElement(By.xpath("//div[@id=\"payment-info-buttons-container\"]//input"));
-//        Actions builder = new Actions(HelperClass.getDriver());
-//        builder.moveToElement(el).click(el).perform();
         CheckoutLocator.paymentinfobtncontinue.click();
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
