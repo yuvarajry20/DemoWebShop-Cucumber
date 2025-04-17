@@ -18825,3 +18825,11 @@ Was this review helpful? Yes No (3/2)
 =======
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+2025-04-17 11:53:30 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-17 11:53:30 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-17 11:53:31 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-17 11:53:31 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-17 11:53:32 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-17 11:53:32 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-17 11:53:32 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-17 11:53:32 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
