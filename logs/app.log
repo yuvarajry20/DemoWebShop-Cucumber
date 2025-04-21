@@ -25359,3 +25359,22 @@ Was this review helpful? Yes No (3/2)
 2025-04-17 15:55:14 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: , Confirm Password: 123456
 2025-04-17 15:55:14 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+2025-04-17 16:07:45 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-17 16:07:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-17 16:07:46 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-17 16:07:47 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-17 16:07:47 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-17 16:07:47 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-17 16:07:48 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Asserted heading: Digital downloads
+2025-04-17 16:07:49 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Applied grid filter.
+2025-04-17 16:07:49 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Listing all products in the digital download:
+2025-04-17 16:07:49 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - - 3rd Album
+2025-04-17 16:07:49 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - - Music 2
+2025-04-17 16:07:49 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - - Music 2
+2025-04-17 16:07:49 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-17 16:07:50 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-17 16:07:50 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-17 16:07:50 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-17 16:07:51 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-17 16:07:51 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added music album to cart.
+2025-04-17 16:07:51 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (0)
