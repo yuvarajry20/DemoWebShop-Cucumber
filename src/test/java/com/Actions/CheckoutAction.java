@@ -83,8 +83,8 @@ public class CheckoutAction {
     }
 
     public void selectaddresss() {
-//    	CheckoutLocator.addressfield.click();
-//        CheckoutLocator.option1.click();
+    	CheckoutLocator.addressfield.click();
+        CheckoutLocator.option1.click();
         LogManagers.logInfo("Selected address option.");
     }
 
