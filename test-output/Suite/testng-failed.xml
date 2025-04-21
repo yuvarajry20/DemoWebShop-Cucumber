@@ -7,9 +7,13 @@
         <methods>
           <include name="setUpClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="runScenario" invocation-numbers="18 19 22 38 7 8 56 43 12 14 30"/>
 =======
           <include name="runScenario" invocation-numbers="5 24 12 13 14"/>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+=======
+          <include name="runScenario" invocation-numbers="12"/>
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
           <include name="tearDownClass"/>
         </methods>
