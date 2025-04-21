@@ -15,7 +15,7 @@ import io.cucumber.java.Scenario;
 public class Hooks {
 	@Before
 	public static void setUp() {
-		HelperClass.setupDriver();;
+		HelperClass.setupDriver();
 	}
 	@After
 	public static void teardown(Scenario scenario) throws IOException {
