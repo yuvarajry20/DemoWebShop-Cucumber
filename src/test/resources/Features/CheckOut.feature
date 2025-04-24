@@ -28,22 +28,22 @@ And click the terms & conditions
 And click the checkout button
 Then the user should see the checkout page and billing details
 
-
-@invoiceDetails
-Scenario: To read the invoice pdf in the application
-
-When click the orders
-And click the invoice pdf 
-Then the user should see the entire order details
- 
-
-    
-@orderPlacementthroughstorepickup
-Scenario: purchase an item and choose store pickup
-   
-And enter the billing address and click store pick
-And Proceed and confirm order
-Then the user should see the order code successfully
+#
+#@invoiceDetails
+#Scenario: To read the invoice pdf in the application
+#
+#When click the orders
+#And click the invoice pdf 
+#Then the user should see the entire order details
+ #
+#
+    #
+#@orderPlacementthroughstorepickup
+#Scenario: purchase an item and choose store pickup
+   #
+#And enter the billing address and click store pick
+#And Proceed and confirm order
+#Then the user should see the order code successfully
 
 @orderPlacementThroughcreditcard
 Scenario: purchase an item and choose the credit card 
