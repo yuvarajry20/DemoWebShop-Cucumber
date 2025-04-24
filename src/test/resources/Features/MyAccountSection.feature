@@ -1,4 +1,4 @@
-Feature: Validating My Account Section
+Feature: Yuvaraj_14APR2025_DemoWebShop_Validate MyAccountSection
 Background:
     Given I want to be in the demowebshop "url"
     When I click on login

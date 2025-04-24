@@ -30179,3 +30179,45 @@ Was this review helpful? Yes No (3/2)
 2025-04-21 09:27:04 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
 2025-04-21 09:27:04 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
 2025-04-21 09:27:04 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-21 12:41:37 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-21 12:41:37 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-21 12:41:37 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-21 12:41:42 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-21 12:55:54 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-21 12:55:54 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-21 12:55:54 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-21 12:55:59 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-21 13:06:58 [main] INFO  org.apache.logging.log4j.LogManager - Searched for product: products
+2025-04-21 13:07:18 [main] ERROR org.apache.logging.log4j.LogManager - Failed to see the product title and description. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class="product-title"]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [09c16bf8ed6df0e8a10f0d85cd7145e0, findElement {value=//h2[@class="product-title"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52187/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09c16bf8ed6df0e8a10f0d85cd7145e0
+2025-04-21 13:07:38 [main] ERROR org.apache.logging.log4j.LogManager - Failed to click on add to cart. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="button-2 product-box-add-to-cart-button"]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [09c16bf8ed6df0e8a10f0d85cd7145e0, findElement {value=//input[@class="button-2 product-box-add-to-cart-button"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\yuvar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52187/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09c16bf8ed6df0e8a10f0d85cd7145e0
+2025-04-21 13:07:43 [main] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (0)
+2025-04-21 13:13:35 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-21 13:13:35 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-21 13:13:35 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-21 13:13:40 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-21 13:15:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-21 13:15:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-21 13:15:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-21 13:15:53 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-21 13:17:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-21 13:17:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: Music 2
+2025-04-21 13:17:50 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: Computing and Internet
+2025-04-21 13:17:50 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: Computing and Internet
+2025-04-21 13:17:51 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-21 13:17:56 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
