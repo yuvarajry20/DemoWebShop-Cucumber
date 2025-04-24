@@ -20,6 +20,7 @@ public class TagStepDefinitions {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open the DemoWebShop HomePage. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -29,6 +30,7 @@ public class TagStepDefinitions {
             tagaction.getTaggedProducts();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the list of popular tags. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -38,6 +40,7 @@ public class TagStepDefinitions {
             tagaction.clickViewAll();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the View All button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -51,6 +54,7 @@ public class TagStepDefinitions {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to click on tag link. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -64,6 +68,7 @@ public class TagStepDefinitions {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to be redirected to tagged product page. Error: " + e.getMessage());
+            throw e;
         }
     }
 }
