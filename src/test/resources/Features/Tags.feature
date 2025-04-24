@@ -1,4 +1,4 @@
-Feature: LAKSITHA_15APR2025_Popular_tags
+Feature: Laksitha_15APR2025_DemoWebShop_Popular_tags
 
 @AccessPopularTags
 Scenario Outline: Tags should be navigated to product page
