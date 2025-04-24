@@ -56,21 +56,33 @@ function toggleAllBoxes() {
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
 <<<<<<< HEAD
+<td>Tests passed/Failed/Skipped:</td><td>21/1/0</td>
+=======
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 =======
 <td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 </tr><tr>
+<<<<<<< HEAD
+<td>Started on:</td><td>Thu Apr 24 10:56:46 IST 2025</td>
+=======
 <<<<<<< HEAD
 <td>Started on:</td><td>Mon Apr 21 13:17:38 IST 2025</td>
 =======
 <td>Started on:</td><td>Thu Apr 24 11:27:05 IST 2025</td>
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 </tr>
+<<<<<<< HEAD
+<tr><td>Total time:</td><td>368 seconds (368472 ms)</td>
+=======
 <<<<<<< HEAD
 <tr><td>Total time:</td><td>21 seconds (21230 ms)</td>
 =======
 <tr><td>Total time:</td><td>87 seconds (87445 ms)</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 </tr><tr>
 <td>Included groups:</td><td></td>
@@ -79,6 +91,65 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "LAKSITHA_R_Search_Function"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;DESKTOP-3CKMDVP&apos;, ip: &apos;192.168.1.108&apos;
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless], binary: C:\Users\ADMIN\.cache\selen..., extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at com.Utilities.HelperClass.&lt;init&gt;(HelperClass.java:120)
+	at com.Utilities.HelperClass.setupDriver(HelperClass.java:144)
+	at com.Definitions.Hooks.setUp(Hooks.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1256547593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256547593'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;DESKTOP-3CKMDVP&apos;, ip: &apos;192.168.1.108&apos;
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless], binary: C:\Users\ADMIN\.cache\selen..., extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at com.Utilities.HelperClass.&lt;init&gt;(HelperClass.java:120)
+	at com.Utilities.HelperClass.setupDriver(HelperClass.java:144)
+	at com.Definitions.Hooks.setUp(Hooks.java:18)
+</pre></div></td>
+<td>139</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -89,20 +160,58 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply all Sort By options for books", "LAKSITHA_R_Book_Product_Functionality"</td>
+=======
+<<<<<<< HEAD
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the Product Details and Adding to Cart", "Product Details Validation and purchasing in the Shopping cart page"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
+<<<<<<< HEAD
+<td>167</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View details of a specific book", "LAKSITHA_R_Book_Product_Functionality"</td>
+<td></td>
+<td>156</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View submitted reviews of a product", "LAKSITHA_R_Review_a_product"</td>
+<td></td>
+<td>156</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "LAKSITHA_R_Review_a_product"</td>
+<td></td>
+<td>200</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with valid email address", "LAKSITHA_R_HomePageFunctionality"</td>
+=======
 <td>17</td>
 =======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding and Removing a Product in the Shopping Cart", "Divraj_13APR2025_Demowebshop_Shopping_cart"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<td>156</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
 <tr>
+<<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Simple product search with valid keyword", "LAKSITHA_R_Search_Function"</td>
+=======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select the filters view product", "Divraj_14APR2025_Demowebshop_Categories"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
+<<<<<<< HEAD
+<td>198</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+=======
 <td>15</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <tr>
+<<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "LAKSITHA_R_Review_a_product"</td>
+=======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase an item and choose store pickup", "Divraj_12APR2025_Demowebshop_Checkout the product"</td>
 <td></td>
 <td>40</td>
@@ -119,15 +228,28 @@ function toggleAllBoxes() {
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the product is added in wishlist to shopping cart", "Divraj_13APR2025_Demowebshop_Shopping_cart"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
-<td>11</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<td>200</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
 <tr>
+<<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Subscribe with invalid email address", "LAKSITHA_R_HomePageFunctionality"</td>
+=======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "send a product details through Invalid email a friend", "Divraj_13APR2025_Demowebshop_Shopping_cart"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
+<<<<<<< HEAD
+<td>167</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+=======
 <td>13</td>
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <tr>
+<<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Poll the vote without logging in", "LAKSITHA_R_HomePageFunctionality"</td>
+=======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "add product to the cart", "Divraj_14APR2025_Demowebshop_Categories"</td>
 <td></td>
 <td>13</td>
@@ -144,10 +266,49 @@ function toggleAllBoxes() {
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the quantity of the product is increased", "Divraj_13APR2025_Demowebshop_Shopping_cart"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
-<td>12</td>
-<td>com.Runner.runnerTestNG@6497b078</td></tr>
+<td>156</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
 <tr>
+<<<<<<< HEAD
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tags should be navigated to product page", "LAKSITHA_R_Popular_tags"</td>
+<td></td>
+<td>29</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tags should be navigated to product page", "LAKSITHA_R_Popular_tags"</td>
+<td></td>
+<td>9</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Write a review without logging in", "LAKSITHA_R_Review_a_product"</td>
+<td></td>
+<td>195</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "LAKSITHA_R_Search_Function"</td>
+<td></td>
+<td>188</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit review with valid and invalid inputs", "LAKSITHA_R_Review_a_product"</td>
+<td></td>
+<td>200</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "LAKSITHA_R_Search_Function"</td>
+<td></td>
+<td>175</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced product search with various filter combinations", "LAKSITHA_R_Search_Function"</td>
+<td></td>
+<td>171</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View featured products as list", "LAKSITHA_R_HomePageFunctionality"</td>
+=======
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checkout an item in the application", "Divraj_12APR2025_Demowebshop_Checkout the product"</td>
 <td></td>
 <td>21</td>
@@ -184,10 +345,36 @@ function toggleAllBoxes() {
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
 <tr>
 <td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To read the invoice pdf in the application", "Divraj_12APR2025_Demowebshop_Checkout the product"</td>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td></td>
+<<<<<<< HEAD
+<td>158</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply filter options for books", "LAKSITHA_R_Book_Product_Functionality"</td>
+<td></td>
+<td>185</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing two different products", "LAKSITHA_R_Book_Product_Functionality"</td>
+<td></td>
+<td>193</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with invalid or short keywords", "LAKSITHA_R_Search_Function"</td>
+<td></td>
+<td>189</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+<tr>
+<td title='com.Runner.runnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.Runner.runnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all books available", "LAKSITHA_R_Book_Product_Functionality"</td>
+<td></td>
+<td>181</td>
+<td>com.Runner.runnerTestNG@1018bde2</td></tr>
+=======
 <td>23</td>
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 <td>com.Runner.runnerTestNG@6497b078</td></tr>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 </table><p>
 </body>
 </html>

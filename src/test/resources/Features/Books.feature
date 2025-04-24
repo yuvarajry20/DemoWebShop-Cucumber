@@ -1,4 +1,4 @@
-Feature: Book Product Functionality
+Feature: LAKSITHA_14APR2025_Book_Product_Functionality
 
   Background:
     Given I am on the DemoWebShop homepage with "url"
