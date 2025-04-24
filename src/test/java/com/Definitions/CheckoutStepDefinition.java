@@ -152,7 +152,7 @@ public class CheckoutStepDefinition {
             objcheckout.selectcheckout();
             objcheckout.selectaddresss();
             objcheckout.billcontinuebtn();
-            objcheckout.storepickupbox();
+            //objcheckout.storepickupbox();
             objcheckout.shippingcontinue();
             objcheckout.paymentcontinuestep();
             objcheckout.paymentinfocontinue();
@@ -271,7 +271,7 @@ public class CheckoutStepDefinition {
         try {
             objcheckout.clickcheckbox();
             objcheckout.selectcheckout();
-            objcheckout.selectaddresss();
+           // objcheckout.selectaddresss();
             objcheckout.billcontinuebtn();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the checkout buttons and proceed. Error: " + e.getMessage());
