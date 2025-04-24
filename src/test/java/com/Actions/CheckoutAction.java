@@ -153,7 +153,7 @@ public class CheckoutAction {
         for (WebElement a : obj) {
             System.out.println(a.getText());
             LogManagers.logInfo(a.getText());
-        }
+        } 
     }
 
     public void detailsinvoice() {

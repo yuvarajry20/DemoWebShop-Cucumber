@@ -1,4 +1,4 @@
-Feature: Validating Address Section
+Feature: Yuvaraj_12APR2025_DemoWebShop_Validate Address
 Background:
     Given I want to be in the demowebshop "https://demowebshop.tricentis.com/login"
     When I click on login

@@ -1,4 +1,4 @@
-Feature: Login 
+Feature: Yuvaraj_13APR2025_DemoWebShop_Validate Login
 
 @Login
 Scenario Outline: Login with valid and invalid credentials
