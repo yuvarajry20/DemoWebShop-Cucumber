@@ -13,12 +13,13 @@ And remove the product from cart
 Then the shopping cart is empty
 
 @ProductDetailsValidation
-Scenario: Validating the Product Details and Adding to Cart
 
+Scenario: Validating the Product Details and Adding to Cart
+When the user search for a product
 And see the product title and the product description
 And clicks on add to cart
 Then the user should see the successful message
-    
+
 @Verify_Wishlist_Product_URL
 Scenario: Verify the product is same as in the auto-generated url in wishlist page
 

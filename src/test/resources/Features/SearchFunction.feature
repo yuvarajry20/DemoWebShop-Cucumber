@@ -1,4 +1,4 @@
-Feature: Search Functionality
+Feature: LAKSITHA_13APR2025_Search_Function
 
 #Background: Given I am on the DemoWebShop HomePage with "url"
 
