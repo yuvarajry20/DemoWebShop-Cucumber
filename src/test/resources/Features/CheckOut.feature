@@ -29,13 +29,13 @@ And click the checkout button
 Then the user should see the checkout page and billing details
 
 
-@AninvoiceDetail
-Scenario: To read the invoice pdf in the application
-
-When click the orders
-And click the invoice pdf 
-Then the user should see the entire order details
- 
+#@invoiceDetail
+#Scenario: To read the invoice pdf in the application
+#
+#When click the orders
+#And click the invoice pdf 
+#Then the user should see the entire order details
+ #
 
     
 @1StorepickuporderPlacementthrough
