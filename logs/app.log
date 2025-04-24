@@ -30866,3 +30866,229 @@ Session ID: 6bd19396b8ac5edd9b212e120939a246
 2025-04-24 11:22:38 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Selected 'Male' gender.
 2025-04-24 11:22:38 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered registration details: First Name: Yuvaraj, Last Name: R, Email: yuv@gmail.com, Password: 123456, Confirm Password: 
 2025-04-24 11:22:38 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
+2025-04-24 11:27:18 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-24 11:27:18 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:18 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:18 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:18 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-24 11:27:19 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Added music album to cart.
+2025-04-24 11:27:19 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:19 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:19 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:19 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:19 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-24 11:27:19 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:19 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:19 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:20 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:20 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Applied grid filter.
+2025-04-24 11:27:20 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Listing all products in the digital download:
+2025-04-24 11:27:20 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - - 3rd Album
+2025-04-24 11:27:20 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - - Music 2
+2025-04-24 11:27:20 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - - Music 2
+2025-04-24 11:27:20 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:21 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:21 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:21 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:21 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:21 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:21 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Searched for product: laptop
+2025-04-24 11:27:21 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:22 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:22 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:22 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:22 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:22 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:22 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - The checkbox is selected: false
+2025-04-24 11:27:22 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:23 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Added item to cart and clicked cart link.
+2025-04-24 11:27:23 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:23 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:23 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Asserted message: Please accept the terms of service before the next step.
+2025-04-24 11:27:23 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:23 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:23 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:23 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:23 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked the terms of service checkbox.
+2025-04-24 11:27:24 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:24 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:24 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:24 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:24 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:24 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:24 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:24 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:25 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-24 11:27:25 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:25 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:25 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:25 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-24 11:27:25 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on checkout button.
+2025-04-24 11:27:25 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:25 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-24 11:27:25 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Billing Address
+2025-04-24 11:27:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Shipping Address
+2025-04-24 11:27:26 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Shipping Method
+2025-04-24 11:27:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Selected address option.
+2025-04-24 11:27:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Payment Method
+2025-04-24 11:27:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Payment Information
+2025-04-24 11:27:26 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Confirm Order
+2025-04-24 11:27:26 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-24 11:27:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on billing continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on confirm checkout button.
+2025-04-24 11:27:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on confirm checkout button.
+2025-04-24 11:27:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:27:26 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-24 11:27:27 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on back to shipping button.
+2025-04-24 11:27:27 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on payment info continue button.
+2025-04-24 11:27:27 [TestNG-PoolService-5] ERROR org.apache.logging.log4j.LogManager - Failed to proceed and confirm order. Error: unexpected alert open: {Alert text : Your cart is empty}
+  (Session info: chrome=135.0.7049.86): Your cart is empty
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9192bce15f03d7e4740585f1d3b67061, findElement {using=xpath, value=//div[@id="confirm-order-buttons-container"]//input[@class="button-1 confirm-order-next-step-button"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50893/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9192bce15f03d7e4740585f1d3b67061
+2025-04-24 11:27:27 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:27:27 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button in two-day shipping.
+2025-04-24 11:27:27 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on store pickup box.
+2025-04-24 11:27:27 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button in one-day pickup.
+2025-04-24 11:27:27 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on shipping continue button.
+2025-04-24 11:27:27 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-24 11:27:27 [TestNG-PoolService-7] ERROR org.apache.logging.log4j.LogManager - Failed to proceed the further details. Error: unexpected alert open: {Alert text : Your cart is empty}
+  (Session info: chrome=135.0.7049.86): Your cart is empty
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d838bfe4fefc4dc9783694f8e4d20550, findElement {using=xpath, value=//input[@class="button-1 payment-info-next-step-button"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50885/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d838bfe4fefc4dc9783694f8e4d20550
+2025-04-24 11:27:27 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:27:27 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:27:27 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on payment continue button.
+2025-04-24 11:27:27 [TestNG-PoolService-8] ERROR org.apache.logging.log4j.LogManager - Failed to proceed the remaining steps and confirm. Error: unexpected alert open: {Alert text : Your cart is empty}
+  (Session info: chrome=135.0.7049.86): Your cart is empty
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65b4b18b864906c9f0722008fa7524bb, findElement {using=xpath, value=//input[@class="button-1 payment-info-next-step-button"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50883/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b4b18b864906c9f0722008fa7524bb
+2025-04-24 11:27:27 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:27:28 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital downloads' link.
+2025-04-24 11:27:28 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:27:29 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Asserted heading: Digital downloads
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Sub-Total:
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - 9540.00
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Shipping:
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Payment method additional fee:
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - 7.00
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Tax:
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Order Total:
+2025-04-24 11:27:29 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - 9547.00
+2025-04-24 11:27:30 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:31 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:31 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Retrieved product title: 3rd Album
+2025-04-24 11:27:31 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-24 11:27:31 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add to Cart' button.
+2025-04-24 11:27:32 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on shopping cart link.
+2025-04-24 11:27:32 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Product in cart: 3rd Album
+2025-04-24 11:27:34 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Updated cart by removing an item.
+2025-04-24 11:27:34 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Empty cart message: Your Shopping Cart is empty!
+2025-04-24 11:27:35 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:36 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Number of products in cart: (1)
+2025-04-24 11:27:38 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:38 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Added item to wishlist and clicked on wishlist.
+2025-04-24 11:27:38 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Wishlist URL for sharing: http://demowebshop.tricentis.com/wishlist/2b0fe7b1-ebbb-4e80-a482-fef37a6b5cbc
+2025-04-24 11:27:39 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:39 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Current URL: https://demowebshop.tricentis.com/wishlist/2b0fe7b1-ebbb-4e80-a482-fef37a6b5cbc
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Increased quantity to 10 and added to cart.
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Updated quantity in wishlist:
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Sub-Total:
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Shipping:
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Not required
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Not required
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Tax:
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 0.00
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Total:
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 11:27:41 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:41 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 11:27:42 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:43 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' page.
+2025-04-24 11:27:44 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' button.
+2025-04-24 11:27:44 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered friend's email: abcd@gmail.com and your email: abcggggg123@Gmail.com
+2025-04-24 11:27:45 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:45 [TestNG-PoolService-6] ERROR org.apache.logging.log4j.LogManager - Failed to select the credit card method and enter the required fields. Error: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='section payment-method']//ul//li[3]//div//div[2]//input (tried for 20 second(s) with 500 milliseconds interval)
+2025-04-24 11:27:45 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234
+2025-04-24 11:27:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Send' button for email.
+2025-04-24 11:27:45 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Email sent successfully: Your message has been sent.
+2025-04-24 11:27:46 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' page.
+2025-04-24 11:27:46 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:27:47 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added item to wishlist and clicked on wishlist.
+2025-04-24 11:27:47 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Email a friend' button.
+2025-04-24 11:27:47 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:27:47 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered friend's email: abcd and your email: abcggggg123@Gmail.com
+2025-04-24 11:27:47 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Send' button for email.
+2025-04-24 11:27:47 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Email send failed with message: Wrong email
+2025-04-24 11:27:47 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:27:48 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:27:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Added item to cart using checkboxes.
+2025-04-24 11:27:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Product in cart: 3rd Album
+2025-04-24 11:27:49 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Searched for product: 3rd Album
+2025-04-24 11:27:51 [TestNG-PoolService-3] ERROR org.apache.logging.log4j.LogManager - Failed to add to cart the laptop. Error: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68002ddf6128885bb5d2089dd69aaade, clickElement {id=f.631FB53CEC96A37584C5601941B3CC13.d.9A629D505373B95800DC0368C44BF7B8.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51331/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (68002ddf6128885bb5d2089dd69aaade)] -> xpath: //input[@class="button-2 product-box-add-to-cart-button"]]
+Session ID: 68002ddf6128885bb5d2089dd69aaade
+2025-04-24 11:28:05 [TestNG-PoolService-6] ERROR org.apache.logging.log4j.LogManager - Failed to proceed the details and confirm. Error: element not interactable
+  (Session info: chrome=135.0.7049.86)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [107829a585af970ff3509a0c6967dbfc, clickElement {id=f.23A7DBF971819EA2940555320CF0BE3F.d.D86596A1075CE3A5D03A39D725192741.e.286}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50884}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (107829a585af970ff3509a0c6967dbfc)] -> xpath: //input[@class="button-1 payment-info-next-step-button"]]
+Session ID: 107829a585af970ff3509a0c6967dbfc
+2025-04-24 11:28:05 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Order placed successfully 
+2025-04-24 11:28:07 [TestNG-PoolService-2] ERROR org.apache.logging.log4j.LogManager - Failed to get placed order or download invoice as PDF. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="page-title"]//a[2]"}
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9100cb4170e28236991e171c751eef1b, findElement {using=xpath, value=//div[@class="page-title"]//a[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50891/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9100cb4170e28236991e171c751eef1b
+2025-04-24 11:28:11 [TestNG-PoolService-3] ERROR org.apache.logging.log4j.LogManager - Failed to enter the country and pincode and click Estimate Shipping. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="CountryId"]"}
+  (Session info: chrome=135.0.7049.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68002ddf6128885bb5d2089dd69aaade, findElement {using=xpath, value=//*[@id="CountryId"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51331/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68002ddf6128885bb5d2089dd69aaade
+2025-04-24 11:28:25 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on invoice PDF download link.
+2025-04-24 11:28:31 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Shipping estimate ways:
