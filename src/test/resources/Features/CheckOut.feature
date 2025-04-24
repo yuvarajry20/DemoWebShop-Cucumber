@@ -1,12 +1,11 @@
-Feature: Checkout the product in the web Application
+Feature: Divraj_12APR2025_Demowebshop_Checkout the product
 
 Background:
 Given the user is on the Web application 
 When I log in and add an item and add to cart
 |laptop|
 
-
-    
+  
 @Verifying_Terms&Condition_Checkbox
 Scenario: Navigate to checkout page Without clicking the terms & conditions 
 

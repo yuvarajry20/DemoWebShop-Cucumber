@@ -55,9 +55,7 @@ public class AddressAction {
         } catch (IOException e) {
             LogManagers.logError("Error reading Excel data: " + e.getMessage(), e);
         }
-    }
-
-    public void clickAddNew() {
+    }public void clickAddNew() {
         addressPage.addNew.click();
         LogManagers.logInfo("Clicked on 'Add New' button.");
     }

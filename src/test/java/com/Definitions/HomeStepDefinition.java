@@ -6,8 +6,10 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import com.Actions.BookPageAction;
 import com.Actions.HomePageAction;
 import com.Actions.LoginAction;
+import com.Actions.SearchAction;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
@@ -17,6 +19,8 @@ public class HomeStepDefinition {
 
     HomePageAction homePage = new HomePageAction();
     LoginAction loginAction = new LoginAction();
+    SearchAction searchAction=new SearchAction();
+    BookPageAction bookAction=new BookPageAction();
     WebDriver driver = HelperClass.getDriver();
 
     @Given("I am on Demowebshop Homepage {string}")
@@ -110,4 +114,4 @@ public class HomeStepDefinition {
             LogManagers.logError("Failed to see an error message. Error: " + e.getMessage());
         }
     }
-}
+   }

@@ -1,4 +1,4 @@
-Feature: Product Details Validation and purchasing in the Shopping cart page
+Feature: Divraj_13APR2025_Demowebshop_Shopping_cart
 
 Background:
 Given the user is on the home page

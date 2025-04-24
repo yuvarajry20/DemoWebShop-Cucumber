@@ -67,7 +67,7 @@ public class HomePageAction {
     public void GetRecentlyViewedProducts() {
         LogManagers.logInfo("Recently Viewed Products:");
         for (WebElement product : homePage.recentProductList) {
-            String productName = product.getText().trim();
+            String productName = product.getText();
             LogManagers.logInfo("- " + productName);
         }
     }
@@ -90,5 +90,9 @@ public class HomePageAction {
     public void ViewPollInvalidresult() {
         String errorText = homePage.pollErrorMsg.getText();
         LogManagers.logInfo("Poll error message: " + errorText);
+    }
+    public void ReturnToHomePage() {
+    	homePage.ToHomePage.click();
+    	LogManagers.logInfo("Returned to HomePage");
     }
 }
