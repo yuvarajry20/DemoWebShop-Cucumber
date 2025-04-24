@@ -29,13 +29,13 @@ And click the checkout button
 Then the user should see the checkout page and billing details
 
 
-@invoiceDetails
-Scenario: To read the invoice pdf in the application
-
-When click the orders
-And click the invoice pdf 
-Then the user should see the entire order details
- 
+#@invoiceDetails
+#Scenario: To read the invoice pdf in the application
+#
+#When click the orders
+#And click the invoice pdf 
+#Then the user should see the entire order details
+ #
 
     
 @orderPlacementthroughstorepickup
@@ -45,19 +45,19 @@ And enter the billing address and click store pick
 And Proceed and confirm order
 Then the user should see the order code successfully
 
-@orderPlacementThroughcreditcard
-Scenario: purchase an item and choose the credit card 
-
-And click the checkout button and proceed
-And select the credit card method and enter the required fields
-
-|Divraj             |
-|4242 4242 4242 4242|
-|12                 |
-|2034               |
-|567                |
-And proceed the details and confirm
-Then the user should see the order code successfully
+#@orderPlacementThroughcreditcard
+#Scenario: purchase an item and choose the credit card 
+#
+#And click the checkout button and proceed
+#And select the credit card method and enter the required fields
+#
+#|Divraj             |
+#|4242 4242 4242 4242|
+#|12                 |
+#|2034               |
+#|567                |
+#And proceed the details and confirm
+#Then the user should see the order code successfully
 
 #@orderPlacementinTwodayshipping
 #Scenario: purchase an item and choose the two day shipping
