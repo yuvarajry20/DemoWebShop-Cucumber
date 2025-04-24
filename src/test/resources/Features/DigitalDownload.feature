@@ -1,4 +1,4 @@
-Feature: category under digital download product is added to cart
+Feature: Divraj_14APR2025_Demowebshop_Categories
 
 Background:
 Given the user is on the web application

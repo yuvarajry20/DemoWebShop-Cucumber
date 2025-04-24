@@ -1,4 +1,4 @@
-Feature: User Registeration
+Feature: Yuvaraj_15APR2025_DemoWebShop_Validate UserRegistration
 
 @Register
 Scenario Outline: Register on the website with valid and invalid fields
