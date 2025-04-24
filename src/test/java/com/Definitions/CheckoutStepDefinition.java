@@ -308,7 +308,7 @@ public class CheckoutStepDefinition {
     public void select_the_two_day_shipping_as_two_day_air() {
         try {
             objcheckout.shippingcontinue();
-            objcheckout.paymentcontinuestepintwoday();
+           // objcheckout.paymentcontinuestepintwoday();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the two day shipping as two Day Air. Error: " + e.getMessage());
             throw e;
