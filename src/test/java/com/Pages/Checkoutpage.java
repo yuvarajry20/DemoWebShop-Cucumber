@@ -69,7 +69,7 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@class=\"section order-completed\"]//ul//li[2]//a")
 	public WebElement invoiceclickhere;
 	
-	@FindBy(xpath="//div[@class=\"master-wrapper-main\"]//div//div//div[2]//div//ul//li[2]//a")
+	@FindBy(css="div.page-body.checkout-data > div > ul > li:nth-child(2) > a")
 	public WebElement pdfinvoice;
 	
 	@FindBy(xpath="//div[@class=\"section payment-method\"]//ul//li[3]//div//div[2]//input")
