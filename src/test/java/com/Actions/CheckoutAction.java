@@ -147,8 +147,15 @@ public class CheckoutAction {
     }
 
     public void pdfinvoiceclik() {
-        CheckoutLocator.pdfinvoice.click();
+//        CheckoutLocator.pdfinvoice.click();
+//        LogManagers.logInfo("Clicked on PDF invoice link.");
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        WebElement pdfInvoiceLink = wait.until(
+            ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.page-body.checkout-data > div > ul > li:nth-child(2) > a"))
+        );
+        pdfInvoiceLink.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
+        
     }
 
     public void checkoutsteps() {
