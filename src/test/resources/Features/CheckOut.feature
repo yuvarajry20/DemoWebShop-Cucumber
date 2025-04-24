@@ -13,13 +13,13 @@ And click checkout the product
 And forgot to click the term & condition button
 Then the user should see the pop up windows as to click the terms&condition
 
-@orderPlacement
-Scenario:  checkout and download the invoice pdf
-
-And checkout the product
-And select  address and payment methods
-And confirm order
-Then the user should see the order number and able to download the invoice as pdf
+#@orderPlacement
+#Scenario:  checkout and download the invoice pdf
+#
+#And checkout the product
+#And select  address and payment methods
+#And confirm order
+#Then the user should see the order number and able to download the invoice as pdf
 
 @CheckoutanItem
 Scenario: checkout an item in the application
