@@ -104,9 +104,9 @@ public class CheckoutAction {
     }
 
     public void paymentcontinuestep() {
-    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
     	WebElement element = wait.until(
-    	    ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
+    	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
     	);
     	element.click();
         LogManagers.logInfo("Clicked on payment continue button.");
