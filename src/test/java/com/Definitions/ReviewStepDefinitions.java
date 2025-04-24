@@ -23,6 +23,7 @@ public class ReviewStepDefinitions {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open the DemoWebShop Homepage. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -32,6 +33,7 @@ public class ReviewStepDefinitions {
             reviewAction.ClickGiftCategory();
         } catch (Exception e) {
             LogManagers.logError("Failed to navigate to the category. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -41,6 +43,7 @@ public class ReviewStepDefinitions {
             reviewAction.clickGiftCard();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the product. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -50,6 +53,7 @@ public class ReviewStepDefinitions {
             reviewAction.clickReviews();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the link. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -59,6 +63,7 @@ public class ReviewStepDefinitions {
             reviewAction.ReadReviews();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the reviews that have been submitted previously. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -68,6 +73,7 @@ public class ReviewStepDefinitions {
             reviewAction.clickAddReview();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the link. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -77,6 +83,7 @@ public class ReviewStepDefinitions {
             reviewAction.ClickSubmitReview();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on submit review. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -86,6 +93,7 @@ public class ReviewStepDefinitions {
             reviewAction.notLoggedErrorReview();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the expected message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -99,6 +107,7 @@ public class ReviewStepDefinitions {
             loginAction.clickLoginButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to log in to Demowebshop application. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -108,6 +117,7 @@ public class ReviewStepDefinitions {
             reviewAction.ClickGiftCategory();
         } catch (Exception e) {
             LogManagers.logError("Failed to navigate to the gift cards page and click the product. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -117,6 +127,7 @@ public class ReviewStepDefinitions {
             reviewAction.clickGiftCard();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -129,6 +140,7 @@ public class ReviewStepDefinitions {
             reviewAction.giveRating();
         } catch (Exception e) {
             LogManagers.logError("Failed to enter review and click the rating value. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -138,6 +150,7 @@ public class ReviewStepDefinitions {
             reviewAction.ClickSubmitReview();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -153,6 +166,7 @@ public class ReviewStepDefinitions {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to see the error message. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

@@ -23,6 +23,7 @@ public class SearchStepDefinition {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open the DemoWebShop HomePage. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -32,6 +33,7 @@ public class SearchStepDefinition {
             searchaction.enterSearchText(string);
         } catch (Exception e) {
             LogManagers.logError("Failed to click search bar and enter text. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -41,6 +43,7 @@ public class SearchStepDefinition {
             searchaction.clickSearchButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the search button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -50,6 +53,7 @@ public class SearchStepDefinition {
             searchaction.displayResult();
         } catch (Exception e) {
             LogManagers.logError("Failed to display the result. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -59,6 +63,7 @@ public class SearchStepDefinition {
             searchaction.enterSearchText(string);
         } catch (Exception e) {
             LogManagers.logError("Failed to click search bar and enter invalid text. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -68,6 +73,7 @@ public class SearchStepDefinition {
             searchaction.clickSearchButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to enter the search. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -84,9 +90,11 @@ public class SearchStepDefinition {
                 Assert.assertEquals(actualMessage.trim(), expectedMessage);
             } catch (Exception ex) {
                 LogManagers.logError("Failed to display the expected message. Error: " + ex.getMessage());
+                throw e;
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to handle alert or display message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -96,6 +104,7 @@ public class SearchStepDefinition {
             searchaction.enterSearchText(searchterm);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter text in the search box. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -105,6 +114,7 @@ public class SearchStepDefinition {
             searchaction.enableAdvanceSearch();
         } catch (Exception e) {
             LogManagers.logError("Failed to enable advanced search. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -120,6 +130,7 @@ public class SearchStepDefinition {
             searchaction.enterPriceRange(min, max);
         } catch (Exception e) {
             LogManagers.logError("Failed to apply search filters. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -133,6 +144,7 @@ public class SearchStepDefinition {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to display the expected message. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

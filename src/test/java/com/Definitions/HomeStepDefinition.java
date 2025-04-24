@@ -29,6 +29,7 @@ public class HomeStepDefinition {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open Demowebshop Homepage. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -40,6 +41,7 @@ public class HomeStepDefinition {
             homePage.enterNewsLetterEmail(email);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter the email in the newsletter field. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -49,6 +51,7 @@ public class HomeStepDefinition {
             homePage.SubscribeNewsLetter();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the Subscribe button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -58,6 +61,7 @@ public class HomeStepDefinition {
             homePage.SuccessfulSubscription();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the subscription confirmation message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -67,6 +71,7 @@ public class HomeStepDefinition {
             homePage.invalidSubscription();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the subscription error message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -76,6 +81,7 @@ public class HomeStepDefinition {
             homePage.VerifyFeaturedProducts();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the featured products section. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -85,6 +91,7 @@ public class HomeStepDefinition {
             homePage.GetFeaturedProducts();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the list of featured products displayed. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -94,6 +101,7 @@ public class HomeStepDefinition {
             homePage.SelectVotingOption();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the option in poll. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -103,6 +111,7 @@ public class HomeStepDefinition {
             homePage.voting();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the vote button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -112,6 +121,7 @@ public class HomeStepDefinition {
             homePage.ViewPollInvalidresult();
         } catch (Exception e) {
             LogManagers.logError("Failed to see an error message. Error: " + e.getMessage());
+            throw e;
         }
     }
    }

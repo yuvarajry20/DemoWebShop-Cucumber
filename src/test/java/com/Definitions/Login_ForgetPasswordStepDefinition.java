@@ -28,6 +28,7 @@ public class Login_ForgetPasswordStepDefinition {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open the demowebshop. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -37,6 +38,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.clickLoginLink();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on login. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -47,6 +49,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.enterPassword(password);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter email and password. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -56,6 +59,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.clickLoginButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the login button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -78,6 +82,7 @@ public class Login_ForgetPasswordStepDefinition {
             assertEquals(expectedResult, resultMessage.getText());
         } catch (Exception e) {
             LogManagers.logError("Failed to verify the login result. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -87,6 +92,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.clickForgotPasswordLink();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on Forgot password. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -96,6 +102,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.enterEmail(email);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter email in the email field. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -105,6 +112,7 @@ public class Login_ForgetPasswordStepDefinition {
             loginAction.clickRecoverButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the recover button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -128,6 +136,7 @@ public class Login_ForgetPasswordStepDefinition {
             assertEquals(expectedResult, resultMessage.getText());
         } catch (Exception e) {
             LogManagers.logError("Failed to verify the result message. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

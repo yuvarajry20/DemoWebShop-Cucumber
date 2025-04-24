@@ -20,21 +20,19 @@ public class ProductStepDefinition {
             HelperClass.openPage("https://demowebshop.tricentis.com/");
         } catch (Exception e) {
             LogManagers.logError("Failed to open the home page. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("the user search for a product")
     public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
         try {
-            List<Map<String, String>> objList = dataTable.asMaps(String.class,String.class);
-            for(int i=0;i<3;i++)
-            {
-            	String productName1 = objList.get(i).get("products");
-            	objProductAction.searchFieldStore(productName1);
-            	
-            }
+        	 List<String> objList = dataTable.asList(String.class);
+        	 String productName1 = objList.get(0);
+        	 objProductAction.searchFieldStore(productName1);
         } catch (Exception e) {
             LogManagers.logError("Failed to search for a product. Error: " + e.getMessage());
+            throw e;
         }
     }
     
@@ -46,6 +44,7 @@ public class ProductStepDefinition {
             System.out.println("The title of the product is " + titleText);
         } catch (Exception e) {
             LogManagers.logError("Failed to see the product title and description. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -55,6 +54,7 @@ public class ProductStepDefinition {
             objProductAction.clickAddToCart();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on add to cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -64,6 +64,7 @@ public class ProductStepDefinition {
             objProductAction.addToCartMessage();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the successful message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -75,6 +76,7 @@ public class ProductStepDefinition {
             objProductAction.shoppingCart();
         } catch (Exception e) {
             LogManagers.logError("Failed to go to the shopping cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -84,6 +86,7 @@ public class ProductStepDefinition {
             objProductAction.updateCartByRemove();
         } catch (Exception e) {
             LogManagers.logError("Failed to remove the product from cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -93,6 +96,7 @@ public class ProductStepDefinition {
             objProductAction.emptyCarts();
         } catch (Exception e) {
             LogManagers.logError("Failed to verify if the shopping cart is empty. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -102,6 +106,7 @@ public class ProductStepDefinition {
             objProductAction.addToWishlist();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the add to wishlist. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -111,6 +116,7 @@ public class ProductStepDefinition {
             objProductAction.urlWishlist();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the auto-generated URL for the specific product. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -120,6 +126,7 @@ public class ProductStepDefinition {
             objProductAction.urlAutoList();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the product which is same as in the wishlist. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -129,6 +136,7 @@ public class ProductStepDefinition {
             objProductAction.increaseQty();
         } catch (Exception e) {
             LogManagers.logError("Failed to increase the count of the product and click add to cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -138,6 +146,7 @@ public class ProductStepDefinition {
             objProductAction.updatedQtyInWishlist();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the updated quantity and price in the shopping cart page. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -149,6 +158,7 @@ public class ProductStepDefinition {
             objProductAction.emailFriendButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to log in and click Email a friend. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -161,6 +171,7 @@ public class ProductStepDefinition {
             objProductAction.emailFriendSend(friendmail, myemail);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter my email and friend email. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -170,6 +181,7 @@ public class ProductStepDefinition {
             objProductAction.sendMailFriend();
         } catch (Exception e) {
             LogManagers.logError("Failed to click send. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -179,6 +191,7 @@ public class ProductStepDefinition {
             objProductAction.successfulMailSend();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the email sent successful message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -188,6 +201,7 @@ public class ProductStepDefinition {
             objProductAction.unsuccessfulMailSend();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the Invalid email message. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -197,6 +211,7 @@ public class ProductStepDefinition {
             objProductAction.addToWishlist();
         } catch (Exception e) {
             LogManagers.logError("Failed to click add to wishlist. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -206,6 +221,7 @@ public class ProductStepDefinition {
             objProductAction.addToCartCheckboxes();
         } catch (Exception e) {
             LogManagers.logError("Failed to add to cart the product in the wishlist. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -215,6 +231,7 @@ public class ProductStepDefinition {
             objProductAction.verifyTextInCart();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the product is added in the shopping cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -225,6 +242,7 @@ public class ProductStepDefinition {
             objProductAction.addLaptopCart();
         } catch (Exception e) {
             LogManagers.logError("Failed to add to cart the laptop. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -237,6 +255,7 @@ public class ProductStepDefinition {
             objProductAction.countryPin(country, pincode);
         } catch (Exception e) {
             LogManagers.logError("Failed to enter the country and pincode and click Estimate Shipping. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -246,6 +265,7 @@ public class ProductStepDefinition {
             objProductAction.estimateShippingDetails();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the shipping details. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

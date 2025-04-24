@@ -16,6 +16,7 @@ public class AddressStepDefinition {
             addressAction.clickAddressesAndAddNew();
         } catch (Exception e) {
             LogManagers.logError("Failed to click Addresses and add new. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -25,6 +26,7 @@ public class AddressStepDefinition {
             addressAction.fillAddressForm();
         } catch (Exception e) {
             LogManagers.logError("Failed to add new address. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -39,6 +41,7 @@ public class AddressStepDefinition {
             addressAction.clickSave();
         } catch (Exception e) {
             LogManagers.logError("Failed to click save. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -48,6 +51,7 @@ public class AddressStepDefinition {
             addressAction.clickAddresses();
         } catch (Exception e) {
             LogManagers.logError("Failed to click Addresses. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -57,6 +61,7 @@ public class AddressStepDefinition {
             addressAction.clickDeleteAddressButton();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the Delete button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -66,6 +71,7 @@ public class AddressStepDefinition {
             addressAction.handleAlert();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the yes button in the alert. Error: " + e.getMessage());
+            throw e;
         }
     }
 }
