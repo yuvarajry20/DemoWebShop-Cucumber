@@ -41,5 +41,8 @@ public class HomePageLocators {
     
     @FindBy(xpath = "//div[@class=\"item-box\"]")
     public List<WebElement> featuredProductList;
+    
+    @FindBy(xpath="//div[@class=\"header-logo\"]//a")
+    public WebElement ToHomePage;
 
 }
