@@ -1,4 +1,4 @@
-Feature: HomePageFunctionality 
+Feature: LAKSITHA_12APR2025_HomePageFunctionality 
 
 Background: 
   Given I am on Demowebshop Homepage "https://demowebshop.tricentis.com/"

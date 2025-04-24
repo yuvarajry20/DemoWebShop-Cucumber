@@ -28583,3 +28583,222 @@ Was this review helpful? Yes No (3/2)
 2025-04-20 20:52:19 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
 2025-04-20 20:52:19 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Register' button.
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+2025-04-21 11:22:26 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-21 11:22:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-21 11:22:28 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:22:28 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:22:28 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-21 11:22:29 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-21 11:22:29 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-21 11:22:29 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-21 11:23:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-21 11:23:26 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-21 11:23:27 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:23:27 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:23:28 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-21 11:23:28 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-21 11:23:29 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-21 11:23:29 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-21 11:25:36 [TestNG-PoolService-1] ERROR org.apache.logging.log4j.LogManager - Failed to see the list of popular tags. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tags"]//li1"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3952313bb9143790da35bb74453efb27, findElement {using=xpath, value=//div[@class="tags"]//li1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58682/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3952313bb9143790da35bb74453efb27
+2025-04-21 11:25:37 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:25:38 [TestNG-PoolService-2] ERROR org.apache.logging.log4j.LogManager - Failed to see the list of popular tags. Error: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tags"]//li1"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3da7e48de63c01f99a9a02a12c382979, findElement {using=xpath, value=//div[@class="tags"]//li1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58683/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3da7e48de63c01f99a9a02a12c382979
+2025-04-21 11:25:38 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-21 11:25:38 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-21 11:25:38 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-21 11:25:39 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-21 11:25:39 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-23 13:51:50 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-23 13:51:50 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-23 13:51:51 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-23 13:51:51 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-23 13:51:52 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-23 13:51:52 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-23 13:51:52 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
+2025-04-23 13:51:52 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-24 10:58:56 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-24 10:58:56 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-24 10:58:57 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-24 10:58:58 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-24 10:58:58 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-24 10:58:59 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-24 10:58:59 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Poll error message: Only registered users can vote.
+2025-04-24 10:59:00 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-24 10:59:01 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-24 10:59:02 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-24 10:59:03 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-24 10:59:06 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi
+2025-04-24 10:59:06 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 10:59:07 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-24 10:59:10 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 10:59:10 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:10 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Position
+2025-04-24 10:59:13 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-24 10:59:13 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: A to Z
+2025-04-24 10:59:13 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 10:59:13 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Subscription message: 
+2025-04-24 10:59:14 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:14 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 10:59:16 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:16 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - List of available books:
+2025-04-24 10:59:16 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: Z to A
+2025-04-24 10:59:16 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Computing and Internet
+30.00
+10.00
+2025-04-24 10:59:16 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:16 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Copy of Computing and Internet EX
+30.00
+10.00
+2025-04-24 10:59:16 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Fiction
+35.00
+24.00
+2025-04-24 10:59:17 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Fiction EX
+35.00
+24.00
+2025-04-24 10:59:17 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Health Book
+27.00
+10.00
+2025-04-24 10:59:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:17 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Science
+67.00
+51.00
+2025-04-24 10:59:17 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Computing & Internet' book.
+2025-04-24 10:59:18 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'Sort By' filter: Price: High to Low
+2025-04-24 10:59:18 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: Low to High
+2025-04-24 10:59:18 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Reviews' link.
+2025-04-24 10:59:19 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Read reviews: test
+test
+From: Test | Date: 8/9/2016 9:03 AM
+Was this review helpful? Yes No (3/2)
+2025-04-24 10:59:19 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Fiction' book.
+2025-04-24 10:59:19 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Book description: Fiction EX
+Bestselling fiction
+Availability: In stock
+395 review(s) | Add your review
+Old price: 35.00
+Price: 24.00
+Qty:
+2025-04-24 10:59:20 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 10:59:20 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: High to Low
+2025-04-24 10:59:20 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'Display By' filter: 4
+2025-04-24 10:59:21 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 10:59:22 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'View As' filter: List
+2025-04-24 10:59:22 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected 'Sort By' option: Price: High to Low
+2025-04-24 10:59:23 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Health' book.
+2025-04-24 10:59:24 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 10:59:24 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Book Names:
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager -  
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Health Book
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Copy of Computing and Internet EX
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Prices:
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Price
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 10:59:25 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 10:59:29 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Cleared compare list.
+2025-04-24 10:59:30 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Verify cleared list: You have no items to compare.
+2025-04-24 10:59:42 [TestNG-PoolService-3] ERROR org.apache.logging.log4j.LogManager - Price filter not found: Under 25.00
+2025-04-24 10:59:43 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Filtered books list: Science
+A guide to elementary science
+67.00
+51.00
+Fiction
+Bestselling fiction
+35.00
+24.00
+Fiction EX
+Bestselling fiction
+35.00
+24.00
+Copy of Computing and Internet EX
+More Than 100 tips about computing and internet.
+30.00
+10.00
+2025-04-24 10:59:53 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 10:59:53 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 10:59:53 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 10:59:53 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 10:59:53 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 10:59:54 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 10:59:54 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 10:59:54 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 10:59:54 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 10:59:55 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 11:00:02 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 11:00:02 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 11:00:03 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 11:00:03 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 11:00:09 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 11:00:09 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 11:00:10 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 11:00:13 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 11:02:14 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 11:02:15 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Not logged in error message: Only registered users can write reviews
+2025-04-24 11:02:15 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered search text: Fiction
+2025-04-24 11:02:20 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 11:02:21 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 11:02:21 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 11:02:21 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 11:02:21 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Search result: Fiction
+35.00
+24.00
+2025-04-24 11:02:26 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered search text: Mobile
+2025-04-24 11:02:26 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 11:02:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 11:02:27 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered review title: Demo
+2025-04-24 11:02:27 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered review title: 
+2025-04-24 11:02:29 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 11:02:30 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered search text: mo
+2025-04-24 11:02:30 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-24 11:02:30 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-24 11:02:31 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered review title: Test 1
+2025-04-24 11:02:32 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 11:02:32 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered review text: 
+2025-04-24 11:02:32 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 11:02:32 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 11:02:32 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - No result message: No products were found that matched your criteria.
+2025-04-24 11:02:33 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 11:02:33 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 11:02:35 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Search warning message: Search term minimum length is 3 characters
+2025-04-24 11:02:37 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 11:02:37 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Blank text error message: 
+2025-04-24 11:02:37 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered search text: Camera
+2025-04-24 11:02:37 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 11:02:38 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 11:02:38 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered search text: 
+2025-04-24 11:02:38 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Review submitted successfully: Product review is successfully added.
+2025-04-24 11:02:38 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Blank text error message: Review text is required.
+2025-04-24 11:02:38 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 11:02:39 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 11:02:40 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Enabled advanced search.
+2025-04-24 11:02:40 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied category filter.
+2025-04-24 11:02:40 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied camera category filter.
+2025-04-24 11:02:43 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Entered price range: Min=100, Max=500
+2025-04-24 11:02:46 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 11:02:47 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 11:02:48 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 11:02:48 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 11:02:49 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-24 11:02:49 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-24 11:02:49 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-24 11:02:49 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': 3rd Album
