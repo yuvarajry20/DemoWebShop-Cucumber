@@ -15,6 +15,7 @@ public class digitaldownloadstep {
             HelperClass.openPage("https://demowebshop.tricentis.com/");
         } catch (Exception e) {
             LogManagers.logError("Failed to open the web application. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -24,6 +25,7 @@ public class digitaldownloadstep {
             objdigitalact.Digitaldownload();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the digital download category. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -33,6 +35,7 @@ public class digitaldownloadstep {
             objdigitalact.addtocartmusic();
         } catch (Exception e) {
             LogManagers.logError("Failed to add the product to cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -42,6 +45,7 @@ public class digitaldownloadstep {
             objdigitalact.qtyproduct();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the number of products added in cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -51,6 +55,7 @@ public class digitaldownloadstep {
             objdigitalact.addfilter();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the filter option. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -60,6 +65,7 @@ public class digitaldownloadstep {
             objdigitalact.listallproducts();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the list of products based on the filter. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -69,6 +75,7 @@ public class digitaldownloadstep {
             objdigitalact.Assertheading();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the digital download product page. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

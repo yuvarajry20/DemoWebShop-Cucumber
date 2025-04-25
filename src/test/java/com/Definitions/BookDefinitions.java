@@ -27,6 +27,7 @@ public class BookDefinitions {
             HelperClass.openPage(url);
         } catch (Exception e) {
             LogManagers.logError("Failed to open the DemoWebShop homepage. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -36,6 +37,7 @@ public class BookDefinitions {
             bookAction.openBooksCategory();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on the category. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -45,6 +47,7 @@ public class BookDefinitions {
             bookAction.ListOfBooks();
         } catch (Exception e) {
             LogManagers.logError("Failed to see a list of books displayed. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -54,6 +57,7 @@ public class BookDefinitions {
             bookAction.clickFictionBook();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the book titled. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -63,6 +67,7 @@ public class BookDefinitions {
             bookAction.getBookDescription();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the product details page. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -79,6 +84,7 @@ public class BookDefinitions {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to apply the following filters. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -88,6 +94,7 @@ public class BookDefinitions {
             bookAction.filterAppliedBooks();
         } catch (Exception e) {
             LogManagers.logError("Failed to display the filtered books accordingly. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -102,6 +109,7 @@ public class BookDefinitions {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to apply each of the following Sort By filters. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -113,6 +121,7 @@ public class BookDefinitions {
             Assert.assertNotNull(selectedOption);
         } catch (Exception e) {
             LogManagers.logError("Failed to apply each sort result correctly. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -122,6 +131,7 @@ public class BookDefinitions {
             bookAction.clickComputingInternet();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the book link. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -131,6 +141,7 @@ public class BookDefinitions {
             bookAction.AddToCompareList();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the Add to Compare button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -141,6 +152,7 @@ public class BookDefinitions {
             bookAction.clickHealthBook();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the books category and click the link. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -150,6 +162,7 @@ public class BookDefinitions {
             bookAction.AddToCompareList();
         } catch (Exception e) {
             LogManagers.logError("Failed to add it to the compare list. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -159,6 +172,7 @@ public class BookDefinitions {
             bookAction.ResultOfCompareProducts();
         } catch (Exception e) {
             LogManagers.logError("Failed to verify and compare the prices of both the product. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -168,6 +182,7 @@ public class BookDefinitions {
             bookAction.ClearCompareProductsList();
         } catch (Exception e) {
             LogManagers.logError("Failed to clear the list in compare products. Error: " + e.getMessage());
+            throw e;
         }
     }
 

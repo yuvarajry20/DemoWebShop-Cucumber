@@ -36,6 +36,7 @@ public class MyAccountStepDefinition {
             loginAction.enterPassword(password);
         } catch (Exception e) {
             LogManagers.logError("Failed to provide email and password. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -45,6 +46,7 @@ public class MyAccountStepDefinition {
             loginAction.clickLoginLink();
         } catch (Exception e) {
             LogManagers.logError("Failed to click log in. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -54,6 +56,7 @@ public class MyAccountStepDefinition {
             addressAction.clickMyEmail();
         } catch (Exception e) {
             LogManagers.logError("Failed to click my email. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -63,6 +66,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickChangePassword();
         } catch (Exception e) {
             LogManagers.logError("Failed to click change Password. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -72,6 +76,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.enterOldPassword(string);
         } catch (Exception e) {
             LogManagers.logError("Failed to provide oldPassword. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -81,6 +86,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.enterNewConfirmPassword(string, string2);
         } catch (Exception e) {
             LogManagers.logError("Failed to provide newPassword and confirmPassword. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -104,6 +110,7 @@ public class MyAccountStepDefinition {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to click change Password. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -113,6 +120,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.enterOldPassword(string);
         } catch (Exception e) {
             LogManagers.logError("Failed to provide invalid oldPassword. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -122,6 +130,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickOrders();
         } catch (Exception e) {
             LogManagers.logError("Failed to click orders. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -131,6 +140,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getOrder());
         } catch (Exception e) {
             LogManagers.logError("Failed to see Order number. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -140,6 +150,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getOrderDate());
         } catch (Exception e) {
             LogManagers.logError("Failed to see Order Date. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -149,6 +160,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickOrderDetails();
         } catch (Exception e) {
             LogManagers.logError("Failed to click Details. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -158,6 +170,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getProductName());
         } catch (Exception e) {
             LogManagers.logError("Failed to see Products name. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -167,6 +180,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickBackInStock();
         } catch (Exception e) {
             LogManagers.logError("Failed to click Back in stock subscriptions. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -176,6 +190,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getBackInStockText());
         } catch (Exception e) {
             LogManagers.logError("Failed to see the currently subscribed lists. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -185,6 +200,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickRewardPoints();
         } catch (Exception e) {
             LogManagers.logError("Failed to click Reward points. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -194,6 +210,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getCurrentRewardPoints());
         } catch (Exception e) {
             LogManagers.logError("Failed to see the current balance of Reward points. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -203,6 +220,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getHistoryRewardPoints());
         } catch (Exception e) {
             LogManagers.logError("Failed to see the History. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -212,6 +230,7 @@ public class MyAccountStepDefinition {
             accountSectionAction.clickCustomerInfo();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the Customer Info. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -223,6 +242,7 @@ public class MyAccountStepDefinition {
             System.out.println(accountSectionAction.getEmail());
         } catch (Exception e) {
             LogManagers.logError("Failed to see the FirstName, LastName and Email. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

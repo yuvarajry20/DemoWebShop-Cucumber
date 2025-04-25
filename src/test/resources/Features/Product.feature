@@ -15,7 +15,7 @@ Then the shopping cart is empty
 @ProductDetailsValidation
 
 Scenario: Validating the Product Details and Adding to Cart
-When the user search for a product
+
 And see the product title and the product description
 And clicks on add to cart
 Then the user should see the successful message

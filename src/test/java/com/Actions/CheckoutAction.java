@@ -104,7 +104,11 @@ public class CheckoutAction {
     }
 
     public void paymentcontinuestep() {
-        CheckoutLocator.paymentcontinue.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    	WebElement element = wait.until(
+    	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
+    	);
+    	element.click();
         LogManagers.logInfo("Clicked on payment continue button.");
     }
 
@@ -143,8 +147,15 @@ public class CheckoutAction {
     }
 
     public void pdfinvoiceclik() {
-        CheckoutLocator.pdfinvoice.click();
+//        CheckoutLocator.pdfinvoice.click();
+//        LogManagers.logInfo("Clicked on PDF invoice link.");
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        WebElement pdfInvoiceLink = wait.until(
+            ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.page-body.checkout-data > div > ul > li:nth-child(2) > a"))
+        );
+        pdfInvoiceLink.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
+        
     }
 
     public void checkoutsteps() {
@@ -165,10 +176,11 @@ public class CheckoutAction {
     }
 
     public void creditcardcheckbox() {
-    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         WebElement creditCardCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='section payment-method']//ul//li[3]//div//div[2]//input")));
         creditCardCheckbox.click();
         LogManagers.logInfo("Clicked on credit card checkbox.");
+        
     }
 
     public void creditvisacard(String name, String number, String expdate, String year, String code) {
