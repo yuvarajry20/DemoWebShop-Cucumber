@@ -1,6 +1,7 @@
 package com.Actions;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.Pages.TagsPageLocators;
 import com.Utilities.HelperClass;
@@ -35,7 +36,9 @@ public class TagAction {
     }
 
     public void getProductsTaggedDigital() {
+    	String actualText="Products tagged with 'digital'";
         String digitalTaggedText = tagsPage.DigitalTagged.getText();
+        Assert.assertEquals(actualText, digitalTaggedText);
         LogManagers.logInfo("Products tagged with 'Digital': " + digitalTaggedText);
     }
 
