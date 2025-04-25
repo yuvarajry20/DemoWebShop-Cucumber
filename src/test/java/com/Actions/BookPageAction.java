@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import com.Pages.BookPageLocators;
 import com.Utilities.HelperClass;
@@ -142,7 +143,9 @@ public class BookPageAction {
     }
 
     public void verifyClearedList() {
+    	String actualList= "You have no items to compare.";
         String emptyListText = bookPage.EmptyCompareList.getText();
+        Assert.assertEquals(actualList, emptyListText);
         LogManagers.logInfo("Verify cleared list: " + emptyListText);
     }
 }

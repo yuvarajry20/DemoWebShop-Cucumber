@@ -112,6 +112,7 @@ public class HomeStepDefinition {
             homePage.ViewPollInvalidresult();
         } catch (Exception e) {
             LogManagers.logError("Failed to see an error message. Error: " + e.getMessage());
+            throw e;
         }
     }
    }

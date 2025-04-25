@@ -17,7 +17,8 @@ public class TagsPageLocators {
 	@FindBy(xpath="(//a[@class=\"producttag\"])[5]")
 	public WebElement cellTagLink;
 	
-	@FindBy(xpath="//div[@class=\"item-box\"]//h2")
+	//@FindBy(xpath="//div[@class=\"item-box\"]//h2")
+	@FindBy(xpath="//div[@class=\"page-title\"]//h1")
 	public WebElement DigitalTagged;
 	
 	@FindBy(xpath="//div[@class=\"item-box\"]//h2")

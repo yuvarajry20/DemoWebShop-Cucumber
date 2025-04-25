@@ -177,6 +177,7 @@ public class BookDefinitions {
             bookAction.verifyClearedList();
         } catch (Exception e) {
             LogManagers.logError("Failed to assert if the lists are cleared. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

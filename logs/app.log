@@ -33838,3 +33838,355 @@ Session ID: 68002ddf6128885bb5d2089dd69aaade
 2025-04-24 11:28:31 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Shipping estimate ways:
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+2025-04-24 19:30:53 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 19:30:55 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Computing & Internet' book.
+2025-04-24 19:30:56 [main] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 19:30:57 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 19:30:59 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Health' book.
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager - Book Names:
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager -  
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager - Health Book
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager - Copy of Computing and Internet EX
+2025-04-24 19:31:00 [main] INFO  org.apache.logging.log4j.LogManager - Prices:
+2025-04-24 19:31:01 [main] INFO  org.apache.logging.log4j.LogManager - Price
+2025-04-24 19:31:01 [main] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 19:31:01 [main] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 19:31:01 [main] INFO  org.apache.logging.log4j.LogManager - Cleared compare list.
+2025-04-24 19:31:01 [main] INFO  org.apache.logging.log4j.LogManager - Verify cleared list: You have no items to compare.
+2025-04-24 19:41:53 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 19:41:55 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Computing & Internet' book.
+2025-04-24 19:41:56 [main] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 19:41:57 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 19:41:58 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Health' book.
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Book Names:
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager -  
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Health Book
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Copy of Computing and Internet EX
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Prices:
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - Price
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 19:41:59 [main] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 19:42:00 [main] INFO  org.apache.logging.log4j.LogManager - Cleared compare list.
+2025-04-24 21:00:13 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-24 21:00:13 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:00:14 [main] INFO  org.apache.logging.log4j.LogManager - Subscription message: 
+2025-04-24 21:00:20 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi
+2025-04-24 21:00:20 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:00:20 [main] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-24 21:00:27 [main] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-24 21:00:34 [main] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-24 21:00:34 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-24 21:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-24 21:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:02:29 [main] INFO  org.apache.logging.log4j.LogManager - Subscription message: 
+2025-04-24 21:02:37 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi
+2025-04-24 21:02:37 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:02:37 [main] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-24 21:02:44 [main] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-24 21:02:59 [main] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-24 21:02:59 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-24 21:11:26 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-24 21:11:26 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:11:26 [main] INFO  org.apache.logging.log4j.LogManager - Subscription message: 
+2025-04-24 21:11:42 [main] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi
+2025-04-24 21:11:42 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 21:11:42 [main] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-24 21:11:48 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-24 21:11:48 [main] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-24 21:11:48 [main] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-24 21:11:48 [main] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-24 21:11:48 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-24 21:11:49 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-24 21:11:49 [main] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-24 21:11:49 [main] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-24 21:11:58 [main] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-24 21:11:58 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-24 21:11:58 [main] INFO  org.apache.logging.log4j.LogManager - Poll error message: 
+2025-04-24 22:16:28 [main] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 22:16:29 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 22:16:30 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-24 22:16:30 [main] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': Products tagged with 'digital'
+2025-04-24 22:16:44 [main] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 22:16:45 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 22:16:46 [main] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-24 22:16:46 [main] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
+2025-04-24 22:27:46 [TestNG-PoolService-8] ERROR org.apache.logging.log4j.LogManager - Failed to open Demowebshop Homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [489024461528c49ac161972dc47b8d37, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56048/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 489024461528c49ac161972dc47b8d37
+2025-04-24 22:27:46 [TestNG-PoolService-5] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc395476da8f6fc0abdb93be09d2a5e2, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56067/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc395476da8f6fc0abdb93be09d2a5e2
+2025-04-24 22:27:46 [TestNG-PoolService-3] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a354784d7ef052be11f040507f79c06d, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56050/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a354784d7ef052be11f040507f79c06d
+2025-04-24 22:27:46 [TestNG-PoolService-6] ERROR org.apache.logging.log4j.LogManager - Failed to open Demowebshop Homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [331f98989d5a736736c49f2f281d4c67, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56071/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 331f98989d5a736736c49f2f281d4c67
+2025-04-24 22:27:46 [TestNG-PoolService-2] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d854ede38eec656bec96516ddcbef753, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56090/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d854ede38eec656bec96516ddcbef753
+2025-04-24 22:27:46 [TestNG-PoolService-10] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop Homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b82113bae4a6512e454567e228a5413d, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b82113bae4a6512e454567e228a5413d
+2025-04-24 22:27:49 [TestNG-PoolService-7] ERROR org.apache.logging.log4j.LogManager - Failed to enter the email in the newsletter field. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04c212e35525912663f9384c15f39edf, findElement {using=xpath, value=//input[@id="newsletter-email"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56086/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04c212e35525912663f9384c15f39edf
+2025-04-24 22:27:46 [TestNG-PoolService-1] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd7db6af0ad4e9c05bc8ce09814f5e6d, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56085/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7db6af0ad4e9c05bc8ce09814f5e6d
+2025-04-24 22:27:46 [TestNG-PoolService-9] ERROR org.apache.logging.log4j.LogManager - Failed to open Demowebshop Homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1388ce142a11dadcab310d1f74b95e65, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56049/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1388ce142a11dadcab310d1f74b95e65
+2025-04-24 22:27:46 [TestNG-PoolService-4] ERROR org.apache.logging.log4j.LogManager - Failed to open the DemoWebShop homepage. Error: java.util.concurrent.TimeoutException
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2cd5df1f0ce908e639412bdea579b71, get {url=https://demowebshop.tricentis.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56089/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a2cd5df1f0ce908e639412bdea579b71
+2025-04-24 22:28:26 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email for newsletter subscription: sakthi@gmail.com
+2025-04-24 22:28:27 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 22:28:27 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Subscription message: Thank you for signing up! A verification email has been sent. We appreciate your interest.
+2025-04-24 22:28:32 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Selected 'Excellent' voting option.
+2025-04-24 22:28:32 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Featured Products section text: FEATURED PRODUCTS
+2025-04-24 22:28:32 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Featured Products:
+2025-04-24 22:28:32 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Vote' button.
+2025-04-24 22:28:32 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - $25 Virtual Gift Card
+25.00
+2025-04-24 22:28:32 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Poll error message: 
+2025-04-24 22:28:32 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - 14.1-inch Laptop
+1590.00
+2025-04-24 22:28:32 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:28:33 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own cheap computer
+800.00
+2025-04-24 22:28:34 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own computer
+1200.00
+2025-04-24 22:28:34 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Build your own expensive computer
+1800.00
+2025-04-24 22:28:35 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - - Simple Computer
+800.00
+2025-04-24 22:28:37 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:28:37 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Position
+2025-04-24 22:28:38 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: A to Z
+2025-04-24 22:28:41 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 22:28:41 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:28:43 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Name: Z to A
+2025-04-24 22:28:45 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Computing & Internet' book.
+2025-04-24 22:28:45 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Fiction' book.
+2025-04-24 22:28:45 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Book description: Fiction EX
+Bestselling fiction
+Availability: In stock
+395 review(s) | Add your review
+Old price: 35.00
+Price: 24.00
+Qty:
+2025-04-24 22:28:46 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 22:28:46 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: Low to High
+2025-04-24 22:28:47 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 22:28:48 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applying sort filters: Price: High to Low
+2025-04-24 22:28:48 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Subscribe' button for newsletter.
+2025-04-24 22:28:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:28:48 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - List of available books:
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Computing and Internet
+30.00
+10.00
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Copy of Computing and Internet EX
+30.00
+10.00
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Fiction
+35.00
+24.00
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Fiction EX
+35.00
+24.00
+2025-04-24 22:28:49 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Reviews' link.
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Health Book
+27.00
+10.00
+2025-04-24 22:28:49 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - - Science
+67.00
+51.00
+2025-04-24 22:28:49 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:28:49 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Read reviews: test
+test
+From: Test | Date: 8/9/2016 9:03 AM
+Was this review helpful? Yes No (3/2)
+2025-04-24 22:28:49 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Invalid subscription message: Enter valid email
+2025-04-24 22:28:50 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Selected 'Sort By' option: Price: High to Low
+2025-04-24 22:28:51 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Health' book.
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Added book to compare list.
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Book Names:
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager -  
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Health Book
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Copy of Computing and Internet EX
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Prices:
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Price
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 22:28:55 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - 10.00
+2025-04-24 22:28:57 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Cleared compare list.
+2025-04-24 22:28:57 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Verify cleared list: You have no items to compare.
+2025-04-24 22:29:17 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 22:29:18 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 22:29:18 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 22:29:18 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 22:29:19 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' link.
+2025-04-24 22:29:19 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 22:29:19 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered email: abccy@gmail.com
+2025-04-24 22:29:20 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 22:29:20 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 22:29:20 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered password: 789456
+2025-04-24 22:29:21 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 22:29:21 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 22:29:22 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 22:29:23 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Login' button.
+2025-04-24 22:29:26 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 22:29:26 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 22:29:26 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 22:29:26 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Category' link.
+2025-04-24 22:29:32 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 22:29:34 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 22:29:35 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered review title: 
+2025-04-24 22:29:36 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 22:29:36 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-24 22:29:36 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Not logged in error message: Only registered users can write reviews
+2025-04-24 22:29:36 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Entered search text: Fiction
+2025-04-24 22:29:36 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 22:29:36 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 22:29:38 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Gift Card' link.
+2025-04-24 22:29:40 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:29:40 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 22:29:40 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 22:29:41 [TestNG-PoolService-10] INFO  org.apache.logging.log4j.LogManager - Search result: Fiction
+35.00
+24.00
+2025-04-24 22:29:41 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Blank text error message: 
+2025-04-24 22:29:42 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered review title: Demo
+2025-04-24 22:29:43 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Add Review' button.
+2025-04-24 22:29:45 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Entered review text: The product is awesome
+2025-04-24 22:29:45 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered review title: Test 1
+2025-04-24 22:29:45 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Entered review text: 
+2025-04-24 22:29:45 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 22:29:45 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Entered search text: Mobile
+2025-04-24 22:29:46 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Books' category.
+2025-04-24 22:29:46 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Rating' button.
+2025-04-24 22:29:49 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:29:49 [TestNG-PoolService-5] INFO  org.apache.logging.log4j.LogManager - No result message: No products were found that matched your criteria.
+2025-04-24 22:29:50 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'Sort By' filter: Price: High to Low
+2025-04-24 22:29:50 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 22:29:51 [TestNG-PoolService-6] INFO  org.apache.logging.log4j.LogManager - Review submitted successfully: Product review is successfully added.
+2025-04-24 22:29:51 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Submit Review' button.
+2025-04-24 22:29:51 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Blank text error message: Review text is required.
+2025-04-24 22:29:54 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'Display By' filter: 4
+2025-04-24 22:29:56 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Applied 'View As' filter: List
+2025-04-24 22:29:56 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Entered search text: mo
+2025-04-24 22:29:56 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered search text: Camera
+2025-04-24 22:29:59 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:29:59 [TestNG-PoolService-7] INFO  org.apache.logging.log4j.LogManager - Search warning message: Search term minimum length is 3 characters
+2025-04-24 22:29:59 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:30:00 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Enabled advanced search.
+2025-04-24 22:30:00 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applied category filter.
+2025-04-24 22:30:00 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Applied camera category filter.
+2025-04-24 22:30:02 [TestNG-PoolService-4] INFO  org.apache.logging.log4j.LogManager - Entered price range: Min=100, Max=500
+2025-04-24 22:30:02 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Entered search text: 
+2025-04-24 22:30:03 [TestNG-PoolService-1] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:30:11 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered search text: Camera
+2025-04-24 22:30:12 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 22:30:12 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Search' button.
+2025-04-24 22:30:13 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Enabled advanced search.
+2025-04-24 22:30:13 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 22:30:13 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Applied category filter.
+2025-04-24 22:30:13 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Applied cell phone category filter.
+2025-04-24 22:30:14 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Digital' tag link.
+2025-04-24 22:30:14 [TestNG-PoolService-8] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Digital': Products tagged with 'digital'
+2025-04-24 22:30:14 [TestNG-PoolService-2] INFO  org.apache.logging.log4j.LogManager - Entered price range: Min=100, Max=500
+2025-04-24 22:30:16 [TestNG-PoolService-3] ERROR org.apache.logging.log4j.LogManager - Price filter not found: Under 25.00
+2025-04-24 22:30:16 [TestNG-PoolService-3] INFO  org.apache.logging.log4j.LogManager - Filtered books list: Science
+A guide to elementary science
+67.00
+51.00
+Fiction
+Bestselling fiction
+35.00
+24.00
+Fiction EX
+Bestselling fiction
+35.00
+24.00
+Copy of Computing and Internet EX
+More Than 100 tips about computing and internet.
+30.00
+10.00
+2025-04-24 22:30:17 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Tagged products text: apparel
+2025-04-24 22:30:17 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'View All' link.
+2025-04-24 22:30:18 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Clicked on 'Cell' tag link.
+2025-04-24 22:30:18 [TestNG-PoolService-9] INFO  org.apache.logging.log4j.LogManager - Products tagged with 'Cell': Smartphone
