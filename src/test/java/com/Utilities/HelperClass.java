@@ -111,7 +111,7 @@ public class HelperClass {
             WebDriver driver = null;
             if (this.web.equalsIgnoreCase("Chrome")) {
             	ChromeOptions opt=new ChromeOptions();
-            	opt.addArguments("--headless");
+            //	opt.addArguments("--headless");
             	Map<String, Object> prefs = new HashMap<String, Object>();
             	prefs.put("credentials_enable_service", false);
             	prefs.put("profile.password_manager_enabled", false);
