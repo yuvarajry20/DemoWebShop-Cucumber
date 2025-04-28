@@ -29,13 +29,13 @@ public class TricentisstepDefinition {
         }
     }
 
-    @Then("the user should be redirected to the Tricentis webpage")
-    public void the_user_should_be_redirected_to_the_tricentis_webpage() {
-        try {
-            objtri.assertpage();
-        } catch (Exception e) {
-            LogManagers.logError("Failed to assert the Tricentis webpage. Error: " + e.getMessage());
-            throw e;
-        }
+@Then("the user should redirected to the tricentis webpage")
+public void the_user_should_redirected_to_the_tricentis_webpage() {
+	try {
+        objtri.assertpage();
+    } catch (Exception e) {
+        LogManagers.logError("Failed to assert the Tricentis webpage. Error: " + e.getMessage());
+        throw e;
     }
+}
 }
