@@ -25,9 +25,11 @@ public class CheckoutStepDefinition {
     @When("I log in and add an item and add to cart")
     public void i_log_in_and_add_an_item_and_add_to_cart(io.cucumber.datatable.DataTable dataTable) throws ProductSearchException {
         try {
-            objcheckout.login();
-            List<String> objList = dataTable.asList(String.class);
-            String productName = objList.get(0);
+        	List<String> objList = dataTable.asList(String.class);
+        	String email=objList.get(0);
+        	String password=objList.get(1);
+            objcheckout.login(email,password);
+            String productName = objList.get(2);
             objcheckout.searchAnItem(productName);
             objcheckout.addtocartanitem();
         } catch (Exception e) {
@@ -152,7 +154,7 @@ public class CheckoutStepDefinition {
             objcheckout.selectcheckout();
             objcheckout.selectaddresss();
             objcheckout.billcontinuebtn();
-            //objcheckout.storepickupbox();
+            objcheckout.storepickupbox();
             objcheckout.shippingcontinue();
             objcheckout.paymentcontinuestep();
             objcheckout.paymentinfocontinue();
@@ -239,6 +241,8 @@ public class CheckoutStepDefinition {
     @When("select the credit card method and enter the required fields")
     public void select_the_credit_card_method_and_enter_the_required_fields(io.cucumber.datatable.DataTable dataTable) {
         try {
+        	objcheckout.storepickupbox();
+            objcheckout.shippingcontinue();
             objcheckout.creditcardcheckbox();
             objcheckout.paymentcontinuestep();
             List<String> objList = dataTable.asList(String.class);
