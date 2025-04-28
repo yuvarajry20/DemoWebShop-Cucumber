@@ -1,4 +1,4 @@
-Feature: HomePageFunctionality 
+Feature: Laksitha_12APR2025_DemoWebShop_HomePageFunctionality 
 
 Background: 
   Given I am on Demowebshop Homepage "https://demowebshop.tricentis.com/"
@@ -34,13 +34,13 @@ Scenario: Subscribe with invalid email address
     And click the vote button
     Then I should see an error message
     
-    #@RecentlyViewed
-    #Scenario: View Recent products as list
-    #When I login using the following credentials
-    #| email            | password  |
-    #|abccy@gmail.com   |789456     |
-    #And I click the search bar and enter search keyword
-    #And click the product link
-    #And return to homepage 
-    #Then I should see list of Recent products displayed 
+    @RecentlyViewed
+    Scenario: View Recent products as list
+    When I login using the following credentials
+    | email            | password  |
+    |abccy@gmail.com   |789456     |
+    And I click the search bar and enter search keyword
+    And click the product link
+    And return to homepage 
+    Then I should see list of Recent products displayed 
     

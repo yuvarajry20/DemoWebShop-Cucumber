@@ -1,4 +1,4 @@
-Feature: Review a product Functionality
+Feature: Laksitha_15APR2025_DemoWebShop_Review_a_product
 
 @ReadReviews
 Scenario: View submitted reviews of a product

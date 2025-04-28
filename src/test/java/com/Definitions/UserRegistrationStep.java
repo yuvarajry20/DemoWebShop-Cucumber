@@ -16,25 +16,27 @@ public class UserRegistrationStep {
     UserRegistrationAction userRegistrationAction = new UserRegistrationAction();
 
     @When("I click on register")
-    public void i_click_on_register() {
+    public void i_click_on_register() throws UserRegistrationException {
         try {
             userRegistrationAction.clickOnRegisterLink();
         } catch (UserRegistrationException e) {
             LogManagers.logError("Failed to click on register. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("I choose gender")
-    public void i_choose_gender() {
+    public void i_choose_gender() throws UserRegistrationException {
         try {
             userRegistrationAction.selectGender();
         } catch (UserRegistrationException e) {
             LogManagers.logError("Failed to choose gender. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("I enter {string},{string},{string},{string},{string} in the corresponding field")
-    public void i_enter_in_the_corresponding_field(String string, String string2, String string3, String string4, String string5) {
+    public void i_enter_in_the_corresponding_field(String string, String string2, String string3, String string4, String string5) throws UserRegistrationException {
         try {
             if (string3.contains("yuvabbb@gmail.com")) {
                 String uniqueEmail = "test" + System.currentTimeMillis() + "@example.com";
@@ -44,15 +46,17 @@ public class UserRegistrationStep {
             }
         } catch (UserRegistrationException e) {
             LogManagers.logError("Failed to enter registration details. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("I click on the register button")
-    public void i_click_on_the_register_button() {
+    public void i_click_on_the_register_button() throws UserRegistrationException {
         try {
             userRegistrationAction.clickOnRegisterButton();
         } catch (UserRegistrationException e) {
             LogManagers.logError("Failed to click on the register button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -65,6 +69,7 @@ public class UserRegistrationStep {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to verify registration result. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -98,6 +103,7 @@ public class UserRegistrationStep {
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to get actual result. Error: " + e.getMessage());
+            throw e;
         }
         return actualResult;
     }

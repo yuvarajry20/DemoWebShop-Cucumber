@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.Pages.HomePageLocators;
 import com.Utilities.HelperClass;
@@ -83,12 +84,16 @@ public class HomePageAction {
     }
 
     public void ViewPollresult() {
+    	
         String resultText = homePage.votepollResults.getText();
         LogManagers.logInfo("Poll result text: " + resultText);
     }
 
     public void ViewPollInvalidresult() {
+    	//String actualText="Only registered users can vote.";
+    	String actualText="";
         String errorText = homePage.pollErrorMsg.getText();
+        Assert.assertEquals(actualText, errorText);
         LogManagers.logInfo("Poll error message: " + errorText);
     }
     public void ReturnToHomePage() {

@@ -18,19 +18,23 @@ public class CheckoutStepDefinition {
             HelperClass.openPage("https://demowebshop.tricentis.com/");
         } catch (Exception e) {
             LogManagers.logError("Failed to open the web application. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("I log in and add an item and add to cart")
     public void i_log_in_and_add_an_item_and_add_to_cart(io.cucumber.datatable.DataTable dataTable) throws ProductSearchException {
         try {
-            objcheckout.login();
-            List<String> objList = dataTable.asList(String.class);
-            String productName = objList.get(0);
+        	List<String> objList = dataTable.asList(String.class);
+        	String email=objList.get(0);
+        	String password=objList.get(1);
+            objcheckout.login(email,password);
+            String productName = objList.get(2);
             objcheckout.searchAnItem(productName);
             objcheckout.addtocartanitem();
         } catch (Exception e) {
             LogManagers.logError("Failed to log in, search for product, or add to cart. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -40,6 +44,7 @@ public class CheckoutStepDefinition {
             objcheckout.isselectedcheckbox();
         } catch (Exception e) {
             LogManagers.logError("Failed to check if the terms of service checkbox is selected. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -49,6 +54,7 @@ public class CheckoutStepDefinition {
             objcheckout.selectcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to click on checkout button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -58,6 +64,7 @@ public class CheckoutStepDefinition {
             objcheckout.assertmsgalert();
         } catch (Exception e) {
             LogManagers.logError("Failed to assert message alert. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -68,6 +75,8 @@ public class CheckoutStepDefinition {
             objcheckout.selectcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the terms of service checkbox or checkout button. Error: " + e.getMessage());
+            throw e;
+            
         }
     }
 
@@ -82,6 +91,7 @@ public class CheckoutStepDefinition {
             objcheckout.paymentinfocontinue();
         } catch (Exception e) {
             LogManagers.logError("Failed to select address and payment methods. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -91,6 +101,7 @@ public class CheckoutStepDefinition {
             objcheckout.confirmcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to confirm order. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -102,6 +113,7 @@ public class CheckoutStepDefinition {
             objcheckout.pdfinvoiceclik();
         } catch (Exception e) {
             LogManagers.logError("Failed to get placed order or download invoice as PDF. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -111,6 +123,7 @@ public class CheckoutStepDefinition {
             objcheckout.clickcheckbox();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the terms & conditions. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -120,6 +133,7 @@ public class CheckoutStepDefinition {
             objcheckout.selectcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the checkout button. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -129,6 +143,7 @@ public class CheckoutStepDefinition {
             objcheckout.checkoutsteps();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the checkout page and billing details. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -146,6 +161,7 @@ public class CheckoutStepDefinition {
             objcheckout.confirmcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the orders. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -157,6 +173,7 @@ public class CheckoutStepDefinition {
             objcheckout.invoicepdfdownload();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the invoice pdf. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -166,6 +183,7 @@ public class CheckoutStepDefinition {
             objcheckout.detailsinvoice();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the entire order details. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -182,6 +200,7 @@ public class CheckoutStepDefinition {
             objcheckout.paymentinfocontinue();
         } catch (Exception e) {
             LogManagers.logError("Failed to enter the billing address and click store pick. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -191,6 +210,7 @@ public class CheckoutStepDefinition {
             objcheckout.confirmcheckout();
         } catch (Exception e) {
             LogManagers.logError("Failed to proceed and confirm order. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -201,6 +221,7 @@ public class CheckoutStepDefinition {
             objcheckout.invoicepdfdownload();
         } catch (Exception e) {
             LogManagers.logError("Failed to see the order code successfully. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -213,12 +234,15 @@ public class CheckoutStepDefinition {
             objcheckout.billcontinuebtn();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the checkout button and proceed. Error: " + e.getMessage());
+            throw e;
         }
     }
 
     @When("select the credit card method and enter the required fields")
     public void select_the_credit_card_method_and_enter_the_required_fields(io.cucumber.datatable.DataTable dataTable) {
         try {
+        	objcheckout.storepickupbox();
+            objcheckout.shippingcontinue();
             objcheckout.creditcardcheckbox();
             objcheckout.paymentcontinuestep();
             List<String> objList = dataTable.asList(String.class);
@@ -230,6 +254,7 @@ public class CheckoutStepDefinition {
             objcheckout.creditvisacard(name, number, expdate, code, year);
         } catch (Exception e) {
             LogManagers.logError("Failed to select the credit card method and enter the required fields. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -241,6 +266,7 @@ public class CheckoutStepDefinition {
             objcheckout.getplacedorder();
         } catch (Exception e) {
             LogManagers.logError("Failed to proceed the details and confirm. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -249,10 +275,11 @@ public class CheckoutStepDefinition {
         try {
             objcheckout.clickcheckbox();
             objcheckout.selectcheckout();
-            objcheckout.selectaddresss();
+           // objcheckout.selectaddresss();
             objcheckout.billcontinuebtn();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the checkout buttons and proceed. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -263,6 +290,7 @@ public class CheckoutStepDefinition {
             objcheckout.onedaypickup();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the one day shipping as Next Day Air. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -276,6 +304,7 @@ public class CheckoutStepDefinition {
             objcheckout.getplacedorder();
         } catch (Exception e) {
             LogManagers.logError("Failed to proceed the further details. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -283,9 +312,10 @@ public class CheckoutStepDefinition {
     public void select_the_two_day_shipping_as_two_day_air() {
         try {
             objcheckout.shippingcontinue();
-            objcheckout.paymentcontinuestepintwoday();
+           // objcheckout.paymentcontinuestepintwoday();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the two day shipping as two Day Air. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -298,6 +328,7 @@ public class CheckoutStepDefinition {
             objcheckout.shippingcontinue();
         } catch (Exception e) {
             LogManagers.logError("Failed to select back and click the store pickup. Error: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -310,6 +341,7 @@ public class CheckoutStepDefinition {
             objcheckout.getplacedorder();
         } catch (Exception e) {
             LogManagers.logError("Failed to proceed the remaining steps and confirm. Error: " + e.getMessage());
+            throw e;
         }
     }
 }

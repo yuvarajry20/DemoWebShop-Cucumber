@@ -2,13 +2,17 @@ package com.Actions;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.Pages.Checkoutpage;
@@ -23,12 +27,12 @@ public class CheckoutAction {
         PageFactory.initElements(HelperClass.getDriver(), CheckoutLocator);
     }
 
-    public void login() {
+    public void login(String email,String password) {
         CheckoutLocator.LoginButtonHomePages.click();
-        CheckoutLocator.Emaillogin.sendKeys("abcggggg123@Gmail.com");
-        CheckoutLocator.Passwordlogin.sendKeys("Divraj@1234");
+        CheckoutLocator.Emaillogin.sendKeys(email);
+        CheckoutLocator.Passwordlogin.sendKeys(password);
         CheckoutLocator.LoginButtonclick.click();
-        LogManagers.logInfo("Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234");
+        LogManagers.logInfo("Logged in with credentials:");
     }
 
     public class ProductSearchException extends Exception {
@@ -104,7 +108,11 @@ public class CheckoutAction {
     }
 
     public void paymentcontinuestep() {
-        CheckoutLocator.paymentcontinue.click();
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    	WebElement element = wait.until(
+    	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
+    	);
+    	element.click();
         LogManagers.logInfo("Clicked on payment continue button.");
     }
 
@@ -145,6 +153,13 @@ public class CheckoutAction {
     public void pdfinvoiceclik() {
         CheckoutLocator.pdfinvoice.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
+//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+//        WebElement pdfInvoiceLink = wait.until(
+//            ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.page-body.checkout-data > div > ul > li:nth-child(2) > a"))
+//        );
+//        pdfInvoiceLink.click();
+        LogManagers.logInfo("Clicked on PDF invoice link.");
+        
     }
 
     public void checkoutsteps() {
@@ -165,10 +180,11 @@ public class CheckoutAction {
     }
 
     public void creditcardcheckbox() {
-    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(5));
         WebElement creditCardCheckbox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='section payment-method']//ul//li[3]//div//div[2]//input")));
         creditCardCheckbox.click();
         LogManagers.logInfo("Clicked on credit card checkbox.");
+        
     }
 
     public void creditvisacard(String name, String number, String expdate, String year, String code) {
