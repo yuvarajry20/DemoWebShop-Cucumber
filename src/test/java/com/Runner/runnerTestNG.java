@@ -23,7 +23,7 @@ features={
 		"src/test/resources/Features/DigitalDownload.feature",
 		"src/test/resources/Features/Tricentis.feature",
 		"src/test/resources/Features/CustomerService.feature",
-		"src/test/resources/Features/CustomerService.feature"
+		"src/test/resources/Features/Footer.feature"
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
