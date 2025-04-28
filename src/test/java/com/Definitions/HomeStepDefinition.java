@@ -124,4 +124,43 @@ public class HomeStepDefinition {
             throw e;
         }
     }
+    @When("I login using the following credentials")
+    public void i_login_using_the_following_credentials(io.cucumber.datatable.DataTable dataTable) {
+       List<Map<String,String>> data=dataTable.asMaps(String.class,String.class);
+       loginAction.clickLoginLink();
+       String email=data.get(0).get("email");
+       String password=data.get(0).get("password");
+       loginAction.enterEmail(email);
+       loginAction.enterPassword(password);
+       loginAction.clickLoginButton();
+    //   homePage.enter
+       
+    }
+
+    @When("I click the search bar and enter search keyword")
+    public void i_click_the_search_bar_and_enter_search_keyword() {
+     // searchAction.enterSearchText();
+      searchAction.enterSearchText("Fiction");
+      searchAction.clickSearchButton();
+      
+    }
+
+    @When("click the product link")
+    public void click_the_product_link() {
+        bookAction.clickFictionBook();
+        
+        searchAction.enterSearchText("Health book");
+        bookAction.clickHealthBook();
+    }
+
+    @When("return to homepage")
+    public void return_to_homepage() {
+       homePage.ReturnToHomePage();
+    }
+
+    @Then("I should see list of Recent products displayed")
+    public void i_should_see_list_of_recent_products_displayed() {
+    	homePage.VerifyRecentProducts();
+           homePage.GetRecentlyViewedProducts();
+    }
    }
