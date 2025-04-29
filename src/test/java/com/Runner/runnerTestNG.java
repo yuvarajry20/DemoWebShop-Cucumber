@@ -14,16 +14,15 @@ features={
 		"src/test/resources/Features/Books.feature",
 		"src/test/resources/Features/HomePage.feature",
 		"src/test/resources/Features/Address.feature",
-		"src/test/resources/Features/CheckOut.feature",
+		 "src/test/resources/Features/CheckOut.feature",
 		"src/test/resources/Features/MyAccountSection.feature",
         "src/test/resources/Features/SearchFunction.feature",
 		"src/test/resources/Features/UserRegistration.feature",
-		"src/test/resources/Features/Review.feature",
-		"src/test/resources/Features/Tags.feature",
-		"src/test/resources/Features/DigitalDownload.feature",
-		"src/test/resources/Features/Tricentis.feature",
-		"src/test/resources/Features/CustomerService.feature",
-		"src/test/resources/Features/Footer.feature"
+		 "src/test/resources/Features/Review.feature",
+		 "src/test/resources/Features/Tags.feature",
+		 "src/test/resources/Features/DigitalDownload.feature",
+		 "src/test/resources/Features/Tricentis.feature",
+		"src/test/resources/Features/CustomerService.feature"
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
