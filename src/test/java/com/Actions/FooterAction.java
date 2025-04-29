@@ -14,7 +14,7 @@ public class FooterAction {
 	    }
 
 	    public void clickNopLink() {
-	        footerpage.Footerlink.click();
+	        footerpage.nopFooterlink.click();
 	    }
 
 	    public String getNOPText() {
@@ -22,6 +22,12 @@ public class FooterAction {
 	    }
 	    public String getCurrentUrl() {
 	        return HelperClass.getDriver().getCurrentUrl();
+	    }
+	    public void clickSiteMapLink() {
+	    	footerpage.siteMaplink.click();
+	    }
+	    public void clickAccesoriesLink() {
+	    	footerpage.AccessoriesLink.click();
 	    }
 
 
