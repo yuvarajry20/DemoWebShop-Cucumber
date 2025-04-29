@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-
 package com.Runner;
 import org.testng.annotations.DataProvider;
 
@@ -33,4 +30,3 @@ public class runnerTestNG extends AbstractTestNGCucumberTests {
     	return super.scenarios();
 	}
 }
->>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
