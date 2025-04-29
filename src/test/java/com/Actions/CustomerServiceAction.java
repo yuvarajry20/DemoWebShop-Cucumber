@@ -19,4 +19,28 @@ public class CustomerServiceAction {
     public String getLatestNewsText() {
         return customerServicePage.getnewsText.getText();
     }
+
+    public void clickBlogLink() {
+        customerServicePage.clickBloglink.click();
+    }
+
+    public String getBlogTitleText() {
+        return customerServicePage.clickBlogTitle.getText();
+    }
+
+    public void clickFirstBlog() {
+        customerServicePage.clickBlogTitle.click();
+    }
+
+    public void addComment(String comment) {
+        customerServicePage.AddNewCommewnt.sendKeys(comment);
+    }
+
+    public void clickNewComment() {
+        customerServicePage.clickNewcomment.click();
+    }
+
+    public String getResultText() {
+        return customerServicePage.ResultText.getText();
+    }
 }
