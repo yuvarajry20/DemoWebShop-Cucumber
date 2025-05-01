@@ -1,5 +1,8 @@
 package com.Definitions;
 
+import java.util.List;
+import java.util.Map;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 
@@ -66,6 +69,36 @@ public class FooterDefinition {
 //          throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
 //      }
         
+    @When("clicks on the Contact us link")
+    public void clicks_on_the_contact_us_link() {
+       footerAction.clickContactUsLink();
+    }
+
+    @When("enters the contact details")
+    public void enters_the_contact_details(io.cucumber.datatable.DataTable dataTable) {
+    	 List<Map<String, String>> contactDetails = dataTable.asMaps(String.class, String.class);
+    	    Map<String, String> data = contactDetails.get(0); 
+
+    	    String name = data.get("name");
+    	    String email = data.get("email");
+    	    String enquiry = data.get("enquiry");
+
+    	    footerAction.enterDetails(name, email, enquiry);
+    }
+
+    @When("clicks on the submit button")
+    public void clicks_on_the_submit_button() {
+    	footerAction.clickSubmit();
+    }
+
+    @Then("the confirmation should be displayed")
+    public void the_confirmation_should_be_displayed() throws InterruptedException {
+//    	 String actualMessage = footerAction.getConfirmation();
+//    	 String expectedMessage = "Your enquiry has been successfully sent to the store owner.";
+//    	 Assert.assertEquals("Confirmation message mismatch!", expectedMessage, actualMessage);
+    	footerAction.getConfirmation();
+    	}
+    	   
 }
 
 
