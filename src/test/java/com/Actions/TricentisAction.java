@@ -74,4 +74,15 @@ public class TricentisAction {
         System.out.println(exp);
         LogManagers.logInfo("Successfully asserted the text for the upcoming partner event.");
     }
+    public void trialsdemos() {
+        WebElement demoTrialElement = trilocate.demotrial;
+        ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", demoTrialElement);
+
+        Actions actions = new Actions(HelperClass.getDriver());
+        actions.moveToElement(demoTrialElement).click().perform();
+    }
+    public void enterprise()
+    {
+    	System.out.println(HelperClass.getDriver().getCurrentUrl());
+    }
 }
