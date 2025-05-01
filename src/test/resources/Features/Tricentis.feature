@@ -21,5 +21,11 @@ And click the upcoming webinars in the footer
 And enter the keyword in the filter search box
 Then the user should see the upcoming partner event
 
+@Tricentis_Demo_trial
+Scenario:To verify the demo trial in the tricentis
+
+And click the trials&Demo
+Then the user should see the list of software test tool demo
+
 
 
