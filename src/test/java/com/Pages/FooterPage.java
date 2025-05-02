@@ -14,9 +14,6 @@ public class FooterPage {
 	@FindBy(xpath="//a[contains(text(),\"Sitemap\")]")
 	public WebElement siteMaplink;
 	
-	@FindBy(xpath="(/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div[2]/div[2]/ul/li[5]/a")
-	public WebElement AccessoriesLink;
-	
 	@FindBy(xpath="//a[contains(text(),\"Contact us\")]")
 	public WebElement ContactUsLink;
 	
