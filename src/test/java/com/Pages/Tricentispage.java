@@ -23,6 +23,13 @@ public class Tricentispage {
 	@FindBy(xpath="//h2[@class=\"EventCard_title__qAh58\"]//a")
 	public WebElement titleinkeyword;
 	
+//	@FindBy(xpath = "//*[@id=\"__next\"]/footer/div[1]/div/div[5]/div[2]/a[1]")
+	@FindBy(xpath="//div[@class=\"FooterMenuColumn_column__dy0pm\"]//a[contains(text(),\"Demos & Trials\")]")
+	public WebElement demotrial;
+	
+	@FindBy(xpath="//div[@class=\"Heading_content-copy__ZKgho  Heading_anim-play___4J_5 Heading_anim-fade-in-up__Takxt \"]//h3")
+	public WebElement testtoolslist;
+	
 	
 	
 

@@ -1,8 +1,31 @@
-Feature: Verify footer link functionality on the homepage
+Feature: Laksitha_28APR2025_footerlink_functionality_on_homepage
 
-@FoooterSection
-Scenario: User verifies and clicks the "Powered by nopCommerce" link
+Background:
     Given User launches the Demo Web Shop application
     When User scrolls to the footer section
-    And clicks on the "Powered by nopCommerce" link
+
+@FooterSection
+Scenario: User verifies and clicks the "Powered by nopCommerce" link
+    And User clicks on the "Powered by nopCommerce" link
     Then User should be navigated to the nopCommerce official website
+
+@SiteMap
+Scenario: User clicks the Sitemap link and navigates to Accessories page
+    And User clicks on the "Sitemap" link page
+    Then User should be navigated to the Sitemap page
+    #When User clicks on the "Accessories" link
+    #Then User should be redirected to the Accessories page
+    
+@ContactUs
+Scenario: User clicks the Contact us link and submits the query
+    And clicks on the Contact us link
+    And enters the contact details
+      | name      |          email       | enquiry           |
+      | sakthi    | testemail@gmail.com  | Test Demo enquiry |
+    And clicks on the submit button
+    Then the confirmation should be displayed
+
+     
+     
+     
+

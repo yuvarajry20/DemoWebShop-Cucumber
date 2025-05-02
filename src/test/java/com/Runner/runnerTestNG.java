@@ -1,4 +1,3 @@
-
 package com.Runner;
 import org.testng.annotations.DataProvider;
 
@@ -23,6 +22,7 @@ features={
 //		 "src/test/resources/Features/DigitalDownload.feature",
 //		 "src/test/resources/Features/Tricentis.feature",
 		"src/test/resources/Features/CustomerService.feature"
+
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {

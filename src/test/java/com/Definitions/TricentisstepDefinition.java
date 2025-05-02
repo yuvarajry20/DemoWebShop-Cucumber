@@ -79,4 +79,15 @@ public class TricentisstepDefinition {
             throw e;
         }
     }
+
+@When("click the trials&Demo")
+public void click_the_trials_demo() {
+	objtri.trialsdemos();
+    
+}
+
+@Then("the user should see the list of software test tool demo")
+public void the_user_should_see_the_list_of_software_test_tool_demo() {
+    objtri.enterprise();
+}
 }
