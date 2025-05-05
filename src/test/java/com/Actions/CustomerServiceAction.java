@@ -33,7 +33,7 @@ public class CustomerServiceAction {
     }
 
     public void addComment(String comment) {
-        customerServicePage.AddNewCommewnt.sendKeys(comment);
+        customerServicePage.AddNewComment.sendKeys(comment);
     }
 
     public void clickNewComment() {

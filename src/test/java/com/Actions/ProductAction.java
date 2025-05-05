@@ -84,6 +84,7 @@ public class ProductAction {
     }
 
     public void urlWishlist() {
+    	
         String wishlistUrl = ProductPageLocator.urlforwishlist.getText();
         LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
         this.urlexp = wishlistUrl;

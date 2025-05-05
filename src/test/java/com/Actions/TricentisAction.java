@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -64,7 +65,9 @@ public class TricentisAction {
     }
 
     public void searchthekeyword() {
-    	trilocate.searchicon.click();
+//    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//    	wait.until(ExpectedConditions.elementToBeClickable(trilocate.searchicon)).click();
+//    	trilocate.searchicon.click();
         trilocate.searchboxinfilter.sendKeys("Unlock"+Keys.ENTER);
         LogManagers.logInfo("Successfully entered the keyword 'Unlock' in the search box.");
     }
