@@ -1,7 +1,7 @@
 Feature: Laksitha_28APR2025_footerlink_functionality_on_homepage
 
 Background:
-    Given User launches the Demo Web Shop application
+    Given I want to be in the demowebshop "url"
     When User scrolls to the footer section
 
 @FooterSection

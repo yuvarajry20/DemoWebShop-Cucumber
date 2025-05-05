@@ -1,8 +1,7 @@
 Feature: Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality
 
   Background:
-    Given I am on the DemoWebShop homepage with "url"
-    #And I am logged in with valid credentials
+     Given I want to be in the demowebshop "url"
 
   @BooksList
   Scenario: View all books available
@@ -12,8 +11,10 @@ Feature: Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality
   @BookDetails
   Scenario: View details of a specific book
     When I click on the "Books" category
-    And I select the book titled "Fiction"
-    Then I should see the product details page for "Fiction"
+    And I select the book titled 
+  #  |Health Book|
+    |Fiction EX |
+    Then I should see the product details page   
 
   @BooksFilters
   Scenario: Apply filter options for books

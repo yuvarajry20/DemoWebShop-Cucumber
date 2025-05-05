@@ -1,7 +1,7 @@
 Feature: Laksitha_12APR2025_DemoWebShop_HomePageFunctionality 
 
 Background: 
-  Given I am on Demowebshop Homepage "https://demowebshop.tricentis.com/"
+  Given I want to be in the demowebshop "url"
 
  # And I login using the following credentials
    # | email            | password  |

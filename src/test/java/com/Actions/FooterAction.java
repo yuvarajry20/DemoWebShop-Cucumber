@@ -35,9 +35,9 @@ public class FooterAction {
 	    public void clickSiteMapLink() {
 	    	footerpage.siteMaplink.click();
 	    }
-	    public void clickAccesoriesLink() {
-	    	footerpage.AccessoriesLink.click();
-	    }
+//	    public void clickAccesoriesLink() {
+//	    	footerpage.AccessoriesLink.click();
+//	    }
 	    public void clickContactUsLink() {
 	    	footerpage.ContactUsLink.click();
 	    }
@@ -50,9 +50,9 @@ public class FooterAction {
 	    	footerpage.ContactSubmit.click();
 	    }
 	    public String getConfirmation() throws InterruptedException{
-//	    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//		     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"result\"]")));
-		    Thread.sleep(3000); 
+	    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+		     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"result\"]")));
+//		    Thread.sleep(3000); 
 	    	return footerpage.ConfirmText.getText();
 	    }
 }

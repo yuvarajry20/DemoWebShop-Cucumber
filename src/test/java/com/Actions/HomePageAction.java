@@ -91,8 +91,8 @@ public class HomePageAction {
 
     public void ViewPollInvalidresult() {
     	//String actualText="Only registered users can vote.";
-    	String actualText="";
-        String errorText = homePage.pollErrorMsg.getText();
+    	String actualText="Vote";
+        String errorText = homePage.Votebtn.getText();
         Assert.assertEquals(actualText, errorText);
         LogManagers.logInfo("Poll error message: " + errorText);
     }

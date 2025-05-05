@@ -1,8 +1,14 @@
 package com.Actions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.Pages.ReviewPage;
 import com.Utilities.HelperClass;
@@ -71,32 +77,100 @@ public class ReviewAction {
         LogManagers.logInfo("Clicked on 'Rating' button.");
     }
 
+//    public void blankTitleError() throws ElementNotFoundException {
+//        if (reviewPage.blanktitle != null) {
+//            String errorText = reviewPage.blanktitle.getText();
+//            System.out.println(errorText);
+//            LogManagers.logInfo("Blank title error message: " + errorText);
+//        } else {
+//            throw new ElementNotFoundException("Blank Title error message element not found.");
+//        }
+//    }
+//
+//    public void blankTextError() throws ElementNotFoundException {
+//        if (reviewPage.blanktext != null) {
+//            String errorText = reviewPage.blanktext.getText();
+//            System.out.println(errorText);
+//            LogManagers.logInfo("Blank text error message: " + errorText);
+//        } else {
+//            throw new ElementNotFoundException("Blank Text error message element not found.");
+//        }
+//    }
+//
+//    public void verifyReviewSubmitted() throws ElementNotFoundException {
+//        if (reviewPage.ReviewSuccess != null) {
+//            String successText = reviewPage.ReviewSuccess.getText();
+//            LogManagers.logInfo("Review submitted successfully: " + successText);
+//        } else {
+//            throw new ElementNotFoundException("Review Success message element not found.");
+//        }
+//    }
+//    public void blankTitleError() throws ElementNotFoundException {
+//        if (reviewPage.blanktitle != null && reviewPage.blanktitle.isDisplayed()) {
+//            String errorText = reviewPage.blanktitle.getText();
+//            System.out.println(errorText);
+//            LogManagers.logInfo("Blank title error message: " + errorText);
+//            Assert.assertEquals(errorText, "Review title is required.", "Title error message mismatch.");
+//        } else {
+//            throw new ElementNotFoundException("Blank Title error message element not found.");
+//        }
+//    }
+//
+//    public void blankTextError() throws ElementNotFoundException {
+//        if (reviewPage.blanktext != null && reviewPage.blanktext.isDisplayed()) {
+//            String errorText = reviewPage.blanktext.getText();
+//            System.out.println(errorText);
+//            LogManagers.logInfo("Blank text error message: " + errorText);
+//            Assert.assertEquals(errorText, "Review text is required.", "Text error message mismatch.");
+//        } else {
+//            throw new ElementNotFoundException("Blank Text error message element not found.");
+//        }
+//    }
+//
+//    public void verifyReviewSubmitted() throws ElementNotFoundException {
+//        if (reviewPage.ReviewSuccess != null && reviewPage.ReviewSuccess.isDisplayed()) {
+//            String successText = reviewPage.ReviewSuccess.getText();
+//            System.out.println(successText);
+//            LogManagers.logInfo("Review submitted successfully: " + successText);
+//            Assert.assertEquals(successText, "Product review is successfully added.", "Success message mismatch.");
+//        } else {
+//            throw new ElementNotFoundException("Review Success message element not found.");
+//        }
+//   
+//    }
+    WebDriverWait wait = new WebDriverWait( HelperClass.getDriver(), Duration.ofSeconds(10));
+
     public void blankTitleError() throws ElementNotFoundException {
-        if (reviewPage.blanktitle != null) {
-            String errorText = reviewPage.blanktitle.getText();
-            System.out.println(errorText);
+        try {
+            WebElement titleError = wait.until(ExpectedConditions.visibilityOf(reviewPage.blanktitle));
+            String errorText = titleError.getText().trim();
             LogManagers.logInfo("Blank title error message: " + errorText);
-        } else {
+            Assert.assertEquals(errorText, "Review title is required.", "Title error message mismatch.");
+        } catch (TimeoutException e) {
             throw new ElementNotFoundException("Blank Title error message element not found.");
         }
     }
-
     public void blankTextError() throws ElementNotFoundException {
-        if (reviewPage.blanktext != null) {
-            String errorText = reviewPage.blanktext.getText();
-            System.out.println(errorText);
+        try {
+            WebElement textError = wait.until(ExpectedConditions.visibilityOf(reviewPage.blanktext));
+            String errorText = textError.getText().trim();
             LogManagers.logInfo("Blank text error message: " + errorText);
-        } else {
+            Assert.assertEquals(errorText, "Review text is required.", "Text error message mismatch.");
+        } catch (TimeoutException e) {
             throw new ElementNotFoundException("Blank Text error message element not found.");
         }
     }
-
     public void verifyReviewSubmitted() throws ElementNotFoundException {
-        if (reviewPage.ReviewSuccess != null) {
-            String successText = reviewPage.ReviewSuccess.getText();
+        try {
+            WebElement successMsg = wait.until(ExpectedConditions.visibilityOf(reviewPage.ReviewSuccess));
+            String successText = successMsg.getText().trim();
             LogManagers.logInfo("Review submitted successfully: " + successText);
-        } else {
+            Assert.assertEquals(successText, "Product review is successfully added.", "Success message mismatch.");
+        } catch (TimeoutException e) {
             throw new ElementNotFoundException("Review Success message element not found.");
         }
     }
+
+
+
 }

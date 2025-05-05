@@ -8,7 +8,16 @@ import org.openqa.selenium.support.FindBy;
 public class BookPageLocators {
 
 	@FindBy(xpath="(//a[contains(text(),\"Books\")])[3]")
-	public WebElement Books;
+	public WebElement Books; 
+	
+	@FindBy(xpath="//div[@class=\"page category-page\"]//child::div//h1")
+	public WebElement BookListsAssert;
+	
+	@FindBy(xpath="//div[@class=\"short-description\"]//preceding-sibling::div")
+	public WebElement FictionAssert;
+	
+	@FindBy(xpath="//h1[@itemprop=\"name\"]//parent::div")
+	public WebElement HealthBookAssert;
 	
 	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
 	public List<WebElement> BooksList;

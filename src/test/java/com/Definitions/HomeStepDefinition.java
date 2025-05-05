@@ -23,15 +23,15 @@ public class HomeStepDefinition {
     BookPageAction bookAction=new BookPageAction();
     WebDriver driver = HelperClass.getDriver();
 
-    @Given("I am on Demowebshop Homepage {string}")
-    public void i_want_to_be_in_the_demowebshop(String url) {
-        try {
-            HelperClass.openPage(url);
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open Demowebshop Homepage. Error: " + e.getMessage());
-            throw e;
-        }
-    }
+//    @Given("I am on Demowebshop Homepage {string}")
+//    public void i_want_to_be_in_the_demowebshop(String url) {
+//        try {
+//            HelperClass.openPage(url);
+//        } catch (Exception e) {
+//            LogManagers.logError("Failed to open Demowebshop Homepage. Error: " + e.getMessage());
+//            throw e;
+//        }
+//    }
 
     @When("I enter the following email in the newsletter field")
     public void i_enter_the_following_email_in_the_newsletter_field(io.cucumber.datatable.DataTable dataTable) {
