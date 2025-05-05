@@ -4,31 +4,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Tricentispage {
-	@FindBy(xpath="//div[@class=\"slider-wrapper theme-default\"]//div//a[@href=\"https://www.tricentis.com/speed/\"]")
+	@FindBy(xpath="//div[@class=\"nivoSlider\"]//child::a[@class=\"nivo-imageLink\"][1]")
 	public WebElement tricentisimg;
 	
-	@FindBy(xpath="//h1[@class=\"MastheadMinimal_h1__KxWFZ anim-delay-2 MastheadMinimal_anim-fade-in-up__litwY MastheadMinimal_anim-play__ULSBT\"]")
+	@FindBy(xpath="//div[@class=\"MastheadMinimal_body-p__qrVJl MastheadMinimal_description__zc_Sl anim-delay-3 MastheadMinimal_anim-fade-in-up__litwY MastheadMinimal_anim-play__ULSBT\"]//preceding-sibling::h1")
 	public WebElement asserttextinpage;
 	
 	@FindBy(xpath="//div[@class=\"FooterMenuColumn_column__dy0pm\"]//a[contains(text(),\"Upcoming webinars\")]")
 	public WebElement upcomingwebinar;
 	
-	@FindBy(xpath="//*[@id=\"filter-area\"]/form/div[2]/div[2]/span/img")
+//	@FindBy(xpath="//input[@id=\"search-field\"]//following-sibling::span//span//child::img")
+	@FindBy(xpath="//span[@style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%\"]//img")
 	public WebElement searchicon;
-
 	
-	@FindBy(xpath="//div[@class=\"FilterBar_search-bar__o66Q9\"]//input")
+	@FindBy(xpath="//div[@class=\"FilterBar_component-filter__ABjzv\"]//div[@class=\"FilterBar_search-bar__o66Q9\"]//child::input")
 	public WebElement searchboxinfilter;
 	
-	@FindBy(xpath="//h2[@class=\"EventCard_title__qAh58\"]//a")
+	@FindBy(xpath="//div[@class=\"EventCard_img-container__cEzL7\"]//following-sibling::div//descendant::a")
 	public WebElement titleinkeyword;
 	
-//	@FindBy(xpath = "//*[@id=\"__next\"]/footer/div[1]/div/div[5]/div[2]/a[1]")
 	@FindBy(xpath="//div[@class=\"FooterMenuColumn_column__dy0pm\"]//a[contains(text(),\"Demos & Trials\")]")
 	public WebElement demotrial;
-	
-	@FindBy(xpath="//div[@class=\"Heading_content-copy__ZKgho  Heading_anim-play___4J_5 Heading_anim-fade-in-up__Takxt \"]//h3")
-	public WebElement testtoolslist;
+//	
+//	@FindBy(xpath="//div[@class=\"Heading_content-copy__ZKgho  Heading_anim-play___4J_5 Heading_anim-fade-in-up__Takxt \"]//h3")
+//	public WebElement testtoolslist;
 	
 	
 	

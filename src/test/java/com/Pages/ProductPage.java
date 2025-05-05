@@ -4,59 +4,61 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ProductPage 
+
+
 {
-	@FindBy(xpath="//li//a[@class=\"ico-login\"]")
+	@FindBy(xpath="//a[@class=\"ico-register\"]//parent::li//following-sibling::li[1]//child::a")
 	public WebElement LoginButtonHomePage;
 	
-	@FindBy(id = "Email")
+	@FindBy(xpath = "//div[@class=\"form-fields\"]//descendant::div[2]//label//following-sibling::input")
 	public WebElement EmailField;
 	
-	@FindBy(id = "Password")
+	@FindBy(xpath = "//div[@class=\"form-fields\"]//descendant::div[3]//label//following-sibling::input")
 	public WebElement PasswordField;
 	
-	@FindBy(xpath="//input[@class=\"button-1 login-button\"]")
+	@FindBy(xpath="//div[@class=\"inputs reversed\"]//following-sibling::div//input")
 	public WebElement LoginButtonSubmit;
 	
-	@FindBy(xpath="//input[@id=\"small-searchterms\"]")
+	@FindBy(xpath="//div[@class=\"search-box\"]//descendant::input[2]//preceding-sibling::input")
 	public WebElement SearchStoreField;
 	
-	@FindBy(xpath="//h2[@class=\"product-title\"]")
+	@FindBy(xpath="//div[@class=\"product-rating-box\"]//preceding-sibling::h2//a")
 	public WebElement ProductTitle;
 	
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
 	public WebElement AddToCart;
 	
-	@FindBy(xpath="//span[@class=\"cart-qty\"]")
+	@FindBy(xpath="//span[contains(text(),\"Shopping cart\")]//following-sibling::span")
 	public WebElement AddTocartnumber;
 	
 	@FindBy(css="#topcartlink > a")
 	public WebElement shoppingcart;
 	
-	@FindBy(xpath="//input[@name=\"removefromcart\"]")
+	@FindBy(xpath="//td[@class=\"product-picture\"]//preceding-sibling::td//descendant::input")
 	public WebElement removefromcart;
 	
-	@FindBy(xpath="//input[@class=\"button-2 update-cart-button\"]")
+	@FindBy(xpath="//input[@class=\"button-2 continue-shopping-button\"]//preceding-sibling::input")
 	public WebElement updatecart;
 	
-	@FindBy(xpath="//div[@class=\"order-summary-content\"]")
+	@FindBy(xpath="//div[@class=\"page-title\"]//parent::div//div[2]")
 	public WebElement emptycart;
 	
-	@FindBy(xpath="//a[@class=\"product-name\"]")
+	@FindBy(xpath="//td[@class=\"product-picture\"]//following-sibling::td//child::a")
 	public WebElement cartproductavailable;
 	
-	@FindBy(id="add-to-wishlist-button-53")
+	@FindBy(css="#add-to-wishlist-button-53")
 	public WebElement addtowishlist;
 	
-	@FindBy(xpath="//ul/li[4]/a[@class=\"ico-wishlist\"]")
+	@FindBy(xpath="//li[@id=\"topcartlink\"]//following-sibling::li//child::a")
 	public WebElement clickwishlist;
 	
 	@FindBy(xpath="//div[@class=\"picture\"]//a[@title=\"Show details for 3rd Album\"]")
 	public WebElement imgalbum3;
 	
-	@FindBy(xpath="//tbody/tr/td[4]/a")
+	@FindBy(xpath="//td[@class=\"product-picture\"]//following-sibling::td//a")
 	public WebElement productnameinwishlist;
 	
-	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div/div/div[2]/div[2]/p[2]/a")
+	@FindBy(xpath="//div[@class=\"share-info\"]//p//a[@class=\"share-link\"]")
 	public WebElement urlforwishlist;
 	
 	@FindBy(xpath="//input[@class=\"qty-input\"]")
@@ -68,39 +70,39 @@ public class ProductPage
 	@FindBy(xpath="//h2[@class=\"product-title\"]//a[text()=\"$25 Virtual Gift Card\"]")
 	public WebElement giftcardpage;
 	
-	@FindBy(xpath="//input[@class=\"button-2 email-a-friend-button\"]")
+	@FindBy(css="input[class$=\"email-a-friend-button\"]")
 	public WebElement emailfriendbtn;
 	
-	@FindBy(xpath="//input[@class=\"friend-email\"]")
+	@FindBy(css="input[class^=\"friend-email\"]")
 	public WebElement friendemail;
 	
-	@FindBy(xpath="//input[@class=\"your-email\"]")
+	@FindBy(css="input[class*=\"your-email\"]")
 	public WebElement myemail;
 	
-	@FindBy(xpath="//input[@class=\"button-1 send-email-a-friend-button\"]")
+	@FindBy(css=".send-email-a-friend-button")
 	public WebElement sendmail;
 	
-	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[2]")
+	@FindBy(xpath="//div[@class=\"title\"]//following-sibling::div[@class=\"result\"]")
 	public WebElement successfulsentmail;
 	
 	@FindBy(xpath="//span[@class=\"field-validation-error\"]//span")
 	public WebElement invalidemailmsg;
 	
-	@FindBy(xpath="//form//table//tbody//tr//td[2]//input")
+	@FindBy(xpath="//td[@class=\"add-to-cart\"]//child::input")
 	public WebElement addtocartcheckbox;
 	
 	@FindBy(xpath="//input[@class=\"button-2 wishlist-add-to-cart-button\"]")
 	public WebElement addtocartbtnbelowchkbox;
 
 
-	@FindBy(xpath="//tr[@class=\"cart-item-row\"]//td[3]//a")
+	@FindBy(xpath="//td[@class=\"product-picture\"]//following-sibling::td//a")
 	public WebElement assertcartwishlist;
 
 	
-	@FindBy(xpath="//select[@class=\"country-input valid\"]")
+	@FindBy(xpath="//label[contains(text(),\"Country:\")]//following-sibling::select")
 	public WebElement countryclick;
 	
-	@FindBy(xpath="//input[@class=\"zip-input\"]")
+	@FindBy(xpath="//label[contains(text(),\"Zip / postal code:\")]//following-sibling::input")
 	public WebElement zipcode;
 	
 	@FindBy(xpath="//input[@class=\"button-2 estimate-shipping-button\"]")
