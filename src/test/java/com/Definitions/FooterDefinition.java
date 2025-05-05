@@ -24,9 +24,9 @@ public class FooterDefinition {
         ((JavascriptExecutor) HelperClass.getDriver()).executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
     
-    @When("User clicks on the {string} link")
-    public void user_clicks_on_the_link(String string) {
-        footerAction.clickNopLink();
+    @When("User clicks on the Powered by nopCommerce link")
+    public void user_clicks_on_the_powered_by_nop_commerce_link() {
+         footerAction.clickNopLink();
     }
 
     @Then("User should be navigated to the nopCommerce official website")

@@ -6,18 +6,22 @@ import org.openqa.selenium.support.FindBy;
 public class FooterPage {
 	
 	@FindBy(xpath="//a[contains(text(),\"nopCommerce\")]")
+	//@FindBy(xpath="//div[@class=\"footer-poweredby\"]//descendant::a")
 	public WebElement nopFooterlink;
 	
-	@FindBy(xpath="//img[@title=\"nopCommerce\"]")
+    @FindBy(xpath="//img[@title=\"nopCommerce\"]")
+	//@FindBy(xpath="//a[@class=\"desktop-logo\"]//child::img")
 	public WebElement nopCommerceText;
 	
 	@FindBy(xpath="//a[contains(text(),\"Sitemap\")]")
+	//@FindBy(xpath="//div[@class=\"column information\"]//descendant::li[1]")
 	public WebElement siteMaplink;
 	
 	@FindBy(xpath="//a[contains(text(),\"Contact us\")]")
+	//@FindBy(xpath="//div[@class=\"column information\"]//descendant::li[6]")
 	public WebElement ContactUsLink;
 	
-	@FindBy(xpath="//input[@class=\"fullname\"]")
+	@FindBy(xpath="//input[@id=\"FullName\"]")
 	public WebElement ContactName;
 	
 	@FindBy(xpath="//input[@class=\"email\"]")

@@ -6,7 +6,7 @@ Background:
 
 @FooterSection
 Scenario: User verifies and clicks the "Powered by nopCommerce" link
-    And User clicks on the "Powered by nopCommerce" link
+    And User clicks on the Powered by nopCommerce link
     Then User should be navigated to the nopCommerce official website
 
 @SiteMap

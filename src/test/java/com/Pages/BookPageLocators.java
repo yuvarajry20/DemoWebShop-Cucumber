@@ -19,7 +19,7 @@ public class BookPageLocators {
 	@FindBy(xpath="//h1[@itemprop=\"name\"]//parent::div")
 	public WebElement HealthBookAssert;
 	
-	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
+	@FindBy(xpath="//div[@class=\"product-grid\"]//child::div[@class=\"item-box\"]")
 	public List<WebElement> BooksList;
 	
 	@FindBy(xpath="//select[@id=\"products-orderby\"]")
@@ -28,6 +28,7 @@ public class BookPageLocators {
 	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
 	public WebElement SortedBookList;
 	
+	//@FindBy(xpath="(//h2[@class=\"product-title\"]//child::a)[4]")
 	@FindBy(xpath="//a[contains(text(),\"Fiction EX\")]")
 	public WebElement Fiction_book;
 	
