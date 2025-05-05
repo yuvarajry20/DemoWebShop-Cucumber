@@ -1,9 +1,9 @@
 Feature: Divraj_13APR2025_Demowebshop_Shopping_cart
 
 Background:
-Given the user is on the home page
-When the user search for a product
-|3rd Album |
+
+Given I want to be in the demowebshop "url"
+When the user search for a product "product"
 
 @shoppingCart_Functionality
 Scenario: Adding and Removing a Product in the Shopping Cart

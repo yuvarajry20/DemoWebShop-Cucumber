@@ -1,7 +1,7 @@
 Feature: Divraj_14APR2025_Demowebshop_Categories
 
 Background:
-Given the user is on the web application
+Given I want to be in the demowebshop "url"
 When the user click the digital download category
 
 @addtocarttheproduct

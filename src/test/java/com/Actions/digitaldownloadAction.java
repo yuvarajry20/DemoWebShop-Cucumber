@@ -38,8 +38,10 @@ public class digitaldownloadAction {
 
     public void qtyproduct() {
         String text = objdigital.qtyproductcount.getText();
-        System.out.println("the number of product in cart :" + text);
         LogManagers.logInfo("Number of products in cart: " + text);
+        String act = "Digital downloads";
+        String exp = objdigital.headingofdigital.getText();
+        Assert.assertEquals(act, exp);
     }
 
     public void addfilter() {
@@ -56,5 +58,9 @@ public class digitaldownloadAction {
             System.out.println(a.getText());
             LogManagers.logInfo("- " + a.getText());
         }
+        String act = "Digital downloads";
+        String exp = objdigital.headingofdigital.getText();
+        Assert.assertEquals(act, exp);
+        
     }
 }
