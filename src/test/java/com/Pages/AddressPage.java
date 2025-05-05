@@ -4,45 +4,87 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddressPage {
-	@FindBy(xpath="//a[text()=\"abccy@gmail.com\"]")
+//	@FindBy(xpath="//a[text()=\"abccy@gmail.com\"]")
+//	public WebElement myEmail;
+//	
+//	@FindBy(xpath="//a[text()='Addresses']")
+//	public WebElement addressesLink;
+//	
+//	@FindBy(xpath="//input[@class='button-1 add-address-button']")
+//	public WebElement addNew;
+//	
+//	@FindBy(id = "Address_FirstName")
+//	public WebElement firstNameField;
+//
+//    @FindBy(id = "Address_LastName")
+//    public WebElement lastNameField;
+//
+//    @FindBy(id = "Address_Email")
+//    public WebElement emailField;
+//
+//    @FindBy(id = "Address_Company")
+//    public WebElement companyField;
+//
+//    @FindBy(xpath = "//select[@name='Address.CountryId']")
+//    public WebElement countryDropdown;
+//    
+//    @FindBy(id="Address_City")
+//    public WebElement AddressCity;
+//    
+//    @FindBy(id="Address_Address1")
+//    public WebElement Address1;
+//    
+//    @FindBy(id="Address_ZipPostalCode")
+//    public WebElement ZipCode;
+//    
+//    @FindBy(id="Address_PhoneNumber")
+//    public WebElement PhoneNumber;
+//    
+//    @FindBy(xpath="//input[@class='button-1 save-address-button']")
+//    public WebElement save;
+//    
+//    @FindBy(xpath="//input[@class=\"button-2 delete-address-button\"]")
+//    public WebElement deleteaddress;
+	
+	@FindBy(xpath="//a[contains(text(), 'abccy@gmail.com')]")
 	public WebElement myEmail;
-	
-	@FindBy(xpath="//a[text()='Addresses']")
+
+	@FindBy(xpath="//a[contains(text(), 'Addresses')]")
 	public WebElement addressesLink;
-	
-	@FindBy(xpath="//input[@class='button-1 add-address-button']")
+
+	@FindBy(xpath="//a[contains(text(), 'Addresses')]/following::input[contains(@class, 'add-address-button')]")
 	public WebElement addNew;
-	
-	@FindBy(id = "Address_FirstName")
+
+	@FindBy(xpath="//label[contains(text(), 'First name')]/following-sibling::input")
 	public WebElement firstNameField;
 
-    @FindBy(id = "Address_LastName")
-    public WebElement lastNameField;
+	@FindBy(xpath="//label[contains(text(), 'Last name')]/following-sibling::input")
+	public WebElement lastNameField;
 
-    @FindBy(id = "Address_Email")
-    public WebElement emailField;
+	@FindBy(xpath="//label[contains(text(), 'Email')]/following-sibling::input")
+	public WebElement emailField;
 
-    @FindBy(id = "Address_Company")
-    public WebElement companyField;
+	@FindBy(xpath="//label[contains(text(), 'Company')]/following-sibling::input")
+	public WebElement companyField;
 
-    @FindBy(xpath = "//select[@name='Address.CountryId']")
-    public WebElement countryDropdown;
-    
-    @FindBy(id="Address_City")
-    public WebElement AddressCity;
-    
-    @FindBy(id="Address_Address1")
-    public WebElement Address1;
-    
-    @FindBy(id="Address_ZipPostalCode")
-    public WebElement ZipCode;
-    
-    @FindBy(id="Address_PhoneNumber")
-    public WebElement PhoneNumber;
-    
-    @FindBy(xpath="//input[@class='button-1 save-address-button']")
-    public WebElement save;
-    
-    @FindBy(xpath="//input[@class=\"button-2 delete-address-button\"]")
-    public WebElement deleteaddress;
+	@FindBy(xpath="//label[contains(text(), 'Country')]/following-sibling::select")
+	public WebElement countryDropdown;
+
+	@FindBy(xpath="//label[contains(text(), 'City')]/following-sibling::input")
+	public WebElement AddressCity;
+
+	@FindBy(xpath="//label[contains(text(), 'Address')]/following-sibling::input")
+	public WebElement Address1;
+
+	@FindBy(xpath="//label[contains(text(), 'Zip')]/following-sibling::input")
+	public WebElement ZipCode;
+
+	@FindBy(xpath="//label[contains(text(), 'Phone')]/following-sibling::input")
+	public WebElement PhoneNumber;
+
+	@FindBy(xpath="//input[contains(@class, 'save-address-button')]")
+	public WebElement save;
+
+	@FindBy(xpath="//input[contains(@class, 'delete-address-button')]")
+	public WebElement deleteaddress;
 }
