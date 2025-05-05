@@ -13,29 +13,17 @@ import io.cucumber.java.en.When;
 
 public class ProductStepDefinition { 
     ProductAction objProductAction = new ProductAction();
-
-    @Given("the user is on the home page")
-    public void the_user_is_on_the_home_page() {
-        try {
-            HelperClass.openPage("https://demowebshop.tricentis.com/");
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the home page. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
-    @When("the user search for a product")
-    public void the_user_search_for_a_product(io.cucumber.datatable.DataTable dataTable) {
-        try {
-        	 List<String> objList = dataTable.asList(String.class);
-        	 String productName1 = objList.get(0);
-        	 objProductAction.searchFieldStore(productName1);
-        } catch (Exception e) {
-            LogManagers.logError("Failed to search for a product. Error: " + e.getMessage());
-            throw e;
-        }
-    }
     
+    @When("the user search for a product {string}")
+    public void the_user_search_for_a_product(String string) throws Exception {
+    	try {
+            String productName1=objProductAction.getproductname();
+            objProductAction.searchFieldStore(productName1);
+        } catch (Exception e) {
+            LogManagers.logError("Failed to read the product name. Error: " + e.getMessage());
+            throw e;
+        }
+    }
 
     @When("see the product title and the product description")
     public void see_the_product_title_and_the_product_description() {

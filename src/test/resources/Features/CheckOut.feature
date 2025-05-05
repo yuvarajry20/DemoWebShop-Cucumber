@@ -1,7 +1,7 @@
 Feature: Divraj_12APR2025_Demowebshop_Checkout the product
 
 Background:
-Given the user is on the Web application 
+Given I want to be in the demowebshop "url"
 
   
 @Verifying_Terms&Condition_Checkbox
