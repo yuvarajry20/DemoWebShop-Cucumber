@@ -14,16 +14,6 @@ public class TagStepDefinitions {
     WebDriver driver = HelperClass.getDriver();
     TagAction tagaction = new TagAction();
 
-    @Given("I am on the DemoWebShop HomePage")
-    public void i_am_on_the_demo_web_shop_home_page(String url) {
-        try {
-            HelperClass.openPage(url);
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the DemoWebShop HomePage. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
     @When("I see the list of popular tags")
     public void i_see_the_list_of_popular_tags() {
         try {

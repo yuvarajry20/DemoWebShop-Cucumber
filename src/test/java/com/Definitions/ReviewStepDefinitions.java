@@ -154,19 +154,41 @@ public class ReviewStepDefinitions {
         }
     }
 
+//    @Then("I should see the error message {string}")
+//    public void i_should_see_the_error_message(String expected) throws ElementNotFoundException {
+//        try {
+//            if (expected.equals("Product review is successfully added.")) {
+//                reviewAction.verifyReviewSubmitted();
+//            } else if (expected.equals("Review title is required.")) {
+//                reviewAction.blankTextError();
+//            } else if (expected.equals("Review text is required.")) {
+//                reviewAction.blankTextError();
+//            }
+//        } catch (Exception e) {
+//            LogManagers.logError("Failed to see the error message. Error: " + e.getMessage());
+//            throw e;
+//        }
+//    }
     @Then("I should see the error message {string}")
     public void i_should_see_the_error_message(String expected) throws ElementNotFoundException {
         try {
-            if (expected.equals("Product review is successfully added.")) {
-                reviewAction.verifyReviewSubmitted();
-            } else if (expected.equals("Review title is required.")) {
-                reviewAction.blankTextError();
-            } else if (expected.equals("Review text is required.")) {
-                reviewAction.blankTextError();
+            switch (expected) {
+                case "Product review is successfully added.":
+                    reviewAction.verifyReviewSubmitted();
+                    break;
+                case "Review title is required.":
+                    reviewAction.blankTitleError();
+                    break;
+                case "Review text is required.":
+                    reviewAction.blankTextError();
+                    break;
+                default:
+                    throw new IllegalArgumentException("Unsupported message: " + expected);
             }
         } catch (Exception e) {
             LogManagers.logError("Failed to see the error message. Error: " + e.getMessage());
             throw e;
         }
     }
+
 }
