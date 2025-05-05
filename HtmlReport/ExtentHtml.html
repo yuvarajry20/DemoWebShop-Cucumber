@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 5, 2025 10:05:37 am</span>
+			<span class='label blue darken-3 suite-start-time'>May 5, 2025 04:15:30 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,8 +76,19 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@ForgotPassword</a></li>
+					<li><a href='#'>@Login</a></li>
 					<li><a href='#'>@DeleteAddess</a></li>
+					<li><a href='#'>@News</a></li>
+					<li><a href='#'>@Blog</a></li>
+					<li><a href='#'>@VerfiyOrders</a></li>
+					<li><a href='#'>@VerifyCustomerInfo</a></li>
+					<li><a href='#'>@Register</a></li>
+					<li><a href='#'>@VerifyBackInStock</a></li>
+					<li><a href='#'>@InValidChangePassword</a></li>
+					<li><a href='#'>@verifyRewardPoints</a></li>
 					<li><a href='#'>@AddAddress</a></li>
+					<li><a href='#'>@ValidChangePassword</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,7 +131,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='strong'>5</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -138,7 +149,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>2</span> scenarios passed</span>
+                    <span class='strong'>24</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -158,7 +169,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>17</span> steps passed</span>
+                    <span class='strong'>156</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -187,8 +198,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Yuvaraj_12APR2025_DemoWebShop_Validate Address</span>
-						<span class='test-time'>May 5, 2025 10:05:39 am</span>
+						<span class='test-name'>Yuvaraj_13APR2025_DemoWebShop_Validate Login</span>
+						<span class='test-time'>May 5, 2025 04:15:31 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -199,9 +210,273 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 01 09.818</span>
+	<span class='duration right label'>00 00 39.961</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid and invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Email</td><td>Password</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>789456</td><td>abccy@gmail.com</td></tr><tr><td>abccy@gmail.com</td><td>testuser1</td><td>The credentials provided are incorrect</td></tr><tr><td></td><td>789456</td><td>No customer account found</td></tr><tr><td>abccy@gmail.com</td><td></td><td>The credentials provided are incorrect</td></tr></table><br><br><table class='markup-table table '><tr><td>Email</td><td>Password</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>789456</td><td>abccy@gmail.com</td></tr><tr><td>abccy@gmail.com</td><td>testuser1</td><td>The credentials provided are incorrect</td></tr><tr><td></td><td>789456</td><td>No customer account found</td></tr><tr><td>abccy@gmail.com</td><td></td><td>The credentials provided are incorrect</td></tr></table><br><br><table class='markup-table table '><tr><td>Email</td><td>Password</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>789456</td><td>abccy@gmail.com</td></tr><tr><td>abccy@gmail.com</td><td>testuser1</td><td>The credentials provided are incorrect</td></tr><tr><td></td><td>789456</td><td>No customer account found</td></tr><tr><td>abccy@gmail.com</td><td></td><td>The credentials provided are incorrect</td></tr></table><br><br><table class='markup-table table '><tr><td>Email</td><td>Password</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>789456</td><td>abccy@gmail.com</td></tr><tr><td>abccy@gmail.com</td><td>testuser1</td><td>The credentials provided are incorrect</td></tr><tr><td></td><td>789456</td><td>No customer account found</td></tr><tr><td>abccy@gmail.com</td><td></td><td>The credentials provided are incorrect</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid and invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Login</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='33' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='38' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='87' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_appropriate_field(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "abccy@gmail.com","789456" in the appropriate field</h6>
+
+				</li>
+				<li test-id='91' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='102' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_login_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the login result should be "abccy@gmail.com"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='4' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid and invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Login</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='30' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='41' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_appropriate_field(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "abccy@gmail.com","" in the appropriate field</h6>
+
+				</li>
+				<li test-id='47' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='55' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_login_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the login result should be "The credentials provided are incorrect"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='5' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid and invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Login</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='35' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='73' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='79' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_appropriate_field(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "abccy@gmail.com","testuser1" in the appropriate field</h6>
+
+				</li>
+				<li test-id='86' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='90' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_login_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the login result should be "The credentials provided are incorrect"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='6' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid and invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Login</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='28' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='39' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='49' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_appropriate_field(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "","789456" in the appropriate field</h6>
+
+				</li>
+				<li test-id='51' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='57' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_login_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the login result should be "No customer account found"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='12' status='pass'>
+
+	<span class='duration right label'>00 00 40.211</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Forgot password with valid and invalid email</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Email</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>Email with instructions has been sent to you.</td></tr><tr><td>divvvv@gmail.com</td><td>Email not found.</td></tr><tr><td>@gmail.com</td><td>Wrong email</td></tr></table><br><br><table class='markup-table table '><tr><td>Email</td><td>Result</td></tr><tr><td>abccy@gmail.com</td><td>Email with instructions has been sent to you.</td></tr><tr><td>divvvv@gmail.com</td><td>Email not found.</td></tr><tr><td>@gmail.com</td><td>Wrong email</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='13' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Forgot password with valid and invalid email</div>
+
+				<div class='category-list'>
+						<span class='category label'>@ForgotPassword</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='34' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='43' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='46' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_forgot_password()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on Forgot password</h6>
+
+				</li>
+				<li test-id='54' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "abccy@gmail.com" in the email field</h6>
+
+				</li>
+				<li test-id='61' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_recover_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the recover button</h6>
+
+				</li>
+				<li test-id='75' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_result_message_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the result message should be "Email with instructions has been sent to you."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='21' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Forgot password with valid and invalid email</div>
+
+				<div class='category-list'>
+						<span class='category label'>@ForgotPassword</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='32' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='36' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='40' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_forgot_password()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on Forgot password</h6>
+
+				</li>
+				<li test-id='45' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "divvvv@gmail.com" in the email field</h6>
+
+				</li>
+				<li test-id='48' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_recover_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the recover button</h6>
+
+				</li>
+				<li test-id='56' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_result_message_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the result message should be "Email not found."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='62' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Forgot password with valid and invalid email</div>
+
+				<div class='category-list'>
+						<span class='category label'>@ForgotPassword</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='84' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='95' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='99' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_forgot_password()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on Forgot password</h6>
+
+				</li>
+				<li test-id='104' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_enter_in_the_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "@gmail.com" in the email field</h6>
+
+				</li>
+				<li test-id='107' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_recover_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the recover button</h6>
+
+				</li>
+				<li test-id='110' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.the_result_message_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the result message should be "Wrong email"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Yuvaraj_12APR2025_DemoWebShop_Validate Address</span>
+						<span class='test-time'>May 5, 2025 04:15:31 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='8' status='pass'>
+
+	<span class='duration right label'>00 01 38.242</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Adding Address</div>
 	</div>
@@ -212,57 +487,57 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='6' class='node given Pass' status='Pass'>
+		<li test-id='27' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "https://demowebshop.tricentis.com/login"</div>
 
 
 		</li>
-		<li test-id='8' class='node when Pass' status='Pass'>
+		<li test-id='80' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
 
 
 		</li>
-		<li test-id='10' class='node when Pass' status='Pass'>
+		<li test-id='88' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
 
 
 					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
 		</li>
-		<li test-id='13' class='node and Pass' status='Pass'>
+		<li test-id='94' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
 
 
 		</li>
-		<li test-id='15' class='node when Pass' status='Pass'>
+		<li test-id='100' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
 
 
 		</li>
-		<li test-id='17' class='node and Pass' status='Pass'>
+		<li test-id='108' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.click_addressess_and_add_new())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click Addressess and add new</div>
 
 
 		</li>
-		<li test-id='21' class='node then Pass' status='Pass'>
+		<li test-id='190' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.i_want_to_add_new_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I want to add new address</div>
 
 
 		</li>
-		<li test-id='22' class='node and Pass' status='Pass'>
+		<li test-id='222' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.select_country_and_state())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And select country and state</div>
 
 
 		</li>
-		<li test-id='23' class='node then Pass' status='Pass'>
+		<li test-id='223' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.i_click_save())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i click save</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='3' status='pass'>
+<div class='scenario node' test-id='11' status='pass'>
 
-	<span class='duration right label'>00 00 42.100</span>
+	<span class='duration right label'>00 01 00.197</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Deleting the already present address</div>
 	</div>
@@ -273,46 +548,767 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='7' class='node given Pass' status='Pass'>
+		<li test-id='31' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "https://demowebshop.tricentis.com/login"</div>
 
 
 		</li>
-		<li test-id='9' class='node when Pass' status='Pass'>
+		<li test-id='53' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
 
 
 		</li>
-		<li test-id='11' class='node when Pass' status='Pass'>
+		<li test-id='68' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
 
 
 					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
 		</li>
-		<li test-id='12' class='node and Pass' status='Pass'>
+		<li test-id='72' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
 
 
 		</li>
-		<li test-id='14' class='node when Pass' status='Pass'>
+		<li test-id='78' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
 
 
 		</li>
-		<li test-id='16' class='node when Pass' status='Pass'>
+		<li test-id='89' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.i_click_addresses())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click Addresses</div>
 
 
 		</li>
-		<li test-id='18' class='node and Pass' status='Pass'>
+		<li test-id='163' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.i_click_the_delete_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i click the Delete button</div>
 
 
 		</li>
-		<li test-id='19' class='node then Pass' status='Pass'>
+		<li test-id='164' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definitions.AddressStepDefinition.i_should_click_the_yes_button_in_the_alert())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i should click the yes button in the alert</div>
 
 
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Yuvaraj_28APR2025_DemoWebShop_Validate Cusromer Service</span>
+						<span class='test-time'>May 5, 2025 04:15:31 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to use this template for my feature file</div>
+
+<div class='scenario node' test-id='10' status='pass'>
+
+	<span class='duration right label'>00 00 34.765</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating customer service news feature</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@News</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='26' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='37' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_click_the_news_link_in_customer_service())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click the news link in customer service</div>
+
+
+		</li>
+		<li test-id='74' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_can_see_the_latest_news_for_the_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I can see the latest news for the website</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+
+	<span class='duration right label'>00 00 50.717</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating customer service blog feature</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Blog</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='29' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='42' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_click_the_blog_link_in_customer_service())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click the blog link in customer service</div>
+
+
+		</li>
+		<li test-id='50' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_can_see_the_blog_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i can see the blog title</div>
+
+
+		</li>
+		<li test-id='52' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_click_the_first_blog())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i click the first blog</div>
+
+
+		</li>
+		<li test-id='98' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_can_add_an_comment_and_click_new_comment())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i can add an comment and click new comment</div>
+
+
+		</li>
+		<li test-id='147' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.CustomerServiceStepDefinition.i_can_see_the_outcome())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i can see the outcome</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>Yuvaraj_14APR2025_DemoWebShop_Validate MyAccountSection</span>
+						<span class='test-time'>May 5, 2025 04:15:57 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='65' status='pass'>
+
+	<span class='duration right label'>00 00 50.912</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: ChangePassword</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>oldPassword</td><td>newPassword</td><td>confirmPassword</td><td>message</td></tr><tr><td>789456</td><td>789456</td><td>789456</td><td>Password was changed</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='66' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>ChangePassword</div>
+
+				<div class='category-list'>
+						<span class='category label'>@ValidChangePassword</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='83' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='168' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='172' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</h6>
+
+							<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+				</li>
+				<li test-id='173' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='176' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_click_my_email()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</h6>
+
+				</li>
+				<li test-id='184' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_want_to_click_change_password()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I want to click change Password</h6>
+
+				</li>
+				<li test-id='189' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_old_password_as(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i provide oldPassword as "789456"</h6>
+
+				</li>
+				<li test-id='191' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_new_password_as_and_confirm_password_as(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i provide newPassword as "789456" and confirmPassword as "789456"</h6>
+
+				</li>
+				<li test-id='193' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_click_change_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i click change Password "Password was changed"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='69' status='pass'>
+
+	<span class='duration right label'>00 00 47.422</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: ChangePassword</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>oldPassword</td><td>newPassword</td><td>confirmPassword</td><td>message</td></tr><tr><td>123478</td><td>789456</td><td>789456</td><td>Old password doesn't match</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='70' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>ChangePassword</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InValidChangePassword</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='85' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='101' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</h6>
+
+				</li>
+				<li test-id='109' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</h6>
+
+							<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+				</li>
+				<li test-id='112' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</h6>
+
+				</li>
+				<li test-id='116' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_click_my_email()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</h6>
+
+				</li>
+				<li test-id='126' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_want_to_click_change_password()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I want to click change Password</h6>
+
+				</li>
+				<li test-id='128' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_invalid_old_password_as(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i provide invalid oldPassword as "123478"</h6>
+
+				</li>
+				<li test-id='130' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_provide_new_password_as_and_confirm_password_as(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i provide newPassword as "789456" and confirmPassword as "789456"</h6>
+
+				</li>
+				<li test-id='133' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.MyAccountStepDefinition.i_click_change_password(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i click change Password "Old password doesn't match"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='139' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InValidChangePassword</span>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='142' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='181' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='186' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='188' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","R","ghana@","123456","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='195' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='199' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "Wrong email"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='81' status='pass'>
+
+	<span class='duration right label'>00 00 22.522</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: verify the orders with products details</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@VerfiyOrders</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='93' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='114' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
+
+
+		</li>
+		<li test-id='124' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+		</li>
+		<li test-id='127' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
+
+
+		</li>
+		<li test-id='132' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
+
+
+		</li>
+		<li test-id='136' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_orders())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click orders</div>
+
+
+		</li>
+		<li test-id='143' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_want_to_see_order_number())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i want to see Order number</div>
+
+
+		</li>
+		<li test-id='144' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_want_to_see_order_date())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i want to see Order Date</div>
+
+
+		</li>
+		<li test-id='145' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_details())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click Details</div>
+
+
+		</li>
+		<li test-id='153' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_want_to_see_products_name())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i want to see Products name</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='96' status='pass'>
+
+	<span class='duration right label'>00 00 16.238</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: verify the back in stock subscriptions</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@VerifyBackInStock</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='113' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='123' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
+
+
+		</li>
+		<li test-id='134' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+		</li>
+		<li test-id='135' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
+
+
+		</li>
+		<li test-id='141' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
+
+
+		</li>
+		<li test-id='146' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_back_in_stock_subscriptions())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click Back in stock subscriptions</div>
+
+
+		</li>
+		<li test-id='149' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_should_see_the_currently_subscribed_lists())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i should see the currently subscribed lists</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='105' status='pass'>
+
+	<span class='duration right label'>00 00 29.011</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: verify the current balance of reward points</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verifyRewardPoints</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='115' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='125' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
+
+
+		</li>
+		<li test-id='169' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+		</li>
+		<li test-id='171' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
+
+
+		</li>
+		<li test-id='174' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
+
+
+		</li>
+		<li test-id='175' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_reward_points())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click Reward points</div>
+
+
+		</li>
+		<li test-id='177' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_should_see_the_current_balance_of_reward_points())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i should see the current balance of Reward points</div>
+
+
+		</li>
+		<li test-id='178' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_should_see_the_history())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And i should see the History</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='117' status='pass'>
+
+	<span class='duration right label'>00 00 36.603</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: verify the customer info</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@VerifyCustomerInfo</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='129' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</div>
+
+
+		</li>
+		<li test-id='137' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on login</div>
+
+
+		</li>
+		<li test-id='197' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_provide_email_and_password(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I provide email and password</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>abccy@gmail.com</td><td>789456</td></tr></table></div>
+		</li>
+		<li test-id='202' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.Login_ForgetPasswordStepDefinition.i_click_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the login button</div>
+
+
+		</li>
+		<li test-id='217' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_my_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click my email</div>
+
+
+		</li>
+		<li test-id='226' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_click_the_customer_info())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When i click the Customer Info</div>
+
+
+		</li>
+		<li test-id='229' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definitions.MyAccountStepDefinition.i_should_see_the_first_name_last_name_and_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then i should see the FirstName, LastName and Email</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='119'>
+					<div class='test-heading'>
+						<span class='test-name'>Yuvaraj_15APR2025_DemoWebShop_Validate UserRegistration</span>
+						<span class='test-time'>May 5, 2025 04:16:12 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='120' status='pass'>
+
+	<span class='duration right label'>00 00 37.015</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Register on the website with valid and invalid fields</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table><br><br><table class='markup-table table '><tr><td>First name</td><td>Second name</td><td>Email</td><td>Password</td><td>Confirm password</td><td>Result</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuvabbb@gmail.com</td><td>123456</td><td>123456</td><td>Your registration completed</td></tr><tr><td>Yuvaraj</td><td>R</td><td>ghana@</td><td>123456</td><td>123456</td><td>Wrong email</td></tr><tr><td></td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>First name is required.</td></tr><tr><td>Yuvaraj</td><td></td><td>yuv@gmail.com</td><td>123456</td><td>123456</td><td>Last name is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td></td><td>123456</td><td>123456</td><td>Email is required.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td></td><td>123456</td><td>The password and confirmation password do not match.</td></tr><tr><td>Yuvaraj</td><td>R</td><td>yuv@gmail.com</td><td>123456</td><td></td><td>Password is required.</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='121' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='131' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='180' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='185' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='187' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","R","yuvabbb@gmail.com","123456","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='194' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='204' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "Your registration completed"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='151' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='159' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='200' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='208' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='211' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "","R","yuv@gmail.com","123456","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='215' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='220' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "First name is required."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='154' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='160' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='162' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='209' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='210' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","","yuv@gmail.com","123456","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='218' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='224' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "Last name is required."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='157' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@ForgotPassword</span>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='161' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='196' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='203' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='206' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","R","","123456","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='212' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='214' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "Email is required."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='166' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='170' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='207' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='213' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='219' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","R","yuv@gmail.com","","123456" in the corresponding field</h6>
+
+				</li>
+				<li test-id='228' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='231' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "The password and confirmation password do not match."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='182' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Register on the website with valid and invalid fields</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Register</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='192' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to be in the demowebshop "url"</h6>
+
+				</li>
+				<li test-id='227' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_register()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on register</h6>
+
+				</li>
+				<li test-id='233' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_choose_gender()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I choose gender</h6>
+
+				</li>
+				<li test-id='234' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_enter_in_the_corresponding_field(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Yuvaraj","R","yuv@gmail.com","123456","" in the corresponding field</h6>
+
+				</li>
+				<li test-id='235' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.i_click_on_the_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the register button</h6>
+
+				</li>
+				<li test-id='236' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definitions.UserRegistrationStep.the_registration_result_should_be(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the registration result should be "Password is required."</h6>
+
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -360,6 +1356,102 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@ForgotPassword</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='13'>Forgot password with valid and invalid email</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='21'>Forgot password with valid and invalid email</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:15:57 pm</td>
+										<td class='linked' test-id='62'>Forgot password with valid and invalid email</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:23 pm</td>
+										<td class='linked' test-id='157'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Login</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='3'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='4'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='5'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='6'>Login with valid and invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@DeleteAddess</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -382,8 +1474,307 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 5, 2025 10:05:39 am</td>
-										<td class='linked' test-id='3'>Deleting the already present address</td>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='11'>Deleting the already present address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@News</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='10'>Validating customer service news feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Blog</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='14'>Validating customer service blog feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@VerfiyOrders</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:16:00 pm</td>
+										<td class='linked' test-id='81'>verify the orders with products details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@VerifyCustomerInfo</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:16:11 pm</td>
+										<td class='linked' test-id='117'>verify the customer info</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Register</span>
+						<span class='category-status right'>
+						<span class='label pass'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:16:12 pm</td>
+										<td class='linked' test-id='121'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:18 pm</td>
+										<td class='linked' test-id='139'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:22 pm</td>
+										<td class='linked' test-id='151'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:22 pm</td>
+										<td class='linked' test-id='154'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:23 pm</td>
+										<td class='linked' test-id='157'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:32 pm</td>
+										<td class='linked' test-id='166'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:37 pm</td>
+										<td class='linked' test-id='182'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@VerifyBackInStock</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:16:06 pm</td>
+										<td class='linked' test-id='96'>verify the back in stock subscriptions</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@InValidChangePassword</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:57 pm</td>
+										<td class='linked' test-id='70'>ChangePassword</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 5, 2025 04:16:18 pm</td>
+										<td class='linked' test-id='139'>Register on the website with valid and invalid fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verifyRewardPoints</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:16:08 pm</td>
+										<td class='linked' test-id='105'>verify the current balance of reward points</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -415,8 +1806,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 5, 2025 10:05:39 am</td>
-										<td class='linked' test-id='2'>Adding Address</td>
+										<td>May 5, 2025 04:15:31 pm</td>
+										<td class='linked' test-id='8'>Adding Address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidChangePassword</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 5, 2025 04:15:57 pm</td>
+										<td class='linked' test-id='66'>ChangePassword</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -441,37 +1865,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>24</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>17</div>
+					<div class='panel-lead'>156</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 5, 2025 10:05:37 am</div>
+					<div class='panel-lead'>May 5, 2025 04:15:30 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 5, 2025 10:06:49 am</div>
+			 		<div class='panel-lead'>May 5, 2025 04:17:10 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 11.663</div>
+					<div class='panel-lead'>00 01 39.301</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -507,6 +1931,24 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>@ForgotPassword</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Login</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>@DeleteAddess</td>
 							<td>1</td>
 							<td>0</td>
@@ -516,7 +1958,88 @@
 							</td>
 						</tr>
 						<tr>
+							<td>@News</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Blog</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@VerfiyOrders</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@VerifyCustomerInfo</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Register</td>
+							<td>7</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@VerifyBackInStock</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@InValidChangePassword</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verifyRewardPoints</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>@AddAddress</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ValidChangePassword</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -535,23 +2058,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
+                parentCount: 5,
+				passParent: 5,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 2,
-				passChild: 2,
+				childCount: 24,
+				passChild: 24,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 17,
-				passGrandChild: 17,
+				grandChildCount: 156,
+				passGrandChild: 156,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -563,7 +2086,7 @@
 		
 		<script>
 			var timeline = {
-			        "Yuvaraj_12APR2025_DemoWebShop_Validate Address":69.825
+			        "Yuvaraj_13APR2025_DemoWebShop_Validate Login":40.232,"Yuvaraj_12APR2025_DemoWebShop_Validate Address":98.242,"Yuvaraj_28APR2025_DemoWebShop_Validate Cusromer Service":50.719,"Yuvaraj_14APR2025_DemoWebShop_Validate MyAccountSection":51.086,"Yuvaraj_15APR2025_DemoWebShop_Validate UserRegistration":37.015
 			};
 		</script>
 		
