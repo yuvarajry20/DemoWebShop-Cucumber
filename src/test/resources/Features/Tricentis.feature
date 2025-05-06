@@ -1,7 +1,7 @@
 Feature: Divraj_28APR2025_Demowebshop_Tricentis
 
 Background:
-Given the user is on the home page of the application
+Given I want to be in the demowebshop "url"
 When I click the Tricentis Academy image
 
 @Tricentis_Webpage

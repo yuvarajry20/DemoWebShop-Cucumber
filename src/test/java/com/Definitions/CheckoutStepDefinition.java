@@ -12,16 +12,6 @@ import io.cucumber.java.en.*;
 public class CheckoutStepDefinition {
     CheckoutAction objcheckout = new CheckoutAction();
 
-    @Given("the user is on the Web application")
-    public void the_user_is_on_the_web_application() {
-        try {
-            HelperClass.openPage("https://demowebshop.tricentis.com/");
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the web application. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
     @When("I log in and add an item and add to cart")
     public void i_log_in_and_add_an_item_and_add_to_cart(io.cucumber.datatable.DataTable dataTable) throws ProductSearchException {
         try {

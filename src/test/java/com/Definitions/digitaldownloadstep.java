@@ -9,16 +9,6 @@ import io.cucumber.java.en.*;
 public class digitaldownloadstep {
     digitaldownloadAction objdigitalact = new digitaldownloadAction();
 
-    @Given("the user is on the web application")
-    public void the_user_is_on_the_web_application() {
-        try {
-            HelperClass.openPage("https://demowebshop.tricentis.com/");
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the web application. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
     @When("the user click the digital download category")
     public void the_user_click_the_digital_download_category() {
         try {

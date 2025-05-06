@@ -30,6 +30,9 @@ public class BookPageAction {
             String bookName = book.getText().trim();
             LogManagers.logInfo("- " + bookName);
         }
+        String actualTitle = bookPage.BookListsAssert.getText();
+        Assert.assertEquals(actualTitle.trim(), "Books", "Title does not match.");
+        LogManagers.logInfo("Verified that 'Fiction' book page is displayed.");
     }
 
     public void VerifySortedBooks() {
@@ -45,6 +48,15 @@ public class BookPageAction {
     public void getBookDescription() {
         String description = bookPage.FictionDetail.getText();
         LogManagers.logInfo("Book description: " + description);
+        String actualTitle = bookPage.FictionAssert.getText();
+        Assert.assertEquals(actualTitle.trim(), "Fiction EX", "Title does not match.");
+        LogManagers.logInfo("Verified that 'Fiction' book page is displayed.");
+        
+    }
+    public void AssertHealthBook() {
+    	 String actualTitle = bookPage.FictionAssert.getText();
+         Assert.assertEquals(actualTitle.trim(), "Health Book", "Title does not match.");
+         LogManagers.logInfo("Verified that 'Health book' book page is displayed.");      
     }
 
     public void clickPriceFilter(String value) {

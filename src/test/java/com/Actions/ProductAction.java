@@ -1,6 +1,11 @@
 package com.Actions;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,7 +13,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Pages.ProductPage;
@@ -49,10 +56,10 @@ public class ProductAction {
     }
 
     public void addToCartMessage() throws InterruptedException {
-        long startTime = System.currentTimeMillis();
-        while (System.currentTimeMillis() - startTime < 5000) {
-        }
         String numberOfProduct = ProductPageLocator.AddTocartnumber.getText();
+        String act="The product has been added to your shopping cart";
+        String exp=ProductPageLocator.assertnotification.getText();
+        Assert.assertEquals(act, exp);
         LogManagers.logInfo("Number of products in cart: " + numberOfProduct);
     }
 
@@ -71,8 +78,9 @@ public class ProductAction {
     }
 
     public void emptyCarts() {
-        String act = "\r\n" + "    \r\n" + "    \r\n" + "Your Shopping Cart is empty!    ";
+        String act ="Your Shopping Cart is empty!";
         String exp = ProductPageLocator.emptycart.getText();
+        Assert.assertEquals(act, exp);;
         LogManagers.logInfo("Empty cart message: " + exp);
     }
 
@@ -87,14 +95,14 @@ public class ProductAction {
     	
         String wishlistUrl = ProductPageLocator.urlforwishlist.getText();
         LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
-        this.urlexp = wishlistUrl;
-        ProductPageLocator.urlforwishlist.click();
     }
 
     public void urlAutoList() {
-        String exp = HelperClass.getDriver().getCurrentUrl();
-        LogManagers.logInfo("Current URL: " + exp);
-        urlexp.contains(exp);
+    	String act="Your wishlist URL for sharing:";
+        String exp =ProductPageLocator.urlsharing.getText();
+        Assert.assertEquals(act, exp);
+        LogManagers.logInfo("Current page: " + exp);
+
     }
 
     public void increaseQty() {
@@ -114,6 +122,10 @@ public class ProductAction {
         for (WebElement a : obj) {
             LogManagers.logInfo(a.getText());
         }
+        String act="10.00";
+        String exp=ProductPageLocator.qtyten.getText();
+        Assert.assertEquals(act, exp);
+        
     }
 
     public void emailAFriend() {
@@ -164,6 +176,7 @@ public class ProductAction {
     public void verifyTextInCart() {
         String textInCart = "3rd Album";
         String exp = ProductPageLocator.assertcartwishlist.getText();
+        Assert.assertEquals(textInCart, exp);
         LogManagers.logInfo("Product in cart: " + exp);
     }
 
@@ -190,5 +203,20 @@ public class ProductAction {
         for (WebElement a : obj) {
             LogManagers.logInfo(a.getText());
         }
+        String act="The one day air shipping";
+        String exp=ProductPageLocator.shippingineday.getText();
+        Assert.assertEquals(act, exp);
     }
+
+	public String getproductname() throws IOException {
+		File file = new File("src/test/resources/testdata.properties");
+        FileInputStream fileInput = new FileInputStream(file);
+
+        Properties prop = new Properties();
+        prop.load(fileInput);
+
+        return prop.getProperty("Product");
+	}
+
+
 }

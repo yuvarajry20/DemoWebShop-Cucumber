@@ -43,7 +43,6 @@ public class TricentisAction {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(20));
             WebElement upcomingWebinarLink = wait.until(ExpectedConditions.visibilityOf(trilocate.upcomingwebinar));
 
-            // Use JavaScript to click the element
             JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
             js.executeScript("arguments[0].click();", upcomingWebinarLink);
 
@@ -61,20 +60,21 @@ public class TricentisAction {
             System.out.println(a.getText());
             LogManagers.logInfo("Listed upcoming webinar: " + a.getText());
         }
+        String act="https://www.tricentis.com/events";
+        String exp=HelperClass.getDriver().getCurrentUrl();
+        Assert.assertEquals(act, exp);
         LogManagers.logInfo("Successfully listed all upcoming webinars.");
     }
 
     public void searchthekeyword() {
-//    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//    	wait.until(ExpectedConditions.elementToBeClickable(trilocate.searchicon)).click();
-//    	trilocate.searchicon.click();
         trilocate.searchboxinfilter.sendKeys("Unlock"+Keys.ENTER);
         LogManagers.logInfo("Successfully entered the keyword 'Unlock' in the search box.");
     }
 
     public void unlockassert() {
-        String exp = trilocate.titleinkeyword.getText();
-        System.out.println(exp);
+        String act="https://www.tricentis.com/events";
+        String exp=HelperClass.getDriver().getCurrentUrl();
+        Assert.assertEquals(act, exp);
         LogManagers.logInfo("Successfully asserted the text for the upcoming partner event.");
     }
     public void trialsdemos() {
@@ -86,6 +86,9 @@ public class TricentisAction {
     }
     public void enterprise()
     {
-    	System.out.println(HelperClass.getDriver().getCurrentUrl());
+    	String act="https://www.tricentis.com/solutions/speed";
+    	String exp=HelperClass.getDriver().getCurrentUrl();
+    	Assert.assertEquals(act, exp);
+    	
     }
 }

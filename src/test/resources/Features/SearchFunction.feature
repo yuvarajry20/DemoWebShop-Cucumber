@@ -4,14 +4,14 @@ Feature: Laksitha_13APR2025_DemoWebShop_Search_Function
 
 @ValidKeywordSearch
   Scenario: Simple product search with valid keyword
-  Given I am on the DemoWebShop HomePage with "url"
+  Given I want to be in the demowebshop "url"
   When I click search bar and enter "Fiction"
   And I click the search button
   Then the "Fiction" should be displayed in the results
   
 @InvalidKeywordSearch
   Scenario Outline: Search with invalid or short keywords
-    Given I am on the DemoWebShop HomePage with "url"
+    Given I want to be in the demowebshop "url"
     When I click search bar and enter invalid "<keyword>"
     And I enter the search 
     Then a message that "<expectedMessage>" should be displayed
@@ -24,7 +24,7 @@ Feature: Laksitha_13APR2025_DemoWebShop_Search_Function
 
   @AdvanceSearch
   Scenario Outline: Perform advanced product search with various filter combinations
-    Given I am on the DemoWebShop HomePage with "url"
+    Given I want to be in the demowebshop "url"
     When I enter "<SearchTerm>" in the search box
     And I click the search button
     And I enable advanced search

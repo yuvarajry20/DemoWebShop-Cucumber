@@ -21,16 +21,6 @@ public class BookDefinitions {
     LoginAction loginAction = new LoginAction();
     WebDriver driver = HelperClass.getDriver();
 
-    @Given("I am on the DemoWebShop homepage with {string}")
-    public void i_am_on_the_demo_web_shop_homepage_with(String url) {
-        try {
-            HelperClass.openPage(url);
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the DemoWebShop homepage. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
     @When("I click on the {string} category")
     public void i_click_on_the_category(String string) {
         try {
@@ -51,25 +41,22 @@ public class BookDefinitions {
         }
     }
 
-    @When("I select the book titled {string}")
-    public void i_select_the_book_titled(String string) {
-        try {
-            bookAction.clickFictionBook();
-        } catch (Exception e) {
-            LogManagers.logError("Failed to select the book titled. Error: " + e.getMessage());
-            throw e;
-        }
-    }
+    @When("I select the book titled")
+    public void i_select_the_book_titled(DataTable dataTable) {
+    	 List<String> bookTitles = dataTable.asList(); 
+    	    for (String title : bookTitles) {
+    	        if (title.equalsIgnoreCase("Fiction EX")) {
+    	            bookAction.clickFictionBook();
+    	        } else {
+    	            throw new IllegalArgumentException("Book not supported: " + title);
+    	        }
+    	    }
+    	}
 
-    @Then("I should see the product details page for {string}")
-    public void i_should_see_the_product_details_page_for(String string) {
-        try {
-            bookAction.getBookDescription();
-        } catch (Exception e) {
-            LogManagers.logError("Failed to see the product details page. Error: " + e.getMessage());
-            throw e;
-        }
-    }
+    @Then("I should see the product details page")
+    public void i_should_see_the_product_details_page() {
+    	bookAction.getBookDescription();
+          }
 
     @When("I apply the following filters:")
     public void i_apply_the_following_filters(DataTable dataTable) {
