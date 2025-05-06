@@ -1,5 +1,6 @@
 package com.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -24,6 +25,9 @@ public class ProductPage
 	
 	@FindBy(xpath="//div[@class=\"product-rating-box\"]//preceding-sibling::h2//a")
 	public WebElement ProductTitle;
+	
+	@FindBy(xpath="//div[@class=\"master-wrapper-page\"]//preceding-sibling::div[@id=\"bar-notification\"]//p")
+	public WebElement assertnotification;
 	
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
 	public WebElement AddToCart;
@@ -61,8 +65,14 @@ public class ProductPage
 	@FindBy(xpath="//div[@class=\"share-info\"]//p//a[@class=\"share-link\"]")
 	public WebElement urlforwishlist;
 	
+	@FindBy(xpath = "//div[@class=\"share-info\"]//child::p//span")
+	public WebElement urlsharing;
+	
 	@FindBy(xpath="//input[@class=\"qty-input\"]")
 	public WebElement increaseqty;
+	
+	@FindBy(xpath="//span[@class=\"product-price order-total\"]//child::strong")
+	public WebElement qtyten;
 	
 	@FindBy(xpath = "//input[@class=\"button-1 add-to-cart-button\"]")
 	public WebElement addtocartinqty;
@@ -97,7 +107,9 @@ public class ProductPage
 
 	@FindBy(xpath="//td[@class=\"product-picture\"]//following-sibling::td//a")
 	public WebElement assertcartwishlist;
-
+	
+	@FindBy(xpath="//ul[@class=\"shipping-results\"]//li[2]//child::span")
+	public WebElement shippingineday;
 	
 	@FindBy(xpath="//label[contains(text(),\"Country:\")]//following-sibling::select")
 	public WebElement countryclick;

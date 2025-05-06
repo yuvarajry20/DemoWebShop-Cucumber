@@ -90,12 +90,12 @@ public class HomePageAction {
     }
 
     public void ViewPollInvalidresult() {
-    	//String actualText="Only registered users can vote.";
-    	String actualText="";
-        String errorText = homePage.pollErrorMsg.getText();
-        Assert.assertEquals(actualText, errorText);
-        LogManagers.logInfo("Poll error message: " + errorText);
+    	String expectedMessage = "Do you like nopCommerce?";
+    	String actualMessage = homePage.pollErrorMsg.getText();
+     	Assert.assertEquals(actualMessage, expectedMessage, "Poll message mismatch!");
+        LogManagers.logInfo("Poll error message: " + actualMessage);
     }
+
     public void ReturnToHomePage() {
     	homePage.ToHomePage.click();
     	LogManagers.logInfo("Returned to HomePage");

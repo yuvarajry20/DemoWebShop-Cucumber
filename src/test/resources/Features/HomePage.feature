@@ -1,7 +1,7 @@
 Feature: Laksitha_12APR2025_DemoWebShop_HomePageFunctionality 
 
 Background: 
-  Given I am on Demowebshop Homepage "https://demowebshop.tricentis.com/"
+  Given I want to be in the demowebshop "url"
 
  # And I login using the following credentials
    # | email            | password  |
@@ -24,7 +24,7 @@ Scenario: Subscribe with invalid email address
   Then I should see the subscription error message
   
    @FeaturedProducts
-  Scenario: View featured products as list
+   Scenario: View featured products as list
     When I see the featured products section
     Then I should see list of featured products displayed 
    
@@ -32,7 +32,7 @@ Scenario: Subscribe with invalid email address
     Scenario: Poll the vote without logging in
     When I click the option in poll
     And click the vote button
-    Then I should see an error message
+    Then I should see an error message                  
     
     @RecentlyViewed
     Scenario: View Recent products as list
@@ -42,5 +42,5 @@ Scenario: Subscribe with invalid email address
     And I click the search bar and enter search keyword
     And click the product link
     And return to homepage 
-    Then I should see list of Recent products displayed 
+    Then I should see list of Recent products displayed   
     

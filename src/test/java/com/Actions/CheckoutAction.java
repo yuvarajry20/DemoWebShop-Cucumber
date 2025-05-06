@@ -137,6 +137,9 @@ public class CheckoutAction {
     		WebElement el = HelperClass.getDriver().findElement(By.xpath("//div//ul//li[2]//a[text()=\"Click here for order details.\"]"));
     		Actions builder = new Actions(HelperClass.getDriver());
     		builder.moveToElement(el).click(el).perform();
+    		String act="Order information";
+        	String exp=CheckoutLocator.orderinfo.getText();
+        	Assert.assertEquals(act, exp);
     		
     	}
     	catch(Exception e)
@@ -151,6 +154,9 @@ public class CheckoutAction {
     }
 
     public void pdfinvoiceclik() {
+    	String act="Order information";
+    	String exp=CheckoutLocator.orderinfo.getText();
+    	Assert.assertEquals(act, exp);
         CheckoutLocator.pdfinvoice.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
 //        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
@@ -168,7 +174,10 @@ public class CheckoutAction {
         for (WebElement a : obj) {
             System.out.println(a.getText());
             LogManagers.logInfo(a.getText());
-        } 
+        }
+        String act="Checkout";
+        String exp=CheckoutLocator.orderinfo.getText();
+        Assert.assertEquals(act, exp);
     }
 
     public void detailsinvoice() {
@@ -177,6 +186,9 @@ public class CheckoutAction {
             System.out.println(a.getText());
             LogManagers.logInfo(a.getText());
         }
+        String act="Order information";
+    	String exp=CheckoutLocator.orderinfo.getText();
+    	Assert.assertEquals(act, exp);
     }
 
     public void creditcardcheckbox() {
