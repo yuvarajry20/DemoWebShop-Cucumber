@@ -31,8 +31,10 @@ public class FooterDefinition {
 
     @Then("User should be navigated to the nopCommerce official website")
     public void user_should_be_navigated_to_the_nop_commerce_official_website() {
-        String actualText = footerAction.getNOPText();
-        Assert.assertTrue(actualText.contains("Free and open-source eCommerce platform"), "Navigation failed");
+//        String actualText = footerAction.getNOPText();
+//        String exp="Free and open-source eCommerce platform";
+//        Assert.assertEquals(actualText,exp);
+    	 footerAction.assertNopCommerceUrl();
 //            String actualUrl = footerAction.getCurrentUrl();
 //            if (!actualUrl.contains("nopcommerce.com")) {
 //                throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
@@ -43,22 +45,19 @@ public class FooterDefinition {
        	 footerAction.clickSiteMapLink();
     }
 
-    @Then("User should be navigated to the Sitemap page")
-    public void user_should_be_navigated_to_the_sitemap_page() {
-    	String actualUrl = footerAction.getCurrentUrl();
-      if (!actualUrl.contains("https://demowebshop.tricentis.com/sitemap")) {
-          throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
-      }
-    }
-
-//    @Then("User should be redirected to the Accessories page")
-//    public void user_should_be_redirected_to_the_accessories_page() {
-//    	footerAction.clickAccesoriesLink();
+//    @Then("User should be navigated to the Sitemap page")
+//    public void user_should_be_navigated_to_the_sitemap_page() {
 //    	String actualUrl = footerAction.getCurrentUrl();
-//      if (!actualUrl.contains("https://demowebshop.tricentis.com/accessories")) {
+//      if (!actualUrl.contains("https://demowebshop.tricentis.com/sitemap")) {
 //          throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
 //      }
-        
+//    }
+    @Then("User should be navigated to the Sitemap page")
+    public void user_should_be_navigated_to_the_sitemap_page() {
+        String actualUrl = footerAction.getCurrentUrl();
+        Assert.assertEquals("https://demowebshop.tricentis.com/sitemap", actualUrl);
+    }
+       
     @When("clicks on the Contact us link")
     public void clicks_on_the_contact_us_link() {
        footerAction.clickContactUsLink();
@@ -85,7 +84,7 @@ public class FooterDefinition {
     public void the_confirmation_should_be_displayed() throws InterruptedException {
     	 String actualMessage = footerAction.getConfirmation();
     	 String expectedMessage = "Your enquiry has been successfully sent to the store owner.";
-    	 Assert.assertEquals("Confirmation message mismatch!", expectedMessage, actualMessage);
+    	 Assert.assertEquals(expectedMessage, actualMessage);
    // 	footerAction.getConfirmation();
     	}
     	   

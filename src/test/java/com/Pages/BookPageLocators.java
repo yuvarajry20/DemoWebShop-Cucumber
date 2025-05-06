@@ -66,6 +66,9 @@ public class BookPageLocators {
 	@FindBy(xpath="//table[@class='compare-products-table']//tr[3]/td")
 	public List<WebElement> comparePrice;
 	
+	@FindBy(xpath="//table[@class='compare-products-table']//tr[3]//td[i]")
+	public List<WebElement> priceDynamixpath;
+	
 	@FindBy(xpath="//a[contains(text(),\"Clear list\")]")
 	public WebElement ClearList;
 	

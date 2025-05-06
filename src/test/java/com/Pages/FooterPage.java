@@ -27,10 +27,10 @@ public class FooterPage {
 	@FindBy(xpath="//input[@class=\"email\"]")
 	public WebElement ContactEmail;
 	
-	@FindBy(xpath="//a[contains(text(),\"Contact us\")]")
+	@FindBy(xpath="//textarea[@class=\"enquiry\"]")
 	public WebElement ContactEnquiry;
 	
-	@FindBy(xpath="//a[contains(text(),\"Contact us\")]")
+	@FindBy(xpath="//input[@class=\"button-1 contact-us-button\"]")
 	public WebElement ContactSubmit;
 	
 	//@FindBy(xpath="//div[@class=\"result\"]")
