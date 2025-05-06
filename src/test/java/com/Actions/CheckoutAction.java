@@ -187,7 +187,7 @@ public class CheckoutAction {
             LogManagers.logInfo(a.getText());
         }
         String act="Order information";
-    	String exp=CheckoutLocator.orderinfo.getText();
+    	String exp=CheckoutLocator.orderinfo2.getText();
     	Assert.assertEquals(act, exp);
     }
 
