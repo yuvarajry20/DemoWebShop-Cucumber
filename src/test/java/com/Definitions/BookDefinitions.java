@@ -1,5 +1,6 @@
 package com.Definitions;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -116,6 +117,7 @@ public class BookDefinitions {
     public void i_click_the_book_link(String string) {
         try {
             bookAction.clickComputingInternet();
+        	//bookAction.clickFictionBook();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the book link. Error: " + e.getMessage());
             throw e;
@@ -156,7 +158,10 @@ public class BookDefinitions {
     @Then("verify and compare the prices of both the product")
     public void verify_and_compare_the_prices_of_both_the_product() {
         try {
-            bookAction.ResultOfCompareProducts();
+            //bookAction.ResultOfCompareProducts();
+//        	List<String> expectedPrices = Arrays.asList("24.00", "10.00");
+//        	bookAction.assertCompareProductPrices(expectedPrices);
+        	bookAction.assertCompareProductPriceExists();
         } catch (Exception e) {
             LogManagers.logError("Failed to verify and compare the prices of both the product. Error: " + e.getMessage());
             throw e;

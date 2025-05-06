@@ -76,7 +76,7 @@ public class SearchStepDefinition {
             Assert.assertEquals(actualMessage.trim(), expectedMessage);
         } catch (NoAlertPresentException e) {
             try {
-                String actualMessage = searchaction.getRelevantSearchMessage(expectedMessage);
+                String actualMessage = searchaction.verifyRelevantSearchMessage(expectedMessage);
                 Assert.assertEquals(actualMessage.trim(), expectedMessage);
             } catch (Exception ex) {
                 LogManagers.logError("Failed to display the expected message. Error: " + ex.getMessage());

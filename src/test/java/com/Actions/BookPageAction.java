@@ -2,6 +2,8 @@ package com.Actions;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -137,17 +139,33 @@ public class BookPageAction {
         LogManagers.logInfo("Added book to compare list.");
     }
 
-    public void ResultOfCompareProducts() {
-        LogManagers.logInfo("Book Names:");
-        for (WebElement name : bookPage.compareName) {
-            LogManagers.logInfo(name.getText());
-        }
-
-        LogManagers.logInfo("Prices:");
-        for (WebElement price : bookPage.comparePrice) {
-            LogManagers.logInfo(price.getText());
-        }
-    }
+    public void assertCompareProductPriceExists() {
+    	 WebDriver driver = HelperClass.getDriver();
+    	 String expected="Health Book";
+    	 int i=1;
+    	 while(true) {
+    		 WebElement items=driver.findElement(By.xpath("//table[@class='compare-products-table']//tr[2]//td["+i+"]"));
+    	     String actual=items.getText();
+    	     if(expected.equals(actual)) {
+    	    	 Assert.assertEquals(expected,actual);
+    	    	 break;
+    	     }
+    	     i++;
+    	 }     
+    }    	
+// public void assertCompareProductPrices() {
+//    	 WebDriver driver = HelperClass.getDriver();
+//         String expectedPrice="10.00";
+//         List<WebElement>price=driver.findElements(By.xpath("//table[@class='compare-products-table']//tr[3]//td"));
+//         for(int i=1;i<price.size();i++) {
+//        	 String actPrice=price.get(i).getText();
+//        	 if(expectedPrice.equals(actPrice)){
+//        		 System.out.println("The price of the product is: "+actPrice);
+//        	 }
+//        	 Assert.assertEquals(actPrice, expectedPrice);
+//         }
+//         
+//    }
 
     public void ClearCompareProductsList() {
         bookPage.ClearList.click();

@@ -53,18 +53,18 @@ public class SearchAction {
         LogManagers.logInfo("Search warning message: " + warningText);
     }
 
-    public String getRelevantSearchMessage(String expectedMessage) {
+    public String verifyRelevantSearchMessage(String expectedMessage) {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
 
         if (expectedMessage.equals("No products were found that matched your criteria.")) {
             String actualMessage = wait.until(ExpectedConditions.visibilityOf(searchPage.noResultMessage)).getText();
             LogManagers.logInfo("No result message: " + actualMessage);
-            return actualMessage;
+            Assert.assertEquals(actualMessage, expectedMessage, "Mismatch in no result message");
         }
         else if (expectedMessage.equals("Search term minimum length is 3 characters")) {
             String actualMessage = wait.until(ExpectedConditions.visibilityOf(searchPage.searchWarning)).getText();
             LogManagers.logInfo("Search warning message: " + actualMessage);
-            return actualMessage;
+            Assert.assertEquals(actualMessage, expectedMessage, "Mismatch in search warning");
         }
         else if (expectedMessage.equals("Please enter some search keyword")) {
             try {
@@ -72,15 +72,16 @@ public class SearchAction {
                 String actualMessage = alert.getText();
                 alert.accept();
                 LogManagers.logInfo("Alert message: " + actualMessage);
-                return actualMessage;
-            }
-            catch (NoAlertPresentException e) {
+                Assert.assertEquals(actualMessage, expectedMessage, "Mismatch in alert message");
+            } catch (NoAlertPresentException e) {
                 LogManagers.logError("No alert present", e);
-                return "No alert present";
+                Assert.fail("Expected alert not present");
             }
         }
-        return "";
+		return expectedMessage;
     }
+
+    
 
     public void enableAdvanceSearch() {
         searchPage.AdvanceCheckbox.click();
