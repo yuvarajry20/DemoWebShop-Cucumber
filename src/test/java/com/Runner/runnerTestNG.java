@@ -19,10 +19,19 @@ features={
 //		"src/test/resources/Features/UserRegistration.feature",
 		 "src/test/resources/Features/Review.feature",
 		 "src/test/resources/Features/Tags.feature",
+<<<<<<< HEAD
 //		 "src/test/resources/Features/DigitalDownload.feature",
 //		 "src/test/resources/Features/Tricentis.feature",
 //     	"src/test/resources/Features/CustomerService.feature",
           "src/test/resources/Features/Footer.feature"
+=======
+		 "src/test/resources/Features/DigitalDownload.feature",
+		 "src/test/resources/Features/Tricentis.feature",
+     	"src/test/resources/Features/CustomerService.feature",
+		 "src/test/resources/Features/Footer.feature",
+     	"src/test/resources/Features/HomePageLinks.feature",
+     	
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {

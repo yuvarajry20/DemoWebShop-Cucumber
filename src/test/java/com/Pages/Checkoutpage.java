@@ -74,6 +74,9 @@ public class Checkoutpage {
 	@FindBy(xpath="//div[@class=\"page-title\"]//child::h1")
 	public WebElement orderinfo;
 	
+	@FindBy(xpath="//div[@class=\"page-title\"]//a[contains(text(),\"Print\")]//preceding-sibling::h1")
+	public WebElement orderinfo2;
+	
 	
 	@FindBy(xpath="//div[@class=\"section payment-method\"]//ul//li[3]//div//div[2]//input")
 	public WebElement creditcheckbox;

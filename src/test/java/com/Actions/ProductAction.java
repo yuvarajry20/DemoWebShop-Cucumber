@@ -117,11 +117,29 @@ public class ProductAction {
     }
 
     public void updatedQtyInWishlist() {
-        List<WebElement> obj = HelperClass.getDriver().findElements(By.xpath("//table[@class=\"cart-total\"]//tr//td//span"));
+    	
+    	List<WebElement> rows=HelperClass.getDriver().findElements(By.xpath("//table[@class='cart-total']//tr"));
+    	int row=rows.size();
+    	int col=2;
+    	for(int i=1;i<row+1;i++)
+    	{
+    		for(int j=1;j<col+1;j++) {
+    			if(j%2!=0)
+    			{
+    				WebElement data=HelperClass.getDriver().findElement(By.xpath("//table[@class='cart-total']//tr["+i+"]//td["+j+"]//child::span[1]"));
+        			System.out.print(data.getText());
+    			}
+    			else
+    			{
+    				WebElement data=HelperClass.getDriver().findElement(By.xpath("//table[@class='cart-total']//tr["+i+"]//td["+j+"]//child::span//span"));
+        			System.out.print(data.getText());
+    			}
+    			
+    			
+    		}
+    		System.out.println();
+    	}
         LogManagers.logInfo("Updated quantity in wishlist:");
-        for (WebElement a : obj) {
-            LogManagers.logInfo(a.getText());
-        }
         String act="10.00";
         String exp=ProductPageLocator.qtyten.getText();
         Assert.assertEquals(act, exp);
@@ -134,9 +152,6 @@ public class ProductAction {
     }
 
     public void emailFriendButton() {
-//    	JavascriptExecutor obj=(JavascriptExecutor)HelperClass.getDriver();
-//    	WebElement element = HelperClass.getDriver().findElement(By.xpath("//input[@class='button-2 email-a-friend-button']"));
-//    	obj.executeScript("arguments[0].click();", element);
         ProductPageLocator.emailfriendbtn.click();
         LogManagers.logInfo("Clicked on 'Email a friend' button.");
     }

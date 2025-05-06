@@ -8,8 +8,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -17,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class Login_ForgetPasswordStepDefinition {
     LoginAction loginAction = new LoginAction();
@@ -79,7 +78,7 @@ public class Login_ForgetPasswordStepDefinition {
             }
 
             WebElement resultMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(resultMessageLocator));
-            assertEquals(expectedResult, resultMessage.getText());
+            Assert.assertEquals(expectedResult, resultMessage.getText());
         } catch (Exception e) {
             LogManagers.logError("Failed to verify the login result. Error: " + e.getMessage());
             throw e;
@@ -133,7 +132,7 @@ public class Login_ForgetPasswordStepDefinition {
             }
 
             WebElement resultMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(resultMessageLocator));
-            assertEquals(expectedResult, resultMessage.getText());
+            Assert.assertEquals(expectedResult, resultMessage.getText());
         } catch (Exception e) {
             LogManagers.logError("Failed to verify the result message. Error: " + e.getMessage());
             throw e;
