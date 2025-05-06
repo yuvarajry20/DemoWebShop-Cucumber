@@ -24,8 +24,9 @@ public class FooterAction {
 	    }
 
 	    public String getNOPText() {
-	        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(),'Free and open-source eCommerce platform')]")));
+	        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //div[@class=\"home-banner-text-section\"]//h1")));
+//(By.xpath("//h1[contains(text(),'Free and open-source eCommerce platform')]")));
 	        return element.getText();
 	    }
 
@@ -35,9 +36,9 @@ public class FooterAction {
 	    public void clickSiteMapLink() {
 	    	footerpage.siteMaplink.click();
 	    }
-	    public void clickAccesoriesLink() {
-	    	footerpage.AccessoriesLink.click();
-	    }
+//	    public void clickAccesoriesLink() {
+//	    	footerpage.AccessoriesLink.click();
+//	    }
 	    public void clickContactUsLink() {
 	    	footerpage.ContactUsLink.click();
 	    }
@@ -50,9 +51,8 @@ public class FooterAction {
 	    	footerpage.ContactSubmit.click();
 	    }
 	    public String getConfirmation() throws InterruptedException{
-//	    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//		     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"result\"]")));
-		    Thread.sleep(3000); 
+	    	 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+		     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"page-body\"]//child::div[@class=\"result\"]")));
 	    	return footerpage.ConfirmText.getText();
 	    }
 }

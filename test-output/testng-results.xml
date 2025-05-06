@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="23" passed="21" failed="2" skipped="0">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-05-05T22:11:02 IST" name="Default suite" finished-at="2025-05-05T22:11:46 IST" duration-ms="44325">
+=======
+  <suite started-at="2025-05-05T23:02:37 IST" name="Default suite" finished-at="2025-05-05T23:02:55 IST" duration-ms="17977">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-05-05T22:11:02 IST" name="Default test" finished-at="2025-05-05T22:11:46 IST" duration-ms="44325">
+=======
+    <test started-at="2025-05-05T23:02:37 IST" name="Default test" finished-at="2025-05-05T23:02:55 IST" duration-ms="17977">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
       <class name="com.Runner.runnerTestNG">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-05T22:11:02 IST" name="setUpClass" finished-at="2025-05-05T22:11:03 IST" duration-ms="985" status="PASS">
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-05T23:02:37 IST" name="setUpClass" finished-at="2025-05-05T23:02:38 IST" duration-ms="1545" status="PASS">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@766a52f5]]>
+=======
+                <![CDATA[org.testng.TestRunner@66223d94]]>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-05T22:11:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T22:11:31 IST" duration-ms="28109" status="PASS">
           <params>
             <param index="0">
@@ -482,6 +503,41 @@ at ✽.I add to cart the laptop(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-05T22:11:44 IST" name="tearDownClass" finished-at="2025-05-05T22:11:46 IST" duration-ms="2685" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-05T23:02:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T23:02:52 IST" duration-ms="13386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Tags should be navigated to product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_15APR2025_DemoWebShop_Popular_tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-05T23:02:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T23:02:52 IST" duration-ms="13342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Tags should be navigated to product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_15APR2025_DemoWebShop_Popular_tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-05T23:02:52 IST" name="tearDownClass" finished-at="2025-05-05T23:02:55 IST" duration-ms="2956" status="PASS">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

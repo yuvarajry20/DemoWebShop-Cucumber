@@ -17,16 +17,6 @@ public class SearchStepDefinition {
     WebDriver driver = HelperClass.getDriver();
     SearchAction searchaction = new SearchAction();
 
-    @Given("I am on the DemoWebShop HomePage with {string}")
-    public void i_am_on_the_demo_web_shop_home_page_with(String url) {
-        try {
-            HelperClass.openPage(url);
-        } catch (Exception e) {
-            LogManagers.logError("Failed to open the DemoWebShop HomePage. Error: " + e.getMessage());
-            throw e;
-        }
-    }
-
     @When("I click search bar and enter {string}")
     public void i_click_search_bar_and_enter(String string) {
         try {

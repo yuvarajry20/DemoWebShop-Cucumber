@@ -6,25 +6,25 @@ import org.openqa.selenium.support.FindBy;
 public class SearchBarLocators {
 	
 //	@FindBy(xpath="//input[@value=\"Search store\"]")
-//	public WebElement searchbox;
-	@FindBy(id = "small-searchterms")
+//	@FindBy(id = "small-searchterms")
+	@FindBy(xpath="//input[@type=\"submit\"]//preceding-sibling::input")
 	public WebElement searchbox;
 
-	
-	@FindBy(xpath="//input[@value=\"Search\"]")
+	//@FindBy(xpath="//input[@value=\"Search\"]")
+	@FindBy(xpath="//form[@action=\"/search\"]//descendant::input[2]")
 	public WebElement search;
 	
 	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
 	public WebElement getSearchResult;
-	
-	//@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[3]/strong/text()")
+
 	@FindBy(xpath="//strong[contains(text(),\"Search term minimum length is 3 characters\")]")
     public WebElement searchWarning;
 	
 	@FindBy(xpath="//form[@action=\"/search\"]//script[1]")
 	public WebElement SearchAlert;
 
-	@FindBy(xpath = "//strong[@class=\"result\"]")
+	//@FindBy(xpath = "//strong[@class=\"result\"]")
+	@FindBy(xpath ="//div[@class=\"search-results\"]//child::strong[@class=\"result\"]")
 	public WebElement noResultMessage;
 
 	@FindBy(xpath = "//div[@class='search-results']//h2")
