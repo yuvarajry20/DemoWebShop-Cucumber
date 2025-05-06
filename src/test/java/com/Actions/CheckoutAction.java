@@ -187,7 +187,9 @@ public class CheckoutAction {
             LogManagers.logInfo(a.getText());
         }
         String act="Order information";
-    	String exp=CheckoutLocator.orderinfo2.getText();
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        String exp = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"page-title\"]//a[contains(text(),\"Print\")]//preceding-sibling::h1"))).getText();
+//    	String exp=CheckoutLocator.orderinfo2.getText();
     	Assert.assertEquals(act, exp);
     }
 
