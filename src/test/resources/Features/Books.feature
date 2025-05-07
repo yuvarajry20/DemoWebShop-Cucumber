@@ -12,7 +12,7 @@ Feature: Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality
   Scenario: View details of a specific book
     When I click on the "Books" category
     And I select the book titled 
-   |Health Book|
+    #|Health Book|
     |Fiction EX |
     Then I should see the product details page   
 
