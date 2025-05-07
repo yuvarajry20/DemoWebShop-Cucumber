@@ -3,8 +3,6 @@ package com.Actions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -27,14 +25,6 @@ public class FooterAction {
         footerpage.nopFooterlink.click();
     }
 
-//    public String getNOPText() {
-//        WebDriver driver = HelperClass.getDriver();
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-//        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
-//            By.xpath("//h1[contains(text(),'Free and open-source eCommerce platform')]")
-//        ));
-//        return element.getText();
-//    }
     public void assertNopCommerceUrl() {
         WebDriver driver = HelperClass.getDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -66,7 +56,7 @@ public class FooterAction {
         footerpage.ContactSubmit.click();
     }
 
-    public String getConfirmation() throws InterruptedException {
+    public String getConfirmation(){
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
             By.xpath("//div[@class=\"page-body\"]//child::div[@class=\"result\"]")

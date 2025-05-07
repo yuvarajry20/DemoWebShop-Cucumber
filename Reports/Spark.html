@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 7, 2025 02:38:24 pm</span></a>
+<a href="#"><span class="badge badge-primary">May 7, 2025 03:04:29 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@filtersindigitaldownload</a><a class="dropdown-item" href="#">@Digitaldownload</a><a class="dropdown-item" href="#">@addtocarttheproduct</a>
+<a class="dropdown-item" href="#">@CompareProduct</a><a class="dropdown-item" href="#">@BookDetails</a><a class="dropdown-item" href="#">@BooksList</a><a class="dropdown-item" href="#">@BooksSortBy</a><a class="dropdown-item" href="#">@BooksFilters</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Divraj_14APR2025_Demowebshop_Categories</p>
+            <p class="name">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality</p>
             <p class="text-sm">
-              <span>2:38:25 pm</span> / <span>00:00:09:879</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:04:31 pm</span> / <span>00:01:08:965</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Divraj_14APR2025_Demowebshop_Categories</h5>
-<span class='badge badge-success'>05.07.2025 2:38:25 pm</span>
-<span class='badge badge-danger'>05.07.2025 2:38:35 pm</span>
-<span class='badge badge-default'>00:00:09:879</span>
+<h5 class="test-status text-fail">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality</h5>
+<span class='badge badge-success'>05.07.2025 3:04:31 pm</span>
+<span class='badge badge-danger'>05.07.2025 3:05:40 pm</span>
+<span class='badge badge-default'>00:01:08:965</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,7 +121,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>select the filters view product</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Comparing two different products</div>
       </div>
     </div>
         <div class="collapse">
@@ -126,18 +131,43 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_click_the_digital_download_category()">
-                <span>When the user click the digital download category</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_on_the_category(java.lang.String)">
+                <span>When I click on the "Books" category</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.select_the_filter_option()">
-                <span>And select the filter option</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_the_book_link(java.lang.String)">
+                <span>And I click the "Computing and Internet" book link</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_should_see_the_list_of_products_based_on_the_filter()">
-                <span>Then the user should see the list of products based on the filter</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.click_the_add_to_compare_button()">
+                <span>And click the Add to Compare button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.click_the_books_category_and_click_the_link(java.lang.String)">
+                <span>Then click the books category and click the "Health Book" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.add_it_to_the_compare_list()">
+                <span>And add it to the compare list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.verify_and_compare_the_prices_of_both_the_product()">
+                <span>Then verify and compare the prices of both the product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.clear_the_list_in_compare_products()">
+                <span>Then clear the list in compare products</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.assert_if_the_lists_are_cleared()">
+                <span>Then assert if the lists are cleared</span>
       <div>
       </div>
               </div>
@@ -147,7 +177,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>verify the user is on the digital download page</div>
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>View all books available</div>
       </div>
     </div>
         <div class="collapse">
@@ -157,13 +187,13 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_click_the_digital_download_category()">
-                <span>When the user click the digital download category</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_on_the_category(java.lang.String)">
+                <span>When I click on the "Books" category</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_should_see_the_digital_download_product_page()">
-                <span>Then the user should see the digital download product page</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_should_see_a_list_of_books_displayed()">
+                <span>Then I should see a list of books displayed</span>
       <div>
       </div>
               </div>
@@ -173,7 +203,45 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>add product to the cart</div>
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>View details of a specific book</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)">
+                <span>Given I want to be in the demowebshop "url"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_on_the_category(java.lang.String)">
+                <span>When I click on the "Books" category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.Definitions.BookDefinitions.i_select_the_book_titled(io.cucumber.datatable.DataTable)">
+                <span>And I select the book titled</span>
+      <div><table class='markup-table table '><tr><td>Health Book</td></tr><tr><td>Fiction EX</td></tr></table>
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Book not supported: Health Book
+	at com.Definitions.BookDefinitions.i_select_the_book_titled(BookDefinitions.java:52)
+	at ✽.I select the book titled(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Books.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.Definitions.BookDefinitions.i_should_see_the_product_details_page()">
+                <span>Then I should see the product details page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Apply filter options for books</div>
       </div>
     </div>
         <div class="collapse">
@@ -183,18 +251,53 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_click_the_digital_download_category()">
-                <span>When the user click the digital download category</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_on_the_category(java.lang.String)">
+                <span>When I click on the "Books" category</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.click_add_to_cart_the_product()">
-                <span>And click add to cart the product</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_apply_the_following_filters(io.cucumber.datatable.DataTable)">
+                <span>And I apply the following filters:</span>
+      <div><table class='markup-table table '><tr><td>Filter Type</td><td>Value</td></tr><tr><td>Sort By</td><td>Price: High to Low</td></tr><tr><td>Display By</td><td>4</td></tr><tr><td>View As</td><td>List</td></tr><tr><td>Price</td><td>Under 25.00</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.Definitions.digitaldownloadstep.the_user_should_see_the_number_of_products_added_in_cart()">
-                <span>Then the user should see the number of products added in cart</span>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.the_filtered_books_should_be_displayed_accordingly()">
+                <span>Then the filtered books should be displayed accordingly</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Apply all Sort By options for books</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definitions.Login_ForgetPasswordStepDefinition.i_want_to_be_in_the_demowebshop(java.lang.String)">
+                <span>Given I want to be in the demowebshop "url"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_click_on_the_category(java.lang.String)">
+                <span>When I click on the "Books" category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.i_apply_each_of_the_following_sort_by_filters(io.cucumber.datatable.DataTable)">
+                <span>And I apply each of the following Sort By filters:</span>
+      <div><table class='markup-table table '><tr><td>Sort By</td></tr><tr><td>Position</td></tr><tr><td>Name: A to Z</td></tr><tr><td>Name: Z to A</td></tr><tr><td>Price: Low to High</td></tr><tr><td>Price: High to Low</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definitions.BookDefinitions.each_sort_result_should_be_applied_correctly()">
+                <span>Then each sort result should be applied correctly</span>
       <div>
       </div>
               </div>
@@ -213,11 +316,63 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.IllegalArgumentException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalArgumentException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:05:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>And I select the book titled</a>
+<div class="">
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.View details of a specific book.And I select the book titled</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -226,12 +381,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@filtersindigitaldownload</p>
+<p class="name">@CompareProduct</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@filtersindigitaldownload</h4>
+<h4>@CompareProduct</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -245,11 +400,47 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:38:25 pm</td>
+<td>15:04:31 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>select the filters view product</a>
+<a href="#" class="linked" test-id='1' id='2'>Comparing two different products</a>
 <div class="">
-<span class="badge badge-default">Divraj_14APR2025_Demowebshop_Categories.select the filters view product</span>
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.Comparing two different products</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@BookDetails</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BookDetails</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>View details of a specific book</a>
+<div class="">
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.View details of a specific book</span>
 </div>
 </td>
 </tr>
@@ -262,12 +453,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Digitaldownload</p>
+<p class="name">@BooksList</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Digitaldownload</h4>
+<h4>@BooksList</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -281,11 +472,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:38:25 pm</td>
+<td>15:04:31 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>verify the user is on the digital download page</a>
+<a href="#" class="linked" test-id='1' id='3'>View all books available</a>
 <div class="">
-<span class="badge badge-default">Divraj_14APR2025_Demowebshop_Categories.verify the user is on the digital download page</span>
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.View all books available</span>
 </div>
 </td>
 </tr>
@@ -298,12 +489,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@addtocarttheproduct</p>
+<p class="name">@BooksSortBy</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@addtocarttheproduct</h4>
+<h4>@BooksSortBy</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -317,11 +508,47 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:38:25 pm</td>
+<td>15:04:31 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='4'>add product to the cart</a>
+<a href="#" class="linked" test-id='1' id='9'>Apply all Sort By options for books</a>
 <div class="">
-<span class="badge badge-default">Divraj_14APR2025_Demowebshop_Categories.add product to the cart</span>
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.Apply all Sort By options for books</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BooksFilters</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BooksFilters</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Apply filter options for books</a>
+<div class="">
+<span class="badge badge-default">Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality.Apply filter options for books</span>
 </div>
 </td>
 </tr>
@@ -342,25 +569,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 7, 2025 02:38:24 pm</h3>
+<h3>May 7, 2025 03:04:29 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 7, 2025 02:38:35 pm</h3>
+<h3>May 7, 2025 03:05:40 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -376,12 +603,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -399,9 +626,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -419,10 +646,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>11</b> steps passed</small></div>
+<div><small data-tooltip='91%'><b>22</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='4%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -438,7 +665,7 @@
 </div></div>
 <script>
 var timeline = {
-"Divraj_14APR2025_Demowebshop_Categories":9.879
+"Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality":68.965
 };
 </script>
 <div class="row">
@@ -448,7 +675,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@filtersindigitaldownload</td>
+<td>@CompareProduct</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -456,7 +683,15 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Digitaldownload</td>
+<td>@BookDetails</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@BooksList</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -464,7 +699,15 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@addtocarttheproduct</td>
+<td>@BooksSortBy</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BooksFilters</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -498,21 +741,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 0,
+passChild: 4,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 11,
-failGrandChild: 0,
+passGrandChild: 22,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };

@@ -1,6 +1,5 @@
 package com.Definitions;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -13,7 +12,6 @@ import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -117,7 +115,6 @@ public class BookDefinitions {
     public void i_click_the_book_link(String string) {
         try {
             bookAction.clickComputingInternet();
-        	//bookAction.clickFictionBook();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the book link. Error: " + e.getMessage());
             throw e;

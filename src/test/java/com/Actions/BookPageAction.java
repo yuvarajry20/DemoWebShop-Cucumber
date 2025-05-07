@@ -15,48 +15,52 @@ import com.Utilities.LogManagers;
 
 public class BookPageAction {
     BookPageLocators bookPage;
+    BaseActions baseActions;
 
     public BookPageAction() {
         this.bookPage = new BookPageLocators();
+        this.baseActions=new BaseActions();
         PageFactory.initElements(HelperClass.getDriver(), bookPage);
     }
 
     public void openBooksCategory() {
-        bookPage.Books.click();
+        //bookPage.Books.click();
+    	baseActions.clickMethod(bookPage.books);
         LogManagers.logInfo("Clicked on 'Books' category.");
     }
 
     public void ListOfBooks() {
         LogManagers.logInfo("List of available books:");
-        for (WebElement book : bookPage.BooksList) {
+        for (WebElement book : bookPage.booksList) {
             String bookName = book.getText().trim();
             LogManagers.logInfo("- " + bookName);
         }
-        String actualTitle = bookPage.BookListsAssert.getText();
+        String actualTitle = bookPage.bookListsAssert.getText();
         Assert.assertEquals(actualTitle.trim(), "Books", "Title does not match.");
         LogManagers.logInfo("Verified that 'Fiction' book page is displayed.");
     }
 
     public void VerifySortedBooks() {
-        String sortedBooksText = bookPage.SortedBookList.getText();
+        String sortedBooksText = bookPage.sortedBookList.getText();
         LogManagers.logInfo("Sorted books list: " + sortedBooksText);
     }
 
     public void clickFictionBook() {
-        bookPage.Fiction_book.click();
+        //bookPage.Fiction_book.click();
+    	baseActions.clickMethod(bookPage.fiction_book);
         LogManagers.logInfo("Clicked on 'Fiction' book.");
     }
 
     public void getBookDescription() {
-        String description = bookPage.FictionDetail.getText();
+        String description = bookPage.fictionDetail.getText();
         LogManagers.logInfo("Book description: " + description);
-        String actualTitle = bookPage.FictionAssert.getText();
+        String actualTitle = bookPage.fictionAssert.getText();
         Assert.assertEquals(actualTitle.trim(), "Fiction EX", "Title does not match.");
         LogManagers.logInfo("Verified that 'Fiction' book page is displayed.");
         
     }
     public void AssertHealthBook() {
-    	 String actualTitle = bookPage.FictionAssert.getText();
+    	 String actualTitle = bookPage.fictionAssert.getText();
          Assert.assertEquals(actualTitle.trim(), "Health Book", "Title does not match.");
          LogManagers.logInfo("Verified that 'Health book' book page is displayed.");      
     }
@@ -87,11 +91,11 @@ public class BookPageAction {
                     LogManagers.logInfo("Applied 'Sort By' filter: " + value);
                     break;
                 case "Display By":
-                    new Select(bookPage.DisplayDropdown).selectByVisibleText(value);
+                    new Select(bookPage.displayDropdown).selectByVisibleText(value);
                     LogManagers.logInfo("Applied 'Display By' filter: " + value);
                     break;
                 case "View As":
-                    new Select(bookPage.ViewAsDropdown).selectByVisibleText(value);
+                    new Select(bookPage.viewAsDropdown).selectByVisibleText(value);
                     LogManagers.logInfo("Applied 'View As' filter: " + value);
                     break;
                 case "Price":
@@ -125,17 +129,20 @@ public class BookPageAction {
     }
 
     public void clickComputingInternet() {
-        bookPage.Computing_Internet.click();
+        //bookPage.Computing_Internet.click();
+    	baseActions.clickMethod(bookPage.computing_Internet);
         LogManagers.logInfo("Clicked on 'Computing & Internet' book.");
     }
 
     public void clickHealthBook() {
-        bookPage.Health_book.click();
+        //bookPage.Health_book.click();
+    	baseActions.clickMethod(bookPage.health_book);
         LogManagers.logInfo("Clicked on 'Health' book.");
     }
 
     public void AddToCompareList() {
-        bookPage.CompareList.click();
+        //bookPage.CompareList.click();
+    	baseActions.clickMethod(bookPage.compareList);
         LogManagers.logInfo("Added book to compare list.");
     }
 
@@ -153,28 +160,16 @@ public class BookPageAction {
     	     i++;
     	 }     
     }    	
-// public void assertCompareProductPrices() {
-//    	 WebDriver driver = HelperClass.getDriver();
-//         String expectedPrice="10.00";
-//         List<WebElement>price=driver.findElements(By.xpath("//table[@class='compare-products-table']//tr[3]//td"));
-//         for(int i=1;i<price.size();i++) {
-//        	 String actPrice=price.get(i).getText();
-//        	 if(expectedPrice.equals(actPrice)){
-//        		 System.out.println("The price of the product is: "+actPrice);
-//        	 }
-//        	 Assert.assertEquals(actPrice, expectedPrice);
-//         }
-//         
-//    }
 
     public void ClearCompareProductsList() {
-        bookPage.ClearList.click();
+        //bookPage.ClearList.click();
+    	baseActions.clickMethod(bookPage.clearList);
         LogManagers.logInfo("Cleared compare list.");
     }
 
     public void verifyClearedList() {
     	String actualList= "You have no items to compare.";
-        String emptyListText = bookPage.EmptyCompareList.getText();
+        String emptyListText = bookPage.emptyCompareList.getText();
         Assert.assertEquals(actualList, emptyListText);
         LogManagers.logInfo("Verify cleared list: " + emptyListText);
     }

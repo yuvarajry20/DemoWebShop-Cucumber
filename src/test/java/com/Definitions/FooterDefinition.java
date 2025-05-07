@@ -11,7 +11,6 @@ import com.Actions.LoginAction;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -31,31 +30,20 @@ public class FooterDefinition {
 
     @Then("User should be navigated to the nopCommerce official website")
     public void user_should_be_navigated_to_the_nop_commerce_official_website() {
-//        String actualText = footerAction.getNOPText();
-//        String exp="Free and open-source eCommerce platform";
-//        Assert.assertEquals(actualText,exp);
     	 footerAction.assertNopCommerceUrl();
-//            String actualUrl = footerAction.getCurrentUrl();
-//            if (!actualUrl.contains("nopcommerce.com")) {
-//                throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
-//            }
-        }
+           
+    }
+    
     @When("User clicks on the {string} link page")
     public void user_clicks_on_the_link_page(String string) {
        	 footerAction.clickSiteMapLink();
     }
 
-//    @Then("User should be navigated to the Sitemap page")
-//    public void user_should_be_navigated_to_the_sitemap_page() {
-//    	String actualUrl = footerAction.getCurrentUrl();
-//      if (!actualUrl.contains("https://demowebshop.tricentis.com/sitemap")) {
-//          throw new AssertionError("Navigation failed. Current URL: " + actualUrl);
-//      }
-//    }
     @Then("User should be navigated to the Sitemap page")
     public void user_should_be_navigated_to_the_sitemap_page() {
         String actualUrl = footerAction.getCurrentUrl();
-        Assert.assertEquals("https://demowebshop.tricentis.com/sitemap", actualUrl);
+        String expected="https://demowebshop.tricentis.com/sitemap";
+        Assert.assertEquals(actualUrl,expected);
     }
        
     @When("clicks on the Contact us link")
@@ -84,8 +72,7 @@ public class FooterDefinition {
     public void the_confirmation_should_be_displayed() throws InterruptedException {
     	 String actualMessage = footerAction.getConfirmation();
     	 String expectedMessage = "Your enquiry has been successfully sent to the store owner.";
-    	 Assert.assertEquals(expectedMessage, actualMessage);
-   // 	footerAction.getConfirmation();
+    	 Assert.assertEquals(actualMessage,expectedMessage);
     	}
     	   
 }

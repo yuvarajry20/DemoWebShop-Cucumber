@@ -6,12 +6,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.Pages.BookPageLocators;
 import com.Pages.SearchBarLocators;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
@@ -41,10 +40,37 @@ public class SearchAction {
         LogManagers.logInfo("Search result: " + resultText);
     }
 
-    public void noSearchDisplayed() {
+//    public String noSearchDisplayed() {
+//        String noResultText = searchPage.noResultMessage.getText();
+//        System.out.println(noResultText);
+//        LogManagers.logInfo("No search result message: " + noResultText);
+//		return noResultText;
+//    }
+    public String noSearchDisplayed() {
         String noResultText = searchPage.noResultMessage.getText();
-        System.out.println(noResultText);
         LogManagers.logInfo("No search result message: " + noResultText);
+        return noResultText;
+    }
+
+//    public String advanceSearchResultDisplayed() {
+//        String resultText = searchPage.CameraFound.getText();
+//        LogManagers.logInfo("Advanced search result: " + resultText);
+//        return resultText;
+//    }
+
+    public String advanceSearchResultDisplayed() {
+        try {
+            if (searchPage.CameraFound.isDisplayed()) {
+                String resultText = searchPage.CameraFound.getText();
+                LogManagers.logInfo("Advanced search result: " + resultText);
+                return resultText;
+            } else {
+                return "No product title displayed";
+            }
+        } catch (NoSuchElementException e) {
+            LogManagers.logError("Product element not found: " + e.getMessage());
+            return "No product title displayed";
+        }
     }
 
     public void shortKeywordWarning() {
@@ -110,9 +136,10 @@ public class SearchAction {
         LogManagers.logInfo("Entered price range: Min=" + min + ", Max=" + max);
     }
 
-    public void advanceSearchResultDisplayed() {
-        String resultText = searchPage.CameraFound.getText();
-        System.out.println(resultText);
-        LogManagers.logInfo("Advanced search result: " + resultText);
-    }
+//    public String advanceSearchResultDisplayed() {
+//        String resultText = searchPage.CameraFound.getText();
+//        System.out.println(resultText);
+//        LogManagers.logInfo("Advanced search result: " + resultText);
+//		return resultText;
+//    }
 }

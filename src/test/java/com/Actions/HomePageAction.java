@@ -1,7 +1,6 @@
 package com.Actions;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

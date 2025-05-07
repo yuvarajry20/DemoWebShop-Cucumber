@@ -8,39 +8,39 @@ import org.openqa.selenium.support.FindBy;
 public class BookPageLocators {
 
 	@FindBy(xpath="(//a[contains(text(),\"Books\")])[3]")
-	public WebElement Books; 
+	public WebElement books; 
 	
 	@FindBy(xpath="//div[@class=\"page category-page\"]//child::div//h1")
-	public WebElement BookListsAssert;
+	public WebElement bookListsAssert;
 	
 	@FindBy(xpath="//div[@class=\"short-description\"]//preceding-sibling::div")
-	public WebElement FictionAssert;
+	public WebElement fictionAssert;
 	
 	@FindBy(xpath="//h1[@itemprop=\"name\"]//parent::div")
-	public WebElement HealthBookAssert;
+	public WebElement healthBookAssert;
 	
 	@FindBy(xpath="//div[@class=\"product-grid\"]//child::div[@class=\"item-box\"]")
-	public List<WebElement> BooksList;
+	public List<WebElement> booksList;
 	
 	@FindBy(xpath="//select[@id=\"products-orderby\"]")
 	public WebElement sortbyDropdown;
 	
 	@FindBy(xpath="//div[@class=\"product-grid\"]//div[@class=\"item-box\"]")
-	public WebElement SortedBookList;
+	public WebElement sortedBookList;
 	
 	//@FindBy(xpath="(//h2[@class=\"product-title\"]//child::a)[4]")
 	@FindBy(xpath="//a[contains(text(),\"Fiction EX\")]")
-	public WebElement Fiction_book;
+	public WebElement fiction_book;
 	
 	//@FindBy(xpath="//h1[@itemprop=\"name\"]")
 	@FindBy(xpath="//div[@class=\"overview\"]")
-	public WebElement FictionDetail;
+	public WebElement fictionDetail;
 	
 	@FindBy(xpath="//select[@id=\"products-pagesize\"]")
-	public WebElement DisplayDropdown;
+	public WebElement displayDropdown;
 	
 	@FindBy(xpath="//select[@id=\"products-viewmode\"]")
-	public WebElement ViewAsDropdown;
+	public WebElement viewAsDropdown;
 	
 	@FindBy(xpath="(//span[@class=\"PriceRange\"])[1]")
 	public WebElement priceFilter;
@@ -52,13 +52,13 @@ public class BookPageLocators {
 	public WebElement bookFiltered;
 	
 	@FindBy(xpath="(//a[contains(text(),\"Computing and Internet\")])[2]")
-	public WebElement Computing_Internet;
+	public WebElement computing_Internet;
 	
 	@FindBy(xpath="//h2[@class=\"product-title\"]//a[contains(text(),\"Health Book\")]")
-	public WebElement Health_book;
+	public WebElement health_book;
 	
 	@FindBy(xpath="//input[@value=\"Add to compare list\"]")
-	public WebElement CompareList;
+	public WebElement compareList;
 	
 	@FindBy(xpath="//table[@class='compare-products-table']//tr[2]/td")
 	public List<WebElement> compareName;
@@ -70,9 +70,9 @@ public class BookPageLocators {
 	public List<WebElement> priceDynamixpath;
 	
 	@FindBy(xpath="//a[contains(text(),\"Clear list\")]")
-	public WebElement ClearList;
+	public WebElement clearList;
 	
 	@FindBy(xpath="//div[@class=\"page-body\"]")
-	public WebElement EmptyCompareList;
+	public WebElement emptyCompareList;
 	
 }

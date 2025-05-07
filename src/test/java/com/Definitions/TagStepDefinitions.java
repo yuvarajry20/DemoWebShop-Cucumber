@@ -6,7 +6,6 @@ import com.Actions.TagAction;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -35,11 +34,11 @@ public class TagStepDefinitions {
     }
 
     @When("I click on {string} tag link")
-    public void i_click_on_tag_link(String TagName) {
+    public void i_click_on_tag_link(String tagName) {
         try {
-            if (TagName.equalsIgnoreCase("Digital")) {
+            if (tagName.equalsIgnoreCase("Digital")) {
                 tagaction.clickDigitalLinks();
-            } else if (TagName.equalsIgnoreCase("cell")) {
+            } else if (tagName.equalsIgnoreCase("cell")) {
                 tagaction.clickCellLinks();
             }
         } catch (Exception e) {
