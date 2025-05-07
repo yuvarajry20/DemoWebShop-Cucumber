@@ -2,17 +2,12 @@ package com.Actions;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.Pages.Checkoutpage;
@@ -28,10 +23,10 @@ public class CheckoutAction {
     }
 
     public void login(String email,String password) {
-        CheckoutLocator.LoginButtonHomePages.click();
-        CheckoutLocator.Emaillogin.sendKeys(email);
-        CheckoutLocator.Passwordlogin.sendKeys(password);
-        CheckoutLocator.LoginButtonclick.click();
+        CheckoutLocator.loginButtonHomePages.click();
+        CheckoutLocator.emaillogin.sendKeys(email);
+        CheckoutLocator.passwordlogin.sendKeys(password);
+        CheckoutLocator.loginButtonclick.click();
         LogManagers.logInfo("Logged in with credentials:");
     }
 
@@ -117,6 +112,7 @@ public class CheckoutAction {
     }
 
     public void paymentinfocontinue() {
+
         CheckoutLocator.paymentinfobtncontinue.click();
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
@@ -146,9 +142,6 @@ public class CheckoutAction {
     	{
     		System.out.println("invoice not downloaded");
     	}
-//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(25));
-//        WebElement elements = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("")));
-//        elements.click();
 
         LogManagers.logInfo("Clicked on invoice PDF download link.");
     }
@@ -159,12 +152,7 @@ public class CheckoutAction {
     	Assert.assertEquals(act, exp);
         CheckoutLocator.pdfinvoice.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
-//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//        WebElement pdfInvoiceLink = wait.until(
-//            ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.page-body.checkout-data > div > ul > li:nth-child(2) > a"))
-//        );
-//        pdfInvoiceLink.click();
-        LogManagers.logInfo("Clicked on PDF invoice link.");
+     
         
     }
 
@@ -180,6 +168,7 @@ public class CheckoutAction {
         Assert.assertEquals(act, exp);
     }
 
+
     public void detailsinvoice() {
         List<WebElement> obj = HelperClass.getDriver().findElements(By.xpath("//table[@class=\"cart-total\"]//tbody//tr//td//span"));
         for (WebElement a : obj) {
@@ -187,9 +176,8 @@ public class CheckoutAction {
             LogManagers.logInfo(a.getText());
         }
         String act="Order information";
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-        String exp = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"page-title\"]//a[contains(text(),\"Print\")]//preceding-sibling::h1"))).getText();
-//    	String exp=CheckoutLocator.orderinfo2.getText();
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        String exp = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"page-title\"]//h1"))).getText();
     	Assert.assertEquals(act, exp);
     }
 
@@ -224,7 +212,6 @@ public class CheckoutAction {
     	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
         WebElement shippingOption = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"shippingoption_2\"]")));
         shippingOption.click();
-        //CheckoutLocator.twodayshipping.click();
         LogManagers.logInfo("Clicked on payment continue button in two-day shipping.");
     }
 

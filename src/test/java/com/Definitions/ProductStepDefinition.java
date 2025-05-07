@@ -1,13 +1,10 @@
 package com.Definitions;
 
 import java.util.List;
-import java.util.Map;
-
 import com.Actions.ProductAction;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

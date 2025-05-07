@@ -1,6 +1,5 @@
 package com.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -9,31 +8,31 @@ public class ProductPage
 
 {
 	@FindBy(xpath="//a[@class=\"ico-register\"]//parent::li//following-sibling::li[1]//child::a")
-	public WebElement LoginButtonHomePage;
+	public WebElement loginButtonHomePage;
 	
 	@FindBy(xpath = "//div[@class=\"form-fields\"]//descendant::div[2]//label//following-sibling::input")
-	public WebElement EmailField;
+	public WebElement emailField;
 	
 	@FindBy(xpath = "//div[@class=\"form-fields\"]//descendant::div[3]//label//following-sibling::input")
 	public WebElement PasswordField;
 	
 	@FindBy(xpath="//div[@class=\"inputs reversed\"]//following-sibling::div//input")
-	public WebElement LoginButtonSubmit;
+	public WebElement loginButtonSubmit;
 	
 	@FindBy(xpath="//div[@class=\"search-box\"]//descendant::input[2]//preceding-sibling::input")
-	public WebElement SearchStoreField;
+	public WebElement searchStoreField;
 	
 	@FindBy(xpath="//div[@class=\"product-rating-box\"]//preceding-sibling::h2//a")
-	public WebElement ProductTitle;
+	public WebElement productTitle;
 	
 	@FindBy(xpath="//div[@class=\"master-wrapper-page\"]//preceding-sibling::div[@id=\"bar-notification\"]//p")
 	public WebElement assertnotification;
 	
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
-	public WebElement AddToCart;
+	public WebElement addToCart;
 	
 	@FindBy(xpath="//span[contains(text(),\"Shopping cart\")]//following-sibling::span")
-	public WebElement AddTocartnumber;
+	public WebElement addTocartnumber;
 	
 	@FindBy(css="#topcartlink > a")
 	public WebElement shoppingcart;
