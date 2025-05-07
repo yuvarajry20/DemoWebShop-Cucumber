@@ -25,9 +25,9 @@ public class TricentisAction {
         this.trilocate = new Tricentispage();
         PageFactory.initElements(HelperClass.getDriver(), trilocate);
     }
-    
     public void tricentisimg() {
-        trilocate.tricentisimg.click();
+        Actions builder = new Actions(HelperClass.getDriver());
+        builder.moveToElement(trilocate.tricentisimg).click().perform();
         LogManagers.logInfo("Successfully clicked the Tricentis image.");
     }
 

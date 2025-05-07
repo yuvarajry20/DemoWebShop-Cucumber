@@ -38,13 +38,17 @@ public class HomePageAction {
     }
 
     public void SuccessfulSubscription() {
-        String message = homePage.SubscribedMessage.getText();
-        LogManagers.logInfo("Subscription message: " + message);
+        String actualMessage = homePage.SubscribedMessage.getText();
+        String exp="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
+        Assert.assertEquals(actualMessage, exp);     
+        LogManagers.logInfo("Subscription message: " + actualMessage);
     }
 
     public void invalidSubscription() {
-        String message = homePage.InvalidsubscribeMsg.getText();
-        LogManagers.logInfo("Invalid subscription message: " + message);
+        String actualMessage = homePage.InvalidsubscribeMsg.getText();
+        String exp="Enter valid email";
+        Assert.assertEquals(actualMessage, exp);
+        LogManagers.logInfo("Invalid subscription message: " + actualMessage);
     }
 
     public void VerifyFeaturedProducts() {

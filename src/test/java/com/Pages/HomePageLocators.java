@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePageLocators {
+	
+	@FindBy(xpath="//div[@class=\"footer\"]//descendant::a")
+	public WebElement getlinkfooter;
 
 	@FindBy(xpath="//input[@id=\"newsletter-email\"]")
 	public WebElement NewsLetter_email;
