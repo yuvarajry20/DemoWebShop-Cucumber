@@ -1,118 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T15:04:28 IST" name="Default suite" finished-at="2025-05-07T15:05:47 IST" duration-ms="79024">
+  <suite started-at="2025-05-07T23:10:30 IST" name="Default suite" finished-at="2025-05-07T23:10:58 IST" duration-ms="27893">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-07T15:04:28 IST" name="Default test" finished-at="2025-05-07T15:05:47 IST" duration-ms="79024">
+    <test started-at="2025-05-07T23:10:30 IST" name="Default test" finished-at="2025-05-07T23:10:58 IST" duration-ms="27893">
       <class name="com.Runner.runnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:28 IST" name="setUpClass" finished-at="2025-05-07T15:04:30 IST" duration-ms="1850" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:30 IST" name="setUpClass" finished-at="2025-05-07T23:10:31 IST" duration-ms="1327" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2091833]]>
+                <![CDATA[org.testng.TestRunner@5af64ce0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:05:21 IST" duration-ms="50955" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:55 IST" duration-ms="23979" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["View all books available"]]>
+                <![CDATA["View Recent products as list"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality"]]>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:05:21 IST" duration-ms="51232" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17632" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["View details of a specific book"]]>
+                <![CDATA["View featured products as list"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Book not supported: Health Book]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Book not supported: Health Book
-at com.Definitions.BookDefinitions.i_select_the_book_titled(BookDefinitions.java:52)
-at ✽.I select the book titled(file:///C:/Users/ADMIN/git/DemoWebShop-Cucumber/src/test/resources/Features/Books.feature:14)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:05:40 IST" duration-ms="69816" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Apply filter options for books"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality"]]>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:05:23 IST" duration-ms="53439" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17718" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Apply all Sort By options for books"]]>
+                <![CDATA["Subscribe with invalid email address"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality"]]>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:05:22 IST" duration-ms="51860" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17718" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Comparing two different products"]]>
+                <![CDATA["Poll the vote without logging in"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Laksitha_14APR2025_DemoWebShop_Book_Product_Functionality"]]>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T15:05:40 IST" name="tearDownClass" finished-at="2025-05-07T15:05:47 IST" duration-ms="7247" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Subscribe with valid email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:55 IST" name="tearDownClass" finished-at="2025-05-07T23:10:58 IST" duration-ms="2510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
