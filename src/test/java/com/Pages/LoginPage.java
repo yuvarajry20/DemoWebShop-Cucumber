@@ -6,23 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-//    @FindBy(xpath="//a[text()='Log in']")
-//    private WebElement loginLink;
-//
-//    @FindBy(id = "Email")
-//    private WebElement emailField;
-//
-//    @FindBy(id = "Password")
-//    private WebElement passwordField;
-//
-//    @FindBy(xpath="//input[@class=\"button-1 login-button\"]")
-//    private WebElement loginButton;
-//
-//    @FindBy(linkText = "Forgot password?")
-//    private WebElement forgotPasswordLink;
-//
-//    @FindBy(name="send-email")
-//    private WebElement recoverButton;
 	@FindBy(xpath="//a[text()='Log in']")
 	private WebElement loginLink;
 
