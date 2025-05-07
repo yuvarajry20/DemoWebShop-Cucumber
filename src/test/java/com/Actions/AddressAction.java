@@ -13,9 +13,11 @@ import com.Utilities.LogManagers;
 
 public class AddressAction {
     AddressPage addressPage;
+    BaseActions objmethod;
 
     public AddressAction() {
         this.addressPage = new AddressPage();
+        this.objmethod=new BaseActions();
         PageFactory.initElements(HelperClass.getDriver(), addressPage);
     }
 
@@ -56,28 +58,34 @@ public class AddressAction {
             LogManagers.logError("Error reading Excel data: " + e.getMessage(), e);
         }
     }public void clickAddNew() {
-        addressPage.addNew.click();
+//        addressPage.addNew.click();
+        objmethod.clickMethod(addressPage.addNew);
         LogManagers.logInfo("Clicked on 'Add New' button.");
     }
 
     public void clickSave() {
-        addressPage.save.click();
+//        addressPage.save.click();
+        objmethod.clickMethod(addressPage.save);
         LogManagers.logInfo("Clicked on 'Save' button.");
     }
 
     public void clickMyEmail() {
-        addressPage.myEmail.click();
+//        addressPage.myEmail.click();
+    	objmethod.clickMethod(addressPage.myEmail);
         LogManagers.logInfo("Clicked on 'My Email' link.");
     }
 
     public void clickAddresses() {
-        addressPage.addressesLink.click();
+//        addressPage.addressesLink.click();
+    	objmethod.clickMethod(addressPage.addressesLink);
         LogManagers.logInfo("Clicked on 'Addresses' link.");
     }
 
     public void clickAddressesAndAddNew() {
-        addressPage.addressesLink.click();
-        addressPage.addNew.click();
+//        addressPage.addressesLink.click();
+//        addressPage.addNew.click();
+        objmethod.clickMethod(addressPage.addressesLink);
+        objmethod.clickMethod(addressPage.addNew);
         LogManagers.logInfo("Clicked on 'Addresses' link and then 'Add New' button.");
     }
 
