@@ -13,7 +13,7 @@ public class Tricentispage {
 	@FindBy(xpath="//div[@class=\"FooterMenuColumn_column__dy0pm\"]//a[contains(text(),\"Upcoming webinars\")]")
 	public WebElement upcomingwebinar;
 	
-//	@FindBy(xpath="//input[@id=\"search-field\"]//following-sibling::span//span//child::img")
+
 	@FindBy(xpath="//span[@style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%\"]//img")
 	public WebElement searchicon;
 	
@@ -25,10 +25,7 @@ public class Tricentispage {
 	
 	@FindBy(xpath="//div[@class=\"FooterMenuColumn_column__dy0pm\"]//a[contains(text(),\"Demos & Trials\")]")
 	public WebElement demotrial;
-//	
-//	@FindBy(xpath="//div[@class=\"Heading_content-copy__ZKgho  Heading_anim-play___4J_5 Heading_anim-fade-in-up__Takxt \"]//h3")
-//	public WebElement testtoolslist;
-	
+
 	
 	
 

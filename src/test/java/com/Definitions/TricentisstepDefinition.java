@@ -1,10 +1,10 @@
 package com.Definitions;
 
 import com.Actions.TricentisAction;
-import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class TricentisstepDefinition {
     TricentisAction objtri = new TricentisAction();

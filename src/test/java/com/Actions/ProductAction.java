@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -24,39 +23,42 @@ import com.Utilities.LogManagers;
 
 public class ProductAction {
     ProductPage ProductPageLocator = null;
+    BaseActions objmethod;
     String strusername, strpassword, urlexp;
 
     public ProductAction() {
         this.ProductPageLocator = new ProductPage();
+        this.objmethod=new BaseActions();
         PageFactory.initElements(HelperClass.getDriver(), ProductPageLocator);
     }
 
     public void login() {
-        ProductPageLocator.LoginButtonHomePage.click();
-        ProductPageLocator.EmailField.sendKeys("abcggggg123@Gmail.com");
+        ProductPageLocator.loginButtonHomePage.click();
+        ProductPageLocator.emailField.sendKeys("abcggggg123@Gmail.com");
         ProductPageLocator.PasswordField.sendKeys("Divraj@1234");
-        ProductPageLocator.LoginButtonSubmit.click();
+        objmethod.clickMethod(ProductPageLocator.loginButtonSubmit);
         LogManagers.logInfo("Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234");
     }
 
     public void searchFieldStore(String product) {
-        ProductPageLocator.SearchStoreField.sendKeys(product + Keys.ENTER);
+        ProductPageLocator.searchStoreField.sendKeys(product + Keys.ENTER);
         LogManagers.logInfo("Searched for product: " + product);
     }
 
     public String getTitleOfProduct() {
-        String title = ProductPageLocator.ProductTitle.getText();
+        String title = ProductPageLocator.productTitle.getText();
         LogManagers.logInfo("Retrieved product title: " + title);
         return title;
     }
 
     public void clickAddToCart() {
-        ProductPageLocator.AddToCart.click();
+
+        objmethod.clickMethod(ProductPageLocator.addToCart);
         LogManagers.logInfo("Clicked on 'Add to Cart' button.");
     }
 
     public void addToCartMessage() throws InterruptedException {
-        String numberOfProduct = ProductPageLocator.AddTocartnumber.getText();
+        String numberOfProduct = ProductPageLocator.addTocartnumber.getText();
         String act="The product has been added to your shopping cart";
         String exp=ProductPageLocator.assertnotification.getText();
         Assert.assertEquals(act, exp);
@@ -72,8 +74,9 @@ public class ProductAction {
     }
 
     public void updateCartByRemove() {
-        ProductPageLocator.removefromcart.click();
-        ProductPageLocator.updatecart.click();
+    	objmethod.clickMethod(ProductPageLocator.removefromcart);
+    	objmethod.clickMethod(ProductPageLocator.updatecart);
+
         LogManagers.logInfo("Updated cart by removing an item.");
     }
 
@@ -85,31 +88,56 @@ public class ProductAction {
     }
 
     public void addToWishlist() {
-        ProductPageLocator.imgalbum3.click();
-        ProductPageLocator.addtowishlist.click();
-        ProductPageLocator.clickwishlist.click();
+    	objmethod.clickMethod(ProductPageLocator.imgalbum3);
+    	objmethod.clickMethod(ProductPageLocator.addtowishlist);
+    	objmethod.clickMethod(ProductPageLocator.clickwishlist);
         LogManagers.logInfo("Added item to wishlist and clicked on wishlist.");
     }
 
     public void urlWishlist() {
-    	
-        String wishlistUrl = ProductPageLocator.urlforwishlist.getText();
-        LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
+        // Define the locator
+        By wishlistLocator = By.xpath("//div[@class='share-info']//p//a[@class='share-link']");
+
+        try {
+            
+            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+            WebElement wishlistElement = wait.until(ExpectedConditions.visibilityOfElementLocated(wishlistLocator));
+
+            String wishlistUrl = wishlistElement.getText();
+            LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
+        } catch (Exception e) {
+            LogManagers.logError("Failed to retrieve Wishlist URL: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
-    public void urlAutoList() {
-    	String act="Your wishlist URL for sharing:";
-        String exp =ProductPageLocator.urlsharing.getText();
-        Assert.assertEquals(act, exp);
-        LogManagers.logInfo("Current page: " + exp);
 
+    public void urlAutoList() {
+        try {
+
+            By urlSharingLocator = By.xpath("//div[@class=\"share-info\"]//child::p//span");
+
+            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+            WebElement urlSharingElement = wait.until(ExpectedConditions.visibilityOfElementLocated(urlSharingLocator));
+
+            String exp = urlSharingElement.getText();
+
+            String act = "Your wishlist URL for sharing:";
+            Assert.assertEquals(act, exp, "Wishlist URL text does not match");
+
+            LogManagers.logInfo("Current page: " + exp);
+
+        } catch (Exception e) {
+            LogManagers.logError("Failed to retrieve wishlist URL: " + e.getMessage());
+            throw e;
+        }
     }
 
     public void increaseQty() {
-        ProductPageLocator.imgalbum3.click();
+    	objmethod.clickMethod(ProductPageLocator.imgalbum3);
         ProductPageLocator.increaseqty.clear();
         ProductPageLocator.increaseqty.sendKeys("10");
-        ProductPageLocator.addtocartinqty.click();
+        objmethod.clickMethod(ProductPageLocator.addtocartinqty);
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -147,12 +175,12 @@ public class ProductAction {
     }
 
     public void emailAFriend() {
-        ProductPageLocator.giftcardpage.click();
+    	objmethod.clickMethod(ProductPageLocator.giftcardpage);
         LogManagers.logInfo("Clicked on 'Email a friend' page.");
     }
 
     public void emailFriendButton() {
-        ProductPageLocator.emailfriendbtn.click();
+    	objmethod.clickMethod(ProductPageLocator.emailfriendbtn);
         LogManagers.logInfo("Clicked on 'Email a friend' button.");
     }
 
@@ -164,7 +192,7 @@ public class ProductAction {
     }
 
     public void sendMailFriend() {
-        ProductPageLocator.sendmail.click();
+    	objmethod.clickMethod(ProductPageLocator.sendmail);
         LogManagers.logInfo("Clicked on 'Send' button for email.");
     }
 
@@ -181,23 +209,50 @@ public class ProductAction {
         Assert.assertEquals(act, exp);
         LogManagers.logInfo("Email send failed with message: " + exp);
     }
-
+    
     public void addToCartCheckboxes() {
-        ProductPageLocator.addtocartcheckbox.click();
-        ProductPageLocator.addtocartbtnbelowchkbox.click();
-        LogManagers.logInfo("Added item to cart using checkboxes.");
-    }
+        try {
+        	HelperClass.getDriver().navigate().refresh();
+            By checkboxLocator = By.xpath("//form//table//tbody//tr//td[2]//input");
+            By addToCartButtonLocator = By.xpath("//input[@class=\"button-2 wishlist-add-to-cart-button\"]");
+            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+            WebElement checkboxElement = wait.until(ExpectedConditions.visibilityOfElementLocated(checkboxLocator));
+            checkboxElement.click();
+            LogManagers.logInfo("Checkbox clicked.");
+            WebElement addToCartButton = wait.until(ExpectedConditions.elementToBeClickable(addToCartButtonLocator));
+            addToCartButton.click();
+            LogManagers.logInfo("Added item to cart using checkboxes.");
 
+        } catch (Exception e) {
+            LogManagers.logError("Failed to add item to cart: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    
     public void verifyTextInCart() {
-        String textInCart = "3rd Album";
-        String exp = ProductPageLocator.assertcartwishlist.getText();
-        Assert.assertEquals(textInCart, exp);
-        LogManagers.logInfo("Product in cart: " + exp);
+        try {
+            By cartProductLocator = By.xpath("//td[@class='product-picture']//following-sibling::td//a");
+
+            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+            WebElement cartProductElement = wait.until(ExpectedConditions.visibilityOfElementLocated(cartProductLocator));
+
+            String exp = cartProductElement.getText();
+
+            String act = "3rd Album";
+            Assert.assertEquals(act, exp, "Product in cart does not match");
+
+            LogManagers.logInfo("Product in cart: " + exp);
+
+        } catch (Exception e) {
+            
+            LogManagers.logError("Failed to verify product in cart: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void addLaptopCart() {
-        ProductPageLocator.SearchStoreField.sendKeys("laptop" + Keys.ENTER);
-        ProductPageLocator.AddToCart.click();
+        ProductPageLocator.searchStoreField.sendKeys("laptop" + Keys.ENTER);
+        ProductPageLocator.addToCart.click();
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -208,7 +263,7 @@ public class ProductAction {
         Select dropdown = new Select(HelperClass.getDriver().findElement(By.xpath("//*[@id=\"CountryId\"]")));
         dropdown.selectByVisibleText(country);
         ProductPageLocator.zipcode.sendKeys(pincode);
-        ProductPageLocator.shippingestimate.click();
+        objmethod.clickMethod(ProductPageLocator.shippingestimate);
         LogManagers.logInfo("Selected country: " + country + " and entered pincode: " + pincode);
     }
 
