@@ -12,7 +12,6 @@ public class Digitaldownloadpage {
 	
 	@FindBy(xpath="//span[contains(text(),\"View as\")]//following-sibling::select")
 	public WebElement grid;
-	
 	@FindBy(xpath="//select[@id=\"products-viewmode\"]//option[2]")
 	public WebElement gridopt;
 	
