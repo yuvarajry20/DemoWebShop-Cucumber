@@ -6,16 +6,16 @@ import org.openqa.selenium.support.FindBy;
 public class Checkoutpage {
 	
 	@FindBy(css="a[class*=\"ico-login\"]")
-	public WebElement LoginButtonHomePages;
+	public WebElement loginButtonHomePages;
 	
 	@FindBy(id = "Email")
-	public WebElement Emaillogin;
+	public WebElement emaillogin;
 	
 	@FindBy(id = "Password")
-	public WebElement Passwordlogin;
+	public WebElement passwordlogin;
 	
 	@FindBy(xpath="//div[@class=\"inputs reversed\"]//following-sibling::div//input[@class=\"button-1 login-button\"]")
-	public WebElement LoginButtonclick;
+	public WebElement loginButtonclick;
 	
 	@FindBy(xpath="//input[@class=\"button-1 search-box-button\"]//preceding-sibling::input")
 	public WebElement serachfields;

@@ -3,7 +3,6 @@ package com.Actions;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -24,7 +23,6 @@ public class digitaldownloadAction {
 
     public void Digitaldownload() {
     	objmethod.clickMethod(objdigital.digitaldown);
-//        objdigital.digitaldown.click();
         LogManagers.logInfo("Clicked on 'Digital downloads' link.");
     }
 
@@ -37,7 +35,6 @@ public class digitaldownloadAction {
 
     public void addtocartmusic() {
     	objmethod.clickMethod(objdigital.music2);
-//        objdigital.music2.click();
         LogManagers.logInfo("Added music album to cart.");
     }
 
@@ -52,8 +49,6 @@ public class digitaldownloadAction {
     public void addfilter() {
     	objmethod.clickMethod(objdigital.grid);
     	objmethod.clickMethod(objdigital.gridopt);
-//        objdigital.grid.click();
-//        objdigital.gridopt.click();
         LogManagers.logInfo("Applied grid filter.");
     }
 
