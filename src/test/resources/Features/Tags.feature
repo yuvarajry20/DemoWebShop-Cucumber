@@ -9,6 +9,6 @@ Scenario Outline: Tags should be navigated to product page
   Then I should be redirected to "<TagName>" tagged product page
 
 Examples:
-  | TagName   |
+  | tagName   |
   | Digital   |
   | cell      |

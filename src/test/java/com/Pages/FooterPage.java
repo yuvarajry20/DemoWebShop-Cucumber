@@ -19,21 +19,21 @@ public class FooterPage {
 	
 	@FindBy(xpath="//a[contains(text(),\"Contact us\")]")
 	//@FindBy(xpath="//div[@class=\"column information\"]//descendant::li[6]")
-	public WebElement ContactUsLink;
+	public WebElement contactUsLink;
 	
 	@FindBy(xpath="//input[@id=\"FullName\"]")
-	public WebElement ContactName;
+	public WebElement contactName;
 	
 	@FindBy(xpath="//input[@class=\"email\"]")
-	public WebElement ContactEmail;
+	public WebElement contactEmail;
 	
 	@FindBy(xpath="//textarea[@class=\"enquiry\"]")
-	public WebElement ContactEnquiry;
+	public WebElement contactEnquiry;
 	
 	@FindBy(xpath="//input[@class=\"button-1 contact-us-button\"]")
-	public WebElement ContactSubmit;
+	public WebElement contactSubmit;
 	
 	//@FindBy(xpath="//div[@class=\"result\"]")
 	@FindBy(xpath="//div[@class=\"page-body\"]")
-	public WebElement ConfirmText;
+	public WebElement confirmText;
 }

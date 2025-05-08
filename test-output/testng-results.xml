@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+=======
 <testng-results ignored="0" total="72" passed="69" failed="3" skipped="0">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
+  <suite started-at="2025-05-07T23:10:30 IST" name="Default suite" finished-at="2025-05-07T23:10:58 IST" duration-ms="27893">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2025-05-06T16:57:14 IST" name="Default suite" finished-at="2025-05-06T16:58:25 IST" duration-ms="71276">
@@ -16,15 +23,19 @@
 =======
   <suite started-at="2025-05-07T14:38:23 IST" name="Default suite" finished-at="2025-05-07T14:38:36 IST" duration-ms="12989">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
   <suite started-at="2025-05-07T22:01:59 IST" name="Default suite" finished-at="2025-05-07T22:04:41 IST" duration-ms="162005">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <test started-at="2025-05-07T23:10:30 IST" name="Default test" finished-at="2025-05-07T23:10:58 IST" duration-ms="27893">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
     <test started-at="2025-05-06T16:57:14 IST" name="Default test" finished-at="2025-05-06T16:58:25 IST" duration-ms="71276">
@@ -38,11 +49,15 @@
 =======
     <test started-at="2025-05-07T14:38:23 IST" name="Default test" finished-at="2025-05-07T14:38:36 IST" duration-ms="12989">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
     <test started-at="2025-05-07T22:01:59 IST" name="Default test" finished-at="2025-05-07T22:04:41 IST" duration-ms="162005">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
       <class name="com.Runner.runnerTestNG">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:30 IST" name="setUpClass" finished-at="2025-05-07T23:10:31 IST" duration-ms="1327" status="PASS">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-06T16:57:14 IST" name="setUpClass" finished-at="2025-05-06T16:57:14 IST" duration-ms="747" status="PASS">
@@ -56,13 +71,18 @@
 =======
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T14:38:23 IST" name="setUpClass" finished-at="2025-05-07T14:38:24 IST" duration-ms="1033" status="PASS">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:01:59 IST" name="setUpClass" finished-at="2025-05-07T22:02:00 IST" duration-ms="943" status="PASS">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
+                <![CDATA[org.testng.TestRunner@5af64ce0]]>
+=======
                 <![CDATA[org.testng.TestRunner@273fa9e]]>
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
               </value>
             </param>
           </params>
@@ -70,6 +90,9 @@
           </reporter-output>
         </test-method> <!-- setUpClass -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:55 IST" duration-ms="23979" status="PASS">
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-06T16:57:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-06T16:58:23 IST" duration-ms="68551" status="PASS">
@@ -472,6 +495,7 @@ at ✽.I click on the "Books" category(file:///C:/Users/ADMIN/git/DemoWebShop-Cu
 =======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T14:38:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T14:38:35 IST" duration-ms="10223" status="PASS">
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:49 IST" duration-ms="48950" status="PASS">
           <params>
@@ -761,44 +785,12 @@ at ✽.I select the book titled(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber
           <params>
             <param index="0">
               <value>
-                <![CDATA["add product to the cart"]]>
+                <![CDATA["View Recent products as list"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Divraj_14APR2025_Demowebshop_Categories"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:42 IST" duration-ms="8252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["select the filters view product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Divraj_14APR2025_Demowebshop_Categories"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:40 IST" duration-ms="6507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify the user is on the digital download page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Divraj_14APR2025_Demowebshop_Categories"]]>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
               </value>
             </param>
           </params>
@@ -806,6 +798,81 @@ at ✽.I select the book titled(file:///C:/Users/Lenovo/git/DemoWebShop-Cucumber
           </reporter-output>
         </test-method> <!-- runScenario -->
 <<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17632" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:42 IST" duration-ms="8252" status="PASS">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View featured products as list"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17718" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:40 IST" duration-ms="6507" status="PASS">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Subscribe with invalid email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Poll the vote without logging in"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T23:10:49 IST" duration-ms="17631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Subscribe with valid email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Laksitha_12APR2025_DemoWebShop_HomePageFunctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-07T23:10:55 IST" name="tearDownClass" finished-at="2025-05-07T23:10:58 IST" duration-ms="2510" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-06T15:56:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-06T15:57:22 IST" duration-ms="49638" status="FAIL">
           <params>
@@ -1772,6 +1839,7 @@ at ✽.User should be navigated to the nopCommerce official website(file:///C:/U
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T14:38:35 IST" name="tearDownClass" finished-at="2025-05-07T14:38:36 IST" duration-ms="1688" status="PASS">
+>>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 >>>>>>> branch 'master' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
 =======
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-07T22:02:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T22:02:45 IST" duration-ms="11381" status="PASS">

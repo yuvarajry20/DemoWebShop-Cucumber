@@ -6,22 +6,22 @@ import org.openqa.selenium.support.FindBy;
 public class ReviewPage {
 	
 	@FindBy(xpath="(//a[contains(text(),\"Gift Cards\")])[3]")
-	public WebElement GiftCategory;
+	public WebElement giftCategory;
 	
 	@FindBy(xpath="//a[contains(text(),\"$50 Physical Gift Card\")]")
-	public WebElement GiftCard;
+	public WebElement giftCard;
 	
 	@FindBy(xpath="//div[@class=\"product-review-links\"]//a[1]")
-	public WebElement Reviews;
+	public WebElement reviews;
 	
 	@FindBy(xpath="//div[@class=\"product-review-item\"][1]")
-	public WebElement Comments;
+	public WebElement comment_box;
 	
 	@FindBy(xpath="//div[@class=\"product-review-links\"]//a[2]")
-	public WebElement AddReview;
+	public WebElement addReview;
 	
 	@FindBy(xpath="//div[@class=\"validation-summary-errors\"]")
-	public WebElement RegisterError;
+	public WebElement registerError;
 	
 	@FindBy(xpath="//input[@name=\"add-review\"]")
 	public WebElement submitReview;
@@ -39,7 +39,7 @@ public class ReviewPage {
 	public WebElement blanktext;
 	
 	@FindBy(xpath="//div[@class=\"result\"]")
-	public WebElement ReviewSuccess;
+	public WebElement reviewSuccess;
 	
 	@FindBy(xpath="//input[@id=\"addproductrating_3\"]")
 	public WebElement ratingButton;

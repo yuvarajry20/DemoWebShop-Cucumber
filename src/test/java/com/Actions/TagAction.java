@@ -16,7 +16,7 @@ public class TagAction {
     }
 
     public void clickViewAll() {
-        tagsPage.ViewAll.click();
+        tagsPage.viewAll.click();
         LogManagers.logInfo("Clicked on 'View All' link.");
     }
 
@@ -37,7 +37,7 @@ public class TagAction {
 
     public void getProductsTaggedDigital() {
     	String actualText="Products tagged with 'digital'";
-        String digitalTaggedText = tagsPage.DigitalTagged.getText();
+        String digitalTaggedText = tagsPage.digitalTagged.getText();
         Assert.assertEquals(actualText, digitalTaggedText);
         LogManagers.logInfo("Products tagged with 'Digital': " + digitalTaggedText);
     }

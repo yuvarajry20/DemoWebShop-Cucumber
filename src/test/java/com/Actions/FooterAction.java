@@ -3,8 +3,6 @@ package com.Actions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -27,14 +25,6 @@ public class FooterAction {
         footerpage.nopFooterlink.click();
     }
 
-//    public String getNOPText() {
-//        WebDriver driver = HelperClass.getDriver();
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-//        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
-//            By.xpath("//h1[contains(text(),'Free and open-source eCommerce platform')]")
-//        ));
-//        return element.getText();
-//    }
     public void assertNopCommerceUrl() {
         WebDriver driver = HelperClass.getDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -53,20 +43,20 @@ public class FooterAction {
     }
 
     public void clickContactUsLink() {
-        footerpage.ContactUsLink.click();
+        footerpage.contactUsLink.click();
     }
 
     public void enterDetails(String name, String email, String enquiry) {
-        footerpage.ContactName.sendKeys(name);
-        footerpage.ContactEmail.sendKeys(email);
-        footerpage.ContactEnquiry.sendKeys(enquiry);
+        footerpage.contactName.sendKeys(name);
+        footerpage.contactEmail.sendKeys(email);
+        footerpage.contactEnquiry.sendKeys(enquiry);
     }
 
     public void clickSubmit() {
-        footerpage.ContactSubmit.click();
+        footerpage.contactSubmit.click();
     }
 
-    public String getConfirmation() throws InterruptedException {
+    public String getConfirmation(){
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
             By.xpath("//div[@class=\"page-body\"]//child::div[@class=\"result\"]")

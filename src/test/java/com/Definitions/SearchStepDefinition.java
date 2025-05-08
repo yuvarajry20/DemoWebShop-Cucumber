@@ -9,7 +9,6 @@ import com.Actions.SearchAction;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -109,12 +108,12 @@ public class SearchStepDefinition {
     }
 
     @When("I apply the following search filters {string},{string},{string}")
-    public void i_apply_the_following_search_filters(String Category, String min, String max) {
+    public void i_apply_the_following_search_filters(String category, String min, String max) {
         try {
             searchaction.applyCategory();
-            if (Category.equals("Electronics >> Camera, photo")) {
+            if (category.equals("Electronics >> Camera, photo")) {
                 searchaction.applyCameraCategory();
-            } else if (Category.equals("Electronics >> Cell phones")) {
+            } else if (category.equals("Electronics >> Cell phones")) {
                 searchaction.applyCellCategory();
             }
             searchaction.enterPriceRange(min, max);
@@ -125,11 +124,11 @@ public class SearchStepDefinition {
     }
 
     @Then("the system should display {string} message for {string}")
-    public void the_system_should_display_message_for(String ExpectedResult, String SearchTerm) {
+    public void the_system_should_display_message_for(String expectedResult, String searchTerm) {
         try {
-            if (ExpectedResult.equalsIgnoreCase(SearchTerm)) {
+            if (expectedResult.equalsIgnoreCase(searchTerm)) {
                 searchaction.advanceSearchResultDisplayed();
-            } else if (ExpectedResult.equalsIgnoreCase(SearchTerm)) {
+            } else if (expectedResult.equalsIgnoreCase(searchTerm)) {
                 searchaction.noSearchDisplayed();
             }
         } catch (Exception e) {
@@ -137,4 +136,5 @@ public class SearchStepDefinition {
             throw e;
         }
     }
+
 }

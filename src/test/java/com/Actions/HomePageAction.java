@@ -1,7 +1,6 @@
 package com.Actions;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -27,8 +26,8 @@ public class HomePageAction {
 
     public void enterNewsLetterEmail(String email) {
         new WebDriverWait(driver, Duration.ofSeconds(10))
-            .until(ExpectedConditions.visibilityOf(homePage.NewsLetter_email));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + email + "';", homePage.NewsLetter_email);
+            .until(ExpectedConditions.visibilityOf(homePage.newsLetter_email));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + email + "';", homePage.newsLetter_email);
         LogManagers.logInfo("Entered email for newsletter subscription: " + email);
     }
 
@@ -38,21 +37,21 @@ public class HomePageAction {
     }
 
     public void SuccessfulSubscription() {
-        String actualMessage = homePage.SubscribedMessage.getText();
+        String actualMessage = homePage.subscribedMessage.getText();
         String exp="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
         Assert.assertEquals(actualMessage, exp);     
         LogManagers.logInfo("Subscription message: " + actualMessage);
     }
 
     public void invalidSubscription() {
-        String actualMessage = homePage.InvalidsubscribeMsg.getText();
+        String actualMessage = homePage.invalidsubscribeMsg.getText();
         String exp="Enter valid email";
         Assert.assertEquals(actualMessage, exp);
         LogManagers.logInfo("Invalid subscription message: " + actualMessage);
     }
 
     public void VerifyFeaturedProducts() {
-        String sectionText = homePage.FeatureProductsSec.getText();
+        String sectionText = homePage.featureProductsSec.getText();
         LogManagers.logInfo("Featured Products section text: " + sectionText);
     }
 
@@ -65,7 +64,7 @@ public class HomePageAction {
     }
 
     public void VerifyRecentProducts() {
-        String sectionText = homePage.RecentProductsSec.getText();
+        String sectionText = homePage.recentProductsSec.getText();
         LogManagers.logInfo("Recently Viewed Products section text: " + sectionText);
     }
 
@@ -78,12 +77,12 @@ public class HomePageAction {
     }
 
     public void SelectVotingOption() {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.VoteExcellentbtn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.voteExcellentbtn);
         LogManagers.logInfo("Selected 'Excellent' voting option.");
     }
 
     public void voting() {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.Votebtn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", homePage.votebtn);
         LogManagers.logInfo("Clicked on 'Vote' button.");
     }
 
@@ -101,7 +100,7 @@ public class HomePageAction {
     }
 
     public void ReturnToHomePage() {
-    	homePage.ToHomePage.click();
+    	homePage.toHomePage.click();
     	LogManagers.logInfo("Returned to HomePage");
     }
 }

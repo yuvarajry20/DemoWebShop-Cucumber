@@ -13,7 +13,6 @@ import org.testng.Assert;
 import com.Pages.ReviewPage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
-import com.Actions.ElementNotFoundException;
 
 public class ReviewAction {
     ReviewPage reviewPage;
@@ -26,28 +25,28 @@ public class ReviewAction {
     }
 
     public void ClickGiftCategory() {
-        reviewPage.GiftCategory.click();
+        reviewPage.giftCategory.click();
         LogManagers.logInfo("Clicked on 'Gift Category' link.");
     }
 
     public void clickGiftCard() {
-        reviewPage.GiftCard.click();
+        reviewPage.giftCard.click();
         LogManagers.logInfo("Clicked on 'Gift Card' link.");
     }
 
     public void clickReviews() {
-        reviewPage.Reviews.click();
+        reviewPage.reviews.click();
         LogManagers.logInfo("Clicked on 'Reviews' link.");
     }
 
     public void ReadReviews() {
-        String comments = reviewPage.Comments.getText();
+        String comments = reviewPage.comment_box.getText();
         System.out.println(comments);
         LogManagers.logInfo("Read reviews: " + comments);
     }
 
     public void clickAddReview() {
-        reviewPage.AddReview.click();
+        reviewPage.addReview.click();
         LogManagers.logInfo("Clicked on 'Add Review' button.");
     }
 
@@ -57,7 +56,7 @@ public class ReviewAction {
     }
 
     public void notLoggedErrorReview() {
-        String errorText = reviewPage.RegisterError.getText();
+        String errorText = reviewPage.registerError.getText();
         System.out.println(errorText);
         LogManagers.logInfo("Not logged in error message: " + errorText);
     }
@@ -102,7 +101,7 @@ public class ReviewAction {
     }
     public void verifyReviewSubmitted() throws ElementNotFoundException {
         try {
-            WebElement successMsg = wait.until(ExpectedConditions.visibilityOf(reviewPage.ReviewSuccess));
+            WebElement successMsg = wait.until(ExpectedConditions.visibilityOf(reviewPage.reviewSuccess));
             String successText = successMsg.getText().trim();
             LogManagers.logInfo("Review submitted successfully: " + successText);
             Assert.assertEquals(successText, "Product review is successfully added.", "Success message mismatch.");

@@ -11,10 +11,10 @@ public class TagsPageLocators {
 	
 	@FindBy(xpath="//a[contains(text(),\"View all\")]")
 	//@FindBy(xpath="//div[@class=\"tags\"]//following-sibling::div")
-	public WebElement ViewAll;
+	public WebElement viewAll;
 	
 	@FindBy(xpath="//div[@class=\"page-title\"]//child::h1")
-	public WebElement AssertcellTagged;
+	public WebElement assertcellTagged;
 	
 	@FindBy(xpath="//ul[@class=\"product-tags-list\"]/descendant::li[10]")
 	public WebElement digitalTagLink;
@@ -24,7 +24,7 @@ public class TagsPageLocators {
 	
 	//@FindBy(xpath="//div[@class=\"item-box\"]//h2")
 	@FindBy(xpath="//div[@class=\"page-title\"]//h1")
-	public WebElement DigitalTagged;
+	public WebElement digitalTagged;
 	
 	@FindBy(xpath="//div[@class=\"item-box\"]//h2")
 	public WebElement cellTagged;
