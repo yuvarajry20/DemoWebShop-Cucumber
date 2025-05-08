@@ -3,6 +3,7 @@ package com.Actions;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,14 +17,18 @@ import com.Utilities.LogManagers;
 
 public class CheckoutAction {
     Checkoutpage CheckoutLocator = null;
+    BaseActions objmethod;
 
     public CheckoutAction() {
         this.CheckoutLocator = new Checkoutpage();
+        this.objmethod=new BaseActions();
         PageFactory.initElements(HelperClass.getDriver(), CheckoutLocator);
     }
 
     public void login(String email,String password) {
-        CheckoutLocator.loginButtonHomePages.click();
+    	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+        js.executeScript("document.getElementsByClassName(\"ico-login\")[0].click()");
+//        CheckoutLocator.loginButtonHomePages.click();
         CheckoutLocator.emaillogin.sendKeys(email);
         CheckoutLocator.passwordlogin.sendKeys(password);
         CheckoutLocator.loginButtonclick.click();
@@ -108,11 +113,12 @@ public class CheckoutAction {
     	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
     	);
     	element.click();
+//    	objmethod.clickMethod(element);
         LogManagers.logInfo("Clicked on payment continue button.");
     }
 
     public void paymentinfocontinue() {
-
+//    	objmethod.clickMethod(CheckoutLocator.paymentinfobtncontinue);
         CheckoutLocator.paymentinfobtncontinue.click();
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
@@ -177,8 +183,17 @@ public class CheckoutAction {
         }
         String act="Order information";
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-        String exp = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"page-title\"]//h1"))).getText();
-    	Assert.assertEquals(act, exp);
+        WebElement text=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class=\"page-title\"]//h1")));
+        String exp=text.getText();
+        if(act.equalsIgnoreCase(exp))
+        {
+        	Assert.assertEquals(act, exp);
+        }
+        else
+        {
+        	String exp1="Checkout";
+        	Assert.assertEquals(act,exp1);
+        }
     }
 
     public void creditcardcheckbox() {
