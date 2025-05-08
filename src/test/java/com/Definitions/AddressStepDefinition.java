@@ -32,7 +32,7 @@ public class AddressStepDefinition {
 
     @Then("select country and state")
     public void select_country_and_state() {
-       
+       //it is an empty method
     }
 
     @Then("i click save")
