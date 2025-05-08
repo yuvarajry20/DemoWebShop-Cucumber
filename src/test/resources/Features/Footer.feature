@@ -13,9 +13,7 @@ Scenario: User verifies and clicks the Powered by nopCommerce link
 Scenario: User clicks the Sitemap link and navigates to SiteMap Page
     And User clicks on the "Sitemap" link page
     Then User should be navigated to the Sitemap page
-    #When User clicks on the "Accessories" link
-    #Then User should be redirected to the Accessories page
-   
+       
 @ContactUs
 Scenario: User clicks the Contact us link and submits the query
     And clicks on the Contact us link

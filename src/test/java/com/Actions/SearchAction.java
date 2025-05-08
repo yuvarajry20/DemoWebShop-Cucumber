@@ -40,23 +40,11 @@ public class SearchAction {
         LogManagers.logInfo("Search result: " + resultText);
     }
 
-//    public String noSearchDisplayed() {
-//        String noResultText = searchPage.noResultMessage.getText();
-//        System.out.println(noResultText);
-//        LogManagers.logInfo("No search result message: " + noResultText);
-//		return noResultText;
-//    }
     public String noSearchDisplayed() {
         String noResultText = searchPage.noResultMessage.getText();
         LogManagers.logInfo("No search result message: " + noResultText);
         return noResultText;
     }
-
-//    public String advanceSearchResultDisplayed() {
-//        String resultText = searchPage.CameraFound.getText();
-//        LogManagers.logInfo("Advanced search result: " + resultText);
-//        return resultText;
-//    }
 
     public String advanceSearchResultDisplayed() {
         try {
@@ -135,11 +123,4 @@ public class SearchAction {
         searchPage.Advanceseachbtn.click();
         LogManagers.logInfo("Entered price range: Min=" + min + ", Max=" + max);
     }
-
-//    public String advanceSearchResultDisplayed() {
-//        String resultText = searchPage.CameraFound.getText();
-//        System.out.println(resultText);
-//        LogManagers.logInfo("Advanced search result: " + resultText);
-//		return resultText;
-//    }
 }
