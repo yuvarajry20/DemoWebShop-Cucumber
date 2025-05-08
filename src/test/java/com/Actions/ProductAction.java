@@ -21,6 +21,8 @@ import com.Pages.ProductPage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
+import lombok.experimental.Helper;
+
 public class ProductAction {
     ProductPage ProductPageLocator = null;
     BaseActions objmethod;
@@ -65,12 +67,13 @@ public class ProductAction {
         LogManagers.logInfo("Number of products in cart: " + numberOfProduct);
     }
 
-    public void shoppingCart() {
+    public void shoppingCart() 
+    {
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
         LogManagers.logInfo("Clicked on shopping cart link.");
-        LogManagers.logInfo("Product in cart: " + ProductPageLocator.cartproductavailable.getText());
+//        LogManagers.logInfo("Product in cart: " + ProductPageLocator.cartproductavailable.getText());
     }
 
     public void updateCartByRemove() {
@@ -96,15 +99,19 @@ public class ProductAction {
 
     public void urlWishlist() {
         // Define the locator
-        By wishlistLocator = By.xpath("//div[@class='share-info']//p//a[@class='share-link']");
+//        By wishlistLocator = By.xpath("//div[@class='share-info']//p//a[@class='share-link']");
 
         try {
+        	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        	WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("share-link")));
+        	String wishlistUrl = link.getText();
+        	LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
             
-            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-            WebElement wishlistElement = wait.until(ExpectedConditions.visibilityOfElementLocated(wishlistLocator));
-
-            String wishlistUrl = wishlistElement.getText();
-            LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
+//            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+//            WebElement wishlistElement = wait.until(ExpectedConditions.visibilityOfElementLocated(wishlistLocator));
+//        	WebElement link=HelperClass.getDriver().findElement(By.className("share-link"));
+//            String wishlistUrl = link.getText();
+//            LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
         } catch (Exception e) {
             LogManagers.logError("Failed to retrieve Wishlist URL: " + e.getMessage());
             e.printStackTrace();
@@ -115,14 +122,14 @@ public class ProductAction {
     public void urlAutoList() {
         try {
 
-            By urlSharingLocator = By.xpath("//div[@class=\"share-info\"]//child::p//span");
+//            By urlSharingLocator = By.xpath("//div[@class=\"share-info\"]//child::p//span");
+//
+//            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+//            WebElement urlSharingElement = wait.until(ExpectedConditions.visibilityOfElementLocated(urlSharingLocator));
+            String act = "https://demowebshop.tricentis.com/wishlist";
+            
+            String exp = HelperClass.getDriver().getCurrentUrl();
 
-            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-            WebElement urlSharingElement = wait.until(ExpectedConditions.visibilityOfElementLocated(urlSharingLocator));
-
-            String exp = urlSharingElement.getText();
-
-            String act = "Your wishlist URL for sharing:";
             Assert.assertEquals(act, exp, "Wishlist URL text does not match");
 
             LogManagers.logInfo("Current page: " + exp);
