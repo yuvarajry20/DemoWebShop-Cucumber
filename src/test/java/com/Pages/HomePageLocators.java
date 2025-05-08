@@ -11,22 +11,22 @@ public class HomePageLocators {
 	public WebElement getlinkfooter;
 
 	@FindBy(xpath="//input[@id=\"newsletter-email\"]")
-	public WebElement NewsLetter_email;
+	public WebElement newsLetter_email;
 	
     @FindBy(xpath="//input[@id=\"newsletter-subscribe-button\"]")
     public WebElement newsSubscribe;
     
     @FindBy(xpath="//div[@id=\"newsletter-result-block\"]")
-    public WebElement SubscribedMessage;
+    public WebElement subscribedMessage;
     
     @FindBy(xpath="//div[contains(text(),\"Enter valid email\")]")
-    public WebElement InvalidsubscribeMsg;
+    public WebElement invalidsubscribeMsg;
     
     @FindBy(xpath="//input[@id=\"pollanswers-1\"]")
-    public WebElement VoteExcellentbtn;
+    public WebElement voteExcellentbtn;
     
     @FindBy(xpath="//input[@id=\"vote-poll-1\"]")
-    public WebElement Votebtn;
+    public WebElement votebtn;
     
     @FindBy(xpath="//ul[@class=\"poll-results\"]")
     public WebElement votepollResults;
@@ -36,18 +36,18 @@ public class HomePageLocators {
     public WebElement pollErrorMsg;
     
     @FindBy(xpath="//Strong[contains(text(),\"Recently viewed products\")]")
-    public WebElement RecentProductsSec;
+    public WebElement recentProductsSec;
     
     @FindBy(xpath = "//div[@class='block block-recently-viewed-products']//li")
     public List<WebElement> recentProductList;
     
     @FindBy(xpath="//Strong[contains(text(),\"Featured products\")]")
-    public WebElement FeatureProductsSec;
+    public WebElement featureProductsSec;
     
     @FindBy(xpath = "//div[@class=\"item-box\"]")
     public List<WebElement> featuredProductList;
     
     @FindBy(xpath="//div[@class=\"header-logo\"]//a")
-    public WebElement ToHomePage;
+    public WebElement toHomePage;
 
 }

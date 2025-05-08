@@ -24,7 +24,6 @@ public class BookPageAction {
     }
 
     public void openBooksCategory() {
-        //bookPage.Books.click();
     	baseActions.clickMethod(bookPage.books);
         LogManagers.logInfo("Clicked on 'Books' category.");
     }
@@ -46,7 +45,6 @@ public class BookPageAction {
     }
 
     public void clickFictionBook() {
-        //bookPage.Fiction_book.click();
     	baseActions.clickMethod(bookPage.fiction_book);
         LogManagers.logInfo("Clicked on 'Fiction' book.");
     }
@@ -129,19 +127,16 @@ public class BookPageAction {
     }
 
     public void clickComputingInternet() {
-        //bookPage.Computing_Internet.click();
     	baseActions.clickMethod(bookPage.computing_Internet);
         LogManagers.logInfo("Clicked on 'Computing & Internet' book.");
     }
 
     public void clickHealthBook() {
-        //bookPage.Health_book.click();
     	baseActions.clickMethod(bookPage.health_book);
         LogManagers.logInfo("Clicked on 'Health' book.");
     }
 
     public void AddToCompareList() {
-        //bookPage.CompareList.click();
     	baseActions.clickMethod(bookPage.compareList);
         LogManagers.logInfo("Added book to compare list.");
     }
@@ -162,7 +157,6 @@ public class BookPageAction {
     }    	
 
     public void ClearCompareProductsList() {
-        //bookPage.ClearList.click();
     	baseActions.clickMethod(bookPage.clearList);
         LogManagers.logInfo("Cleared compare list.");
     }

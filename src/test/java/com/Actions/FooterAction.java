@@ -43,17 +43,17 @@ public class FooterAction {
     }
 
     public void clickContactUsLink() {
-        footerpage.ContactUsLink.click();
+        footerpage.contactUsLink.click();
     }
 
     public void enterDetails(String name, String email, String enquiry) {
-        footerpage.ContactName.sendKeys(name);
-        footerpage.ContactEmail.sendKeys(email);
-        footerpage.ContactEnquiry.sendKeys(enquiry);
+        footerpage.contactName.sendKeys(name);
+        footerpage.contactEmail.sendKeys(email);
+        footerpage.contactEnquiry.sendKeys(enquiry);
     }
 
     public void clickSubmit() {
-        footerpage.ContactSubmit.click();
+        footerpage.contactSubmit.click();
     }
 
     public String getConfirmation(){
