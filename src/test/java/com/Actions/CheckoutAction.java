@@ -3,6 +3,7 @@ package com.Actions;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,7 +26,9 @@ public class CheckoutAction {
     }
 
     public void login(String email,String password) {
-        CheckoutLocator.loginButtonHomePages.click();
+    	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+        js.executeScript("document.getElementsByClassName(\"ico-login\")[0].click()");
+//        CheckoutLocator.loginButtonHomePages.click();
         CheckoutLocator.emaillogin.sendKeys(email);
         CheckoutLocator.passwordlogin.sendKeys(password);
         CheckoutLocator.loginButtonclick.click();
