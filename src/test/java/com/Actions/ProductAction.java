@@ -21,48 +21,46 @@ import com.Pages.ProductPage;
 import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
-import lombok.experimental.Helper;
-
 public class ProductAction {
-    ProductPage ProductPageLocator = null;
+    ProductPage  productPageLocator= null;
     BaseActions objmethod;
     String strusername, strpassword, urlexp;
 
     public ProductAction() {
-        this.ProductPageLocator = new ProductPage();
+        this.productPageLocator = new ProductPage();
         this.objmethod=new BaseActions();
-        PageFactory.initElements(HelperClass.getDriver(), ProductPageLocator);
+        PageFactory.initElements(HelperClass.getDriver(), productPageLocator);
     }
 
     public void login() {
-        ProductPageLocator.loginButtonHomePage.click();
-        ProductPageLocator.emailField.sendKeys("abcggggg123@Gmail.com");
-        ProductPageLocator.PasswordField.sendKeys("Divraj@1234");
-        objmethod.clickMethod(ProductPageLocator.loginButtonSubmit);
+        productPageLocator.loginButtonHomePage.click();
+        productPageLocator.emailField.sendKeys("abcggggg123@Gmail.com");
+        productPageLocator.passwordField.sendKeys("Divraj@1234");
+        objmethod.clickMethod(productPageLocator.loginButtonSubmit);
         LogManagers.logInfo("Logged in with credentials: abcggggg123@Gmail.com / Divraj@1234");
     }
 
     public void searchFieldStore(String product) {
-        ProductPageLocator.searchStoreField.sendKeys(product + Keys.ENTER);
+        productPageLocator.searchStoreField.sendKeys(product + Keys.ENTER);
         LogManagers.logInfo("Searched for product: " + product);
     }
 
     public String getTitleOfProduct() {
-        String title = ProductPageLocator.productTitle.getText();
+        String title = productPageLocator.productTitle.getText();
         LogManagers.logInfo("Retrieved product title: " + title);
         return title;
     }
 
     public void clickAddToCart() {
 
-        objmethod.clickMethod(ProductPageLocator.addToCart);
+        objmethod.clickMethod(productPageLocator.addToCart);
         LogManagers.logInfo("Clicked on 'Add to Cart' button.");
     }
 
     public void addToCartMessage() throws InterruptedException {
-        String numberOfProduct = ProductPageLocator.addTocartnumber.getText();
+        String numberOfProduct = productPageLocator.addTocartnumber.getText();
         String act="The product has been added to your shopping cart";
-        String exp=ProductPageLocator.assertnotification.getText();
+        String exp=productPageLocator.assertnotification.getText();
         Assert.assertEquals(act, exp);
         LogManagers.logInfo("Number of products in cart: " + numberOfProduct);
     }
@@ -73,45 +71,36 @@ public class ProductAction {
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
         LogManagers.logInfo("Clicked on shopping cart link.");
-//        LogManagers.logInfo("Product in cart: " + ProductPageLocator.cartproductavailable.getText());
     }
 
     public void updateCartByRemove() {
-    	objmethod.clickMethod(ProductPageLocator.removefromcart);
-    	objmethod.clickMethod(ProductPageLocator.updatecart);
+    	objmethod.clickMethod(productPageLocator.removefromcart);
+    	objmethod.clickMethod(productPageLocator.updatecart);
 
         LogManagers.logInfo("Updated cart by removing an item.");
     }
 
     public void emptyCarts() {
         String act ="Your Shopping Cart is empty!";
-        String exp = ProductPageLocator.emptycart.getText();
-        Assert.assertEquals(act, exp);;
+        String exp = productPageLocator.emptycart.getText();
+        Assert.assertEquals(act, exp);
         LogManagers.logInfo("Empty cart message: " + exp);
     }
 
     public void addToWishlist() {
-    	objmethod.clickMethod(ProductPageLocator.imgalbum3);
-    	objmethod.clickMethod(ProductPageLocator.addtowishlist);
-    	objmethod.clickMethod(ProductPageLocator.clickwishlist);
+    	objmethod.clickMethod(productPageLocator.imgalbum3);
+    	objmethod.clickMethod(productPageLocator.addtowishlist);
+    	objmethod.clickMethod(productPageLocator.clickwishlist);
         LogManagers.logInfo("Added item to wishlist and clicked on wishlist.");
     }
 
     public void urlWishlist() {
-        // Define the locator
-//        By wishlistLocator = By.xpath("//div[@class='share-info']//p//a[@class='share-link']");
-
+        
         try {
         	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         	WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("share-link")));
         	String wishlistUrl = link.getText();
         	LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
-            
-//            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//            WebElement wishlistElement = wait.until(ExpectedConditions.visibilityOfElementLocated(wishlistLocator));
-//        	WebElement link=HelperClass.getDriver().findElement(By.className("share-link"));
-//            String wishlistUrl = link.getText();
-//            LogManagers.logInfo("Wishlist URL for sharing: " + wishlistUrl);
         } catch (Exception e) {
             LogManagers.logError("Failed to retrieve Wishlist URL: " + e.getMessage());
             e.printStackTrace();
@@ -121,11 +110,6 @@ public class ProductAction {
 
     public void urlAutoList() {
         try {
-
-//            By urlSharingLocator = By.xpath("//div[@class=\"share-info\"]//child::p//span");
-//
-//            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//            WebElement urlSharingElement = wait.until(ExpectedConditions.visibilityOfElementLocated(urlSharingLocator));
             String act = "https://demowebshop.tricentis.com/wishlist";
             
             String exp = HelperClass.getDriver().getCurrentUrl();
@@ -141,10 +125,10 @@ public class ProductAction {
     }
 
     public void increaseQty() {
-    	objmethod.clickMethod(ProductPageLocator.imgalbum3);
-        ProductPageLocator.increaseqty.clear();
-        ProductPageLocator.increaseqty.sendKeys("10");
-        objmethod.clickMethod(ProductPageLocator.addtocartinqty);
+    	objmethod.clickMethod(productPageLocator.imgalbum3);
+        productPageLocator.increaseqty.clear();
+        productPageLocator.increaseqty.sendKeys("10");
+        objmethod.clickMethod(productPageLocator.addtocartinqty);
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -176,43 +160,43 @@ public class ProductAction {
     	}
         LogManagers.logInfo("Updated quantity in wishlist:");
         String act="10.00";
-        String exp=ProductPageLocator.qtyten.getText();
+        String exp=productPageLocator.qtyten.getText();
         Assert.assertEquals(act, exp);
         
     }
 
     public void emailAFriend() {
-    	objmethod.clickMethod(ProductPageLocator.giftcardpage);
+    	objmethod.clickMethod(productPageLocator.giftcardpage);
         LogManagers.logInfo("Clicked on 'Email a friend' page.");
     }
 
     public void emailFriendButton() {
-    	objmethod.clickMethod(ProductPageLocator.emailfriendbtn);
+    	objmethod.clickMethod(productPageLocator.emailfriendbtn);
         LogManagers.logInfo("Clicked on 'Email a friend' button.");
     }
 
     public void emailFriendSend(String frdemail, String myemail) {
-        ProductPageLocator.friendemail.sendKeys(frdemail);
-        ProductPageLocator.myemail.clear();
-        ProductPageLocator.myemail.sendKeys(myemail);
+        productPageLocator.friendemail.sendKeys(frdemail);
+        productPageLocator.myemail.clear();
+        productPageLocator.myemail.sendKeys(myemail);
         LogManagers.logInfo("Entered friend's email: " + frdemail + " and your email: " + myemail);
     }
 
     public void sendMailFriend() {
-    	objmethod.clickMethod(ProductPageLocator.sendmail);
+    	objmethod.clickMethod(productPageLocator.sendmail);
         LogManagers.logInfo("Clicked on 'Send' button for email.");
     }
 
     public void successfulMailSend() {
         String act = "Your message has been sent.";
-        String exp = ProductPageLocator.successfulsentmail.getText();
+        String exp = productPageLocator.successfulsentmail.getText();
         Assert.assertEquals(act, exp);
         LogManagers.logInfo("Email sent successfully: " + exp);
     }
 
     public void unsuccessfulMailSend() {
         String act = "Wrong email";
-        String exp = ProductPageLocator.invalidemailmsg.getText();
+        String exp = productPageLocator.invalidemailmsg.getText();
         Assert.assertEquals(act, exp);
         LogManagers.logInfo("Email send failed with message: " + exp);
     }
@@ -258,8 +242,8 @@ public class ProductAction {
     }
 
     public void addLaptopCart() {
-        ProductPageLocator.searchStoreField.sendKeys("laptop" + Keys.ENTER);
-        ProductPageLocator.addToCart.click();
+        productPageLocator.searchStoreField.sendKeys("laptop" + Keys.ENTER);
+        productPageLocator.addToCart.click();
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -269,8 +253,8 @@ public class ProductAction {
     public void countryPin(String country, String pincode) {
         Select dropdown = new Select(HelperClass.getDriver().findElement(By.xpath("//*[@id=\"CountryId\"]")));
         dropdown.selectByVisibleText(country);
-        ProductPageLocator.zipcode.sendKeys(pincode);
-        objmethod.clickMethod(ProductPageLocator.shippingestimate);
+        productPageLocator.zipcode.sendKeys(pincode);
+        objmethod.clickMethod(productPageLocator.shippingestimate);
         LogManagers.logInfo("Selected country: " + country + " and entered pincode: " + pincode);
     }
 
@@ -281,7 +265,7 @@ public class ProductAction {
             LogManagers.logInfo(a.getText());
         }
         String act="The one day air shipping";
-        String exp=ProductPageLocator.shippingineday.getText();
+        String exp=productPageLocator.shippingineday.getText();
         Assert.assertEquals(act, exp);
     }
 

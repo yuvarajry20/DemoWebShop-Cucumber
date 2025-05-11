@@ -265,7 +265,6 @@ public class CheckoutStepDefinition {
         try {
             objcheckout.clickcheckbox();
             objcheckout.selectcheckout();
-           // objcheckout.selectaddresss();
             objcheckout.billcontinuebtn();
         } catch (Exception e) {
             LogManagers.logError("Failed to click the checkout buttons and proceed. Error: " + e.getMessage());
@@ -302,7 +301,6 @@ public class CheckoutStepDefinition {
     public void select_the_two_day_shipping_as_two_day_air() {
         try {
             objcheckout.shippingcontinue();
-           // objcheckout.paymentcontinuestepintwoday();
         } catch (Exception e) {
             LogManagers.logError("Failed to select the two day shipping as two Day Air. Error: " + e.getMessage());
             throw e;

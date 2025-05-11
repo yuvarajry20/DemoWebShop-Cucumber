@@ -16,22 +16,21 @@ import com.Utilities.HelperClass;
 import com.Utilities.LogManagers;
 
 public class CheckoutAction {
-    Checkoutpage CheckoutLocator = null;
+    Checkoutpage checkoutLocator = null;
     BaseActions objmethod;
 
     public CheckoutAction() {
-        this.CheckoutLocator = new Checkoutpage();
+        this.checkoutLocator = new Checkoutpage();
         this.objmethod=new BaseActions();
-        PageFactory.initElements(HelperClass.getDriver(), CheckoutLocator);
+        PageFactory.initElements(HelperClass.getDriver(), checkoutLocator);
     }
 
     public void login(String email,String password) {
     	JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
         js.executeScript("document.getElementsByClassName(\"ico-login\")[0].click()");
-//        CheckoutLocator.loginButtonHomePages.click();
-        CheckoutLocator.emaillogin.sendKeys(email);
-        CheckoutLocator.passwordlogin.sendKeys(password);
-        CheckoutLocator.loginButtonclick.click();
+        checkoutLocator.emaillogin.sendKeys(email);
+        checkoutLocator.passwordlogin.sendKeys(password);
+        checkoutLocator.loginButtonclick.click();
         LogManagers.logInfo("Logged in with credentials:");
     }
 
@@ -43,7 +42,7 @@ public class CheckoutAction {
 
         public void searchAnItem(String product) throws ProductSearchException {
             try {
-                CheckoutLocator.serachfields.sendKeys(product + Keys.ENTER);
+                checkoutLocator.serachfields.sendKeys(product + Keys.ENTER);
                 LogManagers.logInfo("Searched for product: " + product);
             } catch (Exception e) {
                 throw new ProductSearchException("Failed to search for product: " + product + ". Error: " + e.getMessage());
@@ -51,7 +50,7 @@ public class CheckoutAction {
         }
 
     public void addtocartanitem() {
-        CheckoutLocator.addtocartlap.click();
+        checkoutLocator.addtocartlap.click();
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();
@@ -67,43 +66,43 @@ public class CheckoutAction {
     }
 
     public void isselectedcheckbox() {
-        boolean isSelected = CheckoutLocator.checkboxbtn.isSelected();
+        boolean isSelected = checkoutLocator.checkboxbtn.isSelected();
         System.out.println("The checkbox is selected :" + isSelected);
         LogManagers.logInfo("The checkbox is selected: " + isSelected);
     }
 
     public void selectcheckout() {
     	
-        CheckoutLocator.checkoutbtn.click();
+        checkoutLocator.checkoutbtn.click();
         LogManagers.logInfo("Clicked on checkout button.");
     }
 
     public void assertmsgalert() {
         String act = "Please accept the terms of service before the next step.";
-        String exp = CheckoutLocator.popupcheckboxmsg.getText();
+        String exp = checkoutLocator.popupcheckboxmsg.getText();
         Assert.assertEquals(act, exp);
-        System.out.println(CheckoutLocator.popupcheckboxmsg.getText());
+        System.out.println(checkoutLocator.popupcheckboxmsg.getText());
         LogManagers.logInfo("Asserted message: " + exp);
     }
 
     public void selectaddresss() {
-    	CheckoutLocator.addressfield.click();
-        CheckoutLocator.option1.click();
+    	checkoutLocator.addressfield.click();
+        checkoutLocator.option1.click();
         LogManagers.logInfo("Selected address option.");
     }
 
     public void billcontinuebtn() {
-        CheckoutLocator.billcontinuebtn.click();
+        checkoutLocator.billcontinuebtn.click();
         LogManagers.logInfo("Clicked on billing continue button.");
     }
 
     public void storepickupbox() {
-        CheckoutLocator.storepick.click();
+        checkoutLocator.storepick.click();
         LogManagers.logInfo("Clicked on store pickup box.");
     }
 
     public void shippingcontinue() {
-        CheckoutLocator.shipcontinuebtn.click();
+        checkoutLocator.shipcontinuebtn.click();
         LogManagers.logInfo("Clicked on shipping continue button.");
     }
 
@@ -113,23 +112,20 @@ public class CheckoutAction {
     	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
     	);
     	element.click();
-//    	objmethod.clickMethod(element);
         LogManagers.logInfo("Clicked on payment continue button.");
     }
 
     public void paymentinfocontinue() {
-//    	objmethod.clickMethod(CheckoutLocator.paymentinfobtncontinue);
-        CheckoutLocator.paymentinfobtncontinue.click();
+        checkoutLocator.paymentinfobtncontinue.click();
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
 
     public void confirmcheckout() {
-        CheckoutLocator.confirmbtnincheckout.click();
+        checkoutLocator.confirmbtnincheckout.click();
         LogManagers.logInfo("Clicked on confirm checkout button.");
     }
 
     public void getplacedorder() {
-        String act = "Your order has been successfully processed!";
         LogManagers.logInfo("Order placed successfully ");
     }
 
@@ -140,7 +136,7 @@ public class CheckoutAction {
     		Actions builder = new Actions(HelperClass.getDriver());
     		builder.moveToElement(el).click(el).perform();
     		String act="Order information";
-        	String exp=CheckoutLocator.orderinfo.getText();
+        	String exp=checkoutLocator.orderinfo.getText();
         	Assert.assertEquals(act, exp);
     		
     	}
@@ -154,9 +150,9 @@ public class CheckoutAction {
 
     public void pdfinvoiceclik() {
     	String act="Order information";
-    	String exp=CheckoutLocator.orderinfo.getText();
+    	String exp=checkoutLocator.orderinfo.getText();
     	Assert.assertEquals(act, exp);
-        CheckoutLocator.pdfinvoice.click();
+        checkoutLocator.pdfinvoice.click();
         LogManagers.logInfo("Clicked on PDF invoice link.");
      
         
@@ -170,7 +166,7 @@ public class CheckoutAction {
             LogManagers.logInfo(a.getText());
         }
         String act="Checkout";
-        String exp=CheckoutLocator.orderinfo.getText();
+        String exp=checkoutLocator.orderinfo.getText();
         Assert.assertEquals(act, exp);
     }
 
@@ -205,21 +201,21 @@ public class CheckoutAction {
     }
 
     public void creditvisacard(String name, String number, String expdate, String year, String code) {
-        CheckoutLocator.cardholdername.sendKeys(name);
-        CheckoutLocator.cardnumber.sendKeys(number);
-        CheckoutLocator.expirymonth.sendKeys(expdate);
-        CheckoutLocator.year.sendKeys(year);
-        CheckoutLocator.cardcode.sendKeys(code);
+        checkoutLocator.cardholdername.sendKeys(name);
+        checkoutLocator.cardnumber.sendKeys(number);
+        checkoutLocator.expirymonth.sendKeys(expdate);
+        checkoutLocator.year.sendKeys(year);
+        checkoutLocator.cardcode.sendKeys(code);
         LogManagers.logInfo("Entered credit card details: " + name + ", " + number + ", " + expdate + ", " + year + ", " + code);
     }
 
     public void onedaypickup() {
-        CheckoutLocator.onedaypick.click();
+        checkoutLocator.onedaypick.click();
         LogManagers.logInfo("Selected one-day pickup option.");
     }
 
     public void paymentcontinuestepinoneday() {
-        CheckoutLocator.shippingcntinue.click();
+        checkoutLocator.shippingcntinue.click();
         LogManagers.logInfo("Clicked on payment continue button in one-day pickup.");
     }
 
@@ -231,7 +227,7 @@ public class CheckoutAction {
     }
 
     public void clickbacktoship() {
-        CheckoutLocator.backtoshipping.click();
+        checkoutLocator.backtoshipping.click();
         LogManagers.logInfo("Clicked on back to shipping button.");
     }
 }
