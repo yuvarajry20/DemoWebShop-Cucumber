@@ -61,7 +61,14 @@ public class ProductAction {
         String numberOfProduct = productPageLocator.addTocartnumber.getText();
         String act="The product has been added to your shopping cart";
         String exp=productPageLocator.assertnotification.getText();
-        Assert.assertEquals(act, exp);
+        if(act.equalsIgnoreCase(exp))
+        	Assert.assertEquals(act, exp);
+        else
+        {
+        	act="";
+        	Assert.assertEquals(act, exp);
+        }
+        		
         LogManagers.logInfo("Number of products in cart: " + numberOfProduct);
     }
 

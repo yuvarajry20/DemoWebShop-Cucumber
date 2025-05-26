@@ -45,7 +45,7 @@ public class BookPageAction {
     }
 
     public void clickFictionBook() {
-    	baseActions.clickMethod(bookPage.fiction_book);
+    	baseActions.clickMethod(bookPage.fictionBook);
         LogManagers.logInfo("Clicked on 'Fiction' book.");
     }
 
@@ -127,12 +127,12 @@ public class BookPageAction {
     }
 
     public void clickComputingInternet() {
-    	baseActions.clickMethod(bookPage.computing_Internet);
+    	baseActions.clickMethod(bookPage.computingInternet);
         LogManagers.logInfo("Clicked on 'Computing & Internet' book.");
     }
 
     public void clickHealthBook() {
-    	baseActions.clickMethod(bookPage.health_book);
+    	baseActions.clickMethod(bookPage.healthBook);
         LogManagers.logInfo("Clicked on 'Health' book.");
     }
 

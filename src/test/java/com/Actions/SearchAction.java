@@ -52,14 +52,17 @@ public class SearchAction {
                 String resultText = searchPage.CameraFound.getText();
                 LogManagers.logInfo("Advanced search result: " + resultText);
                 return resultText;
-            } else {
-                return "No product title displayed";
+            } else  {
+                String noResultText = searchPage.noResultMessage.getText();
+                LogManagers.logInfo("No search result message: " + noResultText);
+                return noResultText;
             }
         } catch (NoSuchElementException e) {
-            LogManagers.logError("Product element not found: " + e.getMessage());
-            return "No product title displayed";
+            LogManagers.logError("Search result elements not found: " + e.getMessage());
+            return "Element not found";
         }
     }
+
 
     public void shortKeywordWarning() {
         String warningText = searchPage.searchWarning.getText();

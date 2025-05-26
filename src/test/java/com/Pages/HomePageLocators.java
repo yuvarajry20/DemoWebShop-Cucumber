@@ -11,7 +11,7 @@ public class HomePageLocators {
 	public WebElement getlinkfooter;
 
 	@FindBy(xpath="//input[@id=\"newsletter-email\"]")
-	public WebElement newsLetter_email;
+	public WebElement newsLetterEmail;
 	
     @FindBy(xpath="//input[@id=\"newsletter-subscribe-button\"]")
     public WebElement newsSubscribe;
