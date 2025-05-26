@@ -6,7 +6,11 @@
       <class name="com.Runner.runnerTestNG">
         <methods>
           <include name="setUpClass"/>
+<<<<<<< HEAD
+          <include name="runScenario" invocation-numbers="27"/>
+=======
           <include name="runScenario" invocation-numbers="49 74 75"/>
+>>>>>>> branch 'Divraj' of https://github.com/yuvarajry20/DemoWebShop-Cucumber.git
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.Runner.runnerTestNG -->
