@@ -250,7 +250,8 @@ public class ProductAction {
 
     public void addLaptopCart() {
         productPageLocator.searchStoreField.sendKeys("laptop" + Keys.ENTER);
-        productPageLocator.addToCart.click();
+//        productPageLocator.addToCart.click();
+        objmethod.clickMethod(productPageLocator.addToCart);
         WebElement el = HelperClass.getDriver().findElement(By.cssSelector("#topcartlink > a"));
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(el).click(el).perform();

@@ -28,7 +28,9 @@ public class nopcommerceAction {
 	    }
 	    public void nopgettext()
 	    {
-	    	String exp=objmethod.gettexts(nop.textinnopcommerce);
+	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(20));
+            WebElement nopcommerce = wait.until(ExpectedConditions.visibilityOf(nop.textinnopcommerce));
+	    	String exp=objmethod.gettexts(nopcommerce);
 	    	String act="Free and open-source eCommerce platform";
 	    	Assert.assertEquals(act, exp);
 	    	
