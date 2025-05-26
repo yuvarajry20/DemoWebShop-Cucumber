@@ -25,6 +25,8 @@ features={
 		 "src/test/resources/Features/Footer.feature",
      	"src/test/resources/Features/HomePageLinks.feature",
 		"src/test/resources/Features/NextandPreviousbtn.feature",
+		
+		
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {
