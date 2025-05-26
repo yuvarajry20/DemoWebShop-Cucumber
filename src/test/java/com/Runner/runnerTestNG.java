@@ -24,6 +24,7 @@ features={
   	    "src/test/resources/Features/CustomerService.feature",
 		 "src/test/resources/Features/Footer.feature",
      	"src/test/resources/Features/HomePageLinks.feature",
+     	"src/test/resources/Features/nopcommerce.feature"
 },
 glue="com.Definitions")
 public class runnerTestNG extends AbstractTestNGCucumberTests {

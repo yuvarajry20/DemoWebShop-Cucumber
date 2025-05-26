@@ -11,5 +11,7 @@ public class BaseActions {
 		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();",element);
 	}
 	
+	
+	
 
 }
