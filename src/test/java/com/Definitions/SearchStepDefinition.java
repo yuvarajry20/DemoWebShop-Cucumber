@@ -126,9 +126,9 @@ public class SearchStepDefinition {
     @Then("the system should display {string} message for {string}")
     public void the_system_should_display_message_for(String expectedResult, String searchTerm) {
         try {
-            if (expectedResult.equalsIgnoreCase(searchTerm)) {
+            if (searchTerm.equalsIgnoreCase("Camcorder")) {
                 searchaction.advanceSearchResultDisplayed();
-            } else if (expectedResult.equalsIgnoreCase(searchTerm)) {
+            } else if (searchTerm.equalsIgnoreCase("Camera")) {
                 searchaction.noSearchDisplayed();
             }
         } catch (Exception e) {
