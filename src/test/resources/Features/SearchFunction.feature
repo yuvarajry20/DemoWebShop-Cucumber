@@ -1,26 +1,26 @@
 Feature: Laksitha_13APR2025_DemoWebShop_Search_Function
 
-#Background: Given I am on the DemoWebShop HomePage with "url"
+Background: Given I am on the DemoWebShop HomePage with "url"
 
-#@ValidKeywordSearch
-  #Scenario: Simple product search with valid keyword
-  #Given I want to be in the demowebshop "url"
-  #When I click search bar and enter "Fiction"
-  #And I click the search button
-  #Then the "Fiction" should be displayed in the results
-  #
-#@InvalidKeywordSearch
-  #Scenario Outline: Search with invalid or short keywords
-    #Given I want to be in the demowebshop "url"
-    #When I click search bar and enter invalid "<keyword>"
-    #And I enter the search 
-    #Then a message that "<expectedMessage>" should be displayed
-#
-    #Examples:
-      #| keyword | expectedMessage                                           |
-      #| Mobile  | No products were found that matched your criteria.        |
-      #| mo      | Search term minimum length is 3 characters                |
-      #|         | Please enter some search keyword                          |
+@ValidKeywordSearch
+  Scenario: Simple product search with valid keyword
+  Given I want to be in the demowebshop "url"
+  When I click search bar and enter "Fiction"
+  And I click the search button
+  Then the "Fiction" should be displayed in the results
+  
+@InvalidKeywordSearch
+  Scenario Outline: Search with invalid or short keywords
+    Given I want to be in the demowebshop "url"
+    When I click search bar and enter invalid "<keyword>"
+    And I enter the search 
+    Then a message that "<expectedMessage>" should be displayed
+
+    Examples:
+      | keyword | expectedMessage                                           |
+      | Mobile  | No products were found that matched your criteria.        |
+      | mo      | Search term minimum length is 3 characters                |
+      |         | Please enter some search keyword                          |
 
   @AdvanceSearch
   Scenario Outline: Perform advanced product search with various filter combinations

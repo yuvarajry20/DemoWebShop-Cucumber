@@ -14,7 +14,7 @@ public class ProductPage
 	public WebElement emailField;
 	
 	@FindBy(xpath = "//div[@class=\"form-fields\"]//descendant::div[3]//label//following-sibling::input")
-	public WebElement PasswordField;
+	public WebElement passwordField;
 	
 	@FindBy(xpath="//div[@class=\"inputs reversed\"]//following-sibling::div//input")
 	public WebElement loginButtonSubmit;
