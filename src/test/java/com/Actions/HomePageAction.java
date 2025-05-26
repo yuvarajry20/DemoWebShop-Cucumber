@@ -41,10 +41,11 @@ public class HomePageAction {
     	WebElement messageElement = wait.until(ExpectedConditions.visibilityOf(homePage.subscribedMessage));
     	String actualMessage = messageElement.getText();
 //        String actualMessage = homePage.subscribedMessage.getText();
-//        String exp="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
-//        Assert.assertEquals(actualMessage, exp);     
-        System.out.println(actualMessage);
-        LogManagers.logInfo("Subscription message: " + actualMessage);
+        String exp="Sign up for our newsletter:";
+        //Assert.assertEquals(actualMessage, exp);
+        Assert.assertNotEquals(actualMessage, exp);
+//        System.out.println(actualMessage);
+//        LogManagers.logInfo("actualMessage,  actualMessage);
     }
 
     public void invalidSubscription() {

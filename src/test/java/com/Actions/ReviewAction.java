@@ -40,7 +40,7 @@ public class ReviewAction {
     }
 
     public void ReadReviews() {
-        String comments = reviewPage.comment_box.getText();
+        String comments = reviewPage.commentBox.getText();
         System.out.println(comments);
         LogManagers.logInfo("Read reviews: " + comments);
     }

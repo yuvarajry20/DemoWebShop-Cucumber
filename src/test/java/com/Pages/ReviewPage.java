@@ -15,7 +15,7 @@ public class ReviewPage {
 	public WebElement reviews;
 	
 	@FindBy(xpath="//div[@class=\"product-review-item\"][1]")
-	public WebElement comment_box;
+	public WebElement commentBox;
 	
 	@FindBy(xpath="//div[@class=\"product-review-links\"]//a[2]")
 	public WebElement addReview;

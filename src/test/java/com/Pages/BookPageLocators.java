@@ -30,7 +30,7 @@ public class BookPageLocators {
 	
 	//@FindBy(xpath="(//h2[@class=\"product-title\"]//child::a)[4]")
 	@FindBy(xpath="//a[contains(text(),\"Fiction EX\")]")
-	public WebElement fiction_book;
+	public WebElement fictionBook;
 	
 	//@FindBy(xpath="//h1[@itemprop=\"name\"]")
 	@FindBy(xpath="//div[@class=\"overview\"]")
@@ -52,10 +52,10 @@ public class BookPageLocators {
 	public WebElement bookFiltered;
 	
 	@FindBy(xpath="(//a[contains(text(),\"Computing and Internet\")])[2]")
-	public WebElement computing_Internet;
+	public WebElement computingInternet;
 	
 	@FindBy(xpath="//h2[@class=\"product-title\"]//a[contains(text(),\"Health Book\")]")
-	public WebElement health_book;
+	public WebElement healthBook;
 	
 	@FindBy(xpath="//input[@value=\"Add to compare list\"]")
 	public WebElement compareList;
