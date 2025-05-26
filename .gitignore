@@ -10,3 +10,4 @@ test-output/
 cucumber-reports/
 surefire-reports/
 junitreports//
+logs/

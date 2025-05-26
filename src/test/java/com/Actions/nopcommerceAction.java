@@ -1,6 +1,11 @@
 package com.Actions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.Pages.nopcommercepage;
@@ -17,11 +22,13 @@ public class nopcommerceAction {
 	    
 	    public void nopcommercewebpage()
 	    {
-	    	objmethod.clickMethod(nop.nopcommerce);
+	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(20));
+            WebElement nopcommerce = wait.until(ExpectedConditions.visibilityOf(nop.nopcommerce));
+	    	objmethod.clickMethod(nopcommerce);
 	    }
 	    public void nopgettext()
 	    {
-	    	String exp=nop.textinnopcommerce.getText();
+	    	String exp=objmethod.gettexts(nop.textinnopcommerce);
 	    	String act="Free and open-source eCommerce platform";
 	    	Assert.assertEquals(act, exp);
 	    	
@@ -29,7 +36,9 @@ public class nopcommerceAction {
 	    
 	    public void aboutus()
 	    {
-	    	objmethod.clickMethod(nop.about);
+	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(20));
+            WebElement aboutpage = wait.until(ExpectedConditions.visibilityOf(nop.about));
+	    	objmethod.clickMethod(aboutpage);
 	    }
 	    public void detailsabout()
 	    {
