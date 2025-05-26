@@ -11,5 +11,12 @@ public class BaseActions {
 		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();",element);
 	}
 	
+	public String gettexts(WebElement text)
+	{
+		return (String) ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].getText();",text);
+	}
+	
+	
+	
 
 }

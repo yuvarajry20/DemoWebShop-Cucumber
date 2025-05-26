@@ -112,19 +112,16 @@ public class CheckoutAction {
     	    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='buttons']//input[@class='button-1 payment-method-next-step-button']"))
     	);
     	objmethod.clickMethod(element);
-//    	element.click();
         LogManagers.logInfo("Clicked on payment continue button.");
     }
 
     public void paymentinfocontinue() {
-//        checkoutLocator.paymentinfobtncontinue.click();
         objmethod.clickMethod(checkoutLocator.paymentinfobtncontinue);
         LogManagers.logInfo("Clicked on payment info continue button.");
     }
 
     public void confirmcheckout() {
     	objmethod.clickMethod(checkoutLocator.confirmbtnincheckout);
-//        checkoutLocator.confirmbtnincheckout.click();
         LogManagers.logInfo("Clicked on confirm checkout button.");
     }
 
@@ -206,11 +203,6 @@ public class CheckoutAction {
         {
         	Assert.assertEquals(act, exp);
         }
-//        else
-//        {
-//        	String exp1="Checkout";
-//        	Assert.assertEquals(act,exp1);
-//        }
     }
 
     public void creditcardcheckbox() {
