@@ -23,6 +23,7 @@ features={
 		 "src/test/resources/Features/Tricentis.feature",
      	"src/test/resources/Features/CustomerService.feature",
 		 "src/test/resources/Features/Footer.feature",
+		 "src/test/resources/Features/MusicPageButton.feature",
      	"src/test/resources/Features/HomePageLinks.feature",
 		"src/test/resources/Features/NextandPreviousbtn.feature",
      	"src/test/resources/Features/nopcommerce.feature"
