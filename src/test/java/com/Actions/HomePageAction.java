@@ -26,8 +26,8 @@ public class HomePageAction {
 
     public void enterNewsLetterEmail(String email) {
         new WebDriverWait(driver, Duration.ofSeconds(10))
-            .until(ExpectedConditions.visibilityOf(homePage.newsLetter_email));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + email + "';", homePage.newsLetter_email);
+            .until(ExpectedConditions.visibilityOf(homePage.newsLetterEmail));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].value='" + email + "';", homePage.newsLetterEmail);
         LogManagers.logInfo("Entered email for newsletter subscription: " + email);
     }
 
@@ -40,12 +40,10 @@ public class HomePageAction {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	WebElement messageElement = wait.until(ExpectedConditions.visibilityOf(homePage.subscribedMessage));
     	String actualMessage = messageElement.getText();
-//        String actualMessage = homePage.subscribedMessage.getText();
         String exp="Sign up for our newsletter:";
         //Assert.assertEquals(actualMessage, exp);
         Assert.assertNotEquals(actualMessage, exp);
-//        System.out.println(actualMessage);
-//        LogManagers.logInfo("actualMessage,  actualMessage);
+        LogManagers.logInfo("actualMessage:" + actualMessage);
     }
 
     public void invalidSubscription() {
