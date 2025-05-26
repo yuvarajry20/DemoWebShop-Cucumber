@@ -33,5 +33,5 @@ Background: Given I am on the DemoWebShop HomePage with "url"
 
     Examples:
       | searchTerm | Category                     | Min  | Max  | expectedResult                                    |
-      | Camera     | Electronics >> Camera, photo | 100  | 500  | 1MP 60GB Hard Drive Handycam Camcorder                     |
+      | Camcorder  | Electronics >> Camera, photo | 100  | 500  | 1MP 60GB Hard Drive Handycam Camcorder                     |
       | Camera     | Electronics >> Cell phones   | 100  | 500  | No products were found that matched your criteria.|
