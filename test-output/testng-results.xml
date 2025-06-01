@@ -1,91 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-26T16:23:17 IST" name="Default suite" finished-at="2025-05-26T16:23:38 IST" duration-ms="21132">
+  <suite started-at="2025-05-27T09:32:07 IST" name="Default suite" finished-at="2025-05-27T09:32:21 IST" duration-ms="13597">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-26T16:23:17 IST" name="Default test" finished-at="2025-05-26T16:23:38 IST" duration-ms="21132">
+    <test started-at="2025-05-27T09:32:07 IST" name="Default test" finished-at="2025-05-27T09:32:21 IST" duration-ms="13597">
       <class name="com.Runner.runnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:17 IST" name="setUpClass" finished-at="2025-05-26T16:23:18 IST" duration-ms="1382" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-27T09:32:07 IST" name="setUpClass" finished-at="2025-05-27T09:32:09 IST" duration-ms="1713" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7499eac7]]>
+                <![CDATA[org.testng.TestRunner@104dc1a2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T16:23:35 IST" duration-ms="16817" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-27T09:32:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-27T09:32:18 IST" duration-ms="9650" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User verifies and clicks the Powered by nopCommerce link"]]>
+                <![CDATA["verify the user is on the digital download page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Laksitha_28APR2025_footerlink_functionality_on_homepage"]]>
+                <![CDATA["Divraj_14APR2025_Demowebshop_Categories"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T16:23:35 IST" duration-ms="16817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buttons are enabled or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Laksitha_26MAY2025_DemoWebShop_MusicPage_Buttons"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T16:23:35 IST" duration-ms="16488" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User clicks the Sitemap link and navigates to SiteMap Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Laksitha_28APR2025_footerlink_functionality_on_homepage"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-26T16:23:35 IST" duration-ms="16783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User clicks the Contact us link and submits the query"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Laksitha_28APR2025_footerlink_functionality_on_homepage"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@1018bde2]" started-at="2025-05-26T16:23:35 IST" name="tearDownClass" finished-at="2025-05-26T16:23:38 IST" duration-ms="2840" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.runnerTestNG@6497b078]" started-at="2025-05-27T09:32:18 IST" name="tearDownClass" finished-at="2025-05-27T09:32:21 IST" duration-ms="2162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
