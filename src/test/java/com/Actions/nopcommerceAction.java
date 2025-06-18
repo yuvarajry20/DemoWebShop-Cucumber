@@ -28,7 +28,7 @@ public class nopcommerceAction {
 	    }
 	    public void nopgettext()
 	    {
-	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(30));
+	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(25));
             WebElement nopcommerce = wait.until(ExpectedConditions.visibilityOf(nop.textinnopcommerce));
 	    	String exp=objmethod.gettexts(nopcommerce);
 	    	String act="Free and open-source eCommerce platform";
@@ -38,7 +38,7 @@ public class nopcommerceAction {
 	    
 	    public void aboutus()
 	    {
-	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(30));
+	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(25));
             WebElement aboutpage = wait.until(ExpectedConditions.visibilityOf(nop.about));
 	    	objmethod.clickMethod(aboutpage);
 	    }
