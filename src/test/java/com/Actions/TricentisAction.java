@@ -25,6 +25,10 @@ public class TricentisAction {
         PageFactory.initElements(HelperClass.getDriver(), trilocate);
     }
     public void tricentisimg() {
+    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    	WebElement element = wait.until(
+    	    ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"nivo-slider\"]/a[1]"))
+    	);
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(trilocate.tricentisimg).click().perform();
         LogManagers.logInfo("Successfully clicked the Tricentis image.");
@@ -39,7 +43,8 @@ public class TricentisAction {
     
     public void upcomingevents() {
         try {
-            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(20));
+        	
+            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(35));
             WebElement upcomingWebinarLink = wait.until(ExpectedConditions.visibilityOf(trilocate.upcomingwebinar));
 
             JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
@@ -53,6 +58,7 @@ public class TricentisAction {
     }
 
     public void listoftitleinfilters() {
+    	
         List<WebElement> obj = HelperClass.getDriver().findElements(By.xpath("//h2[@class=\"EventCard_title__qAh58\"]//a"));
         System.out.println("Upcoming webinars:");
         for (WebElement a : obj) {
