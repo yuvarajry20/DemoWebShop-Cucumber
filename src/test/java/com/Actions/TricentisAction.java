@@ -25,10 +25,6 @@ public class TricentisAction {
         PageFactory.initElements(HelperClass.getDriver(), trilocate);
     }
     public void tricentisimg() {
-    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-    	WebElement element = wait.until(
-    	    ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"nivo-slider\"]/a[1]"))
-    	);
         Actions builder = new Actions(HelperClass.getDriver());
         builder.moveToElement(trilocate.tricentisimg).click().perform();
         LogManagers.logInfo("Successfully clicked the Tricentis image.");

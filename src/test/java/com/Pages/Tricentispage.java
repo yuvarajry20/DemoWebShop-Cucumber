@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Tricentispage {
-	@FindBy(xpath="//*[@id=\"nivo-slider\"]/a[1]")
+	@FindBy(xpath="//div[@class=\"slider-wrapper theme-default\"]//child::div[@id=\"nivo-slider\"]//child::a[1]")
 	public WebElement tricentisimg;
 	
 	@FindBy(xpath="//div[@class=\"MastheadMinimal_body-p__qrVJl MastheadMinimal_description__zc_Sl anim-delay-3 MastheadMinimal_anim-fade-in-up__litwY MastheadMinimal_anim-play__ULSBT\"]//preceding-sibling::h1")
