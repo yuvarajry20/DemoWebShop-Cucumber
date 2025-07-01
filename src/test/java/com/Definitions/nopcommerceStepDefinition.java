@@ -32,31 +32,6 @@ public void the_user_should_see_the_nopcommerce_website_successfully() {
       }
 
 }
-@When("click the about us in the footer")
-public void click_the_about_us_in_the_footer() {
-    try
-    {
-    	objnop.aboutus();
-    }
-    catch(Exception e)
-    {
-    	LogManagers.logError("Failed to click the nopcommerce about page. Error: " + e.getMessage());
-        throw e;
-    }
-}
-
-@Then("the user should see the complete details about the nopcommerce page successfully")
-public void the_user_should_see_the_complete_details_about_the_nopcommerce_page_successfully() {
-    try
-    {
-    	objnop.detailsabout();
-    }
-    catch(Exception e)
-    {
-    	LogManagers.logError("Failed to assert the nopcommerce about page. Error: " + e.getMessage());
-        throw e;
-    }
-}
 
 
 }
