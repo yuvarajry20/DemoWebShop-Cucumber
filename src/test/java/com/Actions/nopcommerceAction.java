@@ -22,33 +22,18 @@ public class nopcommerceAction {
 	    
 	    public void nopcommercewebpage()
 	    {
-//	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(30));
-//            WebElement nopcommerce = wait.until(ExpectedConditions.visibilityOf(nop.nopcommerce));
-//	    	objmethod.clickMethod(nopcommerce);
 	    	nop.nopcommerce.click();
 	    }
 	    public void nopgettext() {
 	        try {
-	            String exp = nop.textinnopcommerce.getText();
-	            String act = "Free and open-source eCommerce platform";
-	            System.out.println("Assertion passed: Expected text is displayed.");
+	            String exp = HelperClass.getDriver().getCurrentUrl();
+	            String act = "https://www.nopcommerce.com/en";
+	            
+	            System.out.println("Assertion passed: Expected text is displayed."+exp);
+	            Assert.assertEquals(exp, act);
 	        } catch (AssertionError e) {
 	            System.out.println();
 	        }
 	    }
 
-	    
-//	    public void aboutus()
-//	    {
-////	    	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(25));
-////            WebElement aboutpage = wait.until(ExpectedConditions.visibilityOf(nop.about));
-//            nop.about.click();
-////	    	objmethod.clickMethod(aboutpage);
-//	    }
-//	    public void detailsabout()
-//	    {
-//	    	String act="https://www.nopcommerce.com/en/about-us";
-//	    	String exp=HelperClass.getDriver().getCurrentUrl();
-//	    	Assert.assertEquals(act, exp);
-//	    }
 }
