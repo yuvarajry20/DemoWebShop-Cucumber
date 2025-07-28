@@ -68,7 +68,7 @@ public class TricentisAction {
     }
 
     public void searchthekeyword() {
-        trilocate.searchboxinfilter.sendKeys("Unlock"+Keys.ENTER);
+        trilocate.searchicon.sendKeys("Unlock"+Keys.ENTER);
         LogManagers.logInfo("Successfully entered the keyword 'Unlock' in the search box.");
     }
 
