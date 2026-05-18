@@ -107,17 +107,8 @@
           </configuration>
         
       </plugin>
-      <build>
-  <plugins>
-    <plugin>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.10.0.2594</version>
-    </plugin>
-  </plugins>
-</build>
 
-      <!-- Surefire Plugin for TestNG -->
+      <!-- Surfire Plugin for TestNG -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.2</version>
